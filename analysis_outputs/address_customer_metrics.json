@@ -1,0 +1,487 @@
+{
+  "address_overview": {
+    "unique_addresses": 95147,
+    "multi_permit_addresses": 69656,
+    "pct_multi_permit": 73.20882424038592
+  },
+  "top_addresses": {
+    "1201 YALE PL, Loring Park": 10140,
+    "110 BANK ST, Nicollet Island - East Bank": 6052,
+    "400 GROVELAND AVE, Loring Park": 5160,
+    "5015 35TH AVE S, Minnehaha": 2626,
+    "2950 DEAN PKWY, Cedar - Isles - Dean": 2205,
+    "410 GROVELAND AVE, Loring Park": 1953,
+    "4300 WEST RIVER PKWY S, Hiawatha": 1859,
+    "1225 LASALLE AVE, Loring Park": 1162,
+    "425 13TH AVE SE, Marcy Holmes": 903,
+    "510 GROVELAND AVE, Loring Park": 629,
+    "100 2ND ST SE, Marcy Holmes": 540,
+    "19 1ST ST S, Downtown West": 540,
+    "1235 YALE PL, Loring Park": 414,
+    "729 WASHINGTON AVE N, North Loop": 400,
+    "1111 WEST RIVER PKWY, Downtown East": 395,
+    "275 MARKET ST, Sumner - Glenwood": 372,
+    "901 3RD ST N, North Loop": 324,
+    "60 6TH ST S, Downtown West": 279,
+    "219 2ND ST N, North Loop": 273,
+    "45 7TH ST S, Downtown West": 260
+  },
+  "permit_sequences": [
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing",
+      69
+    ],
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing",
+      30
+    ],
+    [
+      "Commercial \u2192 Commercial \u2192 Commercial \u2192 Commercial \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing",
+      16
+    ],
+    [
+      "Res \u2192 Res",
+      16
+    ],
+    [
+      "Commercial \u2192 Commercial \u2192 Commercial \u2192 Commercial \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing",
+      15
+    ],
+    [
+      "Commercial \u2192 Commercial \u2192 Commercial \u2192 Commercial",
+      13
+    ],
+    [
+      "Plumbing \u2192 Res",
+      10
+    ],
+    [
+      "Plumbing \u2192 Mechanical",
+      10
+    ],
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing",
+      9
+    ],
+    [
+      "Plumbing \u2192 Commercial",
+      9
+    ],
+    [
+      "Commercial \u2192 Plumbing",
+      8
+    ],
+    [
+      "Plumbing \u2192 Plumbing",
+      8
+    ],
+    [
+      "Res \u2192 Mechanical",
+      8
+    ],
+    [
+      "Res \u2192 Plumbing",
+      7
+    ],
+    [
+      "Mechanical \u2192 Plumbing",
+      5
+    ],
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Commercial \u2192 Commercial \u2192 Commercial \u2192 Commercial",
+      5
+    ],
+    [
+      "Commercial \u2192 Commercial \u2192 Commercial",
+      4
+    ],
+    [
+      "Mechanical \u2192 Mechanical \u2192 Mechanical \u2192 Mechanical",
+      4
+    ],
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Commercial \u2192 Commercial \u2192 Commercial \u2192 Commercial \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing",
+      4
+    ],
+    [
+      "Commercial \u2192 Plumbing \u2192 Mechanical",
+      4
+    ],
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Commercial \u2192 Commercial \u2192 Commercial \u2192 Commercial",
+      4
+    ],
+    [
+      "Commercial \u2192 Commercial \u2192 Commercial \u2192 Commercial \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing",
+      4
+    ],
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Res",
+      4
+    ],
+    [
+      "Res \u2192 Plumbing \u2192 Mechanical",
+      4
+    ],
+    [
+      "Plumbing \u2192 Res \u2192 Res",
+      4
+    ],
+    [
+      "Mechanical \u2192 Plumbing \u2192 Res",
+      4
+    ],
+    [
+      "Commercial \u2192 Commercial",
+      3
+    ],
+    [
+      "Plumbing \u2192 Mechanical \u2192 Res",
+      3
+    ],
+    [
+      "Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Plumbing \u2192 Mechanical \u2192 Mechanical \u2192 Mechanical \u2192 Mechanical",
+      3
+    ],
+    [
+      "Commercial \u2192 Mechanical \u2192 Plumbing",
+      3
+    ]
+  ],
+  "customer_distribution": {
+    "One-time": 10100,
+    "Occasional (2-5)": 5090,
+    "Regular (6-20)": 1698,
+    "Frequent (21-100)": 994,
+    "Major (100+)": 486
+  },
+  "loyal_customers": {
+    "count": 3224,
+    "top_by_longevity": {
+      "ALL ENERGY SOLAR INC": {
+        "permit_count": 1429,
+        "first_permit": "2016-12-06T11:31:14+00:00",
+        "last_permit": "2025-05-30T09:31:04+00:00",
+        "total_value": 13532247.0,
+        "neighborhoods": 79,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "AMERICAN WATERWORKS": {
+        "permit_count": 461,
+        "first_permit": "2016-12-08T13:33:49+00:00",
+        "last_permit": "2025-06-03T12:02:29+00:00",
+        "total_value": 5072741.0,
+        "neighborhoods": 70,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "APOLLO HEATING AND AIR": {
+        "permit_count": 491,
+        "first_permit": "2016-12-15T12:15:35+00:00",
+        "last_permit": "2025-06-09T07:56:16+00:00",
+        "total_value": 474812.0,
+        "neighborhoods": 75,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "Air Mechanical Inc": {
+        "permit_count": 741,
+        "first_permit": "2016-12-02T13:53:01+00:00",
+        "last_permit": "2025-06-06T07:43:32+00:00",
+        "total_value": 2496977.0,
+        "neighborhoods": 75,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "All Ways Drains Ltd": {
+        "permit_count": 178,
+        "first_permit": "2016-12-09T13:55:22+00:00",
+        "last_permit": "2025-06-09T08:16:30+00:00",
+        "total_value": 0.0,
+        "neighborhoods": 50,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "Anything Plumbing and Heating LLC": {
+        "permit_count": 135,
+        "first_permit": "2016-12-15T14:05:00+00:00",
+        "last_permit": "2025-06-06T11:28:57+00:00",
+        "total_value": 0.0,
+        "neighborhoods": 39,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "Appliance Connections INC": {
+        "permit_count": 320,
+        "first_permit": "2016-12-06T14:27:34+00:00",
+        "last_permit": "2025-05-29T11:18:40+00:00",
+        "total_value": 0.0,
+        "neighborhoods": 71,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "Architect Mechanical Inc": {
+        "permit_count": 150,
+        "first_permit": "2016-12-01T10:21:05+00:00",
+        "last_permit": "2025-05-23T08:31:44+00:00",
+        "total_value": 10118833.0,
+        "neighborhoods": 41,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "Associated Mechanical Contractors Inc": {
+        "permit_count": 489,
+        "first_permit": "2016-12-09T11:12:33+00:00",
+        "last_permit": "2025-05-23T13:44:35+00:00",
+        "total_value": 63627473.0,
+        "neighborhoods": 42,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "BAYPORT ROOFING AND SIDING LLC": {
+        "permit_count": 471,
+        "first_permit": "2016-12-02T14:39:15+00:00",
+        "last_permit": "2025-05-20T13:16:56+00:00",
+        "total_value": 2325503.0,
+        "neighborhoods": 64,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "BOEHM HEATING": {
+        "permit_count": 346,
+        "first_permit": "2016-12-02T08:54:43+00:00",
+        "last_permit": "2025-06-05T11:57:52+00:00",
+        "total_value": 114800.0,
+        "neighborhoods": 60,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "BONFES PLUMBING HEATING AND AIR SERVICE INC": {
+        "permit_count": 2147,
+        "first_permit": "2016-12-05T10:10:54+00:00",
+        "last_permit": "2025-06-09T11:19:54+00:00",
+        "total_value": 285235.0,
+        "neighborhoods": 78,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "BUILDING ASSETS LLC": {
+        "permit_count": 124,
+        "first_permit": "2016-12-14T12:57:57+00:00",
+        "last_permit": "2025-06-02T14:28:34+00:00",
+        "total_value": 28933425.0,
+        "neighborhoods": 33,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "Barr Web Industries Inc": {
+        "permit_count": 520,
+        "first_permit": "2016-12-05T08:20:24+00:00",
+        "last_permit": "2025-06-09T08:31:47+00:00",
+        "total_value": 1200.0,
+        "neighborhoods": 79,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      },
+      "Bartylla Plumbing and Heating Inc": {
+        "permit_count": 311,
+        "first_permit": "2016-12-12T13:02:44+00:00",
+        "last_permit": "2025-06-09T09:25:46+00:00",
+        "total_value": 33100.0,
+        "neighborhoods": 68,
+        "years_active": 8.5,
+        "customer_type": "Major (100+)"
+      }
+    }
+  },
+  "address_types": {
+    "Residential": 249,
+    "Mixed/Multi-tenant": 114,
+    "Residential - Owner": 92,
+    "Commercial": 45
+  },
+  "multi_neighborhood_customers": 5287,
+  "top_value_addresses": {
+    "1201 YALE PL, Loring Park": {
+      "total_value": 8266416949.0,
+      "avg_value": 1254198.0,
+      "permit_count": 6591,
+      "primary_type": "Commercial"
+    },
+    "400 GROVELAND AVE, Loring Park": {
+      "total_value": 4186691254.0,
+      "avg_value": 2028436.0,
+      "permit_count": 2064,
+      "primary_type": "Commercial"
+    },
+    "110 BANK ST, Nicollet Island - East Bank": {
+      "total_value": 1745716994.0,
+      "avg_value": 544855.0,
+      "permit_count": 3204,
+      "primary_type": "Commercial"
+    },
+    "729 WASHINGTON AVE N, North Loop": {
+      "total_value": 586239560.0,
+      "avg_value": 2931198.0,
+      "permit_count": 200,
+      "primary_type": "Commercial"
+    },
+    "2950 DEAN PKWY, Cedar - Isles - Dean": {
+      "total_value": 413080780.0,
+      "avg_value": 421511.0,
+      "permit_count": 980,
+      "primary_type": "Mechanical"
+    },
+    "250 NICOLLET MALL, Downtown West": {
+      "total_value": 226753832.0,
+      "avg_value": 4535077.0,
+      "permit_count": 50,
+      "primary_type": "Commercial"
+    },
+    "1111 WEST RIVER PKWY, Downtown East": {
+      "total_value": 177475810.0,
+      "avg_value": 2304881.0,
+      "permit_count": 77,
+      "primary_type": "Commercial"
+    },
+    "700 NICOLLET MALL, Downtown West": {
+      "total_value": 170921323.0,
+      "avg_value": 2756796.0,
+      "permit_count": 62,
+      "primary_type": "Commercial"
+    },
+    "240 CHICAGO AVE, Downtown East": {
+      "total_value": 169053370.0,
+      "avg_value": 11270225.0,
+      "permit_count": 15,
+      "primary_type": "Mechanical"
+    },
+    "1235 YALE PL, Loring Park": {
+      "total_value": 168675560.0,
+      "avg_value": 611143.0,
+      "permit_count": 276,
+      "primary_type": "Commercial"
+    },
+    "100 2ND ST SE, Marcy Holmes": {
+      "total_value": 166178100.0,
+      "avg_value": 395662.0,
+      "permit_count": 420,
+      "primary_type": "Commercial"
+    },
+    "5015 35TH AVE S, Minnehaha": {
+      "total_value": 148536862.0,
+      "avg_value": 61278.0,
+      "permit_count": 2424,
+      "primary_type": "Commercial"
+    },
+    "1225 LASALLE AVE, Loring Park": {
+      "total_value": 143542275.0,
+      "avg_value": 192158.0,
+      "permit_count": 747,
+      "primary_type": "Commercial"
+    },
+    "505 4TH AVE S, Downtown West": {
+      "total_value": 143073947.0,
+      "avg_value": 17884243.0,
+      "permit_count": 8,
+      "primary_type": "Commercial"
+    },
+    "521 15TH AVE SE, Marcy Holmes": {
+      "total_value": 141789040.0,
+      "avg_value": 28357808.0,
+      "permit_count": 5,
+      "primary_type": "Mechanical"
+    },
+    "1256 PENN AVE N, Near - North": {
+      "total_value": 134082448.0,
+      "avg_value": 1289254.0,
+      "permit_count": 104,
+      "primary_type": "Commercial"
+    },
+    "60 6TH ST S, Downtown West": {
+      "total_value": 132702720.0,
+      "avg_value": 589790.0,
+      "permit_count": 225,
+      "primary_type": "Commercial"
+    },
+    "4300 WEST RIVER PKWY S, Hiawatha": {
+      "total_value": 128361753.0,
+      "avg_value": 108505.0,
+      "permit_count": 1183,
+      "primary_type": "Commercial"
+    },
+    "600 8TH AVE N, North Loop": {
+      "total_value": 123380915.0,
+      "avg_value": 41126972.0,
+      "permit_count": 3,
+      "primary_type": "Commercial"
+    },
+    "1001 3RD AVE S, Downtown West": {
+      "total_value": 118712028.0,
+      "avg_value": 4565847.0,
+      "permit_count": 26,
+      "primary_type": "Commercial"
+    },
+    "15 1ST ST S, Downtown West": {
+      "total_value": 117551520.0,
+      "avg_value": 734697.0,
+      "permit_count": 160,
+      "primary_type": "Commercial"
+    },
+    "200 UNIVERSITY AVE SE, Marcy Holmes": {
+      "total_value": 113624884.0,
+      "avg_value": 22724977.0,
+      "permit_count": 5,
+      "primary_type": "Commercial"
+    },
+    "365 NICOLLET MALL, Downtown West": {
+      "total_value": 113337250.0,
+      "avg_value": 16191036.0,
+      "permit_count": 7,
+      "primary_type": "Mechanical"
+    },
+    "600 PORTLAND AVE, Elliot Park": {
+      "total_value": 109391467.0,
+      "avg_value": 9115956.0,
+      "permit_count": 12,
+      "primary_type": "Commercial"
+    },
+    "700 4TH ST S, Downtown East": {
+      "total_value": 108428393.0,
+      "avg_value": 36142798.0,
+      "permit_count": 3,
+      "primary_type": "Commercial"
+    },
+    "1301 2ND AVE S, Loring Park": {
+      "total_value": 97634415.0,
+      "avg_value": 1084827.0,
+      "permit_count": 90,
+      "primary_type": "Commercial"
+    },
+    "800 28TH ST E, Midtown Phillips": {
+      "total_value": 94422516.0,
+      "avg_value": 527500.0,
+      "permit_count": 179,
+      "primary_type": "Mechanical"
+    },
+    "401 1ST AVE NE, Nicollet Island - East Bank": {
+      "total_value": 92332086.0,
+      "avg_value": 9233209.0,
+      "permit_count": 10,
+      "primary_type": "Commercial"
+    },
+    "270 HENNEPIN AVE, Downtown West": {
+      "total_value": 86654893.0,
+      "avg_value": 43327446.0,
+      "permit_count": 2,
+      "primary_type": "Commercial"
+    },
+    "801 15TH AVE SE, Marcy Holmes": {
+      "total_value": 83588011.0,
+      "avg_value": 11941144.0,
+      "permit_count": 7,
+      "primary_type": "Commercial"
+    }
+  }
+}

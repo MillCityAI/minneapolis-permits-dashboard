@@ -1,0 +1,1297 @@
+{
+  "overview": {
+    "unique_contractors": 18368,
+    "contractors_100plus": 488,
+    "new_contractors_2022plus": 4939
+  },
+  "top_contractors": {
+    "CenterPoint Energy Resource Corp": 32152,
+    "Warners Stellian Co Inc": 12073,
+    "CENTERPOINT ENERGY": 9163,
+    "Standard Heating and Air Conditioning Inc": 6313,
+    "Urban Pine Plumbing and Mechanical Inc": 5284,
+    "MN Plumbing & Home Services INC": 4578,
+    "RENEWAL BY ANDERSEN CORP": 3737,
+    "UPTOWN PLUMBING HEATING AND COOLING": 2712,
+    "Horwitz LLC": 2622,
+    "ZEMAN CONSTRUCTION CO": 2544,
+    "Metropolitan Mechanical Contractors Inc": 2422,
+    "GITTLEMAN CONSTRUCTION & MAINTENANCE CORPORATION": 2417,
+    "Hero Home Services LLC": 2294,
+    "CHAMPION PLUMBING LLC": 2290,
+    "Ray N Welter Heating Co": 2276,
+    "BONFES PLUMBING HEATING AND AIR SERVICE INC": 2147,
+    "KAUFMAN SHEET METAL ROOFING INC": 2104,
+    "Centraire Heating & Air Conditioning LLC": 2043,
+    "ST PAUL PLUMBING AND HEATING CO INC": 2035,
+    "Metro Heating & Cooling LLC": 1942,
+    "FIRESIDE HEARTH AND HOME": 1877,
+    "Gilbert Mechanical Contractors Inc": 1836,
+    "Airic's Heating & Air Conditioning Inc": 1806,
+    "Pronto Heating & Air Conditioning Inc": 1701,
+    "Dean's Professional Plumbing Inc": 1668,
+    "Norblom Plumbing Co": 1599,
+    "SELA ROOFING AND REMODELING INC": 1590,
+    "4Front Energy Solutions Inc": 1585,
+    "Linn Star Transfer Inc": 1558,
+    "EGAN COMPANY INC": 1556,
+    "SODERLIN PLUMBING HEATING AND AIR": 1554,
+    "PRACTICAL SYSTEMS AND DUCTWORK HEATING AND COOLING": 1541,
+    "THE HOME DEPOT": 1446,
+    "PELLA NORTHLAND": 1441,
+    "Farr Plumbing and Heating LLC": 1436,
+    "ALL ENERGY SOLAR INC": 1429,
+    "Weld and Sons Plumbing Inc": 1406,
+    "Minnesota Rusco Inc": 1393,
+    "Major Mechanical Inc": 1331,
+    "Cities 1 Plumbing and Heating Inc": 1264,
+    "Erickson Plumbing Heating Cooling Inc": 1201,
+    "Residential Heating and Air Conditioning Inc": 1131,
+    "Perfection Heating and Air Conditioning Inc": 1128,
+    "Legend Mechanical Inc": 1122,
+    "CREW2 INC": 1096,
+    "SEDGWICK HEATING & AIR CONDITIONING": 1078,
+    "Hoffmann and Uhlhorn Construction": 1066,
+    "GRABOW PLUMBING INC": 1044,
+    "Binder Heating and Air Conditioning Inc": 1034,
+    "Home Energy Center Inc": 1016
+  },
+  "performance_metrics": [
+    {
+      "contractor": "CenterPoint Energy Resource Corp",
+      "total_permits": 32152,
+      "approval_rate": 91.47175914406569,
+      "cancellation_rate": 0.5660612092560339,
+      "avg_processing_days": 323.411390683441,
+      "median_processing_days": 305.0,
+      "avg_project_value": 6611.333333333333,
+      "total_project_value": 535518.0
+    },
+    {
+      "contractor": "Warners Stellian Co Inc",
+      "total_permits": 12073,
+      "approval_rate": 79.62395427814131,
+      "cancellation_rate": 0.9773875590159862,
+      "avg_processing_days": 459.3156909639181,
+      "median_processing_days": 392.0,
+      "avg_project_value": null,
+      "total_project_value": 0.0
+    },
+    {
+      "contractor": "CENTERPOINT ENERGY",
+      "total_permits": 9163,
+      "approval_rate": 94.85976208665285,
+      "cancellation_rate": 1.898941394739714,
+      "avg_processing_days": 327.5477750948603,
+      "median_processing_days": 252.0,
+      "avg_project_value": 6001.785714285715,
+      "total_project_value": 336100.0
+    },
+    {
+      "contractor": "Standard Heating and Air Conditioning Inc",
+      "total_permits": 6313,
+      "approval_rate": 89.03849200063362,
+      "cancellation_rate": 1.0296214161254555,
+      "avg_processing_days": 229.21495825190976,
+      "median_processing_days": 34.0,
+      "avg_project_value": 8082.923714759536,
+      "total_project_value": 4874003.0
+    },
+    {
+      "contractor": "Urban Pine Plumbing and Mechanical Inc",
+      "total_permits": 5284,
+      "approval_rate": 87.83118849356548,
+      "cancellation_rate": 1.5518546555639667,
+      "avg_processing_days": 473.7089616544593,
+      "median_processing_days": 368.0,
+      "avg_project_value": null,
+      "total_project_value": 0.0
+    },
+    {
+      "contractor": "MN Plumbing & Home Services INC",
+      "total_permits": 4578,
+      "approval_rate": 78.89908256880734,
+      "cancellation_rate": 0.54608999563128,
+      "avg_processing_days": 534.357597564351,
+      "median_processing_days": 610.0,
+      "avg_project_value": null,
+      "total_project_value": 0.0
+    },
+    {
+      "contractor": "RENEWAL BY ANDERSEN CORP",
+      "total_permits": 3737,
+      "approval_rate": 85.81750066898582,
+      "cancellation_rate": 5.646240299705646,
+      "avg_processing_days": 240.11849799938443,
+      "median_processing_days": 85.0,
+      "avg_project_value": 17824.900722504684,
+      "total_project_value": 66611654.0
+    },
+    {
+      "contractor": "UPTOWN PLUMBING HEATING AND COOLING",
+      "total_permits": 2712,
+      "approval_rate": 97.01327433628319,
+      "cancellation_rate": 2.9867256637168142,
+      "avg_processing_days": 411.9370286576169,
+      "median_processing_days": 158.0,
+      "avg_project_value": 7298.875,
+      "total_project_value": 350346.0
+    },
+    {
+      "contractor": "Horwitz LLC",
+      "total_permits": 2622,
+      "approval_rate": 96.45308924485126,
+      "cancellation_rate": 0.8009153318077803,
+      "avg_processing_days": 279.01579155151995,
+      "median_processing_days": 153.0,
+      "avg_project_value": 88331.28844404004,
+      "total_project_value": 97076086.0
+    },
+    {
+      "contractor": "ZEMAN CONSTRUCTION CO",
+      "total_permits": 2544,
+      "approval_rate": 76.45440251572327,
+      "cancellation_rate": 0.0,
+      "avg_processing_days": 491.9629820051414,
+      "median_processing_days": 440.0,
+      "avg_project_value": 393364.62971698114,
+      "total_project_value": 1000719618.0
+    },
+    {
+      "contractor": "Metropolitan Mechanical Contractors Inc",
+      "total_permits": 2422,
+      "approval_rate": 98.80264244426094,
+      "cancellation_rate": 0.6193228736581338,
+      "avg_processing_days": 534.3405766819891,
+      "median_processing_days": 110.0,
+      "avg_project_value": 279012.6947291362,
+      "total_project_value": 190565670.5
+    },
+    {
+      "contractor": "GITTLEMAN CONSTRUCTION & MAINTENANCE CORPORATION",
+      "total_permits": 2417,
+      "approval_rate": 98.51055026892843,
+      "cancellation_rate": 0.08274720728175423,
+      "avg_processing_days": 103.83830323393532,
+      "median_processing_days": 33.0,
+      "avg_project_value": 56902.68557748114,
+      "total_project_value": 98043327.25
+    },
+    {
+      "contractor": "Hero Home Services LLC",
+      "total_permits": 2294,
+      "approval_rate": 87.31473408892764,
+      "cancellation_rate": 1.264167393199651,
+      "avg_processing_days": 202.0164752870694,
+      "median_processing_days": 20.0,
+      "avg_project_value": 6976.931818181818,
+      "total_project_value": 306985.0
+    },
+    {
+      "contractor": "CHAMPION PLUMBING LLC",
+      "total_permits": 2290,
+      "approval_rate": 89.82532751091703,
+      "cancellation_rate": 1.0917030567685588,
+      "avg_processing_days": 353.42419825072886,
+      "median_processing_days": 47.0,
+      "avg_project_value": null,
+      "total_project_value": 0.0
+    },
+    {
+      "contractor": "Ray N Welter Heating Co",
+      "total_permits": 2276,
+      "approval_rate": 91.25659050966608,
+      "cancellation_rate": 0.8347978910369069,
+      "avg_processing_days": 238.33093525179856,
+      "median_processing_days": 38.0,
+      "avg_project_value": 8164.478064516129,
+      "total_project_value": 506197.64
+    },
+    {
+      "contractor": "BONFES PLUMBING HEATING AND AIR SERVICE INC",
+      "total_permits": 2147,
+      "approval_rate": 86.25989753143922,
+      "cancellation_rate": 1.7233348858872848,
+      "avg_processing_days": 257.36725901992463,
+      "median_processing_days": 47.0,
+      "avg_project_value": 6956.94243902439,
+      "total_project_value": 285234.64
+    },
+    {
+      "contractor": "KAUFMAN SHEET METAL ROOFING INC",
+      "total_permits": 2104,
+      "approval_rate": 94.05893536121674,
+      "cancellation_rate": 1.3307984790874523,
+      "avg_processing_days": 174.14788732394365,
+      "median_processing_days": 104.5,
+      "avg_project_value": 15422.3133365019,
+      "total_project_value": 32448547.259999998
+    },
+    {
+      "contractor": "Centraire Heating & Air Conditioning LLC",
+      "total_permits": 2043,
+      "approval_rate": 96.23103279490944,
+      "cancellation_rate": 0.9300048947626041,
+      "avg_processing_days": 433.38324873096445,
+      "median_processing_days": 379.0,
+      "avg_project_value": 29896.68948148148,
+      "total_project_value": 8072106.16
+    },
+    {
+      "contractor": "ST PAUL PLUMBING AND HEATING CO INC",
+      "total_permits": 2035,
+      "approval_rate": 83.29238329238329,
+      "cancellation_rate": 1.8181818181818181,
+      "avg_processing_days": 319.20362785254537,
+      "median_processing_days": 57.0,
+      "avg_project_value": 5612.1321276595745,
+      "total_project_value": 527540.42
+    },
+    {
+      "contractor": "Metro Heating & Cooling LLC",
+      "total_permits": 1942,
+      "approval_rate": 84.70648815653965,
+      "cancellation_rate": 0.772399588053553,
+      "avg_processing_days": 351.0230442692541,
+      "median_processing_days": 128.0,
+      "avg_project_value": 7535.43375,
+      "total_project_value": 964535.52
+    },
+    {
+      "contractor": "FIRESIDE HEARTH AND HOME",
+      "total_permits": 1877,
+      "approval_rate": 93.81992541289291,
+      "cancellation_rate": 0.9057005860415557,
+      "avg_processing_days": 150.1799091940976,
+      "median_processing_days": 27.0,
+      "avg_project_value": 8677.25,
+      "total_project_value": 34709.0
+    },
+    {
+      "contractor": "Gilbert Mechanical Contractors Inc",
+      "total_permits": 1836,
+      "approval_rate": 99.89106753812636,
+      "cancellation_rate": 0.10893246187363835,
+      "avg_processing_days": 554.5316248636859,
+      "median_processing_days": 617.0,
+      "avg_project_value": 4890113.1288014315,
+      "total_project_value": 2733573239.0
+    },
+    {
+      "contractor": "Airic's Heating & Air Conditioning Inc",
+      "total_permits": 1806,
+      "approval_rate": 96.78848283499445,
+      "cancellation_rate": 1.7718715393133997,
+      "avg_processing_days": 443.3533408833522,
+      "median_processing_days": 193.5,
+      "avg_project_value": 14621.9,
+      "total_project_value": 2193285.0
+    },
+    {
+      "contractor": "Pronto Heating & Air Conditioning Inc",
+      "total_permits": 1701,
+      "approval_rate": 92.9453262786596,
+      "cancellation_rate": 0.5291005291005291,
+      "avg_processing_days": 154.53063802905874,
+      "median_processing_days": 53.0,
+      "avg_project_value": 9277.361032608696,
+      "total_project_value": 1707034.4300000002
+    },
+    {
+      "contractor": "Dean's Professional Plumbing Inc",
+      "total_permits": 1668,
+      "approval_rate": 77.27817745803357,
+      "cancellation_rate": 1.738609112709832,
+      "avg_processing_days": 314.5077519379845,
+      "median_processing_days": 94.5,
+      "avg_project_value": 5795.369333333334,
+      "total_project_value": 608513.78
+    },
+    {
+      "contractor": "Norblom Plumbing Co",
+      "total_permits": 1599,
+      "approval_rate": 90.93183239524703,
+      "cancellation_rate": 1.5634771732332706,
+      "avg_processing_days": 326.6471801925722,
+      "median_processing_days": 75.0,
+      "avg_project_value": 14000.0,
+      "total_project_value": 28000.0
+    },
+    {
+      "contractor": "SELA ROOFING AND REMODELING INC",
+      "total_permits": 1590,
+      "approval_rate": 91.19496855345912,
+      "cancellation_rate": 1.5723270440251573,
+      "avg_processing_days": 225.1255172413793,
+      "median_processing_days": 148.0,
+      "avg_project_value": 26933.884220125783,
+      "total_project_value": 42824875.91
+    },
+    {
+      "contractor": "4Front Energy Solutions Inc",
+      "total_permits": 1585,
+      "approval_rate": 85.6782334384858,
+      "cancellation_rate": 3.2807570977917986,
+      "avg_processing_days": 100.02354672553348,
+      "median_processing_days": 63.0,
+      "avg_project_value": 8316.176296296297,
+      "total_project_value": 898147.04
+    },
+    {
+      "contractor": "Linn Star Transfer Inc",
+      "total_permits": 1558,
+      "approval_rate": 98.13863928112966,
+      "cancellation_rate": 1.8613607188703467,
+      "avg_processing_days": 586.96875,
+      "median_processing_days": 565.0,
+      "avg_project_value": null,
+      "total_project_value": 0.0
+    },
+    {
+      "contractor": "EGAN COMPANY INC",
+      "total_permits": 1556,
+      "approval_rate": 99.48586118251927,
+      "cancellation_rate": 0.06426735218508997,
+      "avg_processing_days": 157.75500969618616,
+      "median_processing_days": 14.0,
+      "avg_project_value": 751586.7751677852,
+      "total_project_value": 223972859.0
+    },
+    {
+      "contractor": "SODERLIN PLUMBING HEATING AND AIR",
+      "total_permits": 1554,
+      "approval_rate": 93.30759330759331,
+      "cancellation_rate": 0.5148005148005148,
+      "avg_processing_days": 188.8393103448276,
+      "median_processing_days": 29.0,
+      "avg_project_value": 9197.67857142857,
+      "total_project_value": 257535.0
+    },
+    {
+      "contractor": "PRACTICAL SYSTEMS AND DUCTWORK HEATING AND COOLING",
+      "total_permits": 1541,
+      "approval_rate": 97.1447112264763,
+      "cancellation_rate": 2.790395846852693,
+      "avg_processing_days": 163.67668670674684,
+      "median_processing_days": 67.0,
+      "avg_project_value": 7953.415575221238,
+      "total_project_value": 898735.96
+    },
+    {
+      "contractor": "THE HOME DEPOT",
+      "total_permits": 1446,
+      "approval_rate": 88.93499308437067,
+      "cancellation_rate": 6.431535269709543,
+      "avg_processing_days": 193.1864406779661,
+      "median_processing_days": 81.0,
+      "avg_project_value": 6243.202676348548,
+      "total_project_value": 9027671.07
+    },
+    {
+      "contractor": "PELLA NORTHLAND",
+      "total_permits": 1441,
+      "approval_rate": 83.13671061762665,
+      "cancellation_rate": 4.302567661346287,
+      "avg_processing_days": 387.7076923076923,
+      "median_processing_days": 133.0,
+      "avg_project_value": 13081.915537820956,
+      "total_project_value": 18851040.29
+    },
+    {
+      "contractor": "Farr Plumbing and Heating LLC",
+      "total_permits": 1436,
+      "approval_rate": 92.54874651810584,
+      "cancellation_rate": 2.437325905292479,
+      "avg_processing_days": 148.73438675696013,
+      "median_processing_days": 58.0,
+      "avg_project_value": 14612.307692307691,
+      "total_project_value": 949800.0
+    },
+    {
+      "contractor": "ALL ENERGY SOLAR INC",
+      "total_permits": 1429,
+      "approval_rate": 92.02239328201539,
+      "cancellation_rate": 2.099370188943317,
+      "avg_processing_days": 124.70361990950227,
+      "median_processing_days": 55.0,
+      "avg_project_value": 9469.732288313506,
+      "total_project_value": 13532247.44
+    },
+    {
+      "contractor": "Weld and Sons Plumbing Inc",
+      "total_permits": 1406,
+      "approval_rate": 95.37695590327169,
+      "cancellation_rate": 1.6358463726884778,
+      "avg_processing_days": 168.96196868008948,
+      "median_processing_days": 49.0,
+      "avg_project_value": 9340.54054054054,
+      "total_project_value": 345600.0
+    },
+    {
+      "contractor": "Minnesota Rusco Inc",
+      "total_permits": 1393,
+      "approval_rate": 82.6992103374013,
+      "cancellation_rate": 3.6611629576453697,
+      "avg_processing_days": 505.116298811545,
+      "median_processing_days": 413.0,
+      "avg_project_value": 8240.530346117868,
+      "total_project_value": 8809126.940000001
+    },
+    {
+      "contractor": "Major Mechanical Inc",
+      "total_permits": 1331,
+      "approval_rate": 20.36063110443276,
+      "cancellation_rate": 0.15026296018031557,
+      "avg_processing_days": 331.93357933579335,
+      "median_processing_days": 257.0,
+      "avg_project_value": 416370.8347107438,
+      "total_project_value": 50380871.0
+    },
+    {
+      "contractor": "Cities 1 Plumbing and Heating Inc",
+      "total_permits": 1264,
+      "approval_rate": 88.29113924050634,
+      "cancellation_rate": 0.23734177215189875,
+      "avg_processing_days": 327.4440465532677,
+      "median_processing_days": 132.0,
+      "avg_project_value": 14070.708333333334,
+      "total_project_value": 675394.0
+    },
+    {
+      "contractor": "Erickson Plumbing Heating Cooling Inc",
+      "total_permits": 1201,
+      "approval_rate": 97.58534554537886,
+      "cancellation_rate": 1.0824313072439635,
+      "avg_processing_days": 217.53498293515358,
+      "median_processing_days": 56.0,
+      "avg_project_value": 16805.08161016949,
+      "total_project_value": 1982999.63
+    },
+    {
+      "contractor": "Residential Heating and Air Conditioning Inc",
+      "total_permits": 1131,
+      "approval_rate": 85.58797524314765,
+      "cancellation_rate": 0.707338638373121,
+      "avg_processing_days": 523.7917525773196,
+      "median_processing_days": 458.0,
+      "avg_project_value": 11719.60294117647,
+      "total_project_value": 1593866.0
+    },
+    {
+      "contractor": "Perfection Heating and Air Conditioning Inc",
+      "total_permits": 1128,
+      "approval_rate": 93.35106382978722,
+      "cancellation_rate": 1.2411347517730498,
+      "avg_processing_days": 138.6153846153846,
+      "median_processing_days": 63.0,
+      "avg_project_value": 5711.404678362573,
+      "total_project_value": 976650.2
+    },
+    {
+      "contractor": "Legend Mechanical Inc",
+      "total_permits": 1122,
+      "approval_rate": 99.73262032085562,
+      "cancellation_rate": 0.0,
+      "avg_processing_days": 125.06166219839142,
+      "median_processing_days": 81.0,
+      "avg_project_value": 33459.645161290326,
+      "total_project_value": 2074498.0
+    },
+    {
+      "contractor": "CREW2 INC",
+      "total_permits": 1096,
+      "approval_rate": 85.12773722627736,
+      "cancellation_rate": 5.474452554744526,
+      "avg_processing_days": 294.6,
+      "median_processing_days": 175.0,
+      "avg_project_value": 1744.2194799270073,
+      "total_project_value": 1911664.55
+    },
+    {
+      "contractor": "SEDGWICK HEATING & AIR CONDITIONING",
+      "total_permits": 1078,
+      "approval_rate": 94.89795918367348,
+      "cancellation_rate": 1.0204081632653061,
+      "avg_processing_days": 570.1642228739003,
+      "median_processing_days": 855.0,
+      "avg_project_value": 11956.37989778535,
+      "total_project_value": 7018395.0
+    },
+    {
+      "contractor": "Hoffmann and Uhlhorn Construction",
+      "total_permits": 1066,
+      "approval_rate": 52.15759849906192,
+      "cancellation_rate": 0.0,
+      "avg_processing_days": 722.8687050359712,
+      "median_processing_days": 722.0,
+      "avg_project_value": 2181856.472795497,
+      "total_project_value": 2325859000.0
+    },
+    {
+      "contractor": "GRABOW PLUMBING INC",
+      "total_permits": 1044,
+      "approval_rate": 98.37164750957854,
+      "cancellation_rate": 0.4789272030651341,
+      "avg_processing_days": 264.59201557935734,
+      "median_processing_days": 140.0,
+      "avg_project_value": null,
+      "total_project_value": 0.0
+    },
+    {
+      "contractor": "Binder Heating and Air Conditioning Inc",
+      "total_permits": 1034,
+      "approval_rate": 92.45647969052224,
+      "cancellation_rate": 1.2572533849129592,
+      "avg_processing_days": 401.59394572025053,
+      "median_processing_days": 148.0,
+      "avg_project_value": 19700.44522144522,
+      "total_project_value": 8451491.0
+    },
+    {
+      "contractor": "Home Energy Center Inc",
+      "total_permits": 1016,
+      "approval_rate": 71.9488188976378,
+      "cancellation_rate": 3.0511811023622046,
+      "avg_processing_days": 391.7476383265857,
+      "median_processing_days": 176.0,
+      "avg_project_value": 11533.625,
+      "total_project_value": 461345.0
+    }
+  ],
+  "efficiency_rankings": [
+    {
+      "contractor": "EGAN COMPANY INC",
+      "efficiency_score": 94.90796570105755,
+      "total_permits": 1556,
+      "approval_rate": 99.48586118251927,
+      "median_days": 14.0
+    },
+    {
+      "contractor": "GITTLEMAN CONSTRUCTION & MAINTENANCE CORPORATION",
+      "efficiency_score": 94.33232863888144,
+      "total_permits": 2417,
+      "approval_rate": 98.51055026892843,
+      "median_days": 33.0
+    },
+    {
+      "contractor": "MINNESOTA PLUMBING AND HEATING INC",
+      "efficiency_score": 92.76281471809,
+      "total_permits": 493,
+      "approval_rate": 99.79716024340772,
+      "median_days": 10.0
+    },
+    {
+      "contractor": "Standard Heating and Air Conditioning Inc",
+      "efficiency_score": 92.47361360527766,
+      "total_permits": 6313,
+      "approval_rate": 89.03849200063362,
+      "median_days": 34.0
+    },
+    {
+      "contractor": "FIRESIDE HEARTH AND HOME",
+      "efficiency_score": 92.18472146965973,
+      "total_permits": 1877,
+      "approval_rate": 93.81992541289291,
+      "median_days": 27.0
+    },
+    {
+      "contractor": "SODERLIN PLUMBING HEATING AND AIR",
+      "efficiency_score": 91.48881234388175,
+      "total_permits": 1554,
+      "approval_rate": 93.30759330759331,
+      "median_days": 29.0
+    },
+    {
+      "contractor": "EGRESS WINDOW GUY",
+      "efficiency_score": 91.0,
+      "total_permits": 1000,
+      "approval_rate": 94.89999999999999,
+      "median_days": 30.0
+    },
+    {
+      "contractor": "Erickson Plumbing Heating Cooling Inc",
+      "efficiency_score": 90.96361012444169,
+      "total_permits": 1201,
+      "approval_rate": 97.58534554537886,
+      "median_days": 56.0
+    },
+    {
+      "contractor": "RESTORATION PROFESSIONALS MN",
+      "efficiency_score": 90.95272253838031,
+      "total_permits": 550,
+      "approval_rate": 95.27272727272728,
+      "median_days": 14.0
+    },
+    {
+      "contractor": "Ray N Welter Heating Co",
+      "efficiency_score": 90.9250177033779,
+      "total_permits": 2276,
+      "approval_rate": 91.25659050966608,
+      "median_days": 38.0
+    },
+    {
+      "contractor": "Riverdale Ventures Legacy LLC",
+      "efficiency_score": 90.81599386984311,
+      "total_permits": 383,
+      "approval_rate": 100.0,
+      "median_days": 35.0
+    },
+    {
+      "contractor": "Weld and Sons Plumbing Inc",
+      "efficiency_score": 90.78712432745886,
+      "total_permits": 1406,
+      "approval_rate": 95.37695590327169,
+      "median_days": 49.0
+    },
+    {
+      "contractor": "PRACTICAL SYSTEMS AND DUCTWORK HEATING AND COOLING",
+      "efficiency_score": 90.49785809949736,
+      "total_permits": 1541,
+      "approval_rate": 97.1447112264763,
+      "median_days": 67.0
+    },
+    {
+      "contractor": "Hero Home Services LLC",
+      "efficiency_score": 90.40244396407734,
+      "total_permits": 2294,
+      "approval_rate": 87.31473408892764,
+      "median_days": 20.0
+    },
+    {
+      "contractor": "AAirgate Heating and AC Inc",
+      "efficiency_score": 90.3268118300011,
+      "total_permits": 206,
+      "approval_rate": 98.54368932038835,
+      "median_days": 11.0
+    },
+    {
+      "contractor": "Legend Mechanical Inc",
+      "efficiency_score": 90.28301241294295,
+      "total_permits": 1122,
+      "approval_rate": 99.73262032085562,
+      "median_days": 81.0
+    },
+    {
+      "contractor": "Pronto Heating & Air Conditioning Inc",
+      "efficiency_score": 90.09874202661665,
+      "total_permits": 1701,
+      "approval_rate": 92.9453262786596,
+      "median_days": 53.0
+    },
+    {
+      "contractor": "Cool Air Mechanical Inc",
+      "efficiency_score": 89.89207278850432,
+      "total_permits": 384,
+      "approval_rate": 97.65625,
+      "median_days": 34.0
+    },
+    {
+      "contractor": "CHAMPION PLUMBING LLC",
+      "efficiency_score": 89.8001381103894,
+      "total_permits": 2290,
+      "approval_rate": 89.82532751091703,
+      "median_days": 47.0
+    },
+    {
+      "contractor": "Metropolitan Mechanical Contractors Inc",
+      "efficiency_score": 89.77999538437373,
+      "total_permits": 2422,
+      "approval_rate": 98.80264244426094,
+      "median_days": 110.0
+    },
+    {
+      "contractor": "STANDARD WATER CONTROL SYSTEMS INC",
+      "efficiency_score": 89.76538267243546,
+      "total_permits": 909,
+      "approval_rate": 89.87898789878987,
+      "median_days": 11.0
+    },
+    {
+      "contractor": "STAFFORD HOME SERVICE",
+      "efficiency_score": 89.74753447637235,
+      "total_permits": 839,
+      "approval_rate": 95.82836710369487,
+      "median_days": 50.0
+    },
+    {
+      "contractor": "McDonnell Plumbing and Heating LLC",
+      "efficiency_score": 89.69813723492076,
+      "total_permits": 303,
+      "approval_rate": 98.34983498349835,
+      "median_days": 32.5
+    },
+    {
+      "contractor": "MODERN HEATING AND AIR CONDITIONING INC",
+      "efficiency_score": 89.4454712423833,
+      "total_permits": 681,
+      "approval_rate": 99.55947136563876,
+      "median_days": 75.0
+    },
+    {
+      "contractor": "GITTLEMAN CONSTRUCTION AND MAINTENANCE CORP",
+      "efficiency_score": 89.38216975492742,
+      "total_permits": 855,
+      "approval_rate": 95.2046783625731,
+      "median_days": 48.0
+    },
+    {
+      "contractor": "MATT KUNDERT OBO VERIZON WIRELESS",
+      "efficiency_score": 89.28444545184392,
+      "total_permits": 211,
+      "approval_rate": 99.52606635071089,
+      "median_days": 35.0
+    },
+    {
+      "contractor": "KAT CONSTRUCTION LLC",
+      "efficiency_score": 89.23939030977589,
+      "total_permits": 249,
+      "approval_rate": 99.19678714859438,
+      "median_days": 39.0
+    },
+    {
+      "contractor": "TOPSIDE INC",
+      "efficiency_score": 89.21870670245315,
+      "total_permits": 293,
+      "approval_rate": 97.95221843003414,
+      "median_days": 36.0
+    },
+    {
+      "contractor": "TWIN CITY HEATING AND AIR",
+      "efficiency_score": 89.12140726548738,
+      "total_permits": 478,
+      "approval_rate": 95.39748953974896,
+      "median_days": 35.0
+    },
+    {
+      "contractor": "Farr Plumbing and Heating LLC",
+      "efficiency_score": 89.0815382162445,
+      "total_permits": 1436,
+      "approval_rate": 92.54874651810584,
+      "median_days": 58.0
+    },
+    {
+      "contractor": "ALL ENERGY SOLAR INC",
+      "efficiency_score": 89.07418143786667,
+      "total_permits": 1429,
+      "approval_rate": 92.02239328201539,
+      "median_days": 55.0
+    },
+    {
+      "contractor": "Hearth and Home Technologies LLC",
+      "efficiency_score": 88.78087364146492,
+      "total_permits": 485,
+      "approval_rate": 98.14432989690721,
+      "median_days": 62.0
+    },
+    {
+      "contractor": "Holmlund Masonry Inc",
+      "efficiency_score": 88.73452057957991,
+      "total_permits": 703,
+      "approval_rate": 91.03840682788051,
+      "median_days": 26.0
+    },
+    {
+      "contractor": "Perfection Heating and Air Conditioning Inc",
+      "efficiency_score": 88.69785755497419,
+      "total_permits": 1128,
+      "approval_rate": 93.35106382978722,
+      "median_days": 63.0
+    },
+    {
+      "contractor": "MINNEAPOLIS-ST. PAUL PLUMBING, HEATING &  AIR",
+      "efficiency_score": 88.64105561650075,
+      "total_permits": 247,
+      "approval_rate": 99.59514170040485,
+      "median_days": 52.0
+    },
+    {
+      "contractor": "DINIUS PLUMBING CO INC",
+      "efficiency_score": 88.6198441360774,
+      "total_permits": 525,
+      "approval_rate": 98.09523809523809,
+      "median_days": 70.0
+    },
+    {
+      "contractor": "Becketwood Coop",
+      "efficiency_score": 88.61943352306837,
+      "total_permits": 169,
+      "approval_rate": 100.0,
+      "median_days": 42.0
+    },
+    {
+      "contractor": "Master Gas Fitters Inc",
+      "efficiency_score": 88.38235794620257,
+      "total_permits": 353,
+      "approval_rate": 98.01699716713881,
+      "median_days": 57.5
+    },
+    {
+      "contractor": "BAYPORT ROOFING AND SIDING LLC",
+      "efficiency_score": 88.27427651016677,
+      "total_permits": 471,
+      "approval_rate": 95.75371549893843,
+      "median_days": 53.0
+    },
+    {
+      "contractor": "Engineered Supply",
+      "efficiency_score": 88.25876930527878,
+      "total_permits": 205,
+      "approval_rate": 100.0,
+      "median_days": 55.0
+    },
+    {
+      "contractor": "Mohler Chimney Repair LLC",
+      "efficiency_score": 88.19185313461101,
+      "total_permits": 316,
+      "approval_rate": 93.9873417721519,
+      "median_days": 28.0
+    },
+    {
+      "contractor": "Twin City Fireplace & Stone Company",
+      "efficiency_score": 88.18832914882302,
+      "total_permits": 720,
+      "approval_rate": 91.80555555555556,
+      "median_days": 44.0
+    },
+    {
+      "contractor": "BONFES PLUMBING HEATING AND AIR SERVICE INC",
+      "efficiency_score": 88.17078574616819,
+      "total_permits": 2147,
+      "approval_rate": 86.25989753143922,
+      "median_days": 47.0
+    },
+    {
+      "contractor": "MERIDIAN PROPERTIES LLC",
+      "efficiency_score": 88.06514294862981,
+      "total_permits": 219,
+      "approval_rate": 93.60730593607306,
+      "median_days": 18.0
+    },
+    {
+      "contractor": "Master Plumbing Services LLC",
+      "efficiency_score": 88.05646689202229,
+      "total_permits": 803,
+      "approval_rate": 91.65628891656289,
+      "median_days": 50.5
+    },
+    {
+      "contractor": "POWER PLUMBING LLC",
+      "efficiency_score": 87.95536177105465,
+      "total_permits": 139,
+      "approval_rate": 99.28057553956835,
+      "median_days": 40.0
+    },
+    {
+      "contractor": "Midwest Egress",
+      "efficiency_score": 87.94962828339108,
+      "total_permits": 179,
+      "approval_rate": 94.41340782122904,
+      "median_days": 18.0
+    },
+    {
+      "contractor": "WOODLAND STOVES & FIREPLACES",
+      "efficiency_score": 87.9025242955037,
+      "total_permits": 780,
+      "approval_rate": 93.58974358974359,
+      "median_days": 64.0
+    },
+    {
+      "contractor": "Vito Mechanical Inc",
+      "efficiency_score": 87.8408356703454,
+      "total_permits": 362,
+      "approval_rate": 96.13259668508287,
+      "median_days": 54.0
+    },
+    {
+      "contractor": "KAUFMAN SHEET METAL ROOFING INC",
+      "efficiency_score": 87.83572297398646,
+      "total_permits": 2104,
+      "approval_rate": 94.05893536121674,
+      "median_days": 104.5
+    }
+  ],
+  "growth_analysis": [
+    {
+      "contractor": "CenterPoint Energy Resource Corp",
+      "years_active": 9,
+      "early_avg": 800.5,
+      "recent_avg": 3742.0,
+      "growth_rate": 367.4578388507183
+    },
+    {
+      "contractor": "Warners Stellian Co Inc",
+      "years_active": 10,
+      "early_avg": 580.0,
+      "recent_avg": 1420.0,
+      "growth_rate": 144.82758620689654
+    },
+    {
+      "contractor": "CENTERPOINT ENERGY",
+      "years_active": 10,
+      "early_avg": 2741.5,
+      "recent_avg": 252.5,
+      "growth_rate": -90.78971366040489
+    },
+    {
+      "contractor": "Standard Heating and Air Conditioning Inc",
+      "years_active": 10,
+      "early_avg": 258.0,
+      "recent_avg": 653.5,
+      "growth_rate": 153.29457364341087
+    },
+    {
+      "contractor": "Urban Pine Plumbing and Mechanical Inc",
+      "years_active": 10,
+      "early_avg": 453.0,
+      "recent_avg": 310.5,
+      "growth_rate": -31.456953642384107
+    },
+    {
+      "contractor": "MN Plumbing & Home Services INC",
+      "years_active": 7,
+      "early_avg": 660.5,
+      "recent_avg": 486.0,
+      "growth_rate": -26.419379258137777
+    },
+    {
+      "contractor": "RENEWAL BY ANDERSEN CORP",
+      "years_active": 10,
+      "early_avg": 173.5,
+      "recent_avg": 339.0,
+      "growth_rate": 95.38904899135446
+    },
+    {
+      "contractor": "UPTOWN PLUMBING HEATING AND COOLING",
+      "years_active": 5,
+      "early_avg": 246.5,
+      "recent_avg": 670.0,
+      "growth_rate": 171.80527383367138
+    },
+    {
+      "contractor": "Horwitz LLC",
+      "years_active": 10,
+      "early_avg": 90.5,
+      "recent_avg": 444.0,
+      "growth_rate": 390.6077348066298
+    },
+    {
+      "contractor": "ZEMAN CONSTRUCTION CO",
+      "years_active": 9,
+      "early_avg": 189.0,
+      "recent_avg": 303.0,
+      "growth_rate": 60.317460317460316
+    },
+    {
+      "contractor": "Metropolitan Mechanical Contractors Inc",
+      "years_active": 10,
+      "early_avg": 302.0,
+      "recent_avg": 18.5,
+      "growth_rate": -93.87417218543047
+    },
+    {
+      "contractor": "GITTLEMAN CONSTRUCTION & MAINTENANCE CORPORATION",
+      "years_active": 10,
+      "early_avg": 287.0,
+      "recent_avg": 39.0,
+      "growth_rate": -86.41114982578398
+    },
+    {
+      "contractor": "Hero Home Services LLC",
+      "years_active": 6,
+      "early_avg": 369.5,
+      "recent_avg": 280.5,
+      "growth_rate": -24.08660351826793
+    },
+    {
+      "contractor": "CHAMPION PLUMBING LLC",
+      "years_active": 10,
+      "early_avg": 173.5,
+      "recent_avg": 137.5,
+      "growth_rate": -20.7492795389049
+    },
+    {
+      "contractor": "Ray N Welter Heating Co",
+      "years_active": 10,
+      "early_avg": 106.0,
+      "recent_avg": 157.5,
+      "growth_rate": 48.58490566037736
+    },
+    {
+      "contractor": "BONFES PLUMBING HEATING AND AIR SERVICE INC",
+      "years_active": 10,
+      "early_avg": 96.0,
+      "recent_avg": 256.0,
+      "growth_rate": 166.66666666666669
+    },
+    {
+      "contractor": "KAUFMAN SHEET METAL ROOFING INC",
+      "years_active": 10,
+      "early_avg": 72.0,
+      "recent_avg": 244.0,
+      "growth_rate": 238.88888888888889
+    },
+    {
+      "contractor": "Centraire Heating & Air Conditioning LLC",
+      "years_active": 9,
+      "early_avg": 148.0,
+      "recent_avg": 184.0,
+      "growth_rate": 24.324324324324326
+    },
+    {
+      "contractor": "ST PAUL PLUMBING AND HEATING CO INC",
+      "years_active": 10,
+      "early_avg": 58.0,
+      "recent_avg": 212.5,
+      "growth_rate": 266.37931034482756
+    },
+    {
+      "contractor": "Metro Heating & Cooling LLC",
+      "years_active": 10,
+      "early_avg": 113.0,
+      "recent_avg": 215.0,
+      "growth_rate": 90.2654867256637
+    },
+    {
+      "contractor": "FIRESIDE HEARTH AND HOME",
+      "years_active": 10,
+      "early_avg": 73.0,
+      "recent_avg": 104.0,
+      "growth_rate": 42.465753424657535
+    },
+    {
+      "contractor": "Gilbert Mechanical Contractors Inc",
+      "years_active": 6,
+      "early_avg": 81.5,
+      "recent_avg": 476.5,
+      "growth_rate": 484.6625766871166
+    },
+    {
+      "contractor": "Airic's Heating & Air Conditioning Inc",
+      "years_active": 9,
+      "early_avg": 130.0,
+      "recent_avg": 32.0,
+      "growth_rate": -75.38461538461539
+    },
+    {
+      "contractor": "Pronto Heating & Air Conditioning Inc",
+      "years_active": 10,
+      "early_avg": 98.5,
+      "recent_avg": 154.0,
+      "growth_rate": 56.34517766497462
+    },
+    {
+      "contractor": "Dean's Professional Plumbing Inc",
+      "years_active": 10,
+      "early_avg": 77.0,
+      "recent_avg": 276.5,
+      "growth_rate": 259.09090909090907
+    },
+    {
+      "contractor": "Norblom Plumbing Co",
+      "years_active": 10,
+      "early_avg": 109.5,
+      "recent_avg": 101.5,
+      "growth_rate": -7.30593607305936
+    },
+    {
+      "contractor": "SELA ROOFING AND REMODELING INC",
+      "years_active": 10,
+      "early_avg": 73.0,
+      "recent_avg": 211.5,
+      "growth_rate": 189.72602739726028
+    },
+    {
+      "contractor": "4Front Energy Solutions Inc",
+      "years_active": 7,
+      "early_avg": 8.5,
+      "recent_avg": 341.5,
+      "growth_rate": 3917.6470588235297
+    },
+    {
+      "contractor": "Linn Star Transfer Inc",
+      "years_active": 4,
+      "early_avg": 452.5,
+      "recent_avg": 326.5,
+      "growth_rate": -27.845303867403317
+    },
+    {
+      "contractor": "EGAN COMPANY INC",
+      "years_active": 9,
+      "early_avg": 144.0,
+      "recent_avg": 6.0,
+      "growth_rate": -95.83333333333334
+    },
+    {
+      "contractor": "SODERLIN PLUMBING HEATING AND AIR",
+      "years_active": 10,
+      "early_avg": 91.0,
+      "recent_avg": 107.5,
+      "growth_rate": 18.13186813186813
+    },
+    {
+      "contractor": "PRACTICAL SYSTEMS AND DUCTWORK HEATING AND COOLING",
+      "years_active": 6,
+      "early_avg": 89.0,
+      "recent_avg": 313.5,
+      "growth_rate": 252.24719101123597
+    },
+    {
+      "contractor": "THE HOME DEPOT",
+      "years_active": 9,
+      "early_avg": 186.5,
+      "recent_avg": 97.0,
+      "growth_rate": -47.98927613941019
+    },
+    {
+      "contractor": "PELLA NORTHLAND",
+      "years_active": 10,
+      "early_avg": 81.0,
+      "recent_avg": 105.5,
+      "growth_rate": 30.246913580246915
+    },
+    {
+      "contractor": "Farr Plumbing and Heating LLC",
+      "years_active": 10,
+      "early_avg": 66.0,
+      "recent_avg": 111.0,
+      "growth_rate": 68.18181818181817
+    },
+    {
+      "contractor": "ALL ENERGY SOLAR INC",
+      "years_active": 10,
+      "early_avg": 49.5,
+      "recent_avg": 224.0,
+      "growth_rate": 352.5252525252525
+    },
+    {
+      "contractor": "Weld and Sons Plumbing Inc",
+      "years_active": 10,
+      "early_avg": 118.5,
+      "recent_avg": 94.5,
+      "growth_rate": -20.253164556962027
+    },
+    {
+      "contractor": "Minnesota Rusco Inc",
+      "years_active": 10,
+      "early_avg": 33.0,
+      "recent_avg": 67.5,
+      "growth_rate": 104.54545454545455
+    },
+    {
+      "contractor": "Major Mechanical Inc",
+      "years_active": 10,
+      "early_avg": 31.0,
+      "recent_avg": 535.5,
+      "growth_rate": 1627.4193548387095
+    },
+    {
+      "contractor": "Cities 1 Plumbing and Heating Inc",
+      "years_active": 10,
+      "early_avg": 39.0,
+      "recent_avg": 88.0,
+      "growth_rate": 125.64102564102564
+    },
+    {
+      "contractor": "Erickson Plumbing Heating Cooling Inc",
+      "years_active": 10,
+      "early_avg": 103.0,
+      "recent_avg": 47.0,
+      "growth_rate": -54.36893203883495
+    },
+    {
+      "contractor": "Residential Heating and Air Conditioning Inc",
+      "years_active": 10,
+      "early_avg": 80.5,
+      "recent_avg": 87.0,
+      "growth_rate": 8.074534161490684
+    },
+    {
+      "contractor": "Perfection Heating and Air Conditioning Inc",
+      "years_active": 9,
+      "early_avg": 139.0,
+      "recent_avg": 90.5,
+      "growth_rate": -34.89208633093525
+    },
+    {
+      "contractor": "Legend Mechanical Inc",
+      "years_active": 10,
+      "early_avg": 4.0,
+      "recent_avg": 5.5,
+      "growth_rate": 37.5
+    },
+    {
+      "contractor": "CREW2 INC",
+      "years_active": 10,
+      "early_avg": 94.0,
+      "recent_avg": 73.0,
+      "growth_rate": -22.340425531914892
+    },
+    {
+      "contractor": "SEDGWICK HEATING & AIR CONDITIONING",
+      "years_active": 9,
+      "early_avg": 40.5,
+      "recent_avg": 34.5,
+      "growth_rate": -14.814814814814813
+    },
+    {
+      "contractor": "Hoffmann and Uhlhorn Construction",
+      "years_active": 3,
+      "early_avg": 278.0,
+      "recent_avg": 521.5,
+      "growth_rate": 87.58992805755396
+    },
+    {
+      "contractor": "GRABOW PLUMBING INC",
+      "years_active": 9,
+      "early_avg": 35.0,
+      "recent_avg": 23.0,
+      "growth_rate": -34.285714285714285
+    },
+    {
+      "contractor": "Binder Heating and Air Conditioning Inc",
+      "years_active": 10,
+      "early_avg": 43.0,
+      "recent_avg": 72.5,
+      "growth_rate": 68.6046511627907
+    },
+    {
+      "contractor": "Home Energy Center Inc",
+      "years_active": 10,
+      "early_avg": 37.5,
+      "recent_avg": 123.5,
+      "growth_rate": 229.33333333333334
+    }
+  ],
+  "new_contractors": {
+    "Hoffmann and Uhlhorn Construction": 1066,
+    "Professional Mechanical Services LLC": 346,
+    "MasTec Network Solutions": 229,
+    "McQuillan Home Services LLC": 214,
+    "Hail Experts Inc": 206,
+    "Becketwood Coop": 169,
+    "Window Nation LLC": 152,
+    "BRS Field Ops, LLC": 147,
+    "Tundraland Home Improvements": 130,
+    "Blue Yeti Services LLC": 128,
+    "Four Brothers Construction LLC": 115,
+    "Bold North Roofing and Contracting LLC": 114,
+    "Rusco Kitchen Remodelers": 114,
+    "Twin Cities Roofing": 96,
+    "Sunny Solar LLC": 93,
+    "Lenz Construction": 80,
+    "Paris Roofing LLC": 78,
+    "Suburban Plumbing": 76,
+    "Home Care Heating and Air LLC": 69,
+    "O'Boys Heating & Air LLC": 65,
+    "Kohler Services": 62,
+    "Pipe and Water Plumbing LLC": 62,
+    "Lopez Son's Plumbing LLC": 62,
+    "Affinity Plumbing LLC": 62,
+    "One Nation Exteriors LLC": 59,
+    "Firebird Exteriors LLC": 57,
+    "Travis Glanzer HVAC LLC": 57,
+    "VisionAiry Heating & Cooling Inc": 54,
+    "Lionheart Building & Consultants": 53,
+    "MN Heating and Cooling LLC": 53
+  }
+}

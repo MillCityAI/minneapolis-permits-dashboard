@@ -1,0 +1,298 @@
+{
+  "overview": {
+    "records_with_value": 158337,
+    "total_project_value": 31427300478.982597,
+    "avg_project_value": 198483.6170887575,
+    "median_project_value": 12000.0,
+    "total_fees_collected": 589038646.5600001,
+    "avg_fee": 1661.6228294818561
+  },
+  "value_distribution": {
+    "percentiles": {
+      "0.0": 0.0015,
+      "0.1": 2010.0,
+      "0.25": 5267.0,
+      "0.5": 12000.0,
+      "0.75": 29600.0,
+      "0.9": 149503.0,
+      "0.95": 498000.0,
+      "0.99": 4300000.0,
+      "1.0": 143905050.0
+    },
+    "project_sizes": {
+      "Medium ($5-25K)": 76951,
+      "Small (<$5K)": 38472,
+      "Large ($25-100K)": 21943,
+      "Major ($100-500K)": 13201,
+      "Mega+ (>$1M)": 4798,
+      "Mega ($500K-1M)": 2972
+    }
+  },
+  "fee_analysis": {
+    "avg_fee_ratio": 13169.750570546039,
+    "fee_by_type": {
+      "Site": {
+        "avg_fee_ratio": 127943.19,
+        "median_fee_ratio": 1.42,
+        "count": 211
+      },
+      "Commercial": {
+        "avg_fee_ratio": 50234.98,
+        "median_fee_ratio": 2.74,
+        "count": 40477
+      },
+      "Res": {
+        "avg_fee_ratio": 188.14,
+        "median_fee_ratio": 3.01,
+        "count": 96491
+      },
+      "Mechanical": {
+        "avg_fee_ratio": 32.0,
+        "median_fee_ratio": 2.33,
+        "count": 19801
+      },
+      "Wrecking": {
+        "avg_fee_ratio": 2.79,
+        "median_fee_ratio": 2.54,
+        "count": 885
+      }
+    }
+  },
+  "annual_trends": {
+    "2016": {
+      "total_value": 188997136.0,
+      "avg_value": 202569.0,
+      "median_value": 9500.0,
+      "count": 933
+    },
+    "2017": {
+      "total_value": 2921984035.0,
+      "avg_value": 164129.0,
+      "median_value": 11600.0,
+      "count": 17803
+    },
+    "2018": {
+      "total_value": 2629919225.0,
+      "avg_value": 144493.0,
+      "median_value": 8577.0,
+      "count": 18201
+    },
+    "2019": {
+      "total_value": 2615278671.0,
+      "avg_value": 146121.0,
+      "median_value": 9075.0,
+      "count": 17898
+    },
+    "2020": {
+      "total_value": 6294455237.0,
+      "avg_value": 373160.0,
+      "median_value": 10710.0,
+      "count": 16868
+    },
+    "2021": {
+      "total_value": 2278255228.0,
+      "avg_value": 119012.0,
+      "median_value": 11688.0,
+      "count": 19143
+    },
+    "2022": {
+      "total_value": 7984283318.0,
+      "avg_value": 480576.0,
+      "median_value": 12490.0,
+      "count": 16614
+    },
+    "2023": {
+      "total_value": 2014664547.0,
+      "avg_value": 92437.0,
+      "median_value": 14009.0,
+      "count": 21795
+    },
+    "2024": {
+      "total_value": 3880226878.0,
+      "avg_value": 168070.0,
+      "median_value": 14500.0,
+      "count": 23087
+    },
+    "2025": {
+      "total_value": 619236205.0,
+      "avg_value": 103292.0,
+      "median_value": 12250.0,
+      "count": 5995
+    }
+  },
+  "high_value_contractors": {
+    "BUILDING RESTORATION CORP": {
+      "total_value": 3603669819.0,
+      "avg_value": 7011031.0,
+      "count": 514
+    },
+    "Gilbert Mechanical Contractors Inc": {
+      "total_value": 2722140785.0,
+      "avg_value": 7755387.0,
+      "count": 351
+    },
+    "Hoffmann and Uhlhorn Construction": {
+      "total_value": 2040000000.0,
+      "avg_value": 4000000.0,
+      "count": 510
+    },
+    "WL HALL COMPANY": {
+      "total_value": 1649257933.0,
+      "avg_value": 3227511.0,
+      "count": 511
+    },
+    "LS BLACK CONSTRUCTORS INC": {
+      "total_value": 1510755495.0,
+      "avg_value": 4291919.0,
+      "count": 352
+    },
+    "ADVANCED MASONRY RESTORATION INC": {
+      "total_value": 966075233.0,
+      "avg_value": 2483484.0,
+      "count": 389
+    },
+    "ZEMAN CONSTRUCTION CO": {
+      "total_value": 750843640.0,
+      "avg_value": 2045895.0,
+      "count": 367
+    },
+    "FRANA COMPANIES": {
+      "total_value": 724502116.0,
+      "avg_value": 16100047.0,
+      "count": 45
+    },
+    "RJM CONSTRUCTION": {
+      "total_value": 679415994.0,
+      "avg_value": 11919579.0,
+      "count": 57
+    },
+    "GARDNER BUILDERS": {
+      "total_value": 536960592.0,
+      "avg_value": 6171961.0,
+      "count": 87
+    },
+    "MCGOUGH CONSTRUCTION": {
+      "total_value": 282372835.0,
+      "avg_value": 14118642.0,
+      "count": 20
+    },
+    "Ryan Companies US, Inc": {
+      "total_value": 264133443.0,
+      "avg_value": 37733349.0,
+      "count": 7
+    },
+    "Kraus Anderson Construction Co.": {
+      "total_value": 263161324.0,
+      "avg_value": 37594475.0,
+      "count": 7
+    },
+    "MORTENSON": {
+      "total_value": 224147587.0,
+      "avg_value": 16010542.0,
+      "count": 14
+    },
+    "GREINER CONSTRUCTION": {
+      "total_value": 223238131.0,
+      "avg_value": 4960847.0,
+      "count": 45
+    },
+    "WATSON-FORSBERG": {
+      "total_value": 206598961.0,
+      "avg_value": 2754653.0,
+      "count": 75
+    },
+    "WEIS BUILDERS": {
+      "total_value": 193424749.0,
+      "avg_value": 11377926.0,
+      "count": 17
+    },
+    "JE DUNN CONSTRUCTION": {
+      "total_value": 188957877.0,
+      "avg_value": 6095415.0,
+      "count": 31
+    },
+    "MCGOUGH CONST CO INC": {
+      "total_value": 181548517.0,
+      "avg_value": 45387129.0,
+      "count": 4
+    },
+    "FRERICHS CONSTRUCTION CO": {
+      "total_value": 180840452.0,
+      "avg_value": 5651264.0,
+      "count": 32
+    }
+  },
+  "geographic_value": {
+    "7.0": {
+      "total_value": 16710665605.0,
+      "avg_value": 614114.0,
+      "count": 27211
+    },
+    "3.0": {
+      "total_value": 5525879445.0,
+      "avg_value": 389998.0,
+      "count": 14169
+    },
+    "5.0": {
+      "total_value": 1280942873.0,
+      "avg_value": 152912.0,
+      "count": 8377
+    },
+    "6.0": {
+      "total_value": 1139617984.0,
+      "avg_value": 274739.0,
+      "count": 4148
+    },
+    "2.0": {
+      "total_value": 1067267123.0,
+      "avg_value": 199154.0,
+      "count": 5359
+    },
+    "1.0": {
+      "total_value": 855461695.0,
+      "avg_value": 77847.0,
+      "count": 10989
+    },
+    "12.0": {
+      "total_value": 851668878.0,
+      "avg_value": 38887.0,
+      "count": 21901
+    },
+    "9.0": {
+      "total_value": 841809832.0,
+      "avg_value": 88967.0,
+      "count": 9462
+    },
+    "10.0": {
+      "total_value": 803854374.0,
+      "avg_value": 118301.0,
+      "count": 6795
+    },
+    "13.0": {
+      "total_value": 641665574.0,
+      "avg_value": 39344.0,
+      "count": 16309
+    },
+    "8.0": {
+      "total_value": 450086203.0,
+      "avg_value": 43286.0,
+      "count": 10398
+    },
+    "11.0": {
+      "total_value": 364599486.0,
+      "avg_value": 27922.0,
+      "count": 13058
+    },
+    "4.0": {
+      "total_value": 239592755.0,
+      "avg_value": 26372.0,
+      "count": 9085
+    }
+  },
+  "outlier_stats": {
+    "count": 25446,
+    "pct_of_records": 16.070785729172588,
+    "total_value": 29659303649.53,
+    "pct_of_value": 94.37432804438622
+  }
+}

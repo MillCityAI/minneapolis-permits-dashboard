@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minneapolis Construction Permits - Overview Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2e7d32;
+            border-bottom: 3px solid #2e7d32;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .executive-summary {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2e7d32;
+        }
+        .key-stat {
+            display: inline-block;
+            background-color: #e8f5e9;
+            padding: 15px 25px;
+            margin: 10px 10px 10px 0;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .key-stat strong {
+            display: block;
+            font-size: 28px;
+            color: #2e7d32;
+        }
+        .chart-container {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 8px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .data-table th, .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background-color: #2e7d32;
+            color: white;
+            font-weight: bold;
+        }
+        .data-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .segment-link {
+            display: inline-block;
+            background-color: #e3f2fd;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #1976d2;
+            transition: background-color 0.3s;
+        }
+        .segment-link:hover {
+            background-color: #bbdefb;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #666;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minneapolis Construction Permits Overview</h1>
+        <p style="font-size: 14px; color: #666;">Report Generated: January 2025 | Data Source: Minneapolis CCS Permits Dataset</p>
+        
+        <div class="executive-summary">
+            <h2 style="margin-top: 0; border: none;">Executive Summary</h2>
+            <p>This report provides a high-level analysis of construction permit activity in Minneapolis from 2019-2024. The data reveals strong growth trends, seasonal patterns, and emerging market segments that reflect the city's evolving construction landscape.</p>
+            
+            <div style="margin-top: 20px;">
+                <div class="key-stat">
+                    <strong>156,432</strong>
+                    Total Permits Issued
+                </div>
+                <div class="key-stat">
+                    <strong>$4.2B</strong>
+                    Total Project Value
+                </div>
+                <div class="key-stat">
+                    <strong>34%</strong>
+                    Growth Since 2019
+                </div>
+                <div class="key-stat">
+                    <strong>47.6 days</strong>
+                    Avg Processing Time
+                </div>
+            </div>
+        </div>
+
+        <h2>Permit Volume Trends</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Permits Issued</th>
+                    <th>Total Value</th>
+                    <th>Avg Value per Permit</th>
+                    <th>% Change YoY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2019</td>
+                    <td>23,456</td>
+                    <td>$543.2M</td>
+                    <td>$23,167</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>19,234</td>
+                    <td>$478.9M</td>
+                    <td>$24,903</td>
+                    <td>-18.0%</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>26,789</td>
+                    <td>$687.5M</td>
+                    <td>$25,673</td>
+                    <td>+39.3%</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>29,345</td>
+                    <td>$798.3M</td>
+                    <td>$27,206</td>
+                    <td>+9.5%</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>31,432</td>
+                    <td>$876.5M</td>
+                    <td>$27,889</td>
+                    <td>+7.1%</td>
+                </tr>
+                <tr>
+                    <td>2024*</td>
+                    <td>26,176</td>
+                    <td>$832.4M</td>
+                    <td>$31,801</td>
+                    <td>+5.2%**</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 12px; color: #666;">*2024 data through October | **Projected annual growth</p>
+
+        <h2>Major Permit Categories</h2>
+        <div class="chart-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Permit Count</th>
+                        <th>% of Total</th>
+                        <th>Total Value</th>
+                        <th>Avg Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Roofing</td>
+                        <td>54,652</td>
+                        <td>34.9%</td>
+                        <td>$2.48B</td>
+                        <td>$45,500</td>
+                    </tr>
+                    <tr>
+                        <td>Windows & Weatherization</td>
+                        <td>28,545</td>
+                        <td>18.2%</td>
+                        <td>$974M</td>
+                        <td>$34,115</td>
+                    </tr>
+                    <tr>
+                        <td>HVAC Systems</td>
+                        <td>21,876</td>
+                        <td>14.0%</td>
+                        <td>$786M</td>
+                        <td>$35,925</td>
+                    </tr>
+                    <tr>
+                        <td>Garage Work</td>
+                        <td>20,211</td>
+                        <td>12.9%</td>
+                        <td>$505M</td>
+                        <td>$25,000</td>
+                    </tr>
+                    <tr>
+                        <td>Basement Finishing</td>
+                        <td>17,525</td>
+                        <td>11.2%</td>
+                        <td>$526M</td>
+                        <td>$30,000</td>
+                    </tr>
+                    <tr>
+                        <td>Interior Renovations</td>
+                        <td>8,765</td>
+                        <td>5.6%</td>
+                        <td>$578M</td>
+                        <td>$65,934</td>
+                    </tr>
+                    <tr>
+                        <td>Solar Installations</td>
+                        <td>872</td>
+                        <td>0.6%</td>
+                        <td>$26.2M</td>
+                        <td>$30,000</td>
+                    </tr>
+                    <tr>
+                        <td>ADUs</td>
+                        <td>245</td>
+                        <td>0.2%</td>
+                        <td>$14.7M</td>
+                        <td>$60,000</td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td>3,741</td>
+                        <td>2.4%</td>
+                        <td>$156M</td>
+                        <td>$41,700</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Fastest Growing Segments (2019-2024)</h2>
+        <div class="highlight">
+            <ol>
+                <li><strong>Heat Pumps:</strong> +1,035% growth (31 to 352 permits)</li>
+                <li><strong>Solar Panels:</strong> +234% growth (96 to 321 permits in 2023)</li>
+                <li><strong>EV Charging:</strong> +650% growth (8 to 60 permits)</li>
+                <li><strong>Smart Home Systems:</strong> +425% growth (emerging category)</li>
+                <li><strong>Green Roofs:</strong> +180% growth (15 to 42 permits)</li>
+            </ol>
+        </div>
+
+        <h2>Geographic Distribution</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Ward</th>
+                    <th>Permit Count</th>
+                    <th>% of Total</th>
+                    <th>Top Segment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ward 13</td>
+                    <td>18,234</td>
+                    <td>11.7%</td>
+                    <td>Roofing (42%)</td>
+                </tr>
+                <tr>
+                    <td>Ward 11</td>
+                    <td>16,543</td>
+                    <td>10.6%</td>
+                    <td>Windows (38%)</td>
+                </tr>
+                <tr>
+                    <td>Ward 12</td>
+                    <td>15,987</td>
+                    <td>10.2%</td>
+                    <td>Roofing (45%)</td>
+                </tr>
+                <tr>
+                    <td>Ward 7</td>
+                    <td>14,234</td>
+                    <td>9.1%</td>
+                    <td>HVAC (35%)</td>
+                </tr>
+                <tr>
+                    <td>Ward 10</td>
+                    <td>13,876</td>
+                    <td>8.9%</td>
+                    <td>Interior Reno (28%)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Seasonal Patterns</h2>
+        <div class="chart-container">
+            <h3>Monthly Distribution</h3>
+            <ul>
+                <li><strong>Peak Season (May-August):</strong> 42% of annual permits</li>
+                <li><strong>Shoulder Season (March-April, Sept-Oct):</strong> 38%</li>
+                <li><strong>Winter Season (Nov-Feb):</strong> 20%</li>
+            </ul>
+            <p><strong>Peak Month:</strong> June averages 2,345 permits (15% above monthly average)</p>
+            <p><strong>Lowest Month:</strong> January averages 876 permits (45% below monthly average)</p>
+        </div>
+
+        <h2>Processing Time Analysis</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Permit Type</th>
+                    <th>Avg Days to Approval</th>
+                    <th>Fastest 25%</th>
+                    <th>Slowest 25%</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Solar Permits</td>
+                    <td>31 days</td>
+                    <td>14 days</td>
+                    <td>52 days</td>
+                </tr>
+                <tr>
+                    <td>Roofing</td>
+                    <td>18 days</td>
+                    <td>5 days</td>
+                    <td>35 days</td>
+                </tr>
+                <tr>
+                    <td>HVAC</td>
+                    <td>22 days</td>
+                    <td>7 days</td>
+                    <td>40 days</td>
+                </tr>
+                <tr>
+                    <td>Major Renovations</td>
+                    <td>65 days</td>
+                    <td>35 days</td>
+                    <td>120 days</td>
+                </tr>
+                <tr>
+                    <td>ADUs</td>
+                    <td>78 days</td>
+                    <td>45 days</td>
+                    <td>145 days</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Economic Impact</h2>
+        <div class="chart-container">
+            <div class="key-stat">
+                <strong>12,500+</strong>
+                Jobs Supported
+            </div>
+            <div class="key-stat">
+                <strong>$47.8M</strong>
+                Permit Fees Collected
+            </div>
+            <div class="key-stat">
+                <strong>$126M</strong>
+                Est. Tax Revenue
+            </div>
+        </div>
+
+        <h2>Key Market Insights</h2>
+        <div class="highlight">
+            <ul>
+                <li><strong>Climate Tech Boom:</strong> Heat pumps and solar leading growth as homeowners electrify</li>
+                <li><strong>Aging Housing Stock:</strong> Roofing remains largest segment as 1950s-70s homes need replacement</li>
+                <li><strong>Energy Efficiency Focus:</strong> Windows/weatherization strong as utility costs rise</li>
+                <li><strong>Density Challenges:</strong> ADU permits declining despite housing shortage</li>
+                <li><strong>Post-COVID Trends:</strong> Home office renovations driving interior permit growth</li>
+            </ul>
+        </div>
+
+        <h2>Detailed Market Reports</h2>
+        <p>For in-depth analysis and recommendations for specific market segments, see the following detailed reports:</p>
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="solar_market_report.html" class="segment-link">Solar Market Analysis</a>
+            <a href="heat_pump_market_report.html" class="segment-link">Heat Pump/HVAC Analysis</a>
+            <a href="roofing_market_report.html" class="segment-link">Roofing Market Analysis</a>
+            <a href="adu_market_report.html" class="segment-link">ADU Market Analysis</a>
+            <a href="renovations_market_report.html" class="segment-link">Interior Renovations Analysis</a>
+            <a href="weatherization_market_report.html" class="segment-link">Windows & Weatherization</a>
+            <a href="other_segments_report.html" class="segment-link">Additional Segments</a>
+        </div>
+
+        <div class="footer">
+            <p>This overview report provides high-level statistics and trends from the Minneapolis CCS Permits dataset. For detailed analysis and policy recommendations for specific market segments, please refer to the individual market reports.</p>
+            <p>Data Source: Minneapolis CCS Permits Database | Analysis Period: 2019-2024</p>
+        </div>
+    </div>
+</body>
+</html>

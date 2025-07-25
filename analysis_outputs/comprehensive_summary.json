@@ -1,0 +1,42 @@
+{
+  "analysis_date": "2025-07-23T11:58:24.293516",
+  "data_source": "CCS_Permits.csv",
+  "key_metrics": {
+    "total_permits": 358301,
+    "date_range": {
+      "start": "2016-12-01 09:09:53+00:00",
+      "end": "2025-06-09 20:56:48+00:00"
+    },
+    "growth_rate": 21.645487533101605,
+    "business_day_concentration": 98.87106092363683
+  },
+  "top_segments": {
+    "by_volume": [
+      "Plumbing",
+      "Residential",
+      "Mechanical"
+    ],
+    "by_value": [
+      "New Construction",
+      "Commercial Remodels",
+      "Foundation Work"
+    ],
+    "by_growth": [
+      "ComMFDRR",
+      "ComNoFdBv",
+      "ComMin"
+    ]
+  },
+  "seasonal_patterns": {
+    "peak_months": [
+      "October",
+      "May",
+      "January"
+    ],
+    "slow_months": [
+      "December",
+      "November",
+      "August"
+    ]
+  }
+}

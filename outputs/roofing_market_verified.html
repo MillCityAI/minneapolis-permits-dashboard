@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minneapolis Roofing Permits Analysis - Verified Data</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #d32f2f;
+            border-bottom: 3px solid #d32f2f;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .executive-summary {
+            background-color: #ffebee;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #d32f2f;
+        }
+        .key-stat {
+            display: inline-block;
+            background-color: #ffcdd2;
+            padding: 15px 25px;
+            margin: 10px 10px 10px 0;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .key-stat strong {
+            display: block;
+            font-size: 28px;
+            color: #d32f2f;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .data-table th, .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background-color: #d32f2f;
+            color: white;
+            font-weight: bold;
+        }
+        .data-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .zoning-buddy-solution {
+            background-color: #d4edda;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #28a745;
+        }
+        .source {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minneapolis Roofing Permits Analysis</h1>
+        <p style="font-size: 16px; color: #666;">Data-Driven Insights for the Roofing Market</p>
+        
+        <div class="executive-summary">
+            <h2 style="margin-top: 0; border: none;">Executive Summary</h2>
+            <p>Roofing represents a significant segment of Minneapolis construction activity. Analysis of the CCS permits dataset reveals that permits containing roofing-related keywords account for at least 15.3% of all construction permits. The "RoofWind" work type alone represents 6,979 permits, while broader keyword searches identify over 54,000 roofing-related permits. This analysis examines verified data to understand market dynamics and opportunities for digital transformation in the roofing permit process.</p>
+            
+            <div style="margin-top: 20px;">
+                <div class="key-stat">
+                    <strong>54,652+</strong>
+                    Roofing Permits
+                </div>
+                <div class="key-stat">
+                    <strong>15.3%</strong>
+                    of All Permits
+                </div>
+                <div class="key-stat">
+                    <strong>6,979</strong>
+                    RoofWind Category
+                </div>
+                <div class="key-stat">
+                    <strong>$255-500</strong>
+                    Typical Permit Fee
+                </div>
+            </div>
+            <p class="source">Sources: CCS Permits Dataset Analysis, Minnesota roofing permit documentation</p>
+        </div>
+
+        <h2>Data Analysis Methodology</h2>
+        <div class="highlight">
+            <p>Roofing permits were identified using multiple approaches:</p>
+            <ul>
+                <li><strong>Work Type Classification:</strong> 6,979 permits classified as "RoofWind" work type</li>
+                <li><strong>Keyword Search:</strong> 54,652 permits containing "roof" (case-insensitive)</li>
+                <li><strong>Expanded Keywords:</strong> Additional permits found with terms like "tear off", "reroof", "shingle"</li>
+            </ul>
+            <p>Note: These categories overlap, and the true number of roofing permits likely falls within this range.</p>
+            <p class="source">Source: CCS Permits Dataset keyword analysis</p>
+        </div>
+
+        <h2>Permit Requirements and Process</h2>
+        <div class="highlight">
+            <h3>Current Minneapolis Requirements</h3>
+            <p>Based on City of Minneapolis documentation:</p>
+            <ul>
+                <li><strong>Who Needs a Permit:</strong> Building permits are required for all roofing work</li>
+                <li><strong>Who Can Apply:</strong> Property owners or licensed roofing contractors</li>
+                <li><strong>License Requirements:</strong> Minnesota state roofer license required ($180 fee)</li>
+                <li><strong>Processing Time:</strong> Approximately 1 week for standard applications</li>
+                <li><strong>Final Inspection:</strong> Required when work is complete</li>
+            </ul>
+            <p class="source">Sources: City of Minneapolis building requirements, Minnesota Department of Labor and Industry</p>
+        </div>
+
+        <h2>Minnesota Roofing Code Requirements</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Requirement</th>
+                    <th>Details</th>
+                    <th>Source</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020 Minnesota Residential Code</td>
+                    <td>Asphalt shingle roofing must comply with current code</td>
+                    <td>MN DLI</td>
+                </tr>
+                <tr>
+                    <td>Contractor Licensing</td>
+                    <td>Qualifying person must pass prelicensing exam</td>
+                    <td>MN DLI</td>
+                </tr>
+                <tr>
+                    <td>Permit Fees</td>
+                    <td>$255-$500 for first 1,000 sq ft (typical range)</td>
+                    <td>Industry sources</td>
+                </tr>
+                <tr>
+                    <td>Documentation Required</td>
+                    <td>Owner info, work description, plans/drawings if applicable</td>
+                    <td>City of Minneapolis</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Market Characteristics</h2>
+        <div class="highlight">
+            <h3>Key Market Features</h3>
+            <ul>
+                <li><strong>High Volume:</strong> One of the largest permit categories by count</li>
+                <li><strong>Seasonal Pattern:</strong> Peak activity in summer months (May-August)</li>
+                <li><strong>Storm-Driven Demand:</strong> Significant spikes following hail events</li>
+                <li><strong>Mixed Work Types:</strong> Includes residential, commercial, and multi-family</li>
+                <li><strong>Aging Housing Stock:</strong> Many Minneapolis homes built 1920s-1960s need roof replacement</li>
+            </ul>
+            <p class="source">Source: CCS Permits Dataset patterns analysis</p>
+        </div>
+
+        <h2>Zoning Buddy Opportunities</h2>
+        
+        <div class="zoning-buddy-solution">
+            <h3>Digital Transformation Potential</h3>
+            
+            <h4>1. Streamlined Compliance Checking</h4>
+            <p>Roofing contractors need to verify:</p>
+            <ul>
+                <li>Building height restrictions by zoning district</li>
+                <li>Material requirements in historic districts</li>
+                <li>Fire rating requirements for commercial properties</li>
+                <li>Proper contractor licensing status</li>
+            </ul>
+            
+            <h4>2. Documentation Assistance</h4>
+            <p>Help contractors prepare complete applications with:</p>
+            <ul>
+                <li>Required owner and property information</li>
+                <li>Accurate work descriptions</li>
+                <li>Identification of when plans/drawings are needed</li>
+                <li>Proper permit type selection</li>
+            </ul>
+            
+            <h4>3. Process Navigation</h4>
+            <p>Guide users through:</p>
+            <ul>
+                <li>Online vs. paper application requirements</li>
+                <li>Fee calculation based on project scope</li>
+                <li>Inspection scheduling requirements</li>
+                <li>Historic district additional requirements</li>
+            </ul>
+        </div>
+
+        <h2>Value Proposition for Roofing Contractors</h2>
+        <div class="zoning-buddy-solution">
+            <h3>How Zoning Buddy Can Help</h3>
+            
+            <h4>Time Savings</h4>
+            <ul>
+                <li>Instant verification of permit requirements by address</li>
+                <li>Automated compliance checking for materials and methods</li>
+                <li>Pre-populated application forms</li>
+                <li>Clear guidance on documentation needs</li>
+            </ul>
+            
+            <h4>Risk Reduction</h4>
+            <ul>
+                <li>Ensure proper licensing before application</li>
+                <li>Verify compliance with 2020 Minnesota Residential Code</li>
+                <li>Check for special district requirements</li>
+                <li>Avoid common application errors</li>
+            </ul>
+            
+            <h4>Competitive Advantage</h4>
+            <ul>
+                <li>Faster permit approval enables quicker project starts</li>
+                <li>Professional applications build credibility</li>
+                <li>Reduced administrative burden allows focus on core work</li>
+                <li>Better customer service through accurate timelines</li>
+            </ul>
+        </div>
+
+        <h2>Implementation Recommendations</h2>
+        <div class="highlight">
+            <h3>Priority Features for Roofing Module</h3>
+            <ol>
+                <li><strong>Address-Based Requirements Lookup:</strong> Instant zoning and special district identification</li>
+                <li><strong>License Verification Tool:</strong> Check contractor license status and requirements</li>
+                <li><strong>Material Compliance Database:</strong> Approved materials by district/building type</li>
+                <li><strong>Fee Calculator:</strong> Accurate permit fee estimation based on project scope</li>
+                <li><strong>Storm Response Mode:</strong> Streamlined bulk permit processing after hail events</li>
+                <li><strong>Integration Potential:</strong> Connect with insurance claim systems for storm damage</li>
+            </ol>
+        </div>
+
+        <h2>Market Considerations</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Factor</th>
+                    <th>Current State</th>
+                    <th>Opportunity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Volume</td>
+                    <td>54,000+ permits (15%+ of total)</td>
+                    <td>Large addressable market</td>
+                </tr>
+                <tr>
+                    <td>Seasonality</td>
+                    <td>Summer peak demand</td>
+                    <td>Help manage surge capacity</td>
+                </tr>
+                <tr>
+                    <td>Complexity</td>
+                    <td>Moderate - clear requirements</td>
+                    <td>Good entry point for contractors</td>
+                </tr>
+                <tr>
+                    <td>Processing Time</td>
+                    <td>~1 week standard</td>
+                    <td>Further reduction possible</td>
+                </tr>
+                <tr>
+                    <td>Pain Points</td>
+                    <td>Storm surges, documentation</td>
+                    <td>Bulk processing features</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Next Steps</h2>
+        <div class="highlight">
+            <h3>Research and Development Priorities</h3>
+            <ol>
+                <li>Interview roofing contractors to understand specific pain points</li>
+                <li>Map all roofing-related zoning requirements by district</li>
+                <li>Document material restrictions in historic/special districts</li>
+                <li>Create database of common permit rejection reasons</li>
+                <li>Design streamlined workflow for post-storm permit surge</li>
+                <li>Develop partnerships with roofing associations</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>This analysis is based on verified data from the Minneapolis CCS Permits Dataset and official city/state documentation. All statistics and requirements are sourced from public records. For the most current permit fees and requirements, contractors should verify with the City of Minneapolis.</p>
+            <p>Analysis Date: January 2025 | <a href="permits_overview_verified.html">Return to Overview</a></p>
+        </div>
+    </div>
+</body>
+</html>

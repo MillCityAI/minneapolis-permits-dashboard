@@ -1,0 +1,336 @@
+{
+  "work_types": {
+    "unique_count": 28,
+    "missing_count": 0,
+    "top_10": {
+      "Res": 104766,
+      "Misc": 63930,
+      "Remodel": 55700,
+      "ExistRes": 53133,
+      "ComNoFdBv": 23240,
+      "Comm-MFD": 11761,
+      "ComMin": 9251,
+      "RoofWind": 6979,
+      "Addition": 6021,
+      "ComMFDRR": 5475
+    }
+  },
+  "occupancy_types": {
+    "unique_count": 10,
+    "missing_count": 0,
+    "distribution": {
+      "SFD": 177163,
+      " ": 80167,
+      "MFD": 52871,
+      "Comm": 33473,
+      "TFD": 9275,
+      "TH": 3262,
+      "3to4": 1074,
+      "Mixed": 634,
+      "Accessory": 350,
+      "Res": 32
+    }
+  },
+  "processing_times": {
+    "New": {
+      "mean": 611.9993011879804,
+      "median": 482.0,
+      "count": 1431
+    },
+    "Addition": {
+      "mean": 475.3384497313891,
+      "median": 252.0,
+      "count": 5212
+    },
+    "RoofWind": {
+      "mean": 448.79507337526206,
+      "median": 359.0,
+      "count": 5724
+    },
+    "FootFound": {
+      "mean": 435.5764705882353,
+      "median": 380.0,
+      "count": 170
+    },
+    "Private": {
+      "mean": 428.37994350282486,
+      "median": 255.0,
+      "count": 708
+    },
+    "ComNoFdBv": {
+      "mean": 417.33809752058914,
+      "median": 239.0,
+      "count": 22949
+    },
+    "ComFdBv": {
+      "mean": 377.96181474480153,
+      "median": 137.5,
+      "count": 5290
+    },
+    "Remodel": {
+      "mean": 377.8899428382073,
+      "median": 196.0,
+      "count": 48284
+    },
+    "Accessory": {
+      "mean": 348.1784746418893,
+      "median": 145.0,
+      "count": 2583
+    },
+    "Conversion": {
+      "mean": 339.5480769230769,
+      "median": 212.5,
+      "count": 104
+    },
+    "Res": {
+      "mean": 318.1754980291893,
+      "median": 201.0,
+      "count": 93870
+    },
+    "UnitFinish": {
+      "mean": 289.9942196531792,
+      "median": 47.0,
+      "count": 519
+    },
+    "ComMFDRR": {
+      "mean": 288.61567246313007,
+      "median": 85.0,
+      "count": 4543
+    },
+    "Comm-MFD": {
+      "mean": 280.64132670551936,
+      "median": 116.0,
+      "count": 11668
+    },
+    "ExistRes": {
+      "mean": 280.0499957755999,
+      "median": 68.0,
+      "count": 47344
+    },
+    "NewRes": {
+      "mean": 258.4,
+      "median": 169.0,
+      "count": 1395
+    },
+    "Misc": {
+      "mean": 244.7426972064268,
+      "median": 89.0,
+      "count": 56451
+    },
+    "ComMin": {
+      "mean": 221.27385609797585,
+      "median": 145.0,
+      "count": 5879
+    },
+    "TempHeat": {
+      "mean": 194.85172171468727,
+      "median": 153.0,
+      "count": 1423
+    },
+    "ComMFDNR": {
+      "mean": 176.67244157937148,
+      "median": 89.0,
+      "count": 2482
+    }
+  },
+  "value_analysis": {
+    "New": {
+      "mean": 3754207.9756508325,
+      "median": 303634.0,
+      "sum": 6085571128.53,
+      "count": 1621
+    },
+    "FootFound": {
+      "mean": 2209654.8445312497,
+      "median": 833972.5,
+      "sum": 424253730.15,
+      "count": 192
+    },
+    "Comm-MFD": {
+      "mean": 371519.74455880874,
+      "median": 8912.0,
+      "sum": 3692534741.17,
+      "count": 9939
+    },
+    "RoofWind": {
+      "mean": 330770.21745378996,
+      "median": 45000.0,
+      "sum": 2308445347.61,
+      "count": 6979
+    },
+    "Remodel": {
+      "mean": 292767.7779057112,
+      "median": 20000.0,
+      "sum": 16301309873.789999,
+      "count": 55680
+    },
+    "UnitCon": {
+      "mean": 236647.31761904762,
+      "median": 50000.0,
+      "sum": 14908781.01,
+      "count": 63
+    },
+    "ComMFDNR": {
+      "mean": 173602.29903709254,
+      "median": 22000.0,
+      "sum": 463344536.13,
+      "count": 2669
+    },
+    "Addition": {
+      "mean": 161290.76232187345,
+      "median": 12000.0,
+      "sum": 971131679.94,
+      "count": 6021
+    },
+    "Conversion": {
+      "mean": 66924.5824137931,
+      "median": 29000.0,
+      "sum": 7763251.56,
+      "count": 116
+    },
+    "ComMFDRR": {
+      "mean": 45867.50951845606,
+      "median": 11750.0,
+      "sum": 244794898.3,
+      "count": 5337
+    },
+    "UnitFinish": {
+      "mean": 38171.12242857143,
+      "median": 1665.0,
+      "sum": 2671978.57,
+      "count": 70
+    },
+    "Private": {
+      "mean": 28434.570294117646,
+      "median": 12500.0,
+      "sum": 24169384.75,
+      "count": 850
+    },
+    "Accessory": {
+      "mean": 26979.205762711863,
+      "median": 20972.16,
+      "sum": 77996883.86,
+      "count": 2891
+    },
+    "NewRes": {
+      "mean": 13762.806512749828,
+      "median": 12000.0,
+      "sum": 19969832.25,
+      "count": 1451
+    },
+    "Misc": {
+      "mean": 11862.116293173784,
+      "median": 9053.5,
+      "sum": 758345094.6226,
+      "count": 63930
+    },
+    "ExistRes": {
+      "mean": 5963.940448113208,
+      "median": 3900.5,
+      "sum": 2528710.75,
+      "count": 424
+    }
+  },
+  "top_combinations": [
+    {
+      "permitType": "Plumbing",
+      "workType": "Res",
+      "count": 104766
+    },
+    {
+      "permitType": "Res",
+      "workType": "Misc",
+      "count": 63930
+    },
+    {
+      "permitType": "Mechanical",
+      "workType": "ExistRes",
+      "count": 53133
+    },
+    {
+      "permitType": "Commercial",
+      "workType": "Remodel",
+      "count": 32258
+    },
+    {
+      "permitType": "Res",
+      "workType": "Remodel",
+      "count": 23442
+    },
+    {
+      "permitType": "Plumbing",
+      "workType": "ComNoFdBv",
+      "count": 23240
+    },
+    {
+      "permitType": "Mechanical",
+      "workType": "Comm-MFD",
+      "count": 11761
+    },
+    {
+      "permitType": "Plumbing",
+      "workType": "ComMin",
+      "count": 9251
+    },
+    {
+      "permitType": "Commercial",
+      "workType": "RoofWind",
+      "count": 6979
+    },
+    {
+      "permitType": "Mechanical",
+      "workType": "ComMFDRR",
+      "count": 5475
+    },
+    {
+      "permitType": "Plumbing",
+      "workType": "ComFdBv",
+      "count": 5372
+    },
+    {
+      "permitType": "Res",
+      "workType": "Addition",
+      "count": 5205
+    },
+    {
+      "permitType": "Res",
+      "workType": "Accessory",
+      "count": 2891
+    },
+    {
+      "permitType": "Mechanical",
+      "workType": "ComMFDNR",
+      "count": 2800
+    },
+    {
+      "permitType": "Mechanical",
+      "workType": "TempHeat",
+      "count": 1482
+    },
+    {
+      "permitType": "Mechanical",
+      "workType": "NewRes",
+      "count": 1464
+    },
+    {
+      "permitType": "Res",
+      "workType": "New",
+      "count": 1112
+    },
+    {
+      "permitType": "Wrecking",
+      "workType": "Private",
+      "count": 850
+    },
+    {
+      "permitType": "Commercial",
+      "workType": "Addition",
+      "count": 816
+    },
+    {
+      "permitType": "Plumbing",
+      "workType": "FoodBev",
+      "count": 558
+    }
+  ]
+}

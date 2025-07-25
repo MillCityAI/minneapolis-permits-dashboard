@@ -1,0 +1,17 @@
+{
+  "total_records": 358301,
+  "date_range": {
+    "start": "2016-12-01 09:09:53+00:00",
+    "end": "2025-06-09 20:56:48+00:00"
+  },
+  "unique_applicants": 18368,
+  "unique_neighborhoods": 87,
+  "total_value": 31427300478.982594,
+  "total_fees": 589038646.5600001,
+  "data_quality": {
+    "missing_issue_date": 0,
+    "missing_complete_date": 39656,
+    "future_dates": 0,
+    "invalid_timelines": 25
+  }
+}

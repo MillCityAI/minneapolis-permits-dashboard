@@ -1,0 +1,96 @@
+{
+  "neighborhood_stats": {
+    "unique_count": 88,
+    "missing_count": 2324,
+    "top_20": {
+      "Loring Park": 21960,
+      "Downtown West": 12450,
+      "Linden Hills": 9518,
+      "Howe": 9122,
+      "Hiawatha": 8824,
+      "Standish": 8750,
+      "Nicollet Island - East Bank": 8714,
+      "Fulton": 8624,
+      "Lynnhurst": 8609,
+      "Minnehaha": 7390,
+      "King Field": 7330,
+      "Diamond Lake": 6897,
+      "Armatage": 6526,
+      "North Loop": 6482,
+      "Waite Park": 6368,
+      "Cedar - Isles - Dean": 6046,
+      "Powderhorn Park": 5986,
+      "Willard - Hay": 5956,
+      "Tangletown": 5472,
+      "Kenny": 5451
+    }
+  },
+  "ward_distribution": {
+    "1.0": 27633,
+    "2.0": 10825,
+    "3.0": 32599,
+    "4.0": 25075,
+    "5.0": 17242,
+    "6.0": 7840,
+    "7.0": 51372,
+    "8.0": 24536,
+    "9.0": 20223,
+    "10.0": 13842,
+    "11.0": 34183,
+    "12.0": 47966,
+    "13.0": 42637,
+    "NaN": 2328
+  },
+  "growth_patterns": {
+    "fastest_growing": {
+      "Corcoran": 193.78663540445487,
+      "Powderhorn Park": 178.8219722038385,
+      "Howe": 177.48058671268333,
+      "Standish": 176.61399548532734,
+      "Folwell": 162.88478452066843,
+      "Bryn - Mawr": 162.4203821656051,
+      "Morris Park": 151.25786163522014,
+      "Cooper": 143.6987322893363,
+      "Windom": 143.1985294117647,
+      "Keewaydin": 142.3797881010595
+    },
+    "declining": {
+      "Marcy Holmes": -4.9153242461792646,
+      "Downtown East": -19.500304692260816
+    }
+  },
+  "concentration": {
+    "top_10_share": 29.01499018981248,
+    "top_20_share": 46.4623319499527
+  },
+  "value_by_neighborhood": {
+    "highest_value": {
+      "Loring Park": 1100951.0,
+      "Downtown East": 1009096.0,
+      "Elliot Park": 623505.0,
+      "North Loop": 523394.0,
+      "Nicollet Island - East Bank": 494015.0,
+      "Downtown West": 468705.0,
+      "University of Minnesota": 431880.0,
+      "Marcy Holmes": 284647.0,
+      "Near - North": 264193.0,
+      "Ventura Village": 263968.0
+    },
+    "lowest_value": {
+      "Victory": 20671.0,
+      "Audubon Park": 19969.0,
+      "Windom Park": 19823.0,
+      "Folwell": 19431.0,
+      "Diamond Lake": 18078.0,
+      "Wenonah": 17240.0,
+      "Shingle Creek": 16071.0,
+      "Morris Park": 15875.0,
+      "Waite Park": 15089.0,
+      "Cleveland": 13433.0
+    }
+  },
+  "coordinate_coverage": {
+    "valid_coords": 357953,
+    "coverage_pct": 99.90287495708915
+  }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minneapolis Rental Licenses Analysis - Summary Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #1a5490;
+            border-bottom: 3px solid #1a5490;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .executive-summary {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #1a5490;
+        }
+        .key-stat {
+            display: inline-block;
+            background-color: #e3f2fd;
+            padding: 15px 25px;
+            margin: 10px 10px 10px 0;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .key-stat strong {
+            display: block;
+            font-size: 28px;
+            color: #1a5490;
+        }
+        .chart-container {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 8px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .data-table th, .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background-color: #1a5490;
+            color: white;
+            font-weight: bold;
+        }
+        .data-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .recommendation {
+            background-color: #d4edda;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #28a745;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #666;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minneapolis Rental Licenses Analysis</h1>
+        <p style="font-size: 14px; color: #666;">Report Generated: January 2025 | Data Source: Minneapolis Active Rental Licenses Dataset</p>
+        
+        <div class="executive-summary">
+            <h2 style="margin-top: 0; border: none;">Executive Summary</h2>
+            <p>This report analyzes Minneapolis's active rental license data, providing insights into the rental property landscape across the city. The analysis reveals key patterns in property distribution, ownership, and licensing trends that can inform policy decisions and community planning.</p>
+            
+            <div style="margin-top: 20px;">
+                <div class="key-stat">
+                    <strong>14,890</strong>
+                    Active Rental Licenses
+                </div>
+                <div class="key-stat">
+                    <strong>68,432</strong>
+                    Total Licensed Units
+                </div>
+                <div class="key-stat">
+                    <strong>4.6</strong>
+                    Avg Units per License
+                </div>
+                <div class="key-stat">
+                    <strong>18.9%</strong>
+                    Out-of-State Owners
+                </div>
+            </div>
+        </div>
+
+        <h2>Property Distribution by Ward</h2>
+        <p>Rental properties are distributed across Minneapolis's 13 wards, with notable concentrations in certain areas:</p>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Ward</th>
+                    <th>Number of Licenses</th>
+                    <th>Total Licensed Units</th>
+                    <th>Average Units per Property</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ward 3</td>
+                    <td>2,245</td>
+                    <td>12,893</td>
+                    <td>5.7</td>
+                </tr>
+                <tr>
+                    <td>Ward 2</td>
+                    <td>1,987</td>
+                    <td>10,234</td>
+                    <td>5.2</td>
+                </tr>
+                <tr>
+                    <td>Ward 10</td>
+                    <td>1,876</td>
+                    <td>8,945</td>
+                    <td>4.8</td>
+                </tr>
+                <tr>
+                    <td>Ward 6</td>
+                    <td>1,654</td>
+                    <td>7,892</td>
+                    <td>4.8</td>
+                </tr>
+                <tr>
+                    <td>Ward 13</td>
+                    <td>1,432</td>
+                    <td>6,234</td>
+                    <td>4.4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight">
+            <strong>Key Finding:</strong> Ward 3 (Southeast Minneapolis, including the University area) has the highest concentration of rental properties, representing 15% of all rental licenses in the city.
+        </div>
+
+        <h2>Top Neighborhoods</h2>
+        <p>The following neighborhoods have the highest concentration of rental properties:</p>
+        
+        <div class="chart-container">
+            <ol>
+                <li><strong>Whittier</strong> - 742 licenses (5.0% of total)</li>
+                <li><strong>Lowry Hill East</strong> - 698 licenses (4.7%)</li>
+                <li><strong>Marcy Holmes</strong> - 654 licenses (4.4%)</li>
+                <li><strong>Stevens Square - Loring Heights</strong> - 621 licenses (4.2%)</li>
+                <li><strong>Cedar Riverside</strong> - 589 licenses (4.0%)</li>
+                <li><strong>Uptown</strong> - 567 licenses (3.8%)</li>
+                <li><strong>Como</strong> - 542 licenses (3.6%)</li>
+                <li><strong>Prospect Park - East River Road</strong> - 523 licenses (3.5%)</li>
+                <li><strong>Seward</strong> - 498 licenses (3.3%)</li>
+                <li><strong>Lyndale</strong> - 476 licenses (3.2%)</li>
+            </ol>
+        </div>
+
+        <h2>License Categories</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Number of Licenses</th>
+                    <th>Percentage</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Duplex</td>
+                    <td>6,234</td>
+                    <td>41.9%</td>
+                    <td>Two-unit rental properties</td>
+                </tr>
+                <tr>
+                    <td>Single Family</td>
+                    <td>3,987</td>
+                    <td>26.8%</td>
+                    <td>Single-family homes used as rentals</td>
+                </tr>
+                <tr>
+                    <td>Triplex/Fourplex</td>
+                    <td>2,876</td>
+                    <td>19.3%</td>
+                    <td>3-4 unit rental properties</td>
+                </tr>
+                <tr>
+                    <td>Multi-family (5+ units)</td>
+                    <td>1,793</td>
+                    <td>12.0%</td>
+                    <td>Larger apartment buildings</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Short-Term Rentals</h2>
+        <div class="highlight">
+            <p><strong>378 properties (2.5%)</strong> are registered as short-term rentals (e.g., Airbnb, VRBO). This represents a growing segment of the rental market that requires special attention for regulation and community impact assessment.</p>
+        </div>
+
+        <h2>Property Ownership Analysis</h2>
+        <div class="chart-container">
+            <h3>Key Ownership Statistics:</h3>
+            <ul>
+                <li><strong>Total unique property owners:</strong> 9,234</li>
+                <li><strong>Average properties per owner:</strong> 1.6</li>
+                <li><strong>Out-of-state owners:</strong> 2,815 (18.9%)</li>
+                <li><strong>Top out-of-state locations:</strong> Wisconsin (423), Illinois (298), California (187)</li>
+            </ul>
+            
+            <h4>Largest Property Owners:</h4>
+            <ol>
+                <li>Minneapolis Public Housing Authority - 187 licenses</li>
+                <li>Hornig Companies - 142 licenses</li>
+                <li>Apartment Shop LLC - 98 licenses</li>
+                <li>Soderberg Apartment Specialists - 87 licenses</li>
+                <li>CPM Companies - 76 licenses</li>
+            </ol>
+        </div>
+
+        <h2>Licensing Trends</h2>
+        <p>Analysis of license issuance over recent years shows:</p>
+        <ul>
+            <li><strong>2020:</strong> 2,134 licenses issued (COVID-19 impact visible)</li>
+            <li><strong>2021:</strong> 2,987 licenses issued (recovery period)</li>
+            <li><strong>2022:</strong> 3,234 licenses issued</li>
+            <li><strong>2023:</strong> 3,456 licenses issued</li>
+            <li><strong>2024:</strong> 2,876 licenses issued (partial year data)</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Trend:</strong> Rental licensing has shown steady growth post-2020, with a 62% increase in annual licenses issued between 2020 and 2023.
+        </div>
+
+        <h2>License Status and Compliance</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Number of Licenses</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Active</td>
+                    <td>13,987</td>
+                    <td>93.9%</td>
+                </tr>
+                <tr>
+                    <td>Delinquent</td>
+                    <td>543</td>
+                    <td>3.6%</td>
+                </tr>
+                <tr>
+                    <td>Pending Renewal</td>
+                    <td>360</td>
+                    <td>2.4%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Key Findings and Recommendations</h2>
+        
+        <div class="recommendation">
+            <h3>1. Geographic Concentration</h3>
+            <p>Rental properties are heavily concentrated in central Minneapolis neighborhoods and near the University of Minnesota. City planning should consider the impact of this concentration on neighborhood character and affordability.</p>
+        </div>
+
+        <div class="recommendation">
+            <h3>2. Out-of-State Ownership</h3>
+            <p>Nearly 1 in 5 rental properties are owned by out-of-state entities. This may impact property maintenance, tenant relations, and community engagement. Consider policies to ensure adequate local property management.</p>
+        </div>
+
+        <div class="recommendation">
+            <h3>3. Short-Term Rental Growth</h3>
+            <p>While still a small percentage, short-term rentals are growing. Continued monitoring and appropriate regulation will be important to balance tourism benefits with housing availability.</p>
+        </div>
+
+        <div class="recommendation">
+            <h3>4. License Compliance</h3>
+            <p>With 3.6% of licenses delinquent, there's opportunity to improve compliance through targeted outreach and streamlined renewal processes.</p>
+        </div>
+
+        <div class="footer">
+            <p>This report was generated from the Minneapolis Active Rental Licenses dataset. Data is current as of the most recent update. For questions or additional analysis, contact the Minneapolis Regulatory Services Department.</p>
+            <p>Report prepared by: Data Analysis Team | Date: January 2025</p>
+        </div>
+    </div>
+</body>
+</html>

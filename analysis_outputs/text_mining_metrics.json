@@ -1,0 +1,233 @@
+{
+  "overview": {
+    "total_with_comments": 353127,
+    "avg_comment_length": 80.0294143466798,
+    "avg_word_count": 12.435021960937567
+  },
+  "top_keywords": {
+    "replace": 91053,
+    "install": 52428,
+    "existing": 51562,
+    "gas": 45626,
+    "meter": 42649,
+    "move": 42059,
+    "water": 40222,
+    "batch": 40141,
+    "required": 38666,
+    "heater": 28672,
+    "floor": 28433,
+    "remodel": 26694,
+    "house": 25456,
+    "furnace": 25396,
+    "roof": 24706,
+    "work": 23046,
+    "garage": 22895,
+    "code": 22860,
+    "kitchen": 22112,
+    "building": 22056,
+    "bathroom": 21531,
+    "occupancy": 20424,
+    "windows": 19896,
+    "replacement": 19402,
+    "basement": 19187,
+    "unit": 19058,
+    "remove": 18133,
+    "permit": 17805,
+    "2020": 16504,
+    "bath": 16410,
+    "off": 15714,
+    "plumbing": 15550,
+    "tear": 14895,
+    "window": 14615,
+    "dryer": 13899,
+    "permits": 13371,
+    "reroof": 13157,
+    "system": 12725,
+    "wall": 12180,
+    "sink": 12086,
+    "separate": 11992,
+    "replacing": 11818,
+    "electrical": 11709,
+    "range": 11335,
+    "line": 11150,
+    "fixtures": 11055,
+    "certificate": 10830,
+    "irc": 10552,
+    "fan": 10408,
+    "main": 10321,
+    "shower": 10132,
+    "dishwasher": 10000,
+    "engineer": 9912,
+    "room": 9781,
+    "type": 9617,
+    "heating/air": 9599,
+    "energy": 9416,
+    "rules": 9365,
+    "re-roof": 9309,
+    "sfd": 9257,
+    "detached": 9167,
+    "minnesota": 9118,
+    "vent": 9083,
+    "air": 9025,
+    "piping": 9022,
+    "boiler": 8770,
+    "door": 8755,
+    "msbc": 8710,
+    "one": 8700,
+    "only": 8688,
+    "shingles": 8678,
+    "conditioning/ventilation": 8614,
+    "exterior": 8549,
+    "units": 8418,
+    "plans": 8358,
+    "add": 8250,
+    "drain": 8023,
+    "a/c": 7887,
+    "openings": 7864,
+    "jjl": 7667,
+    "this": 7562,
+    "2016": 7495,
+    "const": 7381,
+    "2nd": 7186,
+    "interior": 7150,
+    "same": 7109,
+    "chapter": 7106,
+    "structural": 7018,
+    "installation": 6983,
+    "inspections": 6951,
+    "toilet": 6951,
+    "maa": 6920,
+    "tub": 6773,
+    "dwelling": 6771,
+    "level": 6724,
+    "change": 6684,
+    "repair": 6664,
+    "fireplace": 6661,
+    "yes": 6565,
+    "dmh": 6505
+  },
+  "scope_distribution": {
+    "Unspecified": 199709,
+    "Minor": 127382,
+    "Major": 18861,
+    "Mixed": 7175
+  },
+  "urgency_distribution": {
+    "Planned": 348673,
+    "Emergency": 4454
+  },
+  "trade_analysis": {
+    "trade_count_distribution": {
+      "0": 80219,
+      "1": 138848,
+      "2": 91242,
+      "3": 25235,
+      "4": 10989,
+      "5": 4549,
+      "6": 1725,
+      "7": 296,
+      "8": 24
+    },
+    "top_trade_combinations": [
+      {
+        "trades": "HVAC + Plumbing",
+        "count": 23897
+      },
+      {
+        "trades": "HVAC + Windows/Doors",
+        "count": 18676
+      },
+      {
+        "trades": "HVAC + Roofing",
+        "count": 15224
+      },
+      {
+        "trades": "Kitchen/Bath + Plumbing",
+        "count": 6670
+      },
+      {
+        "trades": "Flooring + HVAC",
+        "count": 4836
+      },
+      {
+        "trades": "HVAC + Kitchen/Bath",
+        "count": 4058
+      },
+      {
+        "trades": "HVAC + Structural + Windows/Doors",
+        "count": 3719
+      },
+      {
+        "trades": "Flooring + Plumbing",
+        "count": 3546
+      },
+      {
+        "trades": "Electrical + HVAC + Plumbing",
+        "count": 3108
+      },
+      {
+        "trades": "HVAC + Structural",
+        "count": 2957
+      },
+      {
+        "trades": "HVAC + Kitchen/Bath + Plumbing",
+        "count": 2724
+      },
+      {
+        "trades": "Electrical + HVAC + Kitchen/Bath + Plumbing",
+        "count": 2432
+      },
+      {
+        "trades": "Flooring + Kitchen/Bath",
+        "count": 1995
+      },
+      {
+        "trades": "Flooring + Kitchen/Bath + Plumbing",
+        "count": 1913
+      },
+      {
+        "trades": "Plumbing + Roofing",
+        "count": 1880
+      },
+      {
+        "trades": "Flooring + HVAC + Plumbing",
+        "count": 1431
+      },
+      {
+        "trades": "HVAC + Plumbing + Roofing",
+        "count": 1184
+      },
+      {
+        "trades": "Electrical + HVAC + Roofing",
+        "count": 1100
+      },
+      {
+        "trades": "Electrical + HVAC + Plumbing + Windows/Doors",
+        "count": 946
+      },
+      {
+        "trades": "Flooring + HVAC + Kitchen/Bath + Plumbing",
+        "count": 869
+      }
+    ]
+  },
+  "specific_work_types": {
+    "Water Heater": 28700,
+    "Furnace": 33923,
+    "AC/Cooling": 30253,
+    "Bathroom Remodel": 6574,
+    "Kitchen Remodel": 3318,
+    "Roof Replacement": 15696,
+    "Window Replacement": 2630,
+    "Siding": 5957,
+    "Deck/Patio": 9363,
+    "Garage": 20054
+  },
+  "complexity_distribution": {
+    "Very Low": 192650,
+    "Low": 103310,
+    "Medium": 43443,
+    "High": 11883,
+    "Very High": 1841
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "processing_correlations": {
+    "value": {
+      "correlation": 0.053032321344875816,
+      "p_value": 3.695664460306571e-197
+    },
+    "totalFees": {
+      "correlation": 0.00768227125002568,
+      "p_value": 1.6243333614395085e-05
+    },
+    "has_value": {
+      "correlation": 0.006815287223574981,
+      "p_value": 0.00011956504791066094
+    },
+    "is_commercial": {
+      "correlation": 0.08038214835223649,
+      "p_value": 0.0
+    },
+    "is_residential": {
+      "correlation": -0.04111507539934726,
+      "p_value": 3.015629952646283e-119
+    },
+    "month_numeric": {
+      "correlation": 0.004411370952603661,
+      "p_value": 0.012772010367125337
+    }
+  },
+  "failure_predictors": {
+    "by_contractor_size": {
+      "Small (1-10)": {
+        "failures": 955,
+        "failure_rate": 0.0302,
+        "total_permits": 31602
+      },
+      "Medium (11-50)": {
+        "failures": 858,
+        "failure_rate": 0.0263,
+        "total_permits": 32667
+      },
+      "Large (51-200)": {
+        "failures": 1237,
+        "failure_rate": 0.0245,
+        "total_permits": 50496
+      },
+      "Major (201-1000)": {
+        "failures": 2257,
+        "failure_rate": 0.0232,
+        "total_permits": 97450
+      },
+      "Mega (1000+)": {
+        "failures": 1920,
+        "failure_rate": 0.0131,
+        "total_permits": 146085
+      }
+    },
+    "by_month": {
+      "1": {
+        "failures": 441,
+        "failure_rate": 0.013775223339788843,
+        "total_permits": 32014
+      },
+      "2": {
+        "failures": 352,
+        "failure_rate": 0.012313720002798572,
+        "total_permits": 28586
+      },
+      "3": {
+        "failures": 738,
+        "failure_rate": 0.02329324874538396,
+        "total_permits": 31683
+      },
+      "4": {
+        "failures": 542,
+        "failure_rate": 0.017778652496227777,
+        "total_permits": 30486
+      },
+      "5": {
+        "failures": 550,
+        "failure_rate": 0.017005751035804834,
+        "total_permits": 32342
+      },
+      "6": {
+        "failures": 528,
+        "failure_rate": 0.017800552895961164,
+        "total_permits": 29662
+      },
+      "7": {
+        "failures": 773,
+        "failure_rate": 0.0266248751420797,
+        "total_permits": 29033
+      },
+      "8": {
+        "failures": 554,
+        "failure_rate": 0.020235964495744604,
+        "total_permits": 27377
+      },
+      "9": {
+        "failures": 589,
+        "failure_rate": 0.01991412246001961,
+        "total_permits": 29577
+      },
+      "10": {
+        "failures": 683,
+        "failure_rate": 0.020024040575801108,
+        "total_permits": 34109
+      },
+      "11": {
+        "failures": 741,
+        "failure_rate": 0.02769575780227995,
+        "total_permits": 26755
+      },
+      "12": {
+        "failures": 736,
+        "failure_rate": 0.0275893091427072,
+        "total_permits": 26677
+      }
+    }
+  },
+  "value_predictors": {
+    "by_permit_type": {
+      "Commercial": {
+        "high_value_count": 11325,
+        "high_value_rate": 0.2784,
+        "avg_value": 600762.7296,
+        "median_value": 38400.0,
+        "total_permits": 40675
+      },
+      "Mechanical": {
+        "high_value_count": 2181,
+        "high_value_rate": 0.11,
+        "avg_value": 223020.7621,
+        "median_value": 10700.0,
+        "total_permits": 19834
+      },
+      "Plumbing": {
+        "high_value_count": 0,
+        "high_value_rate": 0.0,
+        "avg_value": 5838.125,
+        "median_value": 4000.0,
+        "total_permits": 8
+      },
+      "Res": {
+        "high_value_count": 2148,
+        "high_value_rate": 0.0222,
+        "avg_value": 21636.0552,
+        "median_value": 10000.0,
+        "total_permits": 96696
+      },
+      "Site": {
+        "high_value_count": 152,
+        "high_value_rate": 0.717,
+        "avg_value": 2114035.3073,
+        "median_value": 744032.5,
+        "total_permits": 212
+      },
+      "Wrecking": {
+        "high_value_count": 27,
+        "high_value_rate": 0.0296,
+        "avg_value": 30197.8879,
+        "median_value": 13000.0,
+        "total_permits": 912
+      }
+    }
+  },
+  "seasonal_patterns": {
+    "Winter": {
+      "processing_days": 320.52,
+      "is_failed": 0.02,
+      "value": 86738.07,
+      "permitNumber": 92283
+    },
+    "Spring": {
+      "processing_days": 318.84,
+      "is_failed": 0.02,
+      "value": 98285.23,
+      "permitNumber": 92490
+    },
+    "Summer": {
+      "processing_days": 312.17,
+      "is_failed": 0.02,
+      "value": 57798.94,
+      "permitNumber": 85987
+    },
+    "Fall": {
+      "processing_days": 318.89,
+      "is_failed": 0.02,
+      "value": 106949.81,
+      "permitNumber": 87541
+    }
+  },
+  "neighborhood_indicators": {
+    "fast_processing": {
+      "Como": {
+        "processing_days": 229.11,
+        "is_failed": 0.01,
+        "value": 46672.1,
+        "permitNumber": 2957
+      },
+      "Sumner - Glenwood": {
+        "processing_days": 238.15,
+        "is_failed": 0.02,
+        "value": 77884.01,
+        "permitNumber": 762
+      },
+      "Bryn - Mawr": {
+        "processing_days": 239.68,
+        "is_failed": 0.01,
+        "value": 28240.84,
+        "permitNumber": 4773
+      },
+      "Marcy Holmes": {
+        "processing_days": 241.05,
+        "is_failed": 0.03,
+        "value": 167585.64,
+        "permitNumber": 5048
+      },
+      "Willard - Hay": {
+        "processing_days": 246.44,
+        "is_failed": 0.01,
+        "value": 23297.22,
+        "permitNumber": 5956
+      },
+      "Bottineau": {
+        "processing_days": 247.09,
+        "is_failed": 0.05,
+        "value": 91252.34,
+        "permitNumber": 1017
+      },
+      "Webber - Camden": {
+        "processing_days": 253.34,
+        "is_failed": 0.01,
+        "value": 17474.09,
+        "permitNumber": 3918
+      },
+      "Waite Park": {
+        "processing_days": 257.76,
+        "is_failed": 0.04,
+        "value": 5596.84,
+        "permitNumber": 6368
+      },
+      "Prospect Park - East River Road": {
+        "processing_days": 257.89,
+        "is_failed": 0.01,
+        "value": 71987.36,
+        "permitNumber": 3604
+      },
+      "Cooper": {
+        "processing_days": 260.82,
+        "is_failed": 0.01,
+        "value": 14382.19,
+        "permitNumber": 4881
+      }
+    },
+    "high_failure": {
+      "St. Anthony West": {
+        "processing_days": 287.23,
+        "is_failed": 0.12,
+        "value": 85109.95,
+        "permitNumber": 1546
+      },
+      "Minnehaha": {
+        "processing_days": 351.86,
+        "is_failed": 0.09,
+        "value": 24991.03,
+        "permitNumber": 7390
+      },
+      "Logan Park": {
+        "processing_days": 261.36,
+        "is_failed": 0.08,
+        "value": 68801.01,
+        "permitNumber": 1741
+      },
+      "Steven's Square - Loring Heights": {
+        "processing_days": 398.48,
+        "is_failed": 0.06,
+        "value": 76600.16,
+        "permitNumber": 1309
+      },
+      "West Maka Ska": {
+        "processing_days": 365.87,
+        "is_failed": 0.06,
+        "value": 103425.21,
+        "permitNumber": 1747
+      },
+      "Beltrami": {
+        "processing_days": 309.78,
+        "is_failed": 0.05,
+        "value": 17168.27,
+        "permitNumber": 910
+      },
+      "Bottineau": {
+        "processing_days": 247.09,
+        "is_failed": 0.05,
+        "value": 91252.34,
+        "permitNumber": 1017
+      },
+      "Holland": {
+        "processing_days": 283.43,
+        "is_failed": 0.05,
+        "value": 46765.75,
+        "permitNumber": 2527
+      },
+      "Marshall Terrace": {
+        "processing_days": 287.55,
+        "is_failed": 0.05,
+        "value": 68492.51,
+        "permitNumber": 1043
+      },
+      "Sheridan": {
+        "processing_days": 280.89,
+        "is_failed": 0.05,
+        "value": 41294.33,
+        "permitNumber": 1673
+      }
+    }
+  },
+  "temporal_trends": {
+    "yearly_metrics": {
+      "2017": {
+        "permitNumber": 42711,
+        "value": 68412.92,
+        "processing_days": 429.68,
+        "is_failed": 0.02
+      },
+      "2018": {
+        "permitNumber": 40211,
+        "value": 65402.98,
+        "processing_days": 362.48,
+        "is_failed": 0.03
+      },
+      "2019": {
+        "permitNumber": 42905,
+        "value": 60955.1,
+        "processing_days": 350.5,
+        "is_failed": 0.06
+      },
+      "2020": {
+        "permitNumber": 40931,
+        "value": 153782.1,
+        "processing_days": 365.21,
+        "is_failed": 0.01
+      },
+      "2021": {
+        "permitNumber": 40409,
+        "value": 56379.9,
+        "processing_days": 332.56,
+        "is_failed": 0.01
+      },
+      "2022": {
+        "permitNumber": 39363,
+        "value": 202837.27,
+        "processing_days": 353.55,
+        "is_failed": 0.02
+      },
+      "2023": {
+        "permitNumber": 47069,
+        "value": 42802.37,
+        "processing_days": 223.28,
+        "is_failed": 0.01
+      },
+      "2024": {
+        "permitNumber": 47026,
+        "value": 82512.37,
+        "processing_days": 106.5,
+        "is_failed": 0.01
+      }
+    },
+    "trend_correlations": {
+      "permits_vs_year": 0.5167644687748756,
+      "value_vs_year": 0.16289864123619438
+    }
+  },
+  "risk_score_analysis": {
+    "0": {
+      "failure_rate": 0.016,
+      "total_permits": 221962,
+      "avg_processing_days": 308.05
+    },
+    "1": {
+      "failure_rate": 0.027,
+      "total_permits": 125577,
+      "avg_processing_days": 327.448
+    },
+    "2": {
+      "failure_rate": 0.031,
+      "total_permits": 10271,
+      "avg_processing_days": 404.671
+    },
+    "3": {
+      "failure_rate": 0.093,
+      "total_permits": 421,
+      "avg_processing_days": 432.744
+    },
+    "4": {
+      "failure_rate": 0.143,
+      "total_permits": 70,
+      "avg_processing_days": 376.574
+    }
+  }
+}

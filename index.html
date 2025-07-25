@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minneapolis Building Permits Analysis</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #2e7d32;
+            border-bottom: 3px solid #2e7d32;
+            padding-bottom: 15px;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #4CAF50, #2e7d32);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .stat-value {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .navigation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .nav-card {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #2e7d32;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: inherit;
+        }
+        .nav-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        .nav-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            text-align: center;
+            color: #666;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minneapolis Building Permits Analysis Dashboard</h1>
+        
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-value">358,301</div>
+                <div class="stat-label">Total Permits Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">$31.4B</div>
+                <div class="stat-label">Total Construction Value</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">7</div>
+                <div class="stat-label">Major Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">21,139</div>
+                <div class="stat-label">Unique Applicants</div>
+            </div>
+        </div>
+
+        <div class="navigation-grid">
+            <a href="reports/permit_analysis_by_category.html" class="nav-card">
+                <div class="nav-title">Category Overview <span class="badge">Main Report</span></div>
+                <div class="nav-description">
+                    Comprehensive breakdown of all permit categories including Building, Mechanical, Plumbing, Solar, Wrecking, Sign, and Soil Erosion permits with detailed statistics and use case analysis.
+                </div>
+            </a>
+
+            <a href="reports/drill_down_reports/summary_dashboard.html" class="nav-card">
+                <div class="nav-title">Detailed Category Reports <span class="badge">Deep Dive</span></div>
+                <div class="nav-description">
+                    In-depth analysis for each category featuring complete applicant lists, abandonment analysis, geographic distribution, and temporal trends with downloadable data.
+                </div>
+            </a>
+
+            <a href="reports/applicant_analysis.html" class="nav-card">
+                <div class="nav-title">Top 100 Applicants <span class="badge">Rankings</span></div>
+                <div class="nav-description">
+                    Ranked analysis of the most active permit applicants including total permits, construction values, average processing times, and specialization patterns.
+                </div>
+            </a>
+
+            <a href="reports/use_case_analysis.csv" class="nav-card">
+                <div class="nav-title">Raw Data Export <span class="badge">CSV</span></div>
+                <div class="nav-description">
+                    Complete dataset export with use case categorizations, permit details, and classification results for further analysis and custom reporting.
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p><strong>Data Source:</strong> Minneapolis Community Planning & Economic Development (CPED)</p>
+            <p><strong>Last Updated:</strong> July 25, 2025</p>
+            <p><strong>Analysis Period:</strong> Complete permit database through 2025</p>
+        </div>
+    </div>
+</body>
+</html>

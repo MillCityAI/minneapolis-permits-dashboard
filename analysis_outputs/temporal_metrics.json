@@ -1,0 +1,144 @@
+{
+  "monthly_seasonality": [
+    {
+      "month_name": "January",
+      "avg_permits": 32014,
+      "seasonal_index": 107.21934909475553
+    },
+    {
+      "month_name": "February",
+      "avg_permits": 28586,
+      "seasonal_index": 95.73849919481107
+    },
+    {
+      "month_name": "March",
+      "avg_permits": 31683,
+      "seasonal_index": 106.11078394980757
+    },
+    {
+      "month_name": "April",
+      "avg_permits": 30486,
+      "seasonal_index": 102.101864075177
+    },
+    {
+      "month_name": "May",
+      "avg_permits": 32342,
+      "seasonal_index": 108.31786682147133
+    },
+    {
+      "month_name": "June",
+      "avg_permits": 29662,
+      "seasonal_index": 99.34217320074463
+    },
+    {
+      "month_name": "July",
+      "avg_permits": 29033,
+      "seasonal_index": 97.23556451140243
+    },
+    {
+      "month_name": "August",
+      "avg_permits": 27377,
+      "seasonal_index": 91.68938964725189
+    },
+    {
+      "month_name": "September",
+      "avg_permits": 29577,
+      "seasonal_index": 99.0574963508335
+    },
+    {
+      "month_name": "October",
+      "avg_permits": 34109,
+      "seasonal_index": 114.23579616021166
+    },
+    {
+      "month_name": "November",
+      "avg_permits": 26755,
+      "seasonal_index": 89.60622493378472
+    },
+    {
+      "month_name": "December",
+      "avg_permits": 26677,
+      "seasonal_index": 89.34499205974863
+    }
+  ],
+  "day_of_week": {
+    "Monday": 69439,
+    "Tuesday": 82696,
+    "Wednesday": 53345,
+    "Thursday": 87184,
+    "Friday": 61592,
+    "Saturday": 1955,
+    "Sunday": 2090
+  },
+  "annual_growth": [
+    {
+      "year": 2016,
+      "permits": 2587,
+      "yoy_growth": NaN
+    },
+    {
+      "year": 2017,
+      "permits": 42711,
+      "yoy_growth": 1550.985697719366
+    },
+    {
+      "year": 2018,
+      "permits": 40211,
+      "yoy_growth": -5.853293062677068
+    },
+    {
+      "year": 2019,
+      "permits": 42905,
+      "yoy_growth": 6.699659297207239
+    },
+    {
+      "year": 2020,
+      "permits": 40931,
+      "yoy_growth": -4.600862370353109
+    },
+    {
+      "year": 2021,
+      "permits": 40409,
+      "yoy_growth": -1.2753169968972133
+    },
+    {
+      "year": 2022,
+      "permits": 39363,
+      "yoy_growth": -2.588532257665377
+    },
+    {
+      "year": 2023,
+      "permits": 47069,
+      "yoy_growth": 19.576759901430286
+    },
+    {
+      "year": 2024,
+      "permits": 47026,
+      "yoy_growth": -0.09135524442839271
+    },
+    {
+      "year": 2025,
+      "permits": 15089,
+      "yoy_growth": -67.91349466252711
+    }
+  ],
+  "cagr": 21.645487533101605,
+  "recent_trend": {
+    "slope": 0.4476025846812363,
+    "direction": "Increasing"
+  },
+  "summary": {
+    "busiest_months": [
+      "October",
+      "May",
+      "January"
+    ],
+    "slowest_months": [
+      "December",
+      "November",
+      "August"
+    ],
+    "business_day_pct": 98.87106092363683,
+    "total_permits": 358301
+  }
+}

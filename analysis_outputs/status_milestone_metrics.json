@@ -1,0 +1,269 @@
+{
+  "status_distribution": {
+    "Closed": 317237,
+    "Issued": 25041,
+    "Open": 8795,
+    "Cancelled": 7216,
+    "Stop Work": 5,
+    "Withdrawn": 4,
+    "Void": 2,
+    "In Process": 1
+  },
+  "milestone_distribution": {
+    "Closed": 318526,
+    "Inspection": 21682,
+    "Final Inspection": 12125,
+    "Cancelled": 5931,
+    "Hole Inspection": 32,
+    "Inspections": 2,
+    "Fees": 1,
+    "Applicant Resubmit": 1,
+    "Applicant Resubmit - No ePlan": 1
+  },
+  "processing_time": {
+    "closed_permits": 317204,
+    "avg_days": 313.3099015144828,
+    "median_days": 143.0,
+    "distribution": {
+      ">1 year": 98062,
+      "1-3 months": 64069,
+      "1-4 weeks": 47811,
+      "3-6 months": 47679,
+      "6-12 months": 44111,
+      "<1 week": 14260
+    }
+  },
+  "bottlenecks": {
+    "long_open_permits": 10995,
+    "avg_days_open": 662.1343337880855,
+    "by_type": {
+      "Plumbing": 5728,
+      "Mechanical": 3215,
+      "Commercial": 2024,
+      "Wrecking": 26,
+      "Site": 2
+    }
+  },
+  "seasonal_patterns": {
+    "monthly_cancellation_rates": {
+      "1": 1.3743987005685012,
+      "2": 1.2313720002798572,
+      "3": 2.3293248745383957,
+      "4": 1.7778652496227776,
+      "5": 1.6974831488467008,
+      "6": 1.77668397275976,
+      "7": 2.66248751420797,
+      "8": 2.019943748401943,
+      "9": 1.9914122460019608,
+      "10": 1.9965405025066698,
+      "11": 2.7658381610913847,
+      "12": 2.7439367245192487
+    }
+  },
+  "contractor_performance": {
+    "top_completion": {
+      "LS BLACK CONSTRUCTORS INC": {
+        "closed_count": 357,
+        "total_count": 357,
+        "completion_rate": 100.0
+      },
+      "SCHOENFELDER PAINTING": {
+        "closed_count": 130,
+        "total_count": 130,
+        "completion_rate": 100.0
+      },
+      "Ryan Companies US, Inc": {
+        "closed_count": 103,
+        "total_count": 103,
+        "completion_rate": 100.0
+      },
+      "JOSEPH ALAN UHLHORN": {
+        "closed_count": 511,
+        "total_count": 511,
+        "completion_rate": 100.0
+      },
+      "RESTORATION SYSTEMS": {
+        "closed_count": 137,
+        "total_count": 137,
+        "completion_rate": 100.0
+      },
+      "CLARK REMODELING LLC": {
+        "closed_count": 101,
+        "total_count": 101,
+        "completion_rate": 100.0
+      },
+      "S AND B PLUMBING LLC": {
+        "closed_count": 180,
+        "total_count": 180,
+        "completion_rate": 100.0
+      },
+      "LACY MECHANICAL LLC": {
+        "closed_count": 123,
+        "total_count": 123,
+        "completion_rate": 100.0
+      },
+      "ANDERSON'S RESIDENTIAL HEATING AND A / C INC": {
+        "closed_count": 115,
+        "total_count": 115,
+        "completion_rate": 100.0
+      },
+      "MOORHEAD MACHINERY AND BOILER CO": {
+        "closed_count": 910,
+        "total_count": 910,
+        "completion_rate": 100.0
+      },
+      "Engineered Supply": {
+        "closed_count": 205,
+        "total_count": 205,
+        "completion_rate": 100.0
+      },
+      "Riverdale Ventures Legacy LLC": {
+        "closed_count": 383,
+        "total_count": 383,
+        "completion_rate": 100.0
+      },
+      "Becketwood Coop": {
+        "closed_count": 169,
+        "total_count": 169,
+        "completion_rate": 100.0
+      },
+      "JAYHAWK MECHANICAL INC": {
+        "closed_count": 200,
+        "total_count": 200,
+        "completion_rate": 100.0
+      },
+      "Nordic Services Inc": {
+        "closed_count": 175,
+        "total_count": 175,
+        "completion_rate": 100.0
+      },
+      "VANMAN ARCHITECTS AND BUILDERS": {
+        "closed_count": 170,
+        "total_count": 170,
+        "completion_rate": 100.0
+      },
+      "Noah Acquistions LLC": {
+        "closed_count": 253,
+        "total_count": 253,
+        "completion_rate": 100.0
+      },
+      "BLACK AND VEATCH CORP / OVERLAND CONTRACTING INC": {
+        "closed_count": 220,
+        "total_count": 220,
+        "completion_rate": 100.0
+      },
+      "NICHOLAS S DRIGANS": {
+        "closed_count": 220,
+        "total_count": 220,
+        "completion_rate": 100.0
+      },
+      "Gilbert Mechanical Contractors Inc": {
+        "closed_count": 1834,
+        "total_count": 1836,
+        "completion_rate": 99.89106753812636
+      }
+    },
+    "bottom_completion": {
+      "DBS RESIDENTIAL SOLUTIONS INC": {
+        "closed_count": 121,
+        "total_count": 191,
+        "completion_rate": 63.35078534031413
+      },
+      "Admiral Radon & Mechanical Services LLC": {
+        "closed_count": 244,
+        "total_count": 422,
+        "completion_rate": 57.81990521327014
+      },
+      "Vector Services LLC": {
+        "closed_count": 73,
+        "total_count": 132,
+        "completion_rate": 55.3030303030303
+      },
+      "Hoffmann and Uhlhorn Construction": {
+        "closed_count": 556,
+        "total_count": 1066,
+        "completion_rate": 52.15759849906192
+      },
+      "McQuillan Home Services LLC": {
+        "closed_count": 95,
+        "total_count": 214,
+        "completion_rate": 44.39252336448598
+      },
+      "Harris St Paul Inc": {
+        "closed_count": 166,
+        "total_count": 386,
+        "completion_rate": 43.005181347150256
+      },
+      "CRAFT MASTERS REMODELING INC": {
+        "closed_count": 76,
+        "total_count": 177,
+        "completion_rate": 42.93785310734463
+      },
+      "QUALITY TRUSTED COMMERCIAL CONSTRUCTION & ROOFING": {
+        "closed_count": 50,
+        "total_count": 120,
+        "completion_rate": 41.66666666666667
+      },
+      "RIVERVIEW WINDOW INC": {
+        "closed_count": 73,
+        "total_count": 183,
+        "completion_rate": 39.89071038251366
+      },
+      "Professional Mechanical Services LLC": {
+        "closed_count": 133,
+        "total_count": 346,
+        "completion_rate": 38.4393063583815
+      },
+      "KGI WIRELESS": {
+        "closed_count": 212,
+        "total_count": 620,
+        "completion_rate": 34.193548387096776
+      },
+      "Four Brothers Construction LLC": {
+        "closed_count": 37,
+        "total_count": 115,
+        "completion_rate": 32.17391304347826
+      },
+      "Tundraland Home Improvements": {
+        "closed_count": 39,
+        "total_count": 130,
+        "completion_rate": 30.0
+      },
+      "Rusco Kitchen Remodelers": {
+        "closed_count": 30,
+        "total_count": 114,
+        "completion_rate": 26.31578947368421
+      },
+      "24 RESTORE": {
+        "closed_count": 38,
+        "total_count": 150,
+        "completion_rate": 25.333333333333336
+      },
+      "PINNACLE ROOFING SYSTEMS": {
+        "closed_count": 46,
+        "total_count": 217,
+        "completion_rate": 21.19815668202765
+      },
+      "Major Mechanical Inc": {
+        "closed_count": 271,
+        "total_count": 1331,
+        "completion_rate": 20.36063110443276
+      },
+      "LOEFFLER CONST AND CONSULTING": {
+        "closed_count": 18,
+        "total_count": 269,
+        "completion_rate": 6.691449814126393
+      },
+      "MasTec Network Solutions": {
+        "closed_count": 6,
+        "total_count": 229,
+        "completion_rate": 2.6200873362445414
+      },
+      "SAC Wireless": {
+        "closed_count": 3,
+        "total_count": 211,
+        "completion_rate": 1.4218009478672986
+      }
+    }
+  }
+}

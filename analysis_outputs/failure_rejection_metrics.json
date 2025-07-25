@@ -1,0 +1,232 @@
+{
+  "overview": {
+    "total_failures": 7227,
+    "failure_rate": 2.01701921010547,
+    "cancelled": 7216,
+    "withdrawn": 4,
+    "void": 2,
+    "stop_work": 5
+  },
+  "cancellation_analysis": {
+    "by_permit_type": {
+      "Res": 2851,
+      "Commercial": 1763,
+      "Plumbing": 1589,
+      "Mechanical": 900,
+      "Wrecking": 99,
+      "Site": 14
+    },
+    "by_work_type": {
+      "Misc": 2133,
+      "Remodel": 1753,
+      "Res": 1183,
+      "ExistRes": 726,
+      "RoofWind": 498,
+      "ComNoFdBv": 264,
+      "Addition": 161,
+      "Comm-MFD": 99,
+      "Private": 89,
+      "ComFdBv": 74,
+      "ComMin": 62,
+      "Accessory": 46,
+      "ComMFDRR": 39,
+      "FootFound": 14,
+      "TempHeat": 13
+    },
+    "timing_distribution": {
+      ">1 year": 1302,
+      "3-6 months": 13,
+      "1-4 weeks": 12,
+      "1-3 months": 12,
+      "6-12 months": 4,
+      "<1 week": 3
+    }
+  },
+  "seasonal_patterns": {
+    "1": {
+      "failures": 441,
+      "total": 32014,
+      "failure_rate": 1.3775223339788842
+    },
+    "2": {
+      "failures": 352,
+      "total": 28586,
+      "failure_rate": 1.2313720002798572
+    },
+    "3": {
+      "failures": 738,
+      "total": 31683,
+      "failure_rate": 2.3293248745383957
+    },
+    "4": {
+      "failures": 542,
+      "total": 30486,
+      "failure_rate": 1.7778652496227776
+    },
+    "5": {
+      "failures": 550,
+      "total": 32342,
+      "failure_rate": 1.7005751035804835
+    },
+    "6": {
+      "failures": 528,
+      "total": 29662,
+      "failure_rate": 1.7800552895961164
+    },
+    "7": {
+      "failures": 773,
+      "total": 29033,
+      "failure_rate": 2.66248751420797
+    },
+    "8": {
+      "failures": 554,
+      "total": 27377,
+      "failure_rate": 2.0235964495744603
+    },
+    "9": {
+      "failures": 589,
+      "total": 29577,
+      "failure_rate": 1.9914122460019608
+    },
+    "10": {
+      "failures": 683,
+      "total": 34109,
+      "failure_rate": 2.0024040575801108
+    },
+    "11": {
+      "failures": 741,
+      "total": 26755,
+      "failure_rate": 2.7695757802279948
+    },
+    "12": {
+      "failures": 736,
+      "total": 26677,
+      "failure_rate": 2.75893091427072
+    }
+  },
+  "high_risk_contractors": {
+    "SAC Wireless": 98.5781990521327,
+    "KGI WIRELESS": 65.80645161290323,
+    "BAC CONSTRUCTION SERVICES LLC": 64.64646464646465,
+    "PINNACLE ROOFING SYSTEMS": 61.29032258064516,
+    "CRAFT MASTERS REMODELING INC": 52.54237288135594,
+    "WELLINGTON HOME IMPROVEMENT": 34.12698412698413,
+    "POWERFULLY GREEN LLC": 22.58064516129032,
+    "SOLCIUS": 22.22222222222222,
+    "RIC INC": 16.666666666666664,
+    "AA Garage Door LLC": 16.0,
+    "LANGERMAN EXTERIORS INC": 15.625,
+    "Berg Exteriors Inc": 14.414414414414415,
+    "Windowlab": 13.23529411764706,
+    "Don & Wayne Excavating LLC": 13.114754098360656,
+    "Bollig and Sons Inc": 12.5
+  },
+  "financial_impact": {
+    "total_fees_lost": 3617529.86,
+    "avg_fee_lost": 506.4440515189696,
+    "total_value_lost": 171101836.6,
+    "avg_value_lost": 35155.50371892336
+  },
+  "work_type_failures": {
+    "Private": {
+      "failures": 89,
+      "total": 850,
+      "failure_rate": 10.470588235294118
+    },
+    "FootFound": {
+      "failures": 14,
+      "total": 192,
+      "failure_rate": 7.291666666666667
+    },
+    "RoofWind": {
+      "failures": 498,
+      "total": 6979,
+      "failure_rate": 7.135692792663706
+    },
+    "Conversion": {
+      "failures": 8,
+      "total": 116,
+      "failure_rate": 6.896551724137931
+    },
+    "Misc": {
+      "failures": 2134,
+      "total": 63930,
+      "failure_rate": 3.3380259659002034
+    },
+    "Remodel": {
+      "failures": 1760,
+      "total": 55700,
+      "failure_rate": 3.1597845601436267
+    },
+    "Addition": {
+      "failures": 161,
+      "total": 6021,
+      "failure_rate": 2.6739744228533464
+    },
+    "Accessory": {
+      "failures": 46,
+      "total": 2891,
+      "failure_rate": 1.5911449325492908
+    },
+    "ComFdBv": {
+      "failures": 74,
+      "total": 5372,
+      "failure_rate": 1.3775130305286671
+    },
+    "ExistRes": {
+      "failures": 726,
+      "total": 53133,
+      "failure_rate": 1.3663824741685957
+    },
+    "ComNoFdBv": {
+      "failures": 264,
+      "total": 23240,
+      "failure_rate": 1.1359724612736661
+    },
+    "Res": {
+      "failures": 1186,
+      "total": 104766,
+      "failure_rate": 1.1320466563579787
+    },
+    "FoodBev": {
+      "failures": 5,
+      "total": 558,
+      "failure_rate": 0.8960573476702508
+    },
+    "TempHeat": {
+      "failures": 13,
+      "total": 1482,
+      "failure_rate": 0.8771929824561403
+    },
+    "Comm-MFD": {
+      "failures": 99,
+      "total": 11761,
+      "failure_rate": 0.8417651560241477
+    },
+    "NewRes": {
+      "failures": 11,
+      "total": 1464,
+      "failure_rate": 0.7513661202185792
+    },
+    "ComMFDRR": {
+      "failures": 39,
+      "total": 5475,
+      "failure_rate": 0.7123287671232876
+    },
+    "New": {
+      "failures": 11,
+      "total": 1621,
+      "failure_rate": 0.6785934608266502
+    },
+    "ComMin": {
+      "failures": 62,
+      "total": 9251,
+      "failure_rate": 0.6701978164522755
+    },
+    "ComMFDNR": {
+      "failures": 12,
+      "total": 2800,
+      "failure_rate": 0.4285714285714286
+    }
+  }
+}

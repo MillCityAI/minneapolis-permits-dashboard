@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Permits - Zoning Buddy Use Case Analysis</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #d32f2f;
+            border-bottom: 3px solid #d32f2f;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .executive-summary {
+            background-color: #ffebee;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #d32f2f;
+        }
+        .key-stat {
+            display: inline-block;
+            background-color: #ffcdd2;
+            padding: 15px 25px;
+            margin: 10px 10px 10px 0;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .key-stat strong {
+            display: block;
+            font-size: 28px;
+            color: #d32f2f;
+        }
+        .user-journey {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #2196f3;
+        }
+        .pain-point {
+            background-color: #f8d7da;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #dc3545;
+        }
+        .zoning-buddy-solution {
+            background-color: #d4edda;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #28a745;
+        }
+        .query-example {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+            border: 1px solid #dee2e6;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .data-table th, .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .data-table th {
+            background-color: #d32f2f;
+            color: white;
+            font-weight: bold;
+        }
+        .source {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Roofing Permits: A Zoning Buddy Success Story</h1>
+        <p style="font-size: 16px; color: #666;">How Natural Language AI Transforms 54,000+ Permit Applications</p>
+        
+        <div class="executive-summary">
+            <h2 style="margin-top: 0; border: none;">Executive Summary</h2>
+            <p>Roofing represents 15.3% of all Minneapolis construction permits, with over 54,000 applications in our dataset. This high-volume, moderate-complexity category perfectly demonstrates Zoning Buddy's core value proposition: transforming technical zoning requirements into plain-English answers that contractors can trust. By focusing on roofing as an initial use case, Zoning Buddy can prove its value with clear metrics while building features that scale to more complex permit types.</p>
+            
+            <div style="margin-top: 20px;">
+                <div class="key-stat">
+                    <strong>54,652</strong>
+                    Roofing Permits
+                </div>
+                <div class="key-stat">
+                    <strong>2-3 hrs</strong>
+                    Research Time
+                </div>
+                <div class="key-stat">
+                    <strong>$180</strong>
+                    License Fee
+                </div>
+                <div class="key-stat">
+                    <strong>1 week</strong>
+                    Processing
+                </div>
+            </div>
+            <p class="source">Sources: CCS Dataset, MN DLI, City of Minneapolis</p>
+        </div>
+
+        <h2>The Roofing Contractor's Journey: Current State</h2>
+        
+        <div class="pain-point">
+            <h3>Sarah's Story: A Typical Roofing Contractor</h3>
+            <p>Sarah runs a 5-person roofing company. For each new project, she must:</p>
+            <ol>
+                <li><strong>Check Zoning (30 min):</strong> Navigate city website to find property's zoning classification</li>
+                <li><strong>Research Requirements (60 min):</strong> Read through code to understand height limits, materials</li>
+                <li><strong>Historic Check (45 min):</strong> Determine if property is in historic/conservation district</li>
+                <li><strong>Document Prep (45 min):</strong> Gather owner info, create work description, find old permits</li>
+                <li><strong>Submit & Wait (1 week):</strong> Hope nothing was missed that causes rejection</li>
+            </ol>
+            <p><strong>Total:</strong> 3 hours per permit × 50 permits/year = 150 hours = $7,500 in overhead</p>
+        </div>
+
+        <h2>Natural Language Queries: The Zoning Buddy Way</h2>
+        
+        <div class="zoning-buddy-solution">
+            <h3>Aligned with PRD Vision: "Ask in Plain English"</h3>
+            
+            <div class="query-example">
+                <strong>Contractor asks:</strong> "Can I reroof 2419 Lyndale Ave S with architectural shingles?"
+            </div>
+            
+            <div class="query-example" style="background-color: #e8f5e9;">
+                <strong>Zoning Buddy responds:</strong><br>
+                ✓ Yes, you can reroof this property with architectural shingles.<br><br>
+                
+                <strong>Property Details:</strong><br>
+                • Zone: R2B (Two-family district)<br>
+                • Historic: Not in historic district ✓<br>
+                • Height Limit: 2.5 stories (current structure complies)<br><br>
+                
+                <strong>Requirements:</strong><br>
+                • Building permit required<br>
+                • Licensed roofing contractor must apply<br>
+                • Final inspection needed when complete<br><br>
+                
+                <strong>Approved Materials:</strong><br>
+                • Architectural shingles ✓<br>
+                • 3-tab shingles ✓<br>
+                • Metal roofing ✓<br><br>
+                
+                <strong>Next Steps:</strong><br>
+                1. Verify your MN roofing license is current<br>
+                2. <a href="#">Start permit application</a><br>
+                3. Fee estimate: $255-500<br><br>
+                
+                <em>Confidence: 95% | Sources: Minneapolis Code §530.120, R2B District Standards</em>
+            </div>
+        </div>
+
+        <h2>Feature Mapping to PRD Tenets</h2>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>PRD Tenet</th>
+                    <th>Roofing Implementation</th>
+                    <th>User Benefit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Minimize User Effort</strong></td>
+                    <td>Single address input retrieves all requirements</td>
+                    <td>3 hours → 5 minutes</td>
+                </tr>
+                <tr>
+                    <td><strong>Users Not Technical</strong></td>
+                    <td>Plain English Q&A, no code knowledge needed</td>
+                    <td>Any crew member can check</td>
+                </tr>
+                <tr>
+                    <td><strong>Correctness Over Speed</strong></td>
+                    <td>Multi-source validation, confidence scores</td>
+                    <td>Trust in accuracy</td>
+                </tr>
+                <tr>
+                    <td><strong>Transparent Interaction</strong></td>
+                    <td>Shows exact code citations, what's uncertain</td>
+                    <td>Verify if needed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Common Roofing Queries (Natural Language)</h2>
+        
+        <div class="user-journey">
+            <h3>Real Questions from Contractors</h3>
+            <ul>
+                <li>"Is this address in a historic district?"</li>
+                <li>"What roofing materials are allowed in Lowry Hill?"</li>
+                <li>"Do I need a permit to repair 10 square feet?"</li>
+                <li>"Can I add a second layer of shingles?"</li>
+                <li>"What's the max height for a new roof?"</li>
+                <li>"Are solar panels allowed with a reroof permit?"</li>
+                <li>"Do I need special requirements near the lakes?"</li>
+                <li>"What inspections are required?"</li>
+            </ul>
+            
+            <p><strong>Key Insight:</strong> Contractors don't ask "What does Section 530.120 say?" They ask practical questions in their own words.</p>
+        </div>
+
+        <h2>MVP Features for Roofing (Phase 1)</h2>
+        
+        <div class="zoning-buddy-solution">
+            <h3>Core Functionality - Weeks 1-10</h3>
+            
+            <h4>1. Address Intelligence</h4>
+            <ul>
+                <li>Input: Street address</li>
+                <li>Output: Zoning, overlays, restrictions</li>
+                <li>Data: Integrate city GIS layers</li>
+            </ul>
+            
+            <h4>2. Material Compliance Checker</h4>
+            <ul>
+                <li>Database of approved materials by zone</li>
+                <li>Special rules for historic districts</li>
+                <li>Visual examples of compliant options</li>
+            </ul>
+            
+            <h4>3. Permit Requirement Engine</h4>
+            <ul>
+                <li>When permits are needed (vs. repairs)</li>
+                <li>Who can apply (owner vs. contractor)</li>
+                <li>Required documentation checklist</li>
+            </ul>
+            
+            <h4>4. Citation System</h4>
+            <ul>
+                <li>Every answer links to code section</li>
+                <li>Version tracking for code updates</li>
+                <li>"Last updated" timestamps</li>
+            </ul>
+        </div>
+
+        <h2>Success Metrics for Roofing</h2>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Current Baseline</th>
+                    <th>3-Month Target</th>
+                    <th>1-Year Target</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Research Time per Permit</td>
+                    <td>2-3 hours</td>
+                    <td>30 minutes</td>
+                    <td>5 minutes</td>
+                </tr>
+                <tr>
+                    <td>First-Time Approval Rate</td>
+                    <td>Unknown (est. 75%)</td>
+                    <td>85%</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>Contractor Adoption</td>
+                    <td>0</td>
+                    <td>50 companies</td>
+                    <td>200 companies</td>
+                </tr>
+                <tr>
+                    <td>Queries per Month</td>
+                    <td>0</td>
+                    <td>500</td>
+                    <td>5,000</td>
+                </tr>
+                <tr>
+                    <td>User Confidence</td>
+                    <td>N/A</td>
+                    <td>80% trust score</td>
+                    <td>95% trust score</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Roofing-Specific Challenges & Solutions</h2>
+        
+        <div class="pain-point">
+            <h3>Challenge: Storm Damage Surge</h3>
+            <p>After hail storms, permit applications can spike 300% in days</p>
+        </div>
+        
+        <div class="zoning-buddy-solution">
+            <h3>Solution: Bulk Query Mode</h3>
+            <ul>
+                <li>Upload multiple addresses via CSV</li>
+                <li>Batch process requirements</li>
+                <li>Generate permit packages for each</li>
+                <li>Flag any special requirements</li>
+            </ul>
+        </div>
+
+        <div class="pain-point">
+            <h3>Challenge: Historic Districts</h3>
+            <p>11 historic districts + 45 conservation districts = complex rules</p>
+        </div>
+        
+        <div class="zoning-buddy-solution">
+            <h3>Solution: Visual Guidance</h3>
+            <ul>
+                <li>Photo examples of approved materials</li>
+                <li>Color palettes by district</li>
+                <li>Direct link to preservation staff</li>
+                <li>Previous approvals database</li>
+            </ul>
+        </div>
+
+        <h2>Building Trust Through Transparency</h2>
+        
+        <div class="user-journey">
+            <h3>How Zoning Buddy Builds Contractor Confidence</h3>
+            
+            <h4>1. Clear Confidence Scores</h4>
+            <p>✓ High Confidence (95%): "Standard shingles allowed in R2B zone"<br>
+            ⚠ Medium Confidence (70%): "Solar panels likely allowed, verify with inspector"<br>
+            ✗ Low Confidence (40%): "Unique situation - recommend calling city"</p>
+            
+            <h4>2. Source Attribution</h4>
+            <p>Every answer shows:<br>
+            • Specific code sections referenced<br>
+            • Date code was last updated<br>
+            • Link to full text</p>
+            
+            <h4>3. Fallback Options</h4>
+            <p>When uncertain:<br>
+            • Flags what needs human review<br>
+            • Provides relevant staff contact<br>
+            • Suggests similar approved projects</p>
+        </div>
+
+        <h2>Revenue Model for Roofing Segment</h2>
+        
+        <div class="zoning-buddy-solution">
+            <h3>Pricing Strategy Based on Value</h3>
+            
+            <h4>Time Savings Value</h4>
+            <ul>
+                <li>3 hours saved × $50/hour = $150 per permit</li>
+                <li>50 permits/year = $7,500 annual value</li>
+                <li>Subscription price: $75/month = $900/year</li>
+                <li><strong>ROI: 8.3x for average contractor</strong></li>
+            </ul>
+            
+            <h4>Market Size</h4>
+            <ul>
+                <li>~500 active roofing contractors in Minneapolis area</li>
+                <li>50% adoption = 250 subscribers</li>
+                <li>$75 × 250 × 12 = $225,000 annual revenue</li>
+                <li>Roofing alone justifies MVP development</li>
+            </ul>
+        </div>
+
+        <h2>Implementation Roadmap</h2>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Focus</th>
+                    <th>Deliverable</th>
+                    <th>Success Criteria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1-2</td>
+                    <td>Data Ingestion</td>
+                    <td>Roofing codes in database</td>
+                    <td>100% code coverage</td>
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td>Address Resolution</td>
+                    <td>Address → Zone lookup</td>
+                    <td>95% accuracy</td>
+                </tr>
+                <tr>
+                    <td>5-6</td>
+                    <td>Query Engine</td>
+                    <td>Natural language processing</td>
+                    <td>10 test queries work</td>
+                </tr>
+                <tr>
+                    <td>7-8</td>
+                    <td>UI Development</td>
+                    <td>Mobile-friendly interface</td>
+                    <td>5-second response</td>
+                </tr>
+                <tr>
+                    <td>9-10</td>
+                    <td>Testing & Launch</td>
+                    <td>Beta with 10 contractors</td>
+                    <td>80% satisfaction</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Why Roofing First?</h2>
+        
+        <div class="zoning-buddy-solution">
+            <h3>Strategic Advantages</h3>
+            <ol>
+                <li><strong>High Volume:</strong> 54,000+ permits prove market need</li>
+                <li><strong>Clear Rules:</strong> Roofing codes are well-defined</li>
+                <li><strong>Measurable Impact:</strong> Time savings easily tracked</li>
+                <li><strong>Revenue Potential:</strong> Contractors willing to pay for efficiency</li>
+                <li><strong>Scalable Features:</strong> Address lookup, materials database useful for all permits</li>
+                <li><strong>Trust Building:</strong> Success with roofing opens doors to complex permits</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>Roofing permits demonstrate Zoning Buddy's core value proposition: transforming complex regulations into trusted, actionable answers. By starting with this high-volume, moderate-complexity use case, we can prove the concept, generate revenue, and build features that scale to serve all permit types.</p>
+            <p>Data Sources: CCS Dataset Analysis, City of Minneapolis, MN DLI | Analysis Date: January 2025</p>
+        </div>
+    </div>
+</body>
+</html>

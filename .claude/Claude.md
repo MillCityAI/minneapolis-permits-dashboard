@@ -1,0 +1,1 @@
+- Activate the conda environment mcai_env on open

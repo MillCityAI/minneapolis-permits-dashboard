@@ -1,0 +1,1360 @@
+{
+  "metadata": {
+    "analysis_date": "2025-07-24T13:22:28.805609",
+    "source_file": "CCS_Permits.csv",
+    "total_records": 143220,
+    "date_range": {
+      "start": "2016-12-01 10:35:24+00:00",
+      "end": "2025-06-09 20:56:48+00:00"
+    }
+  },
+  "summary_metrics": {
+    "volume": {
+      "total_permits": 143220,
+      "monthly_average": 1390.485436893204,
+      "yearly_average": 14322.0,
+      "growth_trend": -1.6788648244958775
+    },
+    "processing": {
+      "mean_days": 333.18805368291584,
+      "median_days": 196.0,
+      "p90_days": 870.0,
+      "within_30_days_pct": 18.150679599557833
+    },
+    "financial": {
+      "total_value": 46705.0,
+      "mean_value": 5838.125,
+      "median_value": 4000.0,
+      "total_fees": 29465524.12
+    },
+    "quality": {
+      "cancellation_rate": 1.109481915933529,
+      "emergency_rate": 0.20388213936601032,
+      "data_completeness": 98.05753386398548
+    }
+  },
+  "time_series": {
+    "monthly": [
+      {
+        "month": "2016-12-31 00:00:00+00:00",
+        "count": 1112,
+        "avg_value": 0.0,
+        "avg_processing": 391.887537993921
+      },
+      {
+        "month": "2017-01-31 00:00:00+00:00",
+        "count": 3959,
+        "avg_value": 0.0,
+        "avg_processing": 368.1941251596424
+      },
+      {
+        "month": "2017-02-28 00:00:00+00:00",
+        "count": 1396,
+        "avg_value": 0.0,
+        "avg_processing": 407.7282530553559
+      },
+      {
+        "month": "2017-03-31 00:00:00+00:00",
+        "count": 2397,
+        "avg_value": 0.0,
+        "avg_processing": 661.0598827470686
+      },
+      {
+        "month": "2017-04-30 00:00:00+00:00",
+        "count": 862,
+        "avg_value": 0.0,
+        "avg_processing": 347.2710280373832
+      },
+      {
+        "month": "2017-05-31 00:00:00+00:00",
+        "count": 1104,
+        "avg_value": 0.0,
+        "avg_processing": 360.5332725615315
+      },
+      {
+        "month": "2017-06-30 00:00:00+00:00",
+        "count": 963,
+        "avg_value": 0.0,
+        "avg_processing": 384.1372340425532
+      },
+      {
+        "month": "2017-07-31 00:00:00+00:00",
+        "count": 898,
+        "avg_value": 0.0,
+        "avg_processing": 390.83541430192963
+      },
+      {
+        "month": "2017-08-31 00:00:00+00:00",
+        "count": 1599,
+        "avg_value": 0.0,
+        "avg_processing": 574.2703213610586
+      },
+      {
+        "month": "2017-09-30 00:00:00+00:00",
+        "count": 1201,
+        "avg_value": 0.0,
+        "avg_processing": 666.3086003372681
+      },
+      {
+        "month": "2017-10-31 00:00:00+00:00",
+        "count": 1247,
+        "avg_value": 0.0,
+        "avg_processing": 495.27957860615885
+      },
+      {
+        "month": "2017-11-30 00:00:00+00:00",
+        "count": 1073,
+        "avg_value": 0.0,
+        "avg_processing": 339.9085768143261
+      },
+      {
+        "month": "2017-12-31 00:00:00+00:00",
+        "count": 2489,
+        "avg_value": 0.0,
+        "avg_processing": 297.662489894907
+      },
+      {
+        "month": "2018-01-31 00:00:00+00:00",
+        "count": 1309,
+        "avg_value": 0.0,
+        "avg_processing": 335.5574272588055
+      },
+      {
+        "month": "2018-02-28 00:00:00+00:00",
+        "count": 861,
+        "avg_value": 0.0,
+        "avg_processing": 377.4877192982456
+      },
+      {
+        "month": "2018-03-31 00:00:00+00:00",
+        "count": 1306,
+        "avg_value": 0.0,
+        "avg_processing": 302.10611928737416
+      },
+      {
+        "month": "2018-04-30 00:00:00+00:00",
+        "count": 2637,
+        "avg_value": 0.0,
+        "avg_processing": 259.46778497903165
+      },
+      {
+        "month": "2018-05-31 00:00:00+00:00",
+        "count": 1072,
+        "avg_value": 0.0,
+        "avg_processing": 336.16351606805296
+      },
+      {
+        "month": "2018-06-30 00:00:00+00:00",
+        "count": 913,
+        "avg_value": 0.0,
+        "avg_processing": 324.0632630410655
+      },
+      {
+        "month": "2018-07-31 00:00:00+00:00",
+        "count": 1026,
+        "avg_value": 0.0,
+        "avg_processing": 359.921
+      },
+      {
+        "month": "2018-08-31 00:00:00+00:00",
+        "count": 1055,
+        "avg_value": 0.0,
+        "avg_processing": 391.1731141199226
+      },
+      {
+        "month": "2018-09-30 00:00:00+00:00",
+        "count": 1036,
+        "avg_value": 0.0,
+        "avg_processing": 372.2497522299306
+      },
+      {
+        "month": "2018-10-31 00:00:00+00:00",
+        "count": 1427,
+        "avg_value": 0.0,
+        "avg_processing": 409.97562724014335
+      },
+      {
+        "month": "2018-11-30 00:00:00+00:00",
+        "count": 1227,
+        "avg_value": 0.0,
+        "avg_processing": 401.6661087866109
+      },
+      {
+        "month": "2018-12-31 00:00:00+00:00",
+        "count": 1355,
+        "avg_value": 0.0,
+        "avg_processing": 349.38880484114975
+      },
+      {
+        "month": "2019-01-31 00:00:00+00:00",
+        "count": 2602,
+        "avg_value": 0.0,
+        "avg_processing": 315.9449433814916
+      },
+      {
+        "month": "2019-02-28 00:00:00+00:00",
+        "count": 882,
+        "avg_value": 0.0,
+        "avg_processing": 331.7395348837209
+      },
+      {
+        "month": "2019-03-31 00:00:00+00:00",
+        "count": 2519,
+        "avg_value": 0.0,
+        "avg_processing": 436.79470763977804
+      },
+      {
+        "month": "2019-04-30 00:00:00+00:00",
+        "count": 1035,
+        "avg_value": 0.0,
+        "avg_processing": 337.20510304219823
+      },
+      {
+        "month": "2019-05-31 00:00:00+00:00",
+        "count": 1067,
+        "avg_value": 0.0,
+        "avg_processing": 336.0763358778626
+      },
+      {
+        "month": "2019-06-30 00:00:00+00:00",
+        "count": 1093,
+        "avg_value": 0.0,
+        "avg_processing": 291.4760112888053
+      },
+      {
+        "month": "2019-07-31 00:00:00+00:00",
+        "count": 1279,
+        "avg_value": 1.6106333072713057,
+        "avg_processing": 342.6781150159744
+      },
+      {
+        "month": "2019-08-31 00:00:00+00:00",
+        "count": 1329,
+        "avg_value": 0.0,
+        "avg_processing": 384.422153369481
+      },
+      {
+        "month": "2019-09-30 00:00:00+00:00",
+        "count": 1388,
+        "avg_value": 0.0,
+        "avg_processing": 364.3847858197932
+      },
+      {
+        "month": "2019-10-31 00:00:00+00:00",
+        "count": 1206,
+        "avg_value": 0.0,
+        "avg_processing": 324.56789069171646
+      },
+      {
+        "month": "2019-11-30 00:00:00+00:00",
+        "count": 966,
+        "avg_value": 0.0,
+        "avg_processing": 367.6517094017094
+      },
+      {
+        "month": "2019-12-31 00:00:00+00:00",
+        "count": 1502,
+        "avg_value": 0.0,
+        "avg_processing": 455.96526386105546
+      },
+      {
+        "month": "2020-01-31 00:00:00+00:00",
+        "count": 1557,
+        "avg_value": 0.0,
+        "avg_processing": 319.6487012987013
+      },
+      {
+        "month": "2020-02-29 00:00:00+00:00",
+        "count": 4909,
+        "avg_value": 0.0,
+        "avg_processing": 372.2480130425922
+      },
+      {
+        "month": "2020-03-31 00:00:00+00:00",
+        "count": 963,
+        "avg_value": 0.0,
+        "avg_processing": 411.9695697796432
+      },
+      {
+        "month": "2020-04-30 00:00:00+00:00",
+        "count": 687,
+        "avg_value": 0.0,
+        "avg_processing": 407.79502196193266
+      },
+      {
+        "month": "2020-05-31 00:00:00+00:00",
+        "count": 640,
+        "avg_value": 0.0,
+        "avg_processing": 407.9341692789969
+      },
+      {
+        "month": "2020-06-30 00:00:00+00:00",
+        "count": 1659,
+        "avg_value": 0.0,
+        "avg_processing": 419.96894031668694
+      },
+      {
+        "month": "2020-07-31 00:00:00+00:00",
+        "count": 1030,
+        "avg_value": 1.941747572815534,
+        "avg_processing": 328.9784735812133
+      },
+      {
+        "month": "2020-08-31 00:00:00+00:00",
+        "count": 884,
+        "avg_value": 0.0,
+        "avg_processing": 346.4770642201835
+      },
+      {
+        "month": "2020-09-30 00:00:00+00:00",
+        "count": 1831,
+        "avg_value": 14.530311305297651,
+        "avg_processing": 500.14552443712245
+      },
+      {
+        "month": "2020-10-31 00:00:00+00:00",
+        "count": 1056,
+        "avg_value": 0.0,
+        "avg_processing": 329.9790076335878
+      },
+      {
+        "month": "2020-11-30 00:00:00+00:00",
+        "count": 1478,
+        "avg_value": 0.0,
+        "avg_processing": 438.91593220338984
+      },
+      {
+        "month": "2020-12-31 00:00:00+00:00",
+        "count": 983,
+        "avg_value": 0.0,
+        "avg_processing": 353.86082474226805
+      },
+      {
+        "month": "2021-01-31 00:00:00+00:00",
+        "count": 932,
+        "avg_value": 0.0,
+        "avg_processing": 340.7684782608696
+      },
+      {
+        "month": "2021-02-28 00:00:00+00:00",
+        "count": 1386,
+        "avg_value": 0.0,
+        "avg_processing": 382.0021707670043
+      },
+      {
+        "month": "2021-03-31 00:00:00+00:00",
+        "count": 2275,
+        "avg_value": 0.0,
+        "avg_processing": 383.15677590788306
+      },
+      {
+        "month": "2021-04-30 00:00:00+00:00",
+        "count": 1036,
+        "avg_value": 0.0,
+        "avg_processing": 352.74368932038834
+      },
+      {
+        "month": "2021-05-31 00:00:00+00:00",
+        "count": 1174,
+        "avg_value": 0.0,
+        "avg_processing": 282.8467465753425
+      },
+      {
+        "month": "2021-06-30 00:00:00+00:00",
+        "count": 979,
+        "avg_value": 0.0,
+        "avg_processing": 355.96800825593397
+      },
+      {
+        "month": "2021-07-31 00:00:00+00:00",
+        "count": 1407,
+        "avg_value": 7.107320540156361,
+        "avg_processing": 287.14295977011494
+      },
+      {
+        "month": "2021-08-31 00:00:00+00:00",
+        "count": 826,
+        "avg_value": 0.0,
+        "avg_processing": 379.26781326781327
+      },
+      {
+        "month": "2021-09-30 00:00:00+00:00",
+        "count": 1207,
+        "avg_value": 0.0,
+        "avg_processing": 360.0294860994103
+      },
+      {
+        "month": "2021-10-31 00:00:00+00:00",
+        "count": 1367,
+        "avg_value": 0.0,
+        "avg_processing": 254.7726586102719
+      },
+      {
+        "month": "2021-11-30 00:00:00+00:00",
+        "count": 748,
+        "avg_value": 0.053475935828877004,
+        "avg_processing": 304.875350140056
+      },
+      {
+        "month": "2021-12-31 00:00:00+00:00",
+        "count": 1064,
+        "avg_value": 5.639097744360902,
+        "avg_processing": 468.4502032520325
+      },
+      {
+        "month": "2022-01-31 00:00:00+00:00",
+        "count": 866,
+        "avg_value": 0.0,
+        "avg_processing": 361.5811138014528
+      },
+      {
+        "month": "2022-02-28 00:00:00+00:00",
+        "count": 1780,
+        "avg_value": 0.0,
+        "avg_processing": 359.7366589327146
+      },
+      {
+        "month": "2022-03-31 00:00:00+00:00",
+        "count": 2074,
+        "avg_value": 0.0,
+        "avg_processing": 363.6286141575274
+      },
+      {
+        "month": "2022-04-30 00:00:00+00:00",
+        "count": 2502,
+        "avg_value": 0.0,
+        "avg_processing": 388.3185876623377
+      },
+      {
+        "month": "2022-05-31 00:00:00+00:00",
+        "count": 2591,
+        "avg_value": 0.0,
+        "avg_processing": 329.77358490566036
+      },
+      {
+        "month": "2022-06-30 00:00:00+00:00",
+        "count": 1011,
+        "avg_value": 0.0,
+        "avg_processing": 457.7448347107438
+      },
+      {
+        "month": "2022-07-31 00:00:00+00:00",
+        "count": 1049,
+        "avg_value": 0.0,
+        "avg_processing": 312.5278350515464
+      },
+      {
+        "month": "2022-08-31 00:00:00+00:00",
+        "count": 870,
+        "avg_value": 0.0,
+        "avg_processing": 304.16290726817044
+      },
+      {
+        "month": "2022-09-30 00:00:00+00:00",
+        "count": 818,
+        "avg_value": 0.0,
+        "avg_processing": 245.34146341463415
+      },
+      {
+        "month": "2022-10-31 00:00:00+00:00",
+        "count": 840,
+        "avg_value": 0.0,
+        "avg_processing": 276.39285714285717
+      },
+      {
+        "month": "2022-11-30 00:00:00+00:00",
+        "count": 682,
+        "avg_value": 0.0,
+        "avg_processing": 223.1413969335605
+      },
+      {
+        "month": "2022-12-31 00:00:00+00:00",
+        "count": 862,
+        "avg_value": 0.0,
+        "avg_processing": 258.021650879567
+      },
+      {
+        "month": "2023-01-31 00:00:00+00:00",
+        "count": 3420,
+        "avg_value": 0.0,
+        "avg_processing": 278.0662231629876
+      },
+      {
+        "month": "2023-02-28 00:00:00+00:00",
+        "count": 1624,
+        "avg_value": 0.0,
+        "avg_processing": 288.75801177240027
+      },
+      {
+        "month": "2023-03-31 00:00:00+00:00",
+        "count": 1799,
+        "avg_value": 0.0,
+        "avg_processing": 267.22558286074354
+      },
+      {
+        "month": "2023-04-30 00:00:00+00:00",
+        "count": 1033,
+        "avg_value": 0.0,
+        "avg_processing": 236.89966555183946
+      },
+      {
+        "month": "2023-05-31 00:00:00+00:00",
+        "count": 857,
+        "avg_value": 0.0,
+        "avg_processing": 222.8695652173913
+      },
+      {
+        "month": "2023-06-30 00:00:00+00:00",
+        "count": 1663,
+        "avg_value": 0.0,
+        "avg_processing": 252.77206851119894
+      },
+      {
+        "month": "2023-07-31 00:00:00+00:00",
+        "count": 1656,
+        "avg_value": 0.0,
+        "avg_processing": 281.14573539288114
+      },
+      {
+        "month": "2023-08-31 00:00:00+00:00",
+        "count": 1683,
+        "avg_value": 0.0,
+        "avg_processing": 362.1142208774584
+      },
+      {
+        "month": "2023-09-30 00:00:00+00:00",
+        "count": 1491,
+        "avg_value": 0.0,
+        "avg_processing": 291.8330508474576
+      },
+      {
+        "month": "2023-10-31 00:00:00+00:00",
+        "count": 2237,
+        "avg_value": 0.0,
+        "avg_processing": 283.28852781880846
+      },
+      {
+        "month": "2023-11-30 00:00:00+00:00",
+        "count": 909,
+        "avg_value": 0.0,
+        "avg_processing": 122.17833333333333
+      },
+      {
+        "month": "2023-12-31 00:00:00+00:00",
+        "count": 659,
+        "avg_value": 0.0,
+        "avg_processing": 128.31223628691984
+      },
+      {
+        "month": "2024-01-31 00:00:00+00:00",
+        "count": 1287,
+        "avg_value": 0.0,
+        "avg_processing": 147.9978700745474
+      },
+      {
+        "month": "2024-02-29 00:00:00+00:00",
+        "count": 2412,
+        "avg_value": 0.0,
+        "avg_processing": 178.04246575342466
+      },
+      {
+        "month": "2024-03-31 00:00:00+00:00",
+        "count": 1225,
+        "avg_value": 0.0,
+        "avg_processing": 161.79538615847542
+      },
+      {
+        "month": "2024-04-30 00:00:00+00:00",
+        "count": 1225,
+        "avg_value": 0.0,
+        "avg_processing": 214.08638211382114
+      },
+      {
+        "month": "2024-05-31 00:00:00+00:00",
+        "count": 873,
+        "avg_value": 0.0,
+        "avg_processing": 106.69656488549619
+      },
+      {
+        "month": "2024-06-30 00:00:00+00:00",
+        "count": 1283,
+        "avg_value": 0.0,
+        "avg_processing": 91.69341563786008
+      },
+      {
+        "month": "2024-07-31 00:00:00+00:00",
+        "count": 1320,
+        "avg_value": 0.0,
+        "avg_processing": 100.0205680705191
+      },
+      {
+        "month": "2024-08-31 00:00:00+00:00",
+        "count": 827,
+        "avg_value": 0.0,
+        "avg_processing": 80.84675834970531
+      },
+      {
+        "month": "2024-09-30 00:00:00+00:00",
+        "count": 829,
+        "avg_value": 0.0,
+        "avg_processing": 63.770161290322584
+      },
+      {
+        "month": "2024-10-31 00:00:00+00:00",
+        "count": 1416,
+        "avg_value": 0.0,
+        "avg_processing": 83.74096385542168
+      },
+      {
+        "month": "2024-11-30 00:00:00+00:00",
+        "count": 2944,
+        "avg_value": 0.0,
+        "avg_processing": 123.7611496531219
+      },
+      {
+        "month": "2024-12-31 00:00:00+00:00",
+        "count": 1738,
+        "avg_value": 0.0,
+        "avg_processing": 94.52464403066813
+      },
+      {
+        "month": "2025-01-31 00:00:00+00:00",
+        "count": 1142,
+        "avg_value": 0.0,
+        "avg_processing": 48.34416826003824
+      },
+      {
+        "month": "2025-02-28 00:00:00+00:00",
+        "count": 829,
+        "avg_value": 0.0,
+        "avg_processing": 31.447300771208226
+      },
+      {
+        "month": "2025-03-31 00:00:00+00:00",
+        "count": 944,
+        "avg_value": 0.0,
+        "avg_processing": 26.77433628318584
+      },
+      {
+        "month": "2025-04-30 00:00:00+00:00",
+        "count": 836,
+        "avg_value": 0.0,
+        "avg_processing": 17.60759493670886
+      },
+      {
+        "month": "2025-05-31 00:00:00+00:00",
+        "count": 2289,
+        "avg_value": 0.0,
+        "avg_processing": 9.706896551724139
+      },
+      {
+        "month": "2025-06-30 00:00:00+00:00",
+        "count": 355,
+        "avg_value": 0.0,
+        "avg_processing": 3.857142857142857
+      }
+    ],
+    "yearly": [
+      {
+        "issueYear": 2016,
+        "permitNumber": 1112,
+        "value": 0.0,
+        "yoy_growth": NaN
+      },
+      {
+        "issueYear": 2017,
+        "permitNumber": 19188,
+        "value": 0.0,
+        "yoy_growth": 1625.5395683453237
+      },
+      {
+        "issueYear": 2018,
+        "permitNumber": 15224,
+        "value": 0.0,
+        "yoy_growth": -20.658745048988948
+      },
+      {
+        "issueYear": 2019,
+        "permitNumber": 16868,
+        "value": 2060.0,
+        "yoy_growth": 10.798738833420906
+      },
+      {
+        "issueYear": 2020,
+        "permitNumber": 17677,
+        "value": 28605.0,
+        "yoy_growth": 4.7960635522883655
+      },
+      {
+        "issueYear": 2021,
+        "permitNumber": 14401,
+        "value": 16040.0,
+        "yoy_growth": -18.532556429258364
+      },
+      {
+        "issueYear": 2022,
+        "permitNumber": 15945,
+        "value": 0.0,
+        "yoy_growth": 10.72147767516145
+      },
+      {
+        "issueYear": 2023,
+        "permitNumber": 19031,
+        "value": 0.0,
+        "yoy_growth": 19.354029476324875
+      },
+      {
+        "issueYear": 2024,
+        "permitNumber": 17379,
+        "value": 0.0,
+        "yoy_growth": -8.680573800641056
+      },
+      {
+        "issueYear": 2025,
+        "permitNumber": 6395,
+        "value": 0.0,
+        "yoy_growth": -63.202715921514475
+      }
+    ],
+    "seasonal_index": {
+      "1": 143.05823209049015,
+      "2": 134.72140762463343,
+      "3": 129.88688730624213,
+      "4": 99.31294511939673,
+      "5": 97.75450356095517,
+      "6": 83.10850439882698,
+      "7": 80.98031001256808,
+      "8": 76.02010892333473,
+      "9": 82.11981566820276,
+      "10": 90.45664013405948,
+      "11": 84.01340594888981,
+      "12": 98.56723921240051
+    }
+  },
+  "categories": {
+    "distribution": {
+      "Other/Unspecified": 44328,
+      "Gas Lines": 28116,
+      "Water Heater": 27892,
+      "Bathroom Fixtures": 16524,
+      "Kitchen Plumbing": 10441,
+      "Drainage/Sewer": 6579,
+      "Miscellaneous": 4273,
+      "Unspecified": 2782,
+      "Water Service": 2273,
+      "Emergency": 12
+    },
+    "subcategories": {}
+  },
+  "geographic": {
+    "top_neighborhoods": [
+      {
+        "Neighborhoods_Desc": "Loring Park",
+        "permitNumber": 9895,
+        "value": 0.0,
+        "processing_days": 468.65494003426613,
+        "status": 17,
+        "cancellation_rate": 0.17180394138453764
+      },
+      {
+        "Neighborhoods_Desc": "Downtown West",
+        "permitNumber": 5790,
+        "value": 0.0,
+        "processing_days": 329.30683989300724,
+        "status": 87,
+        "cancellation_rate": 1.5025906735751295
+      },
+      {
+        "Neighborhoods_Desc": "Nicollet Island - East Bank",
+        "permitNumber": 4390,
+        "value": 1030.0,
+        "processing_days": 330.40679953106684,
+        "status": 54,
+        "cancellation_rate": 1.2300683371298404
+      },
+      {
+        "Neighborhoods_Desc": "Howe",
+        "permitNumber": 3739,
+        "value": 0.0,
+        "processing_days": 279.5670541536717,
+        "status": 11,
+        "cancellation_rate": 0.2941963091735758
+      },
+      {
+        "Neighborhoods_Desc": "Fulton",
+        "permitNumber": 3632,
+        "value": 0.0,
+        "processing_days": 291.1654831738191,
+        "status": 17,
+        "cancellation_rate": 0.46806167400881055
+      },
+      {
+        "Neighborhoods_Desc": "Linden Hills",
+        "permitNumber": 3628,
+        "value": 0.0,
+        "processing_days": 295.9125412541254,
+        "status": 37,
+        "cancellation_rate": 1.0198456449834619
+      },
+      {
+        "Neighborhoods_Desc": "Lynnhurst",
+        "permitNumber": 3593,
+        "value": 0.0,
+        "processing_days": 245.77979924717692,
+        "status": 46,
+        "cancellation_rate": 1.28026718619538
+      },
+      {
+        "Neighborhoods_Desc": "Hiawatha",
+        "permitNumber": 3442,
+        "value": 0.0,
+        "processing_days": 450.05103318722604,
+        "status": 14,
+        "cancellation_rate": 0.40674026728646134
+      },
+      {
+        "Neighborhoods_Desc": "Standish",
+        "permitNumber": 3371,
+        "value": 0.0,
+        "processing_days": 333.75612082670904,
+        "status": 17,
+        "cancellation_rate": 0.5043013942450312
+      },
+      {
+        "Neighborhoods_Desc": "North Loop",
+        "permitNumber": 3149,
+        "value": 0.0,
+        "processing_days": 366.625702247191,
+        "status": 54,
+        "cancellation_rate": 1.714830104795173
+      },
+      {
+        "Neighborhoods_Desc": "Diamond Lake",
+        "permitNumber": 2975,
+        "value": 0.0,
+        "processing_days": 346.952420355813,
+        "status": 16,
+        "cancellation_rate": 0.5378151260504201
+      },
+      {
+        "Neighborhoods_Desc": "King Field",
+        "permitNumber": 2834,
+        "value": 0.0,
+        "processing_days": 361.59035047792446,
+        "status": 18,
+        "cancellation_rate": 0.6351446718419196
+      },
+      {
+        "Neighborhoods_Desc": "Waite Park",
+        "permitNumber": 2766,
+        "value": 0.0,
+        "processing_days": 302.5732657833203,
+        "status": 68,
+        "cancellation_rate": 2.458423716558207
+      },
+      {
+        "Neighborhoods_Desc": "Armatage",
+        "permitNumber": 2667,
+        "value": 0.0,
+        "processing_days": 320.7718177948063,
+        "status": 7,
+        "cancellation_rate": 0.26246719160104987
+      },
+      {
+        "Neighborhoods_Desc": "Powderhorn Park",
+        "permitNumber": 2435,
+        "value": 0.0,
+        "processing_days": 339.7033158813264,
+        "status": 11,
+        "cancellation_rate": 0.4517453798767967
+      },
+      {
+        "Neighborhoods_Desc": "Audubon Park",
+        "permitNumber": 2425,
+        "value": 0.0,
+        "processing_days": 343.3415398388541,
+        "status": 72,
+        "cancellation_rate": 2.9690721649484537
+      },
+      {
+        "Neighborhoods_Desc": "Kenny",
+        "permitNumber": 2330,
+        "value": 0.0,
+        "processing_days": 281.0649411764706,
+        "status": 8,
+        "cancellation_rate": 0.34334763948497854
+      },
+      {
+        "Neighborhoods_Desc": "Victory",
+        "permitNumber": 2280,
+        "value": 0.0,
+        "processing_days": 381.16759002770084,
+        "status": 10,
+        "cancellation_rate": 0.43859649122807015
+      },
+      {
+        "Neighborhoods_Desc": "Willard - Hay",
+        "permitNumber": 2177,
+        "value": 0.0,
+        "processing_days": 295.93617021276594,
+        "status": 15,
+        "cancellation_rate": 0.6890215893431328
+      },
+      {
+        "Neighborhoods_Desc": "Tangletown",
+        "permitNumber": 2142,
+        "value": 0.0,
+        "processing_days": 382.35186129525755,
+        "status": 17,
+        "cancellation_rate": 0.7936507936507936
+      }
+    ],
+    "growth_rates": [
+      {
+        "neighborhood": "Elliot Park",
+        "cagr": 31.049048600380893,
+        "total_permits": 801
+      },
+      {
+        "neighborhood": "East Harriet",
+        "cagr": 31.46182876647019,
+        "total_permits": 1757
+      },
+      {
+        "neighborhood": "Sheridan",
+        "cagr": 34.074924019528055,
+        "total_permits": 582
+      },
+      {
+        "neighborhood": "Jordan",
+        "cagr": 34.352634779398095,
+        "total_permits": 1655
+      },
+      {
+        "neighborhood": "King Field",
+        "cagr": 34.40762977932599,
+        "total_permits": 2834
+      },
+      {
+        "neighborhood": "Morris Park",
+        "cagr": 35.10667516017707,
+        "total_permits": 1749
+      },
+      {
+        "neighborhood": "Diamond Lake",
+        "cagr": 35.390223194152796,
+        "total_permits": 2975
+      },
+      {
+        "neighborhood": "Minnehaha",
+        "cagr": 36.019835160243254,
+        "total_permits": 2137
+      },
+      {
+        "neighborhood": "Midtown Phillips",
+        "cagr": 36.07900001743769,
+        "total_permits": 790
+      },
+      {
+        "neighborhood": "Near - North",
+        "cagr": 36.54506037067089,
+        "total_permits": 891
+      },
+      {
+        "neighborhood": "Powderhorn Park",
+        "cagr": 37.22113621688106,
+        "total_permits": 2435
+      },
+      {
+        "neighborhood": "Ventura Village",
+        "cagr": 38.70232258442192,
+        "total_permits": 560
+      },
+      {
+        "neighborhood": "Hawthorne",
+        "cagr": 39.10321864274033,
+        "total_permits": 741
+      },
+      {
+        "neighborhood": "McKinley",
+        "cagr": 49.80679431428716,
+        "total_permits": 902
+      },
+      {
+        "neighborhood": "Loring Park",
+        "cagr": 52.35554916784542,
+        "total_permits": 9895
+      }
+    ]
+  },
+  "contractors": {
+    "top_20": [
+      {
+        "applicantName": "CenterPoint Energy Resource Corp",
+        "permitNumber": 31231,
+        "processing_days": 323.7238101918423,
+        "value": 0.0,
+        "status": 162,
+        "efficiency_score": 0.30890529782390397
+      },
+      {
+        "applicantName": "Warners Stellian Co Inc",
+        "permitNumber": 12062,
+        "processing_days": 459.56008739985435,
+        "value": 0.0,
+        "status": 118,
+        "efficiency_score": 0.2175994015620245
+      },
+      {
+        "applicantName": "CENTERPOINT ENERGY",
+        "permitNumber": 6628,
+        "processing_days": 360.25007771215417,
+        "value": 0.0,
+        "status": 103,
+        "efficiency_score": 0.2775849505295643
+      },
+      {
+        "applicantName": "Urban Pine Plumbing and Mechanical Inc",
+        "permitNumber": 5284,
+        "processing_days": 473.7089616544593,
+        "value": 0.0,
+        "status": 82,
+        "efficiency_score": 0.2111000806291346
+      },
+      {
+        "applicantName": "MN Plumbing & Home Services INC",
+        "permitNumber": 4578,
+        "processing_days": 534.357597564351,
+        "value": 0.0,
+        "status": 25,
+        "efficiency_score": 0.18714059733745494
+      },
+      {
+        "applicantName": "CHAMPION PLUMBING LLC",
+        "permitNumber": 2290,
+        "processing_days": 353.42419825072886,
+        "value": 0.0,
+        "status": 25,
+        "efficiency_score": 0.2829461041291158
+      },
+      {
+        "applicantName": "FIRESIDE HEARTH AND HOME",
+        "permitNumber": 1831,
+        "processing_days": 150.94944799535153,
+        "value": 0.0,
+        "status": 14,
+        "efficiency_score": 0.6624734394727928
+      },
+      {
+        "applicantName": "Norblom Plumbing Co",
+        "permitNumber": 1597,
+        "processing_days": 325.95798898071627,
+        "value": 0.0,
+        "status": 25,
+        "efficiency_score": 0.3067880014621026
+      },
+      {
+        "applicantName": "Linn Star Transfer Inc",
+        "permitNumber": 1558,
+        "processing_days": 586.96875,
+        "value": 0.0,
+        "status": 29,
+        "efficiency_score": 0.17036682106159826
+      },
+      {
+        "applicantName": "Weld and Sons Plumbing Inc",
+        "permitNumber": 1366,
+        "processing_days": 167.72273425499233,
+        "value": 0.0,
+        "status": 23,
+        "efficiency_score": 0.5962220950200343
+      },
+      {
+        "applicantName": "Gilbert Mechanical Contractors Inc",
+        "permitNumber": 1275,
+        "processing_days": 656.1938775510204,
+        "value": 0.0,
+        "status": 1,
+        "efficiency_score": 0.15239398510271046
+      },
+      {
+        "applicantName": "SODERLIN PLUMBING HEATING AND AIR",
+        "permitNumber": 1257,
+        "processing_days": 201.92399658411614,
+        "value": 0.0,
+        "status": 6,
+        "efficiency_score": 0.495235839680613
+      },
+      {
+        "applicantName": "Metropolitan Mechanical Contractors Inc",
+        "permitNumber": 1236,
+        "processing_days": 895.0823817292006,
+        "value": 18000.0,
+        "status": 4,
+        "efficiency_score": 0.1117215599829046
+      },
+      {
+        "applicantName": "Horwitz LLC",
+        "permitNumber": 1235,
+        "processing_days": 406.1645462256149,
+        "value": 0.0,
+        "status": 12,
+        "efficiency_score": 0.2462056349557707
+      },
+      {
+        "applicantName": "Major Mechanical Inc",
+        "permitNumber": 1168,
+        "processing_days": 371.7521367521368,
+        "value": 0.0,
+        "status": 2,
+        "efficiency_score": 0.26899643637199677
+      },
+      {
+        "applicantName": "Cities 1 Plumbing and Heating Inc",
+        "permitNumber": 1167,
+        "processing_days": 332.6159844054581,
+        "value": 0.0,
+        "status": 2,
+        "efficiency_score": 0.3006470064231797
+      },
+      {
+        "applicantName": "Hero Home Services LLC",
+        "permitNumber": 1057,
+        "processing_days": 138.53065539112052,
+        "value": 0.0,
+        "status": 24,
+        "efficiency_score": 0.7218618847768027
+      },
+      {
+        "applicantName": "Legend Mechanical Inc",
+        "permitNumber": 1057,
+        "processing_days": 124.86458333333333,
+        "value": 0.0,
+        "status": 0,
+        "efficiency_score": 0.8008676065737883
+      },
+      {
+        "applicantName": "Farr Plumbing and Heating LLC",
+        "permitNumber": 1054,
+        "processing_days": 157.24585062240664,
+        "value": 0.0,
+        "status": 32,
+        "efficiency_score": 0.635946828512056
+      },
+      {
+        "applicantName": "GRABOW PLUMBING INC",
+        "permitNumber": 1044,
+        "processing_days": 264.59201557935734,
+        "value": 0.0,
+        "status": 5,
+        "efficiency_score": 0.3779403538728766
+      }
+    ],
+    "specialization": [
+      {
+        "contractor": "CenterPoint Energy Resour",
+        "primary_category": "Other/Unspecified",
+        "specialization_pct": 98.30937209823573,
+        "total_permits": 31231
+      },
+      {
+        "contractor": "Urban Pine Plumbing and M",
+        "primary_category": "Water Heater",
+        "specialization_pct": 97.82361847085541,
+        "total_permits": 5284
+      },
+      {
+        "contractor": "FIRESIDE HEARTH AND HOME",
+        "primary_category": "Gas Lines",
+        "specialization_pct": 96.3407973784817,
+        "total_permits": 1831
+      },
+      {
+        "contractor": "CHAMPION PLUMBING LLC",
+        "primary_category": "Water Heater",
+        "specialization_pct": 95.9825327510917,
+        "total_permits": 2290
+      },
+      {
+        "contractor": "CENTERPOINT ENERGY",
+        "primary_category": "Other/Unspecified",
+        "specialization_pct": 92.3958961979481,
+        "total_permits": 6628
+      },
+      {
+        "contractor": "MN Plumbing & Home Servic",
+        "primary_category": "Gas Lines",
+        "specialization_pct": 70.38007863695938,
+        "total_permits": 4578
+      },
+      {
+        "contractor": "Norblom Plumbing Co",
+        "primary_category": "Water Heater",
+        "specialization_pct": 66.31183469004384,
+        "total_permits": 1597
+      },
+      {
+        "contractor": "SODERLIN PLUMBING HEATING",
+        "primary_category": "Water Heater",
+        "specialization_pct": 66.26889419252187,
+        "total_permits": 1257
+      },
+      {
+        "contractor": "Linn Star Transfer Inc",
+        "primary_category": "Gas Lines",
+        "specialization_pct": 63.7997432605905,
+        "total_permits": 1558
+      },
+      {
+        "contractor": "Hero Home Services LLC",
+        "primary_category": "Water Heater",
+        "specialization_pct": 59.98107852412489,
+        "total_permits": 1057
+      },
+      {
+        "contractor": "Warners Stellian Co Inc",
+        "primary_category": "Gas Lines",
+        "specialization_pct": 59.20245398773007,
+        "total_permits": 12062
+      },
+      {
+        "contractor": "GRABOW PLUMBING INC",
+        "primary_category": "Bathroom Fixtures",
+        "specialization_pct": 54.310344827586206,
+        "total_permits": 1044
+      },
+      {
+        "contractor": "Legend Mechanical Inc",
+        "primary_category": "Drainage/Sewer",
+        "specialization_pct": 48.72280037842952,
+        "total_permits": 1057
+      },
+      {
+        "contractor": "Major Mechanical Inc",
+        "primary_category": "Drainage/Sewer",
+        "specialization_pct": 48.45890410958904,
+        "total_permits": 1168
+      },
+      {
+        "contractor": "Gilbert Mechanical Contra",
+        "primary_category": "Gas Lines",
+        "specialization_pct": 45.09803921568628,
+        "total_permits": 1275
+      },
+      {
+        "contractor": "Horwitz LLC",
+        "primary_category": "Gas Lines",
+        "specialization_pct": 43.88663967611336,
+        "total_permits": 1235
+      },
+      {
+        "contractor": "Metropolitan Mechanical C",
+        "primary_category": "Unspecified",
+        "specialization_pct": 43.36569579288026,
+        "total_permits": 1236
+      },
+      {
+        "contractor": "Cities 1 Plumbing and Hea",
+        "primary_category": "Bathroom Fixtures",
+        "specialization_pct": 40.01713796058269,
+        "total_permits": 1167
+      },
+      {
+        "contractor": "Farr Plumbing and Heating",
+        "primary_category": "Water Heater",
+        "specialization_pct": 38.51992409867172,
+        "total_permits": 1054
+      },
+      {
+        "contractor": "Weld and Sons Plumbing In",
+        "primary_category": "Water Heater",
+        "specialization_pct": 35.72474377745242,
+        "total_permits": 1366
+      }
+    ]
+  },
+  "predictions": {
+    "model_performance": {
+      "r2": 0.18721011141270294,
+      "mae": 244.00627980006402
+    },
+    "feature_importance": [
+      {
+        "feature": "has_value",
+        "importance": 3.832819200559274e-05
+      },
+      {
+        "feature": "is_summer",
+        "importance": 0.010053406654891447
+      },
+      {
+        "feature": "is_commercial",
+        "importance": 0.05163426092421162
+      },
+      {
+        "feature": "is_residential",
+        "importance": 0.05271259674247655
+      },
+      {
+        "feature": "is_winter",
+        "importance": 0.11186102449597302
+      },
+      {
+        "feature": "issueDayOfWeek",
+        "importance": 0.17193698198708365
+      },
+      {
+        "feature": "issueMonth",
+        "importance": 0.24190370696062008
+      },
+      {
+        "feature": "issueYear",
+        "importance": 0.35985969404273804
+      }
+    ],
+    "risk_scores": {
+      "0": {
+        "cancel_rate": 0.012,
+        "cancel_count": 1056,
+        "avg_processing_days": 341.761,
+        "total_permits": 91221
+      },
+      "1": {
+        "cancel_rate": 0.01,
+        "cancel_count": 479,
+        "avg_processing_days": 319.326,
+        "total_permits": 48021
+      },
+      "2": {
+        "cancel_rate": 0.013,
+        "cancel_count": 43,
+        "avg_processing_days": 318.171,
+        "total_permits": 3218
+      },
+      "3": {
+        "cancel_rate": 0.018,
+        "cancel_count": 11,
+        "avg_processing_days": 271.73,
+        "total_permits": 617
+      },
+      "4": {
+        "cancel_rate": 0.0,
+        "cancel_count": 0,
+        "avg_processing_days": 193.671,
+        "total_permits": 96
+      },
+      "5": {
+        "cancel_rate": 0.0,
+        "cancel_count": 0,
+        "avg_processing_days": 248.848,
+        "total_permits": 40
+      },
+      "6": {
+        "cancel_rate": 0.0,
+        "cancel_count": 0,
+        "avg_processing_days": 501.429,
+        "total_permits": 7
+      }
+    }
+  }
+}
