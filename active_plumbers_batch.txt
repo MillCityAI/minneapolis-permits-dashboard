@@ -1,0 +1,299 @@
+Row 2:
+Company: CenterPoint Energy Resource Corp
+Contact: KATHERINE SIMON FRANK TRUST
+Address: 700 W LINDEN AVE
+City: MINNEAPOLIS
+Total Permits: 31231
+Activity Level: Active (30-90 days)
+Days Since Last: 68
+Avg Per Year: 4220.4
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Camden Industrial, Cedar...
+Top Work Types: Res: 31152, ComNoFdBv: 76, ComFdBv: 3
+Total Fees: $2,654,728.00
+First Permit: 2018-01-03
+Last Permit: 2025-05-23
+
+Row 3:
+Company: Warners Stellian Co Inc
+Contact: CLAIRE K SPARBER
+Address: 2601 Broadway St NE
+City: Minneapolis
+Total Permits: 12062
+Activity Level: Active (30-90 days)
+Days Since Last: 51
+Avg Per Year: 1419.1
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 6569, ComNoFdBv: 2741, ComMin: 2466
+Total Fees: $1,048,819.70
+First Permit: 2016-12-07
+Last Permit: 2025-06-09
+
+Row 4:
+Company: CENTERPOINT ENERGY
+Contact: AUGUSTIN MARTINEZ
+Address: ATTN: Emily Heller
+City: MINNEAPOLIS
+Total Permits: 6628
+Activity Level: Active (30-90 days)
+Days Since Last: 71
+Avg Per Year: 779.8
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 6614, ComNoFdBv: 12, ComMin: 1
+Total Fees: $544,960.53
+First Permit: 2016-12-01
+Last Permit: 2025-05-20
+
+Row 5:
+Company: Urban Pine Plumbing and Mechanical Inc
+Contact: CHEO H SMITH
+Address: 13860 Newlander Ave
+City: Lindstrom
+Total Permits: 5284
+Activity Level: Active (30-90 days)
+Days Since Last: 51
+Avg Per Year: 621.6
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 5161, ComNoFdBv: 99, ComMin: 22
+Total Fees: $449,322.50
+First Permit: 2016-12-13
+Last Permit: 2025-06-09
+
+Row 6:
+Company: MN Plumbing & Home Services INC
+Contact: MARK C EYBERG
+Address: 12040 Riverwood Cir
+City: Burnsville
+Total Permits: 4578
+Activity Level: Active (30-90 days)
+Days Since Last: 51
+Avg Per Year: 738.4
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 2825, ComNoFdBv: 990, ComMin: 713
+Total Fees: $397,877.80
+First Permit: 2019-03-14
+Last Permit: 2025-06-09
+
+Row 7:
+Company: CHAMPION PLUMBING LLC
+Contact: GEORGE S HAAS
+Address: 3670 DODD ROAD
+City: EAGAN
+Total Permits: 2290
+Activity Level: Active (30-90 days)
+Days Since Last: 54
+Avg Per Year: 269.4
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 2079, ComNoFdBv: 156, ComMin: 51
+Total Fees: $195,414.90
+First Permit: 2016-12-02
+Last Permit: 2025-06-06
+
+Row 8:
+Company: FIRESIDE HEARTH AND HOME
+Contact: WARREN VOLLMAR
+Address: 2700 Fairview Ave N
+City: Roseville
+Total Permits: 1831
+Activity Level: Active (30-90 days)
+Days Since Last: 56
+Avg Per Year: 215.4
+Service Areas: Armatage, Audubon Park, Bancroft, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Central, Cle...
+Top Work Types: Res: 1318, ComNoFdBv: 441, ComMin: 53
+Total Fees: $170,798.75
+First Permit: 2016-12-02
+Last Permit: 2025-06-04
+
+Row 9:
+Company: Norblom Plumbing Co
+Contact: JOHNATHON HOLDEN
+Address: 1465 SELBY AVE
+City: ST. PAUL
+Total Permits: 1597
+Activity Level: Active (30-90 days)
+Days Since Last: 56
+Avg Per Year: 187.9
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Camden Industrial, Cedar...
+Top Work Types: Res: 1379, ComNoFdBv: 149, ComMin: 57
+Total Fees: $167,688.50
+First Permit: 2016-12-02
+Last Permit: 2025-06-04
+
+Row 10:
+Company: Weld and Sons Plumbing Inc
+Contact: PROJECT SUCCESS
+Address: 8731 Bass Lake Rd
+City: New Hope
+Total Permits: 1366
+Activity Level: Active (30-90 days)
+Days Since Last: 55
+Avg Per Year: 160.7
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 1109, ComNoFdBv: 154, ComMin: 73
+Total Fees: $176,205.27
+First Permit: 2016-12-06
+Last Permit: 2025-06-05
+
+Row 11:
+Company: SODERLIN PLUMBING HEATING AND AIR
+Contact: DANIEL B DAHL
+Address: 3612 CEDAR AVE S
+City: MINNEAPOLIS
+Total Permits: 1257
+Activity Level: Active (30-90 days)
+Days Since Last: 51
+Avg Per Year: 147.9
+Service Areas: Armatage, Audubon Park, Bancroft, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Cedar Rivers...
+Top Work Types: Res: 1132, ComNoFdBv: 95, ComMin: 20
+Total Fees: $120,190.30
+First Permit: 2016-12-05
+Last Permit: 2025-06-09
+
+Row 12:
+Company: Horwitz LLC
+Contact: JAMES J KARASON
+Address: 7400 49TH AVE N
+City: NEW HOPE
+Total Permits: 1235
+Activity Level: Active (30-90 days)
+Days Since Last: 62
+Avg Per Year: 147.0
+Service Areas: Bottineau, Bryant, Cedar - Isles - Dean, Cedar Riverside, Columbia Park, Como, Downtown East, Downto...
+Top Work Types: ComMin: 711, ComNoFdBv: 394, ComFdBv: 107
+Total Fees: $950,619.98
+First Permit: 2016-12-20
+Last Permit: 2025-05-29
+
+Row 13:
+Company: Major Mechanical Inc
+Contact: LMC NE MINNEAPOLIS HOLDINGS LLC
+Address: 11201 86th Ave N
+City: Maple Grove
+Total Permits: 1168
+Activity Level: Active (30-90 days)
+Days Since Last: 58
+Avg Per Year: 137.4
+Service Areas: Bottineau, Cedar Riverside, Como, Corcoran, Downtown East, Downtown West, East Isles, Elliot Park, F...
+Top Work Types: ComMin: 1083, ComNoFdBv: 45, ComFdBv: 37
+Total Fees: $1,515,963.65
+First Permit: 2016-12-13
+Last Permit: 2025-06-02
+
+Row 14:
+Company: Cities 1 Plumbing and Heating Inc
+Contact: ROLAND S CURTIS
+Address: 787 Hubbard Ave
+City: St. Paul
+Total Permits: 1167
+Activity Level: Active (30-90 days)
+Days Since Last: 51
+Avg Per Year: 137.3
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bryant, Bryn - Mawr, Camden Industrial, Cedar - Isles - ...
+Top Work Types: ComNoFdBv: 567, Res: 302, ComMin: 247
+Total Fees: $181,023.47
+First Permit: 2016-12-01
+Last Permit: 2025-06-09
+
+Row 15:
+Company: Hero Home Services LLC
+Contact: MAXIMO F FIGUEROA
+Address: 10900 Hampshire Avenue South #120
+City: Bloomington
+Total Permits: 1057
+Activity Level: Active (30-90 days)
+Days Since Last: 55
+Avg Per Year: 211.4
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 1037, ComMin: 15, ComNoFdBv: 5
+Total Fees: $135,270.60
+First Permit: 2020-06-16
+Last Permit: 2025-06-06
+
+Row 16:
+Company: Legend Mechanical Inc
+Contact: MN NIC ON 5TH LLC
+Address: 8440 Eagle Creek Parkway
+City: Savage
+Total Permits: 1057
+Activity Level: Moderate (90-180 days)
+Days Since Last: 162
+Avg Per Year: 133.8
+Service Areas: Central, Downtown East, Downtown West, East Isles, Harrison, Logan Park, Loring Park, Mid - City Ind...
+Top Work Types: ComNoFdBv: 1029, ComFdBv: 22, FoodBev: 3
+Total Fees: $179,743.90
+First Permit: 2017-04-12
+Last Permit: 2025-02-18
+
+Row 17:
+Company: Farr Plumbing and Heating LLC
+Contact: JHONNY P HEREDIA NIETO
+Address: 3410 Kilmer Lane N
+City: Plymouth
+Total Permits: 1054
+Activity Level: Active (30-90 days)
+Days Since Last: 51
+Avg Per Year: 124.0
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Cedar Riversi...
+Top Work Types: Res: 835, ComNoFdBv: 136, ComMin: 60
+Total Fees: $193,845.28
+First Permit: 2016-12-06
+Last Permit: 2025-06-09
+
+Row 18:
+Company: GRABOW PLUMBING INC
+Contact: MARK A ZOIA
+Address: 8420 REDWOOD ST NW
+City: COON RAPIDS
+Total Permits: 1044
+Activity Level: Active (30-90 days)
+Days Since Last: 70
+Avg Per Year: 125.8
+Service Areas: Bancroft, Bryn - Mawr, Cedar - Isles - Dean, Cooper, Diamond Lake, Downtown East, Downtown West, Eas...
+Top Work Types: ComNoFdBv: 804, Res: 162, ComMin: 57
+Total Fees: $471,895.90
+First Permit: 2017-02-03
+Last Permit: 2025-05-22
+
+Row 19:
+Company: Water Heaters Now Inc
+Contact: KRISTINA E SIGLER
+Address: 23310 Canby Ave
+City: Fairbault
+Total Permits: 925
+Activity Level: Active (30-90 days)
+Days Since Last: 51
+Avg Per Year: 125.0
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 845, ComNoFdBv: 47, ComMin: 31
+Total Fees: $94,827.30
+First Permit: 2018-01-02
+Last Permit: 2025-06-09
+
+Row 20:
+Company: BONFES PLUMBING HEATING AND AIR SERVICE INC
+Contact: ERIC L ESKOLA
+Address: 455 HARDMAN AVE S
+City: SOUTH ST. PAUL
+Total Permits: 859
+Activity Level: Active (30-90 days)
+Days Since Last: 55
+Avg Per Year: 101.1
+Service Areas: Armatage, Audubon Park, Bancroft, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Cedar Rivers...
+Top Work Types: Res: 839, ComNoFdBv: 17, ComFdBv: 3
+Total Fees: $81,694.90
+First Permit: 2016-12-06
+Last Permit: 2025-06-06
+
+Row 21:
+Company: Dean's Professional Plumbing Inc
+Contact: JEREMY T BRADLEY VOGT
+Address: 7400 Kirkwood Ct N
+City: Maple Grove
+Total Permits: 838
+Activity Level: Active (30-90 days)
+Days Since Last: 54
+Avg Per Year: 98.6
+Service Areas: Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Bryn - Mawr, Cedar - Isles - Dean, Ce...
+Top Work Types: Res: 696, ComNoFdBv: 82, ComMin: 36
+Total Fees: $81,328.02
+First Permit: 2016-12-01
+Last Permit: 2025-06-06

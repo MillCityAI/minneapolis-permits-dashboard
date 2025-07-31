@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumbing Contractor Contact Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #1565c0;
+            border-bottom: 3px solid #1565c0;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #424242;
+            margin-top: 40px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .stat-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #1565c0;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .success-card {
+            border-left-color: #4caf50;
+        }
+        .success-card .stat-value {
+            color: #4caf50;
+        }
+        .warning-card {
+            border-left-color: #ff9800;
+        }
+        .warning-card .stat-value {
+            color: #ff9800;
+        }
+        .filter-controls {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .filter-controls input, .filter-controls select {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .download-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #1565c0;
+            color: white;
+            cursor: pointer;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        th:hover {
+            background-color: #1976d2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .has-contact {
+            background-color: #e8f5e9;
+        }
+        .verified-contact {
+            background-color: #c8e6c9;
+            font-weight: bold;
+        }
+        .contact-info {
+            color: #1565c0;
+            text-decoration: none;
+        }
+        .contact-info:hover {
+            text-decoration: underline;
+        }
+        .confidence-high {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .confidence-medium {
+            color: #ff9800;
+        }
+        .confidence-low {
+            color: #f44336;
+        }
+        .no-contact {
+            color: #999;
+            font-style: italic;
+        }
+        #searchBox {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Plumbing Contractor Contact Dashboard</h1>
+        
+        <div class="stat-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalContractors">831</div>
+                <div class="stat-label">Total Contractors</div>
+            </div>
+            <div class="stat-card success-card">
+                <div class="stat-value" id="withPhone">251</div>
+                <div class="stat-label">With Phone Numbers</div>
+            </div>
+            <div class="stat-card success-card">
+                <div class="stat-value" id="withEmail">377</div>
+                <div class="stat-label">With Email Addresses</div>
+            </div>
+            <div class="stat-card warning-card">
+                <div class="stat-value" id="withBoth">247</div>
+                <div class="stat-label">With Both</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">42.4%</div>
+                <div class="stat-label">Match Success Rate</div>
+            </div>
+        </div>
+
+        <div class="filter-controls">
+            <input type="text" id="searchBox" placeholder="Search contractors, emails, phones...">
+            <select id="contactFilter">
+                <option value="all">All Contractors</option>
+                <option value="with-phone">With Phone Numbers</option>
+                <option value="with-email">With Email Addresses</option>
+                <option value="with-both">With Both</option>
+                <option value="verified">Verified Contacts Only</option>
+                <option value="no-contact">No Contact Info</option>
+            </select>
+            <select id="activityFilter">
+                <option value="all">All Activity Levels</option>
+                <option value="very-active">Very Active (< 30 days)</option>
+                <option value="active">Active (30-90 days)</option>
+                <option value="moderate">Moderate (90-180 days)</option>
+                <option value="low">Low (180-365 days)</option>
+            </select>
+        </div>
+
+        <div>
+            <a href="data/plumbing_contractors_with_contacts.csv" class="download-btn">
+                📊 Download Full Dataset (CSV)
+            </a>
+            <a href="data/plumbing_contractors_call_list.csv" class="download-btn">
+                📞 Download Call List (CSV)
+            </a>
+        </div>
+
+        <h2>Contractor Contact Information</h2>
+        <p>Click column headers to sort. Highlighted rows indicate verified contact information from license database.</p>
+        
+        <table id="contractorTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Company Name ↕</th>
+                    <th onclick="sortTable(1)">Contact Person</th>
+                    <th onclick="sortTable(2)">Phone</th>
+                    <th onclick="sortTable(3)">Email</th>
+                    <th onclick="sortTable(4)">Permits ↕</th>
+                    <th onclick="sortTable(5)">Activity</th>
+                    <th onclick="sortTable(6)">Days Since Last</th>
+                    <th onclick="sortTable(7)">Contact Source</th>
+                    <th onclick="sortTable(8)">Confidence</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Sample data structure - in production this would be loaded from the CSV
+        const contractors = [
+            {
+                company: "Warners Stellian Co Inc",
+                contact: "CLAIRE K SPARBER",
+                phone: "612-366-2070",
+                email: "rmwarner@warnesstellian.com",
+                permits: 12062,
+                activity: "Active (30-90 days)",
+                daysSince: 51,
+                source: "Licensed Data",
+                confidence: "High"
+            },
+            {
+                company: "Urban Pine Plumbing and Mechanical Inc",
+                contact: "CHEO H SMITH",
+                phone: "651-888-2275",
+                email: "jpeine@urbanpine.com",
+                permits: 5284,
+                activity: "Active (30-90 days)",
+                daysSince: 51,
+                source: "Licensed Data",
+                confidence: "High"
+            },
+            {
+                company: "CHAMPION PLUMBING LLC",
+                contact: "GEORGE HAAS",
+                phone: "651-365-1340",
+                email: "contactus@championplumbing.net",
+                permits: 2290,
+                activity: "Active (30-90 days)",
+                daysSince: 54,
+                source: "Licensed Data",
+                confidence: "High"
+            },
+            {
+                company: "CenterPoint Energy Resource Corp",
+                contact: "KATHERINE SIMON FRANK TRUST",
+                phone: "",
+                email: "",
+                permits: 31231,
+                activity: "Active (30-90 days)",
+                daysSince: 68,
+                source: "None",
+                confidence: "None"
+            },
+            {
+                company: "MN Plumbing & Home Services INC",
+                contact: "MARK EYBERG",
+                phone: "",
+                email: "mark.eyberg@mnplumbinghome.com",
+                permits: 4578,
+                activity: "Active (30-90 days)",
+                daysSince: 51,
+                source: "Generated",
+                confidence: "Low"
+            }
+        ];
+
+        // Populate table
+        function populateTable(data) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            data.forEach(contractor => {
+                const row = tbody.insertRow();
+                
+                // Add appropriate classes
+                if (contractor.source === "Licensed Data") {
+                    row.classList.add('verified-contact');
+                } else if (contractor.phone || contractor.email) {
+                    row.classList.add('has-contact');
+                }
+                
+                // Company name
+                row.insertCell(0).textContent = contractor.company;
+                
+                // Contact person
+                row.insertCell(1).textContent = contractor.contact || '-';
+                
+                // Phone
+                const phoneCell = row.insertCell(2);
+                if (contractor.phone) {
+                    phoneCell.innerHTML = `<a href="tel:${contractor.phone}" class="contact-info">${contractor.phone}</a>`;
+                } else {
+                    phoneCell.innerHTML = '<span class="no-contact">No phone</span>';
+                }
+                
+                // Email
+                const emailCell = row.insertCell(3);
+                if (contractor.email) {
+                    emailCell.innerHTML = `<a href="mailto:${contractor.email}" class="contact-info">${contractor.email}</a>`;
+                } else {
+                    emailCell.innerHTML = '<span class="no-contact">No email</span>';
+                }
+                
+                // Permits
+                row.insertCell(4).textContent = contractor.permits.toLocaleString();
+                
+                // Activity
+                row.insertCell(5).textContent = contractor.activity;
+                
+                // Days since last
+                row.insertCell(6).textContent = contractor.daysSince;
+                
+                // Source
+                row.insertCell(7).textContent = contractor.source;
+                
+                // Confidence
+                const confCell = row.insertCell(8);
+                confCell.textContent = contractor.confidence;
+                if (contractor.confidence === "High") {
+                    confCell.classList.add('confidence-high');
+                } else if (contractor.confidence === "Medium") {
+                    confCell.classList.add('confidence-medium');
+                } else if (contractor.confidence === "Low") {
+                    confCell.classList.add('confidence-low');
+                }
+            });
+        }
+
+        // Sorting functionality
+        let sortDirection = {};
+        function sortTable(columnIndex) {
+            const table = document.getElementById("contractorTable");
+            const rows = Array.from(table.rows).slice(1);
+            const isNumeric = [4, 6].includes(columnIndex);
+            
+            sortDirection[columnIndex] = !sortDirection[columnIndex];
+            const direction = sortDirection[columnIndex] ? 1 : -1;
+            
+            rows.sort((a, b) => {
+                const aValue = a.cells[columnIndex].textContent;
+                const bValue = b.cells[columnIndex].textContent;
+                
+                if (isNumeric) {
+                    return direction * (parseInt(aValue.replace(/,/g, '')) - parseInt(bValue.replace(/,/g, '')));
+                }
+                return direction * aValue.localeCompare(bValue);
+            });
+            
+            const tbody = table.querySelector('tbody');
+            rows.forEach(row => tbody.appendChild(row));
+        }
+
+        // Filter functionality
+        document.getElementById('contactFilter').addEventListener('change', applyFilters);
+        document.getElementById('activityFilter').addEventListener('change', applyFilters);
+        document.getElementById('searchBox').addEventListener('input', applyFilters);
+
+        function applyFilters() {
+            const contactFilter = document.getElementById('contactFilter').value;
+            const activityFilter = document.getElementById('activityFilter').value;
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            
+            let filtered = contractors;
+            
+            // Contact filter
+            if (contactFilter === 'with-phone') {
+                filtered = filtered.filter(c => c.phone);
+            } else if (contactFilter === 'with-email') {
+                filtered = filtered.filter(c => c.email);
+            } else if (contactFilter === 'with-both') {
+                filtered = filtered.filter(c => c.phone && c.email);
+            } else if (contactFilter === 'verified') {
+                filtered = filtered.filter(c => c.source === 'Licensed Data');
+            } else if (contactFilter === 'no-contact') {
+                filtered = filtered.filter(c => !c.phone && !c.email);
+            }
+            
+            // Activity filter
+            if (activityFilter !== 'all') {
+                const activityMap = {
+                    'very-active': 'Very Active',
+                    'active': 'Active',
+                    'moderate': 'Moderate',
+                    'low': 'Low'
+                };
+                filtered = filtered.filter(c => c.activity.includes(activityMap[activityFilter]));
+            }
+            
+            // Search filter
+            if (searchTerm) {
+                filtered = filtered.filter(c => 
+                    c.company.toLowerCase().includes(searchTerm) ||
+                    c.contact.toLowerCase().includes(searchTerm) ||
+                    c.phone.includes(searchTerm) ||
+                    c.email.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            populateTable(filtered);
+        }
+
+        // Initial load
+        populateTable(contractors);
+    </script>
+</body>
+</html>
