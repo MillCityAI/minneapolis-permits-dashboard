@@ -22,7 +22,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
+archive_workbooks/
+/archive_workbooks
 # Virtual environments
 .env
 .venv
@@ -93,3 +94,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.archive/
