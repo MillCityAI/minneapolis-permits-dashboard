@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plumbing Contractor Contact Dashboard - Dual Contacts</title>
+    <title>Plumbing Contractor Contact Dashboard</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -65,12 +65,6 @@
         }
         .warning-card .stat-value {
             color: #ff9800;
-        }
-        .info-card {
-            border-left-color: #2196f3;
-        }
-        .info-card .stat-value {
-            color: #2196f3;
         }
         .filter-controls {
             background-color: #f5f5f5;
@@ -179,17 +173,6 @@
             background-color: #9e9e9e;
             color: white;
         }
-        .contact-comparison {
-            background-color: #e3f2fd;
-            border-left: 4px solid #1565c0;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-        .contact-comparison h3 {
-            margin-top: 0;
-            color: #0d47a1;
-        }
     </style>
 </head>
 <body>
@@ -202,15 +185,8 @@
             <a href="plumbing_detailed_report.html" style="color: #1565c0; text-decoration: none; font-weight: bold;">Plumbing Report</a>
         </div>
         
-        <h1>Plumbing Contractor Contact Dashboard - Enhanced with Dual Contact Information</h1>
-        
-        <div class="contact-comparison">
-            <h3>Contact Person Information Explained</h3>
-            <ul>
-                <li><strong>Permit Contact Person:</strong> The individual who submitted building permits on behalf of the company (from City of Minneapolis permit data)</li>
-                <li><strong>License Contact Person:</strong> Currently marked as "Not Available" - The Minnesota plumbing license database only contains company contact information (phone/email) but not individual contact names</li>
-            </ul>
-        </div>
+        <h1>Plumbing Contractor Contact Dashboard</h1>
+        <p style="color: #666;">Verified contact information from Minnesota plumbing license database matched with permit data</p>
         
         <div class="stat-grid">
             <div class="stat-card">
@@ -229,7 +205,7 @@
                 <div class="stat-value" id="withBoth">249</div>
                 <div class="stat-label">With Both</div>
             </div>
-            <div class="stat-card info-card">
+            <div class="stat-card">
                 <div class="stat-value">42.4%</div>
                 <div class="stat-label">Match Success Rate</div>
             </div>
@@ -262,8 +238,7 @@
             <thead>
                 <tr>
                     <th onclick="sortTable('company')">Company Name ↕</th>
-                    <th onclick="sortTable('permitContact')">Permit Contact ↕</th>
-                    <th>License Contact</th>
+                    <th onclick="sortTable('contact')">Contact Person ↕</th>
                     <th>Phone</th>
                     <th>Email</th>
                     <th onclick="sortTable('permits')">Permits ↕</th>
@@ -282,8 +257,7 @@
         const contractorData = [
   {
     "company": "Warners Stellian Co Inc",
-    "permitContact": "CLAIRE K SPARBER",
-    "licenseContact": "Not Available",
+    "contact": "CLAIRE K SPARBER",
     "phone": "612-366-2070",
     "email": "rmwarner@warnesstellian.com",
     "permits": 12062,
@@ -295,8 +269,7 @@
   },
   {
     "company": "Urban Pine Plumbing and Mechanical Inc",
-    "permitContact": "CHEO H SMITH",
-    "licenseContact": "Not Available",
+    "contact": "CHEO H SMITH",
     "phone": "651-888-2275",
     "email": "jpeine@urbanpine.com",
     "permits": 5284,
@@ -308,8 +281,7 @@
   },
   {
     "company": "CHAMPION PLUMBING LLC",
-    "permitContact": "GEORGE S HAAS",
-    "licenseContact": "Not Available",
+    "contact": "GEORGE S HAAS",
     "phone": "651-365-1340",
     "email": "contactus@championplumbing.net",
     "permits": 2290,
@@ -321,8 +293,7 @@
   },
   {
     "company": "Norblom Plumbing Co",
-    "permitContact": "JOHNATHON HOLDEN",
-    "licenseContact": "Not Available",
+    "contact": "JOHNATHON HOLDEN",
     "phone": "612-827-4033",
     "email": "info@norblomplumbing.com",
     "permits": 1597,
@@ -334,8 +305,7 @@
   },
   {
     "company": "Weld and Sons Plumbing Inc",
-    "permitContact": "PROJECT SUCCESS",
-    "licenseContact": "Not Available",
+    "contact": "PROJECT SUCCESS",
     "phone": "763-475-0296",
     "email": "timm@weldandsons.com",
     "permits": 1366,
@@ -347,8 +317,7 @@
   },
   {
     "company": "Horwitz LLC",
-    "permitContact": "JAMES J KARASON",
-    "licenseContact": "Not Available",
+    "contact": "JAMES J KARASON",
     "phone": "763-235-9839",
     "email": "dthom@horwitz-nsi.com",
     "permits": 1235,
@@ -360,8 +329,7 @@
   },
   {
     "company": "Major Mechanical Inc",
-    "permitContact": "LMC NE MINNEAPOLIS HOLDINGS LLC",
-    "licenseContact": "Not Available",
+    "contact": "LMC NE MINNEAPOLIS HOLDINGS LLC",
     "phone": "763-424-6680",
     "email": "kristen@majormech.com",
     "permits": 1168,
@@ -373,8 +341,7 @@
   },
   {
     "company": "Cities 1 Plumbing and Heating Inc",
-    "permitContact": "ROLAND S CURTIS",
-    "licenseContact": "Not Available",
+    "contact": "ROLAND S CURTIS",
     "phone": "651-274-6547",
     "email": "michelle@cities1plumbing.com",
     "permits": 1167,
@@ -386,8 +353,7 @@
   },
   {
     "company": "Legend Mechanical Inc",
-    "permitContact": "MN NIC ON 5TH LLC",
-    "licenseContact": "Not Available",
+    "contact": "MN NIC ON 5TH LLC",
     "phone": "952-818-8500",
     "email": "lisa.smith@legendmechanical.com",
     "permits": 1057,
@@ -399,8 +365,7 @@
   },
   {
     "company": "Farr Plumbing and Heating LLC",
-    "permitContact": "JHONNY P HEREDIA NIETO",
-    "licenseContact": "Not Available",
+    "contact": "JHONNY P HEREDIA NIETO",
     "phone": "763-670-3352",
     "email": "jeff@farrplumbingandheating.com",
     "permits": 1054,
@@ -412,8 +377,7 @@
   },
   {
     "company": "GRABOW PLUMBING INC",
-    "permitContact": "MARK A ZOIA",
-    "licenseContact": "Not Available",
+    "contact": "MARK A ZOIA",
     "phone": "763-786-3951",
     "email": "linda@grabowplumbing.com",
     "permits": 1044,
@@ -425,8 +389,7 @@
   },
   {
     "company": "BONFES PLUMBING HEATING AND AIR SERVICE INC",
-    "permitContact": "ERIC L ESKOLA",
-    "licenseContact": "Not Available",
+    "contact": "ERIC L ESKOLA",
     "phone": "651-228-7140",
     "email": "conniec@bonfes.com",
     "permits": 859,
@@ -438,8 +401,7 @@
   },
   {
     "company": "Dean's Professional Plumbing Inc",
-    "permitContact": "JEREMY T BRADLEY VOGT",
-    "licenseContact": "Not Available",
+    "contact": "JEREMY T BRADLEY VOGT",
     "phone": "763-428-1321",
     "email": "dean@deansplumbing.com",
     "permits": 838,
@@ -451,8 +413,7 @@
   },
   {
     "company": "Peters Plumbing LLC",
-    "permitContact": "ANN J BROWN",
-    "licenseContact": "Not Available",
+    "contact": "ANN J BROWN",
     "phone": "763-234-8187",
     "email": "jeremy@petesplumbingmn.com",
     "permits": 834,
@@ -464,8 +425,7 @@
   },
   {
     "company": "Master Plumbing Services LLC",
-    "permitContact": "MARIE BUSHBAUM",
-    "licenseContact": "Not Available",
+    "contact": "MARIE BUSHBAUM",
     "phone": "651-457-7100",
     "email": "jessica@mnmps.com",
     "permits": 803,
@@ -477,8 +437,7 @@
   },
   {
     "company": "Gilbert Mechanical Contractors LLC",
-    "permitContact": "GREG BURNETT",
-    "licenseContact": "Not Available",
+    "contact": "GREG BURNETT",
     "phone": "651-224-5428",
     "email": "ealbers@albersco.com",
     "permits": 699,
@@ -490,8 +449,7 @@
   },
   {
     "company": "GITTLEMAN CONSTRUCTION & MAINTENANCE CORPORATION",
-    "permitContact": "VINAYAK DORAISWAMY",
-    "licenseContact": "Not Available",
+    "contact": "VINAYAK DORAISWAMY",
     "phone": "952-277-2700",
     "email": "abutler@gittleman.com",
     "permits": 693,
@@ -503,8 +461,7 @@
   },
   {
     "company": "Erik Nelson Plumbing LLC",
-    "permitContact": "ELIZABETH CHRISTIAN",
-    "licenseContact": "Not Available",
+    "contact": "ELIZABETH CHRISTIAN",
     "phone": "612-242-6483",
     "email": "erik@eriknelsonplumbing.com",
     "permits": 654,
@@ -516,8 +473,7 @@
   },
   {
     "company": "ST PAUL PLUMBING AND HEATING CO INC",
-    "permitContact": "LOUISE M BARBER",
-    "licenseContact": "Not Available",
+    "contact": "LOUISE M BARBER",
     "phone": "651-228-9200",
     "email": "permits@callmsp.com",
     "permits": 612,
@@ -529,8 +485,7 @@
   },
   {
     "company": "Metro Heating & Cooling LLC",
-    "permitContact": "RENA SINGLETON",
-    "licenseContact": "Not Available",
+    "contact": "RENA SINGLETON",
     "phone": "651-294-7799",
     "email": "dave@metroheating.net",
     "permits": 602,
@@ -542,8 +497,7 @@
   },
   {
     "company": "Northern Mechanical Contractors LLC",
-    "permitContact": "ST PAUL DEVELOPMENT CORP",
-    "licenseContact": "Not Available",
+    "contact": "ST PAUL DEVELOPMENT CORP",
     "phone": "651-789-2275",
     "email": "amyk@northernmc.com",
     "permits": 585,
@@ -555,8 +509,7 @@
   },
   {
     "company": "NORTHERN AIR CORP",
-    "permitContact": "33 CITY CENTER 33 SOUTH PROPERTY LLC",
-    "licenseContact": "Not Available",
+    "contact": "33 CITY CENTER 33 SOUTH PROPERTY LLC",
     "phone": "651-490-9868",
     "email": "jsluss@nac-hvac.com",
     "permits": 563,
@@ -568,8 +521,7 @@
   },
   {
     "company": "Budget Plumbing Corp",
-    "permitContact": "RAZ MCGLYNN",
-    "licenseContact": "Not Available",
+    "contact": "RAZ MCGLYNN",
     "phone": "763-531-2000",
     "email": "tomm@budgetplumbingcorp.com",
     "permits": 555,
@@ -581,8 +533,7 @@
   },
   {
     "company": "DINIUS PLUMBING CO INC",
-    "permitContact": "FIONA P REYNOLDS",
-    "licenseContact": "Not Available",
+    "contact": "FIONA P REYNOLDS",
     "phone": "651-773-5740",
     "email": "kdinius75@yahoo.com",
     "permits": 525,
@@ -594,8 +545,7 @@
   },
   {
     "company": "TJK PLUMBING INC",
-    "permitContact": "MARK W HOWELL",
-    "licenseContact": "Not Available",
+    "contact": "MARK W HOWELL",
     "phone": "763-425-9461",
     "email": "info@tjkplumbinginc.com",
     "permits": 521,
@@ -607,8 +557,7 @@
   },
   {
     "company": "Barr Web Industries Inc",
-    "permitContact": "JASON A FRITZEL",
-    "licenseContact": "Not Available",
+    "contact": "JASON A FRITZEL",
     "phone": "612-872-0202",
     "email": "jason.fritzel@barrwebindustries.com",
     "permits": 518,
@@ -620,8 +569,7 @@
   },
   {
     "company": "Piperight Plumbing Inc",
-    "permitContact": "PAUL R CARLSON",
-    "licenseContact": "Not Available",
+    "contact": "PAUL R CARLSON",
     "phone": "612-598-8103",
     "email": "info@piperightmn.com",
     "permits": 511,
@@ -633,8 +581,7 @@
   },
   {
     "company": "Centraire Heating & Air Conditioning LLC",
-    "permitContact": "MANUEL FROILAN",
-    "licenseContact": "Not Available",
+    "contact": "MANUEL FROILAN",
     "phone": "952-941-1044",
     "email": "lseurer@centraire.com",
     "permits": 498,
@@ -646,8 +593,7 @@
   },
   {
     "company": "Accurate Plumbing INC",
-    "permitContact": "PAMELA WILSON",
-    "licenseContact": "Not Available",
+    "contact": "PAMELA WILSON",
     "phone": "612-221-1221",
     "email": "ellangs@q.com",
     "permits": 489,
@@ -659,8 +605,7 @@
   },
   {
     "company": "All Pride Plumbing Inc",
-    "permitContact": "RYAN POLEHONKA",
-    "licenseContact": "Not Available",
+    "contact": "RYAN POLEHONKA",
     "phone": "651-775-0545",
     "email": "allprideplumbing@aol.com",
     "permits": 472,
@@ -672,8 +617,7 @@
   },
   {
     "company": "LIBERTY PLUMBING CO LLC",
-    "permitContact": "MICHAEL D SASSON",
-    "licenseContact": "Not Available",
+    "contact": "MICHAEL D SASSON",
     "phone": "763-286-2485",
     "email": "kerrys@libertyplumbingheating.com",
     "permits": 467,
@@ -685,8 +629,7 @@
   },
   {
     "company": "DEN-MARK PLUMBING INC",
-    "permitContact": "CITY OF LAKES COMMUNITY LAND TRUST",
-    "licenseContact": "Not Available",
+    "contact": "CITY OF LAKES COMMUNITY LAND TRUST",
     "phone": "763-286-4902",
     "email": "denmarkplbg@yahoo.com",
     "permits": 427,
@@ -698,8 +641,7 @@
   },
   {
     "company": "Erickson Plumbing Heating Cooling Inc",
-    "permitContact": "SKILAR & SKILAR LLC",
-    "licenseContact": "Not Available",
+    "contact": "SKILAR & SKILAR LLC",
     "phone": "763-783-4545",
     "email": "serickson@ihearterickson.com",
     "permits": 423,
@@ -711,8 +653,7 @@
   },
   {
     "company": "North Central Plumbing Inc",
-    "permitContact": "DEANNA L CARLSON",
-    "licenseContact": "Not Available",
+    "contact": "DEANNA L CARLSON",
     "phone": "763-856-4832",
     "email": "info@northcentralplumbing.com",
     "permits": 422,
@@ -724,8 +665,7 @@
   },
   {
     "company": "Gust Plumbing Inc",
-    "permitContact": "JENNIFER LYNN URBAN",
-    "licenseContact": "Not Available",
+    "contact": "JENNIFER LYNN URBAN",
     "phone": "651-592-7919",
     "email": "m.g.plumbing@hotmail.com",
     "permits": 408,
@@ -737,8 +677,7 @@
   },
   {
     "company": "Johnson Plumbing and Heating Co",
-    "permitContact": "ELIZABETH CARLISLE",
-    "licenseContact": "Not Available",
+    "contact": "ELIZABETH CARLISLE",
     "phone": "612-243-3965",
     "email": "johnsonplbgandhtg@earthlink.net",
     "permits": 386,
@@ -750,8 +689,7 @@
   },
   {
     "company": "Perfection Plumbing LLC",
-    "permitContact": "MONIQUE MANNING",
-    "licenseContact": "Not Available",
+    "contact": "MONIQUE MANNING",
     "phone": "612-867-1192",
     "email": "perfectionpluming2@gmail.com",
     "permits": 372,
@@ -763,8 +701,7 @@
   },
   {
     "company": "Hayes Mechanical LLC",
-    "permitContact": "RP MINNEAPOLIS PROPCO, LLC",
-    "licenseContact": "Not Available",
+    "contact": "RP MINNEAPOLIS PROPCO, LLC",
     "phone": "952-232-4843",
     "email": "pat@agapemechanical.com",
     "permits": 363,
@@ -776,8 +713,7 @@
   },
   {
     "company": "NORTHLAND MECHANICAL CONTRACTORS, INC",
-    "permitContact": "JKL PARTNERS LLC",
-    "licenseContact": "Not Available",
+    "contact": "JKL PARTNERS LLC",
     "phone": "763-544-5100",
     "email": "service@northland-mn.com",
     "permits": 343,
@@ -789,8 +725,7 @@
   },
   {
     "company": "B and D Plumbing Heating and A/C Inc",
-    "permitContact": "MITCHELL R BEZIER",
-    "licenseContact": "Not Available",
+    "contact": "MITCHELL R BEZIER",
     "phone": "763-497-2290",
     "email": "tdaleiden@bdplumbers.com",
     "permits": 343,
@@ -802,8 +737,7 @@
   },
   {
     "company": "Bredahl Plumbing Inc",
-    "permitContact": "MIR S ALI",
-    "licenseContact": "Not Available",
+    "contact": "MIR S ALI",
     "phone": "763-424-2646",
     "email": "lbredahl@bredahlplumbing.com",
     "permits": 337,
@@ -815,8 +749,7 @@
   },
   {
     "company": "Steinkraus Plumbing Inc",
-    "permitContact": "BUMBERSHUTE PROPERTIES LLLP",
-    "licenseContact": "Not Available",
+    "contact": "BUMBERSHUTE PROPERTIES LLLP",
     "phone": "952-361-0128",
     "email": "bumbershute.lllp@steinkraus.com",
     "permits": 333,
@@ -828,8 +761,7 @@
   },
   {
     "company": "Appliance Connections INC",
-    "permitContact": "JOSEPH CHRISTOPHER HAJ",
-    "licenseContact": "Not Available",
+    "contact": "JOSEPH CHRISTOPHER HAJ",
     "phone": "952-445-4803",
     "email": "applianceconnections@yahoo.com",
     "permits": 320,
@@ -841,8 +773,7 @@
   },
   {
     "company": "McDonnell Plumbing and Heating LLC",
-    "permitContact": "THOMAS KAY",
-    "licenseContact": "Not Available",
+    "contact": "THOMAS KAY",
     "phone": "763-276-1524",
     "email": "joseph@mcdonnellph.com",
     "permits": 303,
@@ -854,8 +785,7 @@
   },
   {
     "company": "Nybo Peterson Plumbing Co Inc",
-    "permitContact": "HUNTER BRADLEY",
-    "licenseContact": "Not Available",
+    "contact": "HUNTER BRADLEY",
     "phone": "952-461-2749",
     "email": "nybo@integra.net",
     "permits": 291,
@@ -867,8 +797,7 @@
   },
   {
     "company": "A Johnson Plumbing Inc",
-    "permitContact": "MARGARET B LEE",
-    "licenseContact": "Not Available",
+    "contact": "MARGARET B LEE",
     "phone": "612-221-8430",
     "email": "johnsonplumbinginc@gmail.com",
     "permits": 286,
@@ -880,8 +809,7 @@
   },
   {
     "company": "Southtown Plumbing Inc",
-    "permitContact": "CLAIRE L JOHNSTON",
-    "licenseContact": "Not Available",
+    "contact": "CLAIRE L JOHNSTON",
     "phone": "612-866-3057",
     "email": "stplumbing@mcleodusa.net",
     "permits": 282,
@@ -893,8 +821,7 @@
   },
   {
     "company": "Pronto Heating & Air Conditioning Inc",
-    "permitContact": "WILLIAM B WHITE",
-    "licenseContact": "Not Available",
+    "contact": "WILLIAM B WHITE",
     "phone": "952-835-7777",
     "email": "wade@prontoheat.com",
     "permits": 276,
@@ -906,8 +833,7 @@
   },
   {
     "company": "PPS Plumbing LLC",
-    "permitContact": "KAY L MURDOFF",
-    "licenseContact": "Not Available",
+    "contact": "KAY L MURDOFF",
     "phone": "612-868-7278",
     "email": "ppsplumbingcompany@gmail.com",
     "permits": 270,
@@ -919,8 +845,7 @@
   },
   {
     "company": "Alexander Plumbing LLC",
-    "permitContact": "COREY BRENNER",
-    "licenseContact": "Not Available",
+    "contact": "COREY BRENNER",
     "phone": "612-750-5892",
     "email": "office@andersonheating.comcastbiz.net",
     "permits": 257,
@@ -932,8 +857,7 @@
   },
   {
     "company": "Janecky Plumbing Service Inc",
-    "permitContact": "HEIDI BRANDENBURG",
-    "licenseContact": "Not Available",
+    "contact": "HEIDI BRANDENBURG",
     "phone": "651-454-9297",
     "email": "davidjanecky@msn.com",
     "permits": 240,
@@ -945,8 +869,7 @@
   },
   {
     "company": "Rightmark LLC",
-    "permitContact": "CAITLIN J WINKWORTH",
-    "licenseContact": "Not Available",
+    "contact": "CAITLIN J WINKWORTH",
     "phone": "952-758-6237",
     "email": "robin@rightmarkmn.com",
     "permits": 232,
@@ -958,8 +881,7 @@
   },
   {
     "company": "Air Mechanical Inc",
-    "permitContact": "DAVID J SCHMELING",
-    "licenseContact": "Not Available",
+    "contact": "DAVID J SCHMELING",
     "phone": "763-434-7747",
     "email": "ncdispatch@airmechanical.com",
     "permits": 227,
@@ -971,8 +893,7 @@
   },
   {
     "company": "Select Mechanical Services Inc",
-    "permitContact": "STEVEN L YOUNG",
-    "licenseContact": "Not Available",
+    "contact": "STEVEN L YOUNG",
     "phone": "952-926-4488",
     "email": "dale@selectmechanical.com",
     "permits": 221,
@@ -984,8 +905,7 @@
   },
   {
     "company": "Genz-Ryan Plumbing and Heating Co",
-    "permitContact": "WILLIAM A READ",
-    "licenseContact": "Not Available",
+    "contact": "WILLIAM A READ",
     "phone": "952-767-1000",
     "email": "renaef@genzryan.com",
     "permits": 221,
@@ -997,8 +917,7 @@
   },
   {
     "company": "Heating and Cooling Two Inc",
-    "permitContact": "PAUL KROGH",
-    "licenseContact": "Not Available",
+    "contact": "PAUL KROGH",
     "phone": "763-428-3677",
     "email": "steves@heatcool2.com",
     "permits": 220,
@@ -1010,8 +929,7 @@
   },
   {
     "company": "Bruce Nelson Plumbing and Heating Service Inc",
-    "permitContact": "MATTHEW D RASMUSSON",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW D RASMUSSON",
     "phone": "651-738-9354",
     "email": "mrohrer@brucenelsonph.com",
     "permits": 216,
@@ -1023,8 +941,7 @@
   },
   {
     "company": "Midwest Plumbing and Service LLC",
-    "permitContact": "LOPPET ADVENTURES",
-    "licenseContact": "Not Available",
+    "contact": "LOPPET ADVENTURES",
     "phone": "612-807-8968",
     "email": "plumbrite86@yahoo.com",
     "permits": 211,
@@ -1036,8 +953,7 @@
   },
   {
     "company": "Stewart Plumbing Inc",
-    "permitContact": "SAMUEL BAKER",
-    "licenseContact": "Not Available",
+    "contact": "SAMUEL BAKER",
     "phone": "763-428-1833",
     "email": "scott@stewartplumbinginc.net",
     "permits": 204,
@@ -1049,8 +965,7 @@
   },
   {
     "company": "Adam's On-Time Plumbing & Water Heaters LLC",
-    "permitContact": "JEFFREY LEE SCHOONOVER",
-    "licenseContact": "Not Available",
+    "contact": "JEFFREY LEE SCHOONOVER",
     "phone": "612-205-6060",
     "email": "patti.adamsontime@yahoo.com",
     "permits": 199,
@@ -1062,8 +977,7 @@
   },
   {
     "company": "Great Quality Plumbing Inc",
-    "permitContact": "SYDNEY WICKLIFFE",
-    "licenseContact": "Not Available",
+    "contact": "SYDNEY WICKLIFFE",
     "phone": "651-335-4101",
     "email": "urokgrigoryev@comcast.net",
     "permits": 197,
@@ -1075,8 +989,7 @@
   },
   {
     "company": "Barnes Plumbing Co Inc",
-    "permitContact": "CURTIS COLLINS",
-    "licenseContact": "Not Available",
+    "contact": "CURTIS COLLINS",
     "phone": "612-529-1172",
     "email": "barnesplumbing@yahoo.com",
     "permits": 196,
@@ -1088,8 +1001,7 @@
   },
   {
     "company": "ROTO-ROOTER SERVICES CO",
-    "permitContact": "ERIC D FREDELL",
-    "licenseContact": "Not Available",
+    "contact": "ERIC D FREDELL",
     "phone": "763-559-3522",
     "email": "david.lohmann@rrsc.com",
     "permits": 195,
@@ -1101,8 +1013,7 @@
   },
   {
     "company": "Precision Plumbing and Heating Inc",
-    "permitContact": "TODD W GOTHARD",
-    "licenseContact": "Not Available",
+    "contact": "TODD W GOTHARD",
     "phone": "763-497-7486",
     "email": "precisionplumbing2002@hotmail.com",
     "permits": 192,
@@ -1114,8 +1025,7 @@
   },
   {
     "company": "United States Mechanical Inc",
-    "permitContact": "NEXT GEN PREMISE LLC",
-    "licenseContact": "Not Available",
+    "contact": "NEXT GEN PREMISE LLC",
     "phone": "763-780-9030",
     "email": "candyce@usmech.us",
     "permits": 183,
@@ -1127,8 +1037,7 @@
   },
   {
     "company": "Regency Plumbing Inc",
-    "permitContact": "JONATHON JAUQUET",
-    "licenseContact": "Not Available",
+    "contact": "JONATHON JAUQUET",
     "phone": "763-531-1855",
     "email": "regencyplumbing@gmail.com",
     "permits": 183,
@@ -1140,8 +1049,7 @@
   },
   {
     "company": "NOWTHEN PLUMBING INC",
-    "permitContact": "THEODORE MAJDECKI",
-    "licenseContact": "Not Available",
+    "contact": "THEODORE MAJDECKI",
     "phone": "763-753-5216",
     "email": "info@nowthenplumbing.com",
     "permits": 181,
@@ -1153,8 +1061,7 @@
   },
   {
     "company": "Richfield Plumbing Co",
-    "permitContact": "BRIAN W DAVES",
-    "licenseContact": "Not Available",
+    "contact": "BRIAN W DAVES",
     "phone": "952-881-3355",
     "email": "service@richfieldplumbing.com",
     "permits": 180,
@@ -1166,8 +1073,7 @@
   },
   {
     "company": "EGAN COMPANY INC",
-    "permitContact": "CHATEAU COMM HSNG ASSOC INC",
-    "licenseContact": "Not Available",
+    "contact": "CHATEAU COMM HSNG ASSOC INC",
     "phone": "612-490-2766",
     "email": "bb@eganco.com",
     "permits": 178,
@@ -1179,8 +1085,7 @@
   },
   {
     "company": "Plumbing West Inc",
-    "permitContact": "MEAGAN THOMPSON",
-    "licenseContact": "Not Available",
+    "contact": "MEAGAN THOMPSON",
     "phone": "320-587-0300",
     "email": "meagan.thompson@plumbingwest.com",
     "permits": 177,
@@ -1192,8 +1097,7 @@
   },
   {
     "company": "All Ways Drains Ltd",
-    "permitContact": "LEA ELIZABETH SCOTT",
-    "licenseContact": "Not Available",
+    "contact": "LEA ELIZABETH SCOTT",
     "phone": "612-366-7206",
     "email": "allwaysdrains@gmail.com",
     "permits": 177,
@@ -1205,8 +1109,7 @@
   },
   {
     "company": "Vanwinkle Plumbing LLC",
-    "permitContact": "JEREMY R OLEXA",
-    "licenseContact": "Not Available",
+    "contact": "JEREMY R OLEXA",
     "phone": "612-599-2129",
     "email": "vanwinkleplumbing@hotmail.com",
     "permits": 176,
@@ -1218,8 +1121,7 @@
   },
   {
     "company": "Rock Solid Plumbing LLC",
-    "permitContact": "BENJAMIN LINDEN",
-    "licenseContact": "Not Available",
+    "contact": "BENJAMIN LINDEN",
     "phone": "763-477-2193",
     "email": "benjamin.linden@rocksolid.com",
     "permits": 176,
@@ -1231,8 +1133,7 @@
   },
   {
     "company": "Salzer Plumbing LLC",
-    "permitContact": "JOSEPH FINE",
-    "licenseContact": "Not Available",
+    "contact": "JOSEPH FINE",
     "phone": "952-447-8025",
     "email": "salzerplumbingllc@gmail.com",
     "permits": 174,
@@ -1244,8 +1145,7 @@
   },
   {
     "company": "Ike's Plumbing & Drain Cleaning Inc",
-    "permitContact": "SORA LLC",
-    "licenseContact": "Not Available",
+    "contact": "SORA LLC",
     "phone": "651-325-8132",
     "email": "ike@ikesplumbing.com",
     "permits": 174,
@@ -1257,8 +1157,7 @@
   },
   {
     "company": "Seitz Brothers Inc",
-    "permitContact": "FINER HOUSING LLC",
-    "licenseContact": "Not Available",
+    "contact": "FINER HOUSING LLC",
     "phone": "763-425-6700",
     "email": "jennifer@seitzbros.com",
     "permits": 174,
@@ -1270,8 +1169,7 @@
   },
   {
     "company": "West Hennepin Plumbing LLC",
-    "permitContact": "J & B ARMS JOINT REV TRUST",
-    "licenseContact": "Not Available",
+    "contact": "J & B ARMS JOINT REV TRUST",
     "phone": "763-301-1674",
     "email": "westhennepinplumbing@gmail.com",
     "permits": 173,
@@ -1283,8 +1181,7 @@
   },
   {
     "company": "Elias Plumbing LLC",
-    "permitContact": "ABBIE N CAUDIL",
-    "licenseContact": "Not Available",
+    "contact": "ABBIE N CAUDIL",
     "phone": "651-322-7869",
     "email": "eliasplumbing@gmail.com",
     "permits": 171,
@@ -1296,8 +1193,7 @@
   },
   {
     "company": "Wenzel-Plymouth Plumbing LLC",
-    "permitContact": "RICHARD C BROWN ET AL",
-    "licenseContact": "Not Available",
+    "contact": "RICHARD C BROWN ET AL",
     "phone": "651-452-1565",
     "email": "cwenzel@wppmn.com",
     "permits": 167,
@@ -1309,8 +1205,7 @@
   },
   {
     "company": "Plumbing Restoration & Services LLC",
-    "permitContact": "BRITA THOMPSON",
-    "licenseContact": "Not Available",
+    "contact": "BRITA THOMPSON",
     "phone": "651-233-9950",
     "email": "plumbingrestoration@gmail.com",
     "permits": 163,
@@ -1322,8 +1217,7 @@
   },
   {
     "company": "Boevaag Plumbing Inc",
-    "permitContact": "KEITH JANSSEN KRAGNESS",
-    "licenseContact": "Not Available",
+    "contact": "KEITH JANSSEN KRAGNESS",
     "phone": "952-440-3792",
     "email": "boevaag@integra.net",
     "permits": 161,
@@ -1335,8 +1229,7 @@
   },
   {
     "company": "SERVEY PLUMBING INC",
-    "permitContact": "ANGEL PEREZ CARDENAS",
-    "licenseContact": "Not Available",
+    "contact": "ANGEL PEREZ CARDENAS",
     "phone": "952-393-1272",
     "email": "serveyplumbing@yahoo.com",
     "permits": 159,
@@ -1348,8 +1241,7 @@
   },
   {
     "company": "Cool Air Mechanical Inc",
-    "permitContact": "NICOLE M NAGELL",
-    "licenseContact": "Not Available",
+    "contact": "NICOLE M NAGELL",
     "phone": "763-434-7747",
     "email": "ncdispatch@airmechanical.com",
     "permits": 158,
@@ -1361,8 +1253,7 @@
   },
   {
     "company": "NRH Plumbing Inc",
-    "permitContact": "BRENDON DENNEWILL",
-    "licenseContact": "Not Available",
+    "contact": "BRENDON DENNEWILL",
     "phone": "763-425-1347",
     "email": "rplumbing77@gmail.com",
     "permits": 158,
@@ -1374,8 +1265,7 @@
   },
   {
     "company": "Riverside Mechanical Inc",
-    "permitContact": "BAILEY T MONGEON TRUST",
-    "licenseContact": "Not Available",
+    "contact": "BAILEY T MONGEON TRUST",
     "phone": "952-894-7600",
     "email": "dave@riversidemech.com",
     "permits": 153,
@@ -1387,8 +1277,7 @@
   },
   {
     "company": "MR ROOTER PLUMBING OF THE TWIN CITIES",
-    "permitContact": "SEAN MUTH",
-    "licenseContact": "Not Available",
+    "contact": "SEAN MUTH",
     "phone": "763-551-0555",
     "email": "dispatch@mrrootermn.com",
     "permits": 151,
@@ -1400,8 +1289,7 @@
   },
   {
     "company": "ProMech LLC",
-    "permitContact": "NELLIE DUMONT",
-    "licenseContact": "Not Available",
+    "contact": "NELLIE DUMONT",
     "phone": "612-518-3066",
     "email": "promech2010@hotmail.com",
     "permits": 147,
@@ -1413,8 +1301,7 @@
   },
   {
     "company": "ED BROWN PLUMBING LLC",
-    "permitContact": "DEBRA J CARPENTER",
-    "licenseContact": "Not Available",
+    "contact": "DEBRA J CARPENTER",
     "phone": "715-549-5217",
     "email": "edbrownplumbingllc@att.net",
     "permits": 146,
@@ -1426,8 +1313,7 @@
   },
   {
     "company": "Larson Plumbing Inc",
-    "permitContact": "JORY ZUNICH",
-    "licenseContact": "Not Available",
+    "contact": "JORY ZUNICH",
     "phone": "651-291-7788",
     "email": "carlsonplumbing@mywdo.com",
     "permits": 144,
@@ -1439,8 +1325,7 @@
   },
   {
     "company": "Muska Plumbing LLC",
-    "permitContact": "MILDRED G LUTZ",
-    "licenseContact": "Not Available",
+    "contact": "MILDRED G LUTZ",
     "phone": "651-789-6010",
     "email": "mrieschl@muskaplumbing.com",
     "permits": 142,
@@ -1452,8 +1337,7 @@
   },
   {
     "company": "BWS Heating and Air Conditioning LLC",
-    "permitContact": "LORENZO CALERO ORTIZ ET AL",
-    "licenseContact": "Not Available",
+    "contact": "LORENZO CALERO ORTIZ ET AL",
     "phone": "952-669-1941",
     "email": "lorenzo.al@bwsheatingandairconditioning.com",
     "permits": 140,
@@ -1465,8 +1349,7 @@
   },
   {
     "company": "Anything Plumbing and Heating LLC",
-    "permitContact": "KRISTINE M BOYLAN",
-    "licenseContact": "Not Available",
+    "contact": "KRISTINE M BOYLAN",
     "phone": "763-477-8961",
     "email": "anythingplumbing@yahoo.com",
     "permits": 135,
@@ -1478,8 +1361,7 @@
   },
   {
     "company": "Able Plumbing LLC",
-    "permitContact": "FREDERICK A BECKEL",
-    "licenseContact": "Not Available",
+    "contact": "FREDERICK A BECKEL",
     "phone": "952-447-8025",
     "email": "salzerplumbingllc@gmail.com",
     "permits": 135,
@@ -1491,8 +1373,7 @@
   },
   {
     "company": "ACI Plumbing Inc",
-    "permitContact": "THE ALIVENESS PROJECT INC",
-    "licenseContact": "Not Available",
+    "contact": "THE ALIVENESS PROJECT INC",
     "phone": "763-413-1883",
     "email": "glacierplumb@q.com",
     "permits": 135,
@@ -1504,8 +1385,7 @@
   },
   {
     "company": "M and S Plumbing Inc",
-    "permitContact": "KAELA L DICKENS",
-    "licenseContact": "Not Available",
+    "contact": "KAELA L DICKENS",
     "phone": "763-258-7488",
     "email": "mikekeding@hotmail.com",
     "permits": 134,
@@ -1517,8 +1397,7 @@
   },
   {
     "company": "Majestic Plumbing Inc",
-    "permitContact": "JAMES BEUCHE",
-    "licenseContact": "Not Available",
+    "contact": "JAMES BEUCHE",
     "phone": "612-558-0210",
     "email": "james.beuche@majestic.com",
     "permits": 134,
@@ -1530,8 +1409,7 @@
   },
   {
     "company": "Plumb Right Corp",
-    "permitContact": "ANGULA S ERKKILA SKINNER",
-    "licenseContact": "Not Available",
+    "contact": "ANGULA S ERKKILA SKINNER",
     "phone": "763-561-3306",
     "email": "terry@callplumbright.com",
     "permits": 134,
@@ -1543,8 +1421,7 @@
   },
   {
     "company": "Plumbing Services Inc",
-    "permitContact": "STEPHEN MISTEREK",
-    "licenseContact": "Not Available",
+    "contact": "STEPHEN MISTEREK",
     "phone": "651-366-7621",
     "email": "pluserinc@gmail.com",
     "permits": 127,
@@ -1556,8 +1433,7 @@
   },
   {
     "company": "Sayler Heating & Air Conditioning Inc",
-    "permitContact": "ANTHONY D MOULTON",
-    "licenseContact": "Not Available",
+    "contact": "ANTHONY D MOULTON",
     "phone": "952-835-7777",
     "email": "wade@prontoheat.com",
     "permits": 126,
@@ -1569,8 +1445,7 @@
   },
   {
     "company": "Blue Water Plumbing Inc",
-    "permitContact": "WILLIAM GEDDES",
-    "licenseContact": "Not Available",
+    "contact": "WILLIAM GEDDES",
     "phone": "763-238-1002",
     "email": "bluewaterp@yahoo.com",
     "permits": 126,
@@ -1582,8 +1457,7 @@
   },
   {
     "company": "Commercial Plumbing and Heating Inc",
-    "permitContact": "REALTY INCOME PROPERTIES 3 LLC",
-    "licenseContact": "Not Available",
+    "contact": "REALTY INCOME PROPERTIES 3 LLC",
     "phone": "651-464-2988",
     "email": "awicks@cpandh.com",
     "permits": 125,
@@ -1595,8 +1469,7 @@
   },
   {
     "company": "KAB Plumbing LLC",
-    "permitContact": "DOUGLAS L ROHDE",
-    "licenseContact": "Not Available",
+    "contact": "DOUGLAS L ROHDE",
     "phone": "651-789-6010",
     "email": "mrieschl@muskaplumbing.com",
     "permits": 122,
@@ -1608,8 +1481,7 @@
   },
   {
     "company": "Huber Plumbing Co LLC",
-    "permitContact": "ANDREW M DAVID",
-    "licenseContact": "Not Available",
+    "contact": "ANDREW M DAVID",
     "phone": "763-231-0295",
     "email": "randy@huberplumbing.com",
     "permits": 120,
@@ -1621,8 +1493,7 @@
   },
   {
     "company": "Dana Hoagland Plumbing Inc",
-    "permitContact": "MICHAEL D GORDON",
-    "licenseContact": "Not Available",
+    "contact": "MICHAEL D GORDON",
     "phone": "952-935-5150",
     "email": "kathy.dhpinc@gmail.com",
     "permits": 119,
@@ -1634,8 +1505,7 @@
   },
   {
     "company": "St Paul Pipeworks LLC",
-    "permitContact": "JEFFREY MALESKA",
-    "licenseContact": "Not Available",
+    "contact": "JEFFREY MALESKA",
     "phone": "651-644-9400",
     "email": "charlieavoles@comcast.net",
     "permits": 118,
@@ -1647,8 +1517,7 @@
   },
   {
     "company": "J GADTKE PLUMBING INC",
-    "permitContact": "NATHAN J MCMULLIN",
-    "licenseContact": "Not Available",
+    "contact": "NATHAN J MCMULLIN",
     "phone": "612-226-8070",
     "email": "jgadtke@yahoo.com",
     "permits": 118,
@@ -1660,8 +1529,7 @@
   },
   {
     "company": "Jake the Plumber LLC",
-    "permitContact": "NIHAL HAMOUDA",
-    "licenseContact": "Not Available",
+    "contact": "NIHAL HAMOUDA",
     "phone": "651-212-5253",
     "email": "jaketheplumberllc@gmail.com",
     "permits": 116,
@@ -1673,8 +1541,7 @@
   },
   {
     "company": "ALBERTSON MECHANICAL LLC",
-    "permitContact": "WHITE TREE LLC",
-    "licenseContact": "Not Available",
+    "contact": "WHITE TREE LLC",
     "phone": "612-219-8046",
     "email": "albertsonmechanical@hotmail.com",
     "permits": 115,
@@ -1686,8 +1553,7 @@
   },
   {
     "company": "KRAMER MECHANICAL INC",
-    "permitContact": "3957 NICOLLET LLC",
-    "licenseContact": "Not Available",
+    "contact": "3957 NICOLLET LLC",
     "phone": "763-434-7747",
     "email": "ncdispatch@airmechanical.com",
     "permits": 114,
@@ -1699,8 +1565,7 @@
   },
   {
     "company": "Baxter Mechanical, Inc",
-    "permitContact": "MATTHEW HINES",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW HINES",
     "phone": "651-905-1600",
     "email": "dschultz@mastermechanical.com",
     "permits": 112,
@@ -1712,8 +1577,7 @@
   },
   {
     "company": "Sowada & Barna Plumbing LLC",
-    "permitContact": "NORMA J ZACHOW",
-    "licenseContact": "Not Available",
+    "contact": "NORMA J ZACHOW",
     "phone": "763-444-0292",
     "email": "norma.zachow@sowadabarna.com",
     "permits": 111,
@@ -1725,8 +1589,7 @@
   },
   {
     "company": "BLUE RAIN PLUMBING INC",
-    "permitContact": "JMW INVESTMENTS LLC",
-    "licenseContact": "Not Available",
+    "contact": "JMW INVESTMENTS LLC",
     "phone": "612-801-4722",
     "email": "scott@bluerainplumbing.com",
     "permits": 111,
@@ -1738,8 +1601,7 @@
   },
   {
     "company": "Easco Plumbing and Heating Inc",
-    "permitContact": "SUZANNE J MURPHY",
-    "licenseContact": "Not Available",
+    "contact": "SUZANNE J MURPHY",
     "phone": "763-369-5486",
     "email": "eascoplumbing@aol.com",
     "permits": 111,
@@ -1751,8 +1613,7 @@
   },
   {
     "company": "Mike's Custom Mechanical Inc",
-    "permitContact": "BENJAMIN E RUIZ",
-    "licenseContact": "Not Available",
+    "contact": "BENJAMIN E RUIZ",
     "phone": "763-568-7148",
     "email": "mike@mikescustommechanical.com",
     "permits": 108,
@@ -1764,8 +1625,7 @@
   },
   {
     "company": "Welter and Blaylock Inc",
-    "permitContact": "JESSICA M ROSENFELD",
-    "licenseContact": "Not Available",
+    "contact": "JESSICA M ROSENFELD",
     "phone": "612-221-6751",
     "email": "steveyetzer@aol.com",
     "permits": 107,
@@ -1777,8 +1637,7 @@
   },
   {
     "company": "PRIORITY PLUMBING AND DRAINS",
-    "permitContact": "MAI YANG",
-    "licenseContact": "Not Available",
+    "contact": "MAI YANG",
     "phone": "952-460-2572",
     "email": "al@priorityplumbinginc.com",
     "permits": 107,
@@ -1790,8 +1649,7 @@
   },
   {
     "company": "Ryan Plumbing And Heating Co",
-    "permitContact": "DELMA PALMA",
-    "licenseContact": "Not Available",
+    "contact": "DELMA PALMA",
     "phone": "651-224-4771",
     "email": "ryanplumbing@comcast.net",
     "permits": 106,
@@ -1803,8 +1661,7 @@
   },
   {
     "company": "Lake State Plumbing LLC",
-    "permitContact": "CHRISTOPHER LAMBERT",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTOPHER LAMBERT",
     "phone": "651-400-2160",
     "email": "jeremy@lakeareaplumbing.com",
     "permits": 106,
@@ -1816,8 +1673,7 @@
   },
   {
     "company": "K AND S PLUMBING LLC",
-    "permitContact": "DANIEL H KRAHN",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL H KRAHN",
     "phone": "763-425-8760",
     "email": "ksplumbingllc@comcast.net",
     "permits": 106,
@@ -1829,8 +1685,7 @@
   },
   {
     "company": "Fineline Mechanical Services Inc",
-    "permitContact": "DANIEL M SWENSON KLATT",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL M SWENSON KLATT",
     "phone": "952-926-4488",
     "email": "dale@selectmechanical.com",
     "permits": 102,
@@ -1842,8 +1697,7 @@
   },
   {
     "company": "Center Point Plumbing LLC",
-    "permitContact": "DAVID RUBIN",
-    "licenseContact": "Not Available",
+    "contact": "DAVID RUBIN",
     "phone": "763-516-4295",
     "email": "jim@centerpointplumbing.com",
     "permits": 101,
@@ -1855,8 +1709,7 @@
   },
   {
     "company": "Perfection Heating and Air Conditioning Inc",
-    "permitContact": "RACHEL L SURBER",
-    "licenseContact": "Not Available",
+    "contact": "RACHEL L SURBER",
     "phone": "952-835-7777",
     "email": "wade@prontoheat.com",
     "permits": 99,
@@ -1868,8 +1721,7 @@
   },
   {
     "company": "Rhinex Contractor Inc",
-    "permitContact": "PANG CHANG",
-    "licenseContact": "Not Available",
+    "contact": "PANG CHANG",
     "phone": "651-208-4510",
     "email": "xaystx@yahoo.com",
     "permits": 99,
@@ -1881,8 +1733,7 @@
   },
   {
     "company": "Street Plumbing Inc",
-    "permitContact": "DARCY G H MEYER",
-    "licenseContact": "Not Available",
+    "contact": "DARCY G H MEYER",
     "phone": "763-639-5285",
     "email": "splumbing@gmail.com",
     "permits": 95,
@@ -1894,8 +1745,7 @@
   },
   {
     "company": "Silver Tree Plumbing and Heating LLC",
-    "permitContact": "ANNA M BURNS",
-    "licenseContact": "Not Available",
+    "contact": "ANNA M BURNS",
     "phone": "651-319-4200",
     "email": "jennyh@silvertreepanh.com",
     "permits": 92,
@@ -1907,8 +1757,7 @@
   },
   {
     "company": "Kelly Plumbing and Heating Inc",
-    "permitContact": "CLAUDIA BROCKHAUS",
-    "licenseContact": "Not Available",
+    "contact": "CLAUDIA BROCKHAUS",
     "phone": "651-699-1232",
     "email": "wandveikelly@yahoo.com",
     "permits": 89,
@@ -1920,8 +1769,7 @@
   },
   {
     "company": "Podany Plumbing Inc",
-    "permitContact": "DENNIS C GILBERT",
-    "licenseContact": "Not Available",
+    "contact": "DENNIS C GILBERT",
     "phone": "952-448-2709",
     "email": "g.podany@comcast.net",
     "permits": 88,
@@ -1933,8 +1781,7 @@
   },
   {
     "company": "Patricki Plumbing LLC",
-    "permitContact": "ROSS GILBERTSON",
-    "licenseContact": "Not Available",
+    "contact": "ROSS GILBERTSON",
     "phone": "763-432-5195",
     "email": "ellmolskne@aol.com",
     "permits": 87,
@@ -1946,8 +1793,7 @@
   },
   {
     "company": "Right Way Plumbing LLC",
-    "permitContact": "TRENTON EAKINS",
-    "licenseContact": "Not Available",
+    "contact": "TRENTON EAKINS",
     "phone": "612-490-2158",
     "email": "rightwayplumbingmn@gmail.com",
     "permits": 86,
@@ -1959,8 +1805,7 @@
   },
   {
     "company": "Freedom Mechanical LLP",
-    "permitContact": "MONICA MCCRACKEN",
-    "licenseContact": "Not Available",
+    "contact": "MONICA MCCRACKEN",
     "phone": "612-363-6190",
     "email": "peteneu@connections-etc.net",
     "permits": 86,
@@ -1972,8 +1817,7 @@
   },
   {
     "company": "Roberts Plumbing Inc",
-    "permitContact": "SAWYER ROAD PROPERTIES LLC",
-    "licenseContact": "Not Available",
+    "contact": "SAWYER ROAD PROPERTIES LLC",
     "phone": "651-426-9650",
     "email": "rwussler@q.com",
     "permits": 84,
@@ -1985,8 +1829,7 @@
   },
   {
     "company": "M & M PLUMBING",
-    "permitContact": "SAMANTHA FRITSCHE",
-    "licenseContact": "Not Available",
+    "contact": "SAMANTHA FRITSCHE",
     "phone": "763-614-8310",
     "email": "marvinrw28@yahoo.com",
     "permits": 82,
@@ -1998,8 +1841,7 @@
   },
   {
     "company": "Carlson Plumbing Inc",
-    "permitContact": "PROJECT SUCCESS",
-    "licenseContact": "Not Available",
+    "contact": "PROJECT SUCCESS",
     "phone": "651-291-7788",
     "email": "carlsonplumbing@mywdo.com",
     "permits": 81,
@@ -2011,8 +1853,7 @@
   },
   {
     "company": "R Plumbing Co",
-    "permitContact": "MATTHEW T RUSSETT",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW T RUSSETT",
     "phone": "763-425-1347",
     "email": "rplumbing77@gmail.com",
     "permits": 80,
@@ -2024,8 +1865,7 @@
   },
   {
     "company": "JD Mechanical",
-    "permitContact": "SHEILA MAUREEN SMITH LE CORRE",
-    "licenseContact": "Not Available",
+    "contact": "SHEILA MAUREEN SMITH LE CORRE",
     "phone": "320-679-0602",
     "email": "brad@rjmechanical.biz",
     "permits": 78,
@@ -2037,8 +1877,7 @@
   },
   {
     "company": "City Master Co",
-    "permitContact": "ZACHARY A JAEHN",
-    "licenseContact": "Not Available",
+    "contact": "ZACHARY A JAEHN",
     "phone": "651-955-6064",
     "email": "citymasterplumbing@msn.com",
     "permits": 78,
@@ -2050,8 +1889,7 @@
   },
   {
     "company": "Rascher Plumbing and Heating Inc",
-    "permitContact": "LUKE DUSEK",
-    "licenseContact": "Not Available",
+    "contact": "LUKE DUSEK",
     "phone": "651-224-4759",
     "email": "joe@rascherplghtg.com",
     "permits": 78,
@@ -2063,8 +1901,7 @@
   },
   {
     "company": "Versant Plumbing Co",
-    "permitContact": "MATTHEW RITTENHOUSE",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW RITTENHOUSE",
     "phone": "763-238-4703",
     "email": "versantplumbingco@gmail.com",
     "permits": 76,
@@ -2076,8 +1913,7 @@
   },
   {
     "company": "SWIFT HEATING & AIR CONDITIONING INC",
-    "permitContact": "CHELSEA KANE",
-    "licenseContact": "Not Available",
+    "contact": "CHELSEA KANE",
     "phone": "952-835-7777",
     "email": "wade@prontoheat.com",
     "permits": 74,
@@ -2089,8 +1925,7 @@
   },
   {
     "company": "EXCEL MECHANICAL INC",
-    "permitContact": "SWERVO DEVELOPMENT CORP.",
-    "licenseContact": "Not Available",
+    "contact": "SWERVO DEVELOPMENT CORP.",
     "phone": "952-955-0021",
     "email": "swervo.corp.@excel.com",
     "permits": 73,
@@ -2102,8 +1937,7 @@
   },
   {
     "company": "Spriggs Plumbing & Heating Inc",
-    "permitContact": "MARIAN MCCARTHY BEUMER",
-    "licenseContact": "Not Available",
+    "contact": "MARIAN MCCARTHY BEUMER",
     "phone": "651-224-5616",
     "email": "barbm@spriggsph.com",
     "permits": 73,
@@ -2115,8 +1949,7 @@
   },
   {
     "company": "AT Plumbing Heating and Air",
-    "permitContact": "SCOTT CLOUTIER",
-    "licenseContact": "Not Available",
+    "contact": "SCOTT CLOUTIER",
     "phone": "612-381-6988",
     "email": "mike@atplumbingandheating.com",
     "permits": 72,
@@ -2128,8 +1961,7 @@
   },
   {
     "company": "Glacier Plumbing Inc",
-    "permitContact": "C R V VERDOORN ET AL ",
-    "licenseContact": "Not Available",
+    "contact": "C R V VERDOORN ET AL ",
     "phone": "763-413-1883",
     "email": "glacierplumb@q.com",
     "permits": 67,
@@ -2141,8 +1973,7 @@
   },
   {
     "company": "Spring Plumbing",
-    "permitContact": "DEAN ANDERSON",
-    "licenseContact": "Not Available",
+    "contact": "DEAN ANDERSON",
     "phone": "763-614-7963",
     "email": "theresa@springplumbing.net",
     "permits": 66,
@@ -2154,8 +1985,7 @@
   },
   {
     "company": "Professional Mechanical Services LLC",
-    "permitContact": "ROBERT M ROLLINS",
-    "licenseContact": "Not Available",
+    "contact": "ROBERT M ROLLINS",
     "phone": "763-657-7421",
     "email": "debpms123@gmail.com",
     "permits": 66,
@@ -2167,8 +1997,7 @@
   },
   {
     "company": "Master Mechanical Inc",
-    "permitContact": "MPLS BOARD OF EDUCATION DISTRICT #1",
-    "licenseContact": "Not Available",
+    "contact": "MPLS BOARD OF EDUCATION DISTRICT #1",
     "phone": "651-905-1600",
     "email": "dschultz@mastermechanical.com",
     "permits": 65,
@@ -2180,8 +2009,7 @@
   },
   {
     "company": "Hovde Plumbing and Heating Inc",
-    "permitContact": "CHRISTOPHER D ERLANDSON",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTOPHER D ERLANDSON",
     "phone": "952-545-8881",
     "email": "sue@hovdeplumbingandheating.com",
     "permits": 64,
@@ -2193,8 +2021,7 @@
   },
   {
     "company": "Spiess Plumbing INC",
-    "permitContact": "CHURCH OF GOD OF PROPHECY",
-    "licenseContact": "Not Available",
+    "contact": "CHURCH OF GOD OF PROPHECY",
     "phone": "651-248-3853",
     "email": "k.q.spiess@msn.com",
     "permits": 64,
@@ -2206,8 +2033,7 @@
   },
   {
     "company": "WHITE EAGLE PLUMBING",
-    "permitContact": "LUCAS BOYLE MILROY",
-    "licenseContact": "Not Available",
+    "contact": "LUCAS BOYLE MILROY",
     "phone": "612-275-8874",
     "email": "chrznk@yahoo.com",
     "permits": 60,
@@ -2219,8 +2045,7 @@
   },
   {
     "company": "Sheppard Plumbing INC",
-    "permitContact": "PHILIP M ORENSTEIN",
-    "licenseContact": "Not Available",
+    "contact": "PHILIP M ORENSTEIN",
     "phone": "763-434-3584",
     "email": "phil@sheppardplumbing.com",
     "permits": 60,
@@ -2232,8 +2057,7 @@
   },
   {
     "company": "SCHADER HOLE PUSHING AND PLUMBING LLC",
-    "permitContact": "MARIKA REESE",
-    "licenseContact": "Not Available",
+    "contact": "MARIKA REESE",
     "phone": "612-978-4599",
     "email": "schaderplumbing@gmail.com",
     "permits": 60,
@@ -2245,8 +2069,7 @@
   },
   {
     "company": "SUN MECHANICAL INC",
-    "permitContact": "MPLS PARK & RECREATION BOARD",
-    "licenseContact": "Not Available",
+    "contact": "MPLS PARK & RECREATION BOARD",
     "phone": "763-274-2866",
     "email": "kellygr@sunmech.net",
     "permits": 58,
@@ -2258,8 +2081,7 @@
   },
   {
     "company": "LE VAHN  BROS INC",
-    "permitContact": "CHIRAYU B DONGRE",
-    "licenseContact": "Not Available",
+    "contact": "CHIRAYU B DONGRE",
     "phone": "763-551-8990",
     "email": "loren@levahnbros.com",
     "permits": 58,
@@ -2271,8 +2093,7 @@
   },
   {
     "company": "Peterson Plumbing LLC",
-    "permitContact": "THOMAS J LEIER",
-    "licenseContact": "Not Available",
+    "contact": "THOMAS J LEIER",
     "phone": "612-803-5066",
     "email": "peters15612@gmail.com",
     "permits": 58,
@@ -2284,8 +2105,7 @@
   },
   {
     "company": "Jim Morrison Plumbing Inc",
-    "permitContact": "GRACIELA M ESTUDILLO",
-    "licenseContact": "Not Available",
+    "contact": "GRACIELA M ESTUDILLO",
     "phone": "651-325-6313",
     "email": "jimmorrisonplumbing@gmail.com",
     "permits": 57,
@@ -2297,8 +2117,7 @@
   },
   {
     "company": "CITYWIDE PLUMBING LLC",
-    "permitContact": "OPPORTUNITY ZONE FUND, INC.",
-    "licenseContact": "Not Available",
+    "contact": "OPPORTUNITY ZONE FUND, INC.",
     "phone": "612-805-0810",
     "email": "ryan@citywideplumbingmn.com",
     "permits": 56,
@@ -2310,8 +2129,7 @@
   },
   {
     "company": "Patton Heating And Air Conditioning Inc",
-    "permitContact": "NATHAN T MAERTENS",
-    "licenseContact": "Not Available",
+    "contact": "NATHAN T MAERTENS",
     "phone": "952-835-7777",
     "email": "wade@prontoheat.com",
     "permits": 56,
@@ -2323,8 +2141,7 @@
   },
   {
     "company": "Flare Heating & Air Conditioning, Inc.",
-    "permitContact": "KATHERINE A GERDES",
-    "licenseContact": "Not Available",
+    "contact": "KATHERINE A GERDES",
     "phone": "952-941-1044",
     "email": "lseurer@centraire.com",
     "permits": 54,
@@ -2336,8 +2153,7 @@
   },
   {
     "company": "Semlak Plumbing LLC",
-    "permitContact": "DOUGLAS W JOHNSON",
-    "licenseContact": "Not Available",
+    "contact": "DOUGLAS W JOHNSON",
     "phone": "651-269-1246",
     "email": "psemlak@semlakplumbing.com",
     "permits": 53,
@@ -2349,8 +2165,7 @@
   },
   {
     "company": "MH Plumbing Inc",
-    "permitContact": "MARK R RAPACZ",
-    "licenseContact": "Not Available",
+    "contact": "MARK R RAPACZ",
     "phone": "612-363-6888",
     "email": "mmhplumbing@gmail.com",
     "permits": 50,
@@ -2362,8 +2177,7 @@
   },
   {
     "company": "LBP Mechanical Inc",
-    "permitContact": "JAMES FAILLETTAZ",
-    "licenseContact": "Not Available",
+    "contact": "JAMES FAILLETTAZ",
     "phone": "612-333-1515",
     "email": "lbp@lbpmech.com",
     "permits": 49,
@@ -2375,8 +2189,7 @@
   },
   {
     "company": "Arney Plumbing LLC",
-    "permitContact": "ALEXIS P GONZALEZ",
-    "licenseContact": "Not Available",
+    "contact": "ALEXIS P GONZALEZ",
     "phone": "651-276-9310",
     "email": "arneyplumbing@gmail.com",
     "permits": 49,
@@ -2388,8 +2201,7 @@
   },
   {
     "company": "Polar Plumbing INC",
-    "permitContact": "LISA E KNAZAN",
-    "licenseContact": "Not Available",
+    "contact": "LISA E KNAZAN",
     "phone": "651-777-7525",
     "email": "lancerswanson@comcast.net",
     "permits": 46,
@@ -2401,8 +2213,7 @@
   },
   {
     "company": "Corval Constructors Inc",
-    "permitContact": "SRRT HARDING LLC",
-    "licenseContact": "Not Available",
+    "contact": "SRRT HARDING LLC",
     "phone": "651-645-0451",
     "email": "pjohnson@corvalgroup.com",
     "permits": 46,
@@ -2414,8 +2225,7 @@
   },
   {
     "company": "AJ ALBERTS PLUMBING INC",
-    "permitContact": "STEVEN J OLSON",
-    "licenseContact": "Not Available",
+    "contact": "STEVEN J OLSON",
     "phone": "651-738-0580",
     "email": "jim@ajalberts.com",
     "permits": 45,
@@ -2427,8 +2237,7 @@
   },
   {
     "company": "Aqualine Mechanical Inc",
-    "permitContact": "RHONDA J CHARLSON",
-    "licenseContact": "Not Available",
+    "contact": "RHONDA J CHARLSON",
     "phone": "612-247-1119",
     "email": "aquamech@blackhole.com",
     "permits": 44,
@@ -2440,8 +2249,7 @@
   },
   {
     "company": "START TO FINISH CONTRACTING INC",
-    "permitContact": "ELIZABETH A KALIN",
-    "licenseContact": "Not Available",
+    "contact": "ELIZABETH A KALIN",
     "phone": "952-259-1219",
     "email": "lynn@ncmgi.com",
     "permits": 42,
@@ -2453,8 +2261,7 @@
   },
   {
     "company": "Armstrong Plumbing LLC",
-    "permitContact": "NARCISO COHEN",
-    "licenseContact": "Not Available",
+    "contact": "NARCISO COHEN",
     "phone": "952-220-2868",
     "email": "armstrongplumbing69@yahoo.com",
     "permits": 41,
@@ -2466,8 +2273,7 @@
   },
   {
     "company": "Ray Vinzant Plumbing LLC",
-    "permitContact": "TWIN CITIES QUALITY HOUSING LLC",
-    "licenseContact": "Not Available",
+    "contact": "TWIN CITIES QUALITY HOUSING LLC",
     "phone": "651-644-2700",
     "email": "vinzantplumbing@yahoo..com",
     "permits": 41,
@@ -2479,8 +2285,7 @@
   },
   {
     "company": "Petes Plumbing LLC",
-    "permitContact": "PETER C HENNIGAN",
-    "licenseContact": "Not Available",
+    "contact": "PETER C HENNIGAN",
     "phone": "763-234-8187",
     "email": "jeremy@petesplumbingmn.com",
     "permits": 40,
@@ -2492,8 +2297,7 @@
   },
   {
     "company": "Harty Mechanical Inc",
-    "permitContact": "CALVARY LIMITIED PARTNERSHIP",
-    "licenseContact": "Not Available",
+    "contact": "CALVARY LIMITIED PARTNERSHIP",
     "phone": "507-437-8201",
     "email": "pat@hartymechanical.com",
     "permits": 38,
@@ -2505,8 +2309,7 @@
   },
   {
     "company": "J NORDSTROM PLUMBING LLC",
-    "permitContact": "DANIEL R HORTON WELLINGS",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL R HORTON WELLINGS",
     "phone": "763-549-0989",
     "email": "j.nordstrom@rocketmail.com",
     "permits": 38,
@@ -2518,8 +2321,7 @@
   },
   {
     "company": "Service Tech Plumbing LLC",
-    "permitContact": "MAUREEN JOHNSON",
-    "licenseContact": "Not Available",
+    "contact": "MAUREEN JOHNSON",
     "phone": "612-600-0526",
     "email": "servicetechplumbing@gmail.com",
     "permits": 37,
@@ -2531,8 +2333,7 @@
   },
   {
     "company": "Century Plumbing Inc",
-    "permitContact": "RP MINNEAPOLIS PROPCO, LLC",
-    "licenseContact": "Not Available",
+    "contact": "RP MINNEAPOLIS PROPCO, LLC",
     "phone": "651-653-9390",
     "email": "jblasena@centuryplumbing.net",
     "permits": 37,
@@ -2544,8 +2345,7 @@
   },
   {
     "company": "AMERICAN MECHANICAL CO INC",
-    "permitContact": "ANDREW K HARBECK",
-    "licenseContact": "Not Available",
+    "contact": "ANDREW K HARBECK",
     "phone": "612-750-0278",
     "email": "andrew.harbeck@american.com",
     "permits": 36,
@@ -2557,8 +2357,7 @@
   },
   {
     "company": "KB Mechanical Inc",
-    "permitContact": "EQUITY TRUST CO",
-    "licenseContact": "Not Available",
+    "contact": "EQUITY TRUST CO",
     "phone": "612-333-1515",
     "email": "lbp@lbpmech.com",
     "permits": 36,
@@ -2570,8 +2369,7 @@
   },
   {
     "company": "Royal Flush Inc",
-    "permitContact": "JOSEPH W BARHORST",
-    "licenseContact": "Not Available",
+    "contact": "JOSEPH W BARHORST",
     "phone": "763-439-7845",
     "email": "royal_flush_inc@yahoo.com",
     "permits": 36,
@@ -2583,8 +2381,7 @@
   },
   {
     "company": "Sieben Plumbing LLC",
-    "permitContact": "HOLLY HENRIKSEN",
-    "licenseContact": "Not Available",
+    "contact": "HOLLY HENRIKSEN",
     "phone": "651-343-6298",
     "email": "siebenplumbing@live.com",
     "permits": 35,
@@ -2596,8 +2393,7 @@
   },
   {
     "company": "Trenk Mechanical LLC",
-    "permitContact": "SARAH M PAGE",
-    "licenseContact": "Not Available",
+    "contact": "SARAH M PAGE",
     "phone": "612-281-4720",
     "email": "trenkmechanical@gmail.com",
     "permits": 34,
@@ -2609,8 +2405,7 @@
   },
   {
     "company": "MMH Plumbing Inc",
-    "permitContact": "MICHAEL HUTTON",
-    "licenseContact": "Not Available",
+    "contact": "MICHAEL HUTTON",
     "phone": "763-614-8310",
     "email": "marvinrw28@yahoo.com",
     "permits": 34,
@@ -2622,8 +2417,7 @@
   },
   {
     "company": "Doug Linden Inc",
-    "permitContact": "AMOL DIXIT",
-    "licenseContact": "Not Available",
+    "contact": "AMOL DIXIT",
     "phone": "612-242-7560",
     "email": "douglindeninc@gmail.com",
     "permits": 33,
@@ -2635,8 +2429,7 @@
   },
   {
     "company": "First Choice Plumbing & Heating LLC",
-    "permitContact": "MATTHEW J STRASSER",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW J STRASSER",
     "phone": "763-444-6207",
     "email": "firstchoiceplbg@yahoo.com",
     "permits": 32,
@@ -2648,8 +2441,7 @@
   },
   {
     "company": "South Mechanical Contractors Inc",
-    "permitContact": "DANIEL A KLUVER",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL A KLUVER",
     "phone": "952-492-2440",
     "email": "southmech2440@aol.com",
     "permits": 31,
@@ -2661,8 +2453,7 @@
   },
   {
     "company": "Bonfe's Plumbing Heating and Air Service Inc",
-    "permitContact": "LYNN BRINKMAN",
-    "licenseContact": "Not Available",
+    "contact": "LYNN BRINKMAN",
     "phone": "651-228-7140",
     "email": "conniec@bonfes.com",
     "permits": 31,
@@ -2674,8 +2465,7 @@
   },
   {
     "company": "Bill Rascher Mechanical Inc",
-    "permitContact": "CHURCH OF THE INCARNATION",
-    "licenseContact": "Not Available",
+    "contact": "CHURCH OF THE INCARNATION",
     "phone": "651-450-6622",
     "email": "bill@billraschermech.com",
     "permits": 31,
@@ -2687,8 +2477,7 @@
   },
   {
     "company": "Cities Companies, Inc.",
-    "permitContact": "ROBERT F AMBLER II TRUST",
-    "licenseContact": "Not Available",
+    "contact": "ROBERT F AMBLER II TRUST",
     "phone": "651-274-6547",
     "email": "michelle@cities1plumbing.com",
     "permits": 30,
@@ -2700,8 +2489,7 @@
   },
   {
     "company": "Paul Vadnais Plumbing & Well Inc",
-    "permitContact": "JOSEPH P SMITH",
-    "licenseContact": "Not Available",
+    "contact": "JOSEPH P SMITH",
     "phone": "651-587-1579",
     "email": "csvphv@aol.com",
     "permits": 29,
@@ -2713,8 +2501,7 @@
   },
   {
     "company": "Servin Plumbing and Heating LLC",
-    "permitContact": "PETER J GEIER",
-    "licenseContact": "Not Available",
+    "contact": "PETER J GEIER",
     "phone": "763-670-3352",
     "email": "jeff@farrplumbingandheating.com",
     "permits": 29,
@@ -2726,8 +2513,7 @@
   },
   {
     "company": "JS Plumbing Inc",
-    "permitContact": "JOHN R GRIEP",
-    "licenseContact": "Not Available",
+    "contact": "JOHN R GRIEP",
     "phone": "612-868-4102",
     "email": "jason@jaysplumbingservice.com",
     "permits": 29,
@@ -2739,8 +2525,7 @@
   },
   {
     "company": "Murray Plumbing LLC",
-    "permitContact": "MANUEL C HUERTA PIZHA",
-    "licenseContact": "Not Available",
+    "contact": "MANUEL C HUERTA PIZHA",
     "phone": "612-251-1020",
     "email": "murrayplumbingmn@hotmail.com",
     "permits": 28,
@@ -2752,8 +2537,7 @@
   },
   {
     "company": "Voson Plumbing Inc",
-    "permitContact": "NANCY ROOT",
-    "licenseContact": "Not Available",
+    "contact": "NANCY ROOT",
     "phone": "952-938-9300",
     "email": "voson@vosonplumbing.com",
     "permits": 27,
@@ -2765,8 +2549,7 @@
   },
   {
     "company": "Mattson Plumbing LLC",
-    "permitContact": "FARDOWSO ABDINUR LIVING TR",
-    "licenseContact": "Not Available",
+    "contact": "FARDOWSO ABDINUR LIVING TR",
     "phone": "651-554-9000",
     "email": "jim@allisonplumbing.com",
     "permits": 27,
@@ -2778,8 +2561,7 @@
   },
   {
     "company": "KB Service Co",
-    "permitContact": "RUTH K LOWENTHAL",
-    "licenseContact": "Not Available",
+    "contact": "RUTH K LOWENTHAL",
     "phone": "651-748-4933",
     "email": "briannerison@aol.com",
     "permits": 26,
@@ -2791,8 +2573,7 @@
   },
   {
     "company": "Brikk Mechanical LLC",
-    "permitContact": "JOSE MARTINEZ",
-    "licenseContact": "Not Available",
+    "contact": "JOSE MARTINEZ",
     "phone": "651-755-6130",
     "email": "bfrandrup10@gmail.com",
     "permits": 26,
@@ -2804,8 +2585,7 @@
   },
   {
     "company": "BENCHMARK PLUMBING INC",
-    "permitContact": "CLIFTON A ZAWASKY",
-    "licenseContact": "Not Available",
+    "contact": "CLIFTON A ZAWASKY",
     "phone": "651-755-8078",
     "email": "benchmark.plumbing@live.com",
     "permits": 26,
@@ -2817,8 +2597,7 @@
   },
   {
     "company": "Bruckmueller Plumbing Inc",
-    "permitContact": "DAVID M STURGEON",
-    "licenseContact": "Not Available",
+    "contact": "DAVID M STURGEON",
     "phone": "651-686-6696",
     "email": "bruckmuellerplumbing@q.com",
     "permits": 25,
@@ -2830,8 +2609,7 @@
   },
   {
     "company": "Binz Plumbing LLC",
-    "permitContact": "KAJUANA SHEPARD",
-    "licenseContact": "Not Available",
+    "contact": "KAJUANA SHEPARD",
     "phone": "952-212-4636",
     "email": "jwbinz@hotmail.com",
     "permits": 25,
@@ -2843,8 +2621,7 @@
   },
   {
     "company": "Focus Plumbing Services LLC",
-    "permitContact": "ANTHONY P IHRIG",
-    "licenseContact": "Not Available",
+    "contact": "ANTHONY P IHRIG",
     "phone": "651-295-5417",
     "email": "mjstell@comcast.net",
     "permits": 24,
@@ -2856,8 +2633,7 @@
   },
   {
     "company": "Captain Plumbing Services Inc",
-    "permitContact": "CAROL A WHITEFEATHER ET AL",
-    "licenseContact": "Not Available",
+    "contact": "CAROL A WHITEFEATHER ET AL",
     "phone": "651-366-7621",
     "email": "pluserinc@gmail.com",
     "permits": 24,
@@ -2869,8 +2645,7 @@
   },
   {
     "company": "Climate Makers Inc",
-    "permitContact": "JACOB D STARK",
-    "licenseContact": "Not Available",
+    "contact": "JACOB D STARK",
     "phone": "763-786-7522",
     "email": "bryanv@climatemakersinc.com",
     "permits": 24,
@@ -2882,8 +2657,7 @@
   },
   {
     "company": "Waters Plumbing LLC",
-    "permitContact": "HUGH QUINN",
-    "licenseContact": "Not Available",
+    "contact": "HUGH QUINN",
     "phone": "612-801-6649",
     "email": "watersf1@msn.com",
     "permits": 21,
@@ -2895,8 +2669,7 @@
   },
   {
     "company": "JRH Plumbing LLC",
-    "permitContact": "MING NICOLLET, LLC",
-    "licenseContact": "Not Available",
+    "contact": "MING NICOLLET, LLC",
     "phone": "763-425-1347",
     "email": "rplumbing77@gmail.com",
     "permits": 21,
@@ -2908,8 +2681,7 @@
   },
   {
     "company": "Voss Utility & Plumbing Inc",
-    "permitContact": "JACK'S GAS & SERVICE INC.",
-    "licenseContact": "Not Available",
+    "contact": "JACK'S GAS & SERVICE INC.",
     "phone": "763-497-4577",
     "email": "vossup@comcast.net",
     "permits": 21,
@@ -2921,8 +2693,7 @@
   },
   {
     "company": "Modern Plumbing, LLC",
-    "permitContact": "CARISA KARWOWSKI",
-    "licenseContact": "Not Available",
+    "contact": "CARISA KARWOWSKI",
     "phone": "612-870-0022",
     "email": "code.plumbing@gmail.com",
     "permits": 21,
@@ -2934,8 +2705,7 @@
   },
   {
     "company": "GARDNER PLUMBING LLC",
-    "permitContact": "MN46 LLC",
-    "licenseContact": "Not Available",
+    "contact": "MN46 LLC",
     "phone": "651-238-1905",
     "email": "geno.gardner@comcast.net",
     "permits": 21,
@@ -2947,8 +2717,7 @@
   },
   {
     "company": "DLM Plumbing LLC",
-    "permitContact": "MARY C CAVANAGH",
-    "licenseContact": "Not Available",
+    "contact": "MARY C CAVANAGH",
     "phone": "952-270-3062",
     "email": "plumbingbyjd@gmail.com",
     "permits": 20,
@@ -2960,8 +2729,7 @@
   },
   {
     "company": "Kenwood Plumbing Inc",
-    "permitContact": "JANET F WATSON",
-    "licenseContact": "Not Available",
+    "contact": "JANET F WATSON",
     "phone": "952-249-6686",
     "email": "kenwoodplbg@frontier.com",
     "permits": 20,
@@ -2973,8 +2741,7 @@
   },
   {
     "company": "Northeast Plumbing Inc",
-    "permitContact": "KATHERINE SUMMERS",
-    "licenseContact": "Not Available",
+    "contact": "KATHERINE SUMMERS",
     "phone": "763-753-5216",
     "email": "info@nowthenplumbing.com",
     "permits": 20,
@@ -2986,8 +2753,7 @@
   },
   {
     "company": "Pure Mechanical LLC",
-    "permitContact": "JAMES LUCKEY",
-    "licenseContact": "Not Available",
+    "contact": "JAMES LUCKEY",
     "phone": "952-232-4843",
     "email": "pat@agapemechanical.com",
     "permits": 19,
@@ -2999,8 +2765,7 @@
   },
   {
     "company": "EMC SERVICES INC",
-    "permitContact": "2100 GRAND AVE S LLC",
-    "licenseContact": "Not Available",
+    "contact": "2100 GRAND AVE S LLC",
     "phone": "763-712-0252",
     "email": "jegan32183@gmail.com",
     "permits": 18,
@@ -3012,8 +2777,7 @@
   },
   {
     "company": "Midwest Maintenance and Mechanical Inc",
-    "permitContact": "KALSYBRO COMPANY INC",
-    "licenseContact": "Not Available",
+    "contact": "KALSYBRO COMPANY INC",
     "phone": "612-363-4164",
     "email": "edk@midwestmaint.com",
     "permits": 16,
@@ -3025,8 +2789,7 @@
   },
   {
     "company": "Armor Mechanical LLC",
-    "permitContact": "KAPPA KAPPA GAMMA ASSOCIATION",
-    "licenseContact": "Not Available",
+    "contact": "KAPPA KAPPA GAMMA ASSOCIATION",
     "phone": "651-633-2101",
     "email": "kappa.association@armor.com",
     "permits": 15,
@@ -3038,8 +2801,7 @@
   },
   {
     "company": "All Ways Plumbing Inc",
-    "permitContact": "RICHARD A LAUMER",
-    "licenseContact": "Not Available",
+    "contact": "RICHARD A LAUMER",
     "phone": "763-286-8328",
     "email": "joe@allwaysplumbinginc.com",
     "permits": 15,
@@ -3051,8 +2813,7 @@
   },
   {
     "company": "Polo Plumbing Inc",
-    "permitContact": "NICHOLAS GRIZZELL",
-    "licenseContact": "Not Available",
+    "contact": "NICHOLAS GRIZZELL",
     "phone": "952-948-1806",
     "email": "john.adelmann@gmail.com",
     "permits": 15,
@@ -3064,8 +2825,7 @@
   },
   {
     "company": "Avid Heating and Cooling Inc",
-    "permitContact": "JOHN PATRICK MEYERS",
-    "licenseContact": "Not Available",
+    "contact": "JOHN PATRICK MEYERS",
     "phone": "612-767-5029",
     "email": "joshh@calluptown.com",
     "permits": 14,
@@ -3077,8 +2837,7 @@
   },
   {
     "company": "BERGSTROM PLUMBING INC",
-    "permitContact": "DAVID L JENSEN",
-    "licenseContact": "Not Available",
+    "contact": "DAVID L JENSEN",
     "phone": "763-856-9898",
     "email": "bergstromplumber@gmail.com",
     "permits": 14,
@@ -3090,8 +2849,7 @@
   },
   {
     "company": "TEAM MECHANICAL INC",
-    "permitContact": "KYLE C SIMMONS",
-    "licenseContact": "Not Available",
+    "contact": "KYLE C SIMMONS",
     "phone": "651-636-7222",
     "email": "gatewaymech@qwestoffice.net",
     "permits": 14,
@@ -3103,8 +2861,7 @@
   },
   {
     "company": "Klamm Mechanical Contractors Inc",
-    "permitContact": "L L DILWORTH & S DILWORTH",
-    "licenseContact": "Not Available",
+    "contact": "L L DILWORTH & S DILWORTH",
     "phone": "952-890-4868",
     "email": "michelle.m@klammmechanical.com",
     "permits": 11,
@@ -3116,8 +2873,7 @@
   },
   {
     "company": "Galaxy Mechanical Inc",
-    "permitContact": "MPLS BOARD OF EDUCATION DISTRICT #1",
-    "licenseContact": "Not Available",
+    "contact": "MPLS BOARD OF EDUCATION DISTRICT #1",
     "phone": "763-355-5266",
     "email": "galaxymechanical@comcast.net",
     "permits": 11,
@@ -3129,8 +2885,7 @@
   },
   {
     "company": "RYAN MECHANICAL INC",
-    "permitContact": "MEGAN A CARLSON",
-    "licenseContact": "Not Available",
+    "contact": "MEGAN A CARLSON",
     "phone": "651-388-1510",
     "email": "debbie@ryanmech.com",
     "permits": 11,
@@ -3142,8 +2897,7 @@
   },
   {
     "company": "Two Rivers Plumbing Inc",
-    "permitContact": "5C INVESTMENTS LLC",
-    "licenseContact": "Not Available",
+    "contact": "5C INVESTMENTS LLC",
     "phone": "763-856-0044",
     "email": "tworiversplumbing@yahoo.com",
     "permits": 11,
@@ -3155,8 +2909,7 @@
   },
   {
     "company": "Hammer Plumbing LLC",
-    "permitContact": "LBD REAL ESTATE HLDGS LLC",
-    "licenseContact": "Not Available",
+    "contact": "LBD REAL ESTATE HLDGS LLC",
     "phone": "651-481-4929",
     "email": "plumcrzy1229@yahoo.com",
     "permits": 9,
@@ -3168,8 +2921,7 @@
   },
   {
     "company": "Apollo Plumbing Inc",
-    "permitContact": "VALERIE LAWSON",
-    "licenseContact": "Not Available",
+    "contact": "VALERIE LAWSON",
     "phone": "952-948-1806",
     "email": "john.adelmann@gmail.com",
     "permits": 9,
@@ -3181,8 +2933,7 @@
   },
   {
     "company": "JMS Plumbing LLC",
-    "permitContact": "CYNTHIA SIMMONS",
-    "licenseContact": "Not Available",
+    "contact": "CYNTHIA SIMMONS",
     "phone": "763-258-7488",
     "email": "mikekeding@hotmail.com",
     "permits": 9,
@@ -3194,8 +2945,7 @@
   },
   {
     "company": "Lake Area Plumbing Inc",
-    "permitContact": "MICHAEL A MANNO",
-    "licenseContact": "Not Available",
+    "contact": "MICHAEL A MANNO",
     "phone": "651-400-2160",
     "email": "jeremy@lakeareaplumbing.com",
     "permits": 9,
@@ -3207,8 +2957,7 @@
   },
   {
     "company": "AJ Alberts Plumbing",
-    "permitContact": "FRP OR LLC",
-    "licenseContact": "Not Available",
+    "contact": "FRP OR LLC",
     "phone": "651-738-0580",
     "email": "jim@ajalberts.com",
     "permits": 8,
@@ -3220,8 +2969,7 @@
   },
   {
     "company": "Keppers Plumbing LLC",
-    "permitContact": "GLORIA HOLDINGS LLC",
-    "licenseContact": "Not Available",
+    "contact": "GLORIA HOLDINGS LLC",
     "phone": "612-868-7278",
     "email": "ppsplumbingcompany@gmail.com",
     "permits": 8,
@@ -3233,8 +2981,7 @@
   },
   {
     "company": "Metropolitan Mechanical Contractors",
-    "permitContact": "FAIRVIEW HOSPITAL HEALTHCARE SERVICES",
-    "licenseContact": "Not Available",
+    "contact": "FAIRVIEW HOSPITAL HEALTHCARE SERVICES",
     "phone": "952-941-7010",
     "email": "fairview.services@metropolitanmechanicalcontractors.com",
     "permits": 7,
@@ -3246,8 +2993,7 @@
   },
   {
     "company": "Pure Plumbing LLC",
-    "permitContact": "MADELINE E BERVIK",
-    "licenseContact": "Not Available",
+    "contact": "MADELINE E BERVIK",
     "phone": "612-462-6678",
     "email": "pope.plumbing.mn@gmail.com",
     "permits": 7,
@@ -3259,8 +3005,7 @@
   },
   {
     "company": "RIGID Plumbing LLC",
-    "permitContact": "JOSHUA G NEWHOUSE",
-    "licenseContact": "Not Available",
+    "contact": "JOSHUA G NEWHOUSE",
     "phone": "763-614-7963",
     "email": "theresa@springplumbing.net",
     "permits": 7,
@@ -3272,8 +3017,7 @@
   },
   {
     "company": "KT Plumbing Service Inc",
-    "permitContact": "RAMONA J HALVORSON",
-    "licenseContact": "Not Available",
+    "contact": "RAMONA J HALVORSON",
     "phone": "651-366-7621",
     "email": "pluserinc@gmail.com",
     "permits": 6,
@@ -3285,8 +3029,7 @@
   },
   {
     "company": "Quality Plumbing Limited Liability Company LLC",
-    "permitContact": "MARNY SKY",
-    "licenseContact": "Not Available",
+    "contact": "MARNY SKY",
     "phone": "952-412-5545",
     "email": "richard.brandes@yahoo.com",
     "permits": 6,
@@ -3298,8 +3041,7 @@
   },
   {
     "company": "RJ Mechanical Inc",
-    "permitContact": "METROPOLITAN TRANSIT COMMISSION",
-    "licenseContact": "Not Available",
+    "contact": "METROPOLITAN TRANSIT COMMISSION",
     "phone": "320-679-0602",
     "email": "brad@rjmechanical.biz",
     "permits": 6,
@@ -3311,8 +3053,7 @@
   },
   {
     "company": "Fix Plumbing LLC",
-    "permitContact": "BRICK LLC",
-    "licenseContact": "Not Available",
+    "contact": "BRICK LLC",
     "phone": "952-920-9125",
     "email": "jeff@aciplumbing.com",
     "permits": 4,
@@ -3324,8 +3065,7 @@
   },
   {
     "company": "RT Moore Co MN Inc",
-    "permitContact": "2810 PARK AVE S, LLC",
-    "licenseContact": "Not Available",
+    "contact": "2810 PARK AVE S, LLC",
     "phone": "952-736-3759",
     "email": "emoore@rtmooremechanical.com",
     "permits": 4,
@@ -3337,8 +3077,7 @@
   },
   {
     "company": "Harrison Plumbing Limited Liability Company",
-    "permitContact": "ROYAL PRIESTHOOD, LLC",
-    "licenseContact": "Not Available",
+    "contact": "ROYAL PRIESTHOOD, LLC",
     "phone": "651-554-9000",
     "email": "jim@allisonplumbing.com",
     "permits": 4,
@@ -3350,8 +3089,7 @@
   },
   {
     "company": "Beeline Plumbing LLC",
-    "permitContact": "BELLE M GERTJEJANSEN",
-    "licenseContact": "Not Available",
+    "contact": "BELLE M GERTJEJANSEN",
     "phone": "952-212-4636",
     "email": "jwbinz@hotmail.com",
     "permits": 3,
@@ -3363,8 +3101,7 @@
   },
   {
     "company": "HANSEN PLUMBING",
-    "permitContact": "J SELVAGGIO INITIATIVE LP",
-    "licenseContact": "Not Available",
+    "contact": "J SELVAGGIO INITIATIVE LP",
     "phone": "651-257-3522",
     "email": "jhansenplumbing@aol.com",
     "permits": 3,
@@ -3376,8 +3113,7 @@
   },
   {
     "company": "Roark Plumbing Inc",
-    "permitContact": "WILLIAM MUNSON",
-    "licenseContact": "Not Available",
+    "contact": "WILLIAM MUNSON",
     "phone": "612-867-2521",
     "email": "micha@roarkplumbing.com",
     "permits": 3,
@@ -3389,8 +3125,7 @@
   },
   {
     "company": "Onyx Plumbing LLC",
-    "permitContact": "MAGGIE WATSON",
-    "licenseContact": "Not Available",
+    "contact": "MAGGIE WATSON",
     "phone": "651-276-9310",
     "email": "arneyplumbing@gmail.com",
     "permits": 2,
@@ -3402,8 +3137,7 @@
   },
   {
     "company": "Mid State Plumbing & Heating Inc",
-    "permitContact": "Not Available",
-    "licenseContact": "Not Available",
+    "contact": "",
     "phone": "952-445-4444",
     "email": "paul@mnplumbingandheating.com",
     "permits": 2,
@@ -3415,8 +3149,7 @@
   },
   {
     "company": "TY Plumbing",
-    "permitContact": "SARAH E SENSEMAN",
-    "licenseContact": "Not Available",
+    "contact": "SARAH E SENSEMAN",
     "phone": "612-817-6731",
     "email": "bret@allcityplumbingmn.com",
     "permits": 2,
@@ -3428,8 +3161,7 @@
   },
   {
     "company": "Twin Cities Premier Plumbing LLC",
-    "permitContact": "MARCUS B KILGORE",
-    "licenseContact": "Not Available",
+    "contact": "MARCUS B KILGORE",
     "phone": "651-274-6547",
     "email": "michelle@cities1plumbing.com",
     "permits": 2,
@@ -3441,8 +3173,7 @@
   },
   {
     "company": "Modern Plumbing LLC",
-    "permitContact": "Not Available",
-    "licenseContact": "Not Available",
+    "contact": "",
     "phone": "612-870-0022",
     "email": "code.plumbing@gmail.com",
     "permits": 1,
@@ -3454,8 +3185,7 @@
   },
   {
     "company": "Woods  Plumbing Services LLC",
-    "permitContact": "KRISTEN ST MICHEL",
-    "licenseContact": "Not Available",
+    "contact": "KRISTEN ST MICHEL",
     "phone": "651-295-5417",
     "email": "mjstell@comcast.net",
     "permits": 1,
@@ -3467,8 +3197,7 @@
   },
   {
     "company": "VPlumbing LLC",
-    "permitContact": "CRYSTAL CONSTRUCTION INC",
-    "licenseContact": "Not Available",
+    "contact": "CRYSTAL CONSTRUCTION INC",
     "phone": "952-270-3062",
     "email": "plumbingbyjd@gmail.com",
     "permits": 1,
@@ -3480,8 +3209,7 @@
   },
   {
     "company": "Excel Mechanical Inc",
-    "permitContact": "JACKIE JANE HWANG",
-    "licenseContact": "Not Available",
+    "contact": "JACKIE JANE HWANG",
     "phone": "952-955-0021",
     "email": "jackie.hwang@excel.com",
     "permits": 1,
@@ -3493,8 +3221,7 @@
   },
   {
     "company": "Area Mechanical LLC",
-    "permitContact": "STATE OF MINN",
-    "licenseContact": "Not Available",
+    "contact": "STATE OF MINN",
     "phone": "651-789-8880",
     "email": "chris@aquamechanical.net",
     "permits": 1,
@@ -3506,8 +3233,7 @@
   },
   {
     "company": "BOZ Plumbing LLC",
-    "permitContact": "PRESTON MOERKE",
-    "licenseContact": "Not Available",
+    "contact": "PRESTON MOERKE",
     "phone": "763-757-1991",
     "email": "steveboe95@hotmail.com",
     "permits": 1,
@@ -3519,8 +3245,7 @@
   },
   {
     "company": "Metropolitan Mechanical Contractors Inc",
-    "permitContact": "MGEX REAL ESTATE HLDGS LLC",
-    "licenseContact": "Not Available",
+    "contact": "MGEX REAL ESTATE HLDGS LLC",
     "phone": "952-941-7010",
     "email": "",
     "permits": 1236,
@@ -3532,8 +3257,7 @@
   },
   {
     "company": "Associated Mechanical Contractors Inc",
-    "permitContact": "DORAN MAIN LLC",
-    "licenseContact": "Not Available",
+    "contact": "DORAN MAIN LLC",
     "phone": "952-445-5100",
     "email": "",
     "permits": 215,
@@ -3545,8 +3269,7 @@
   },
   {
     "company": "Modern Heating & Air Conditioning LLC",
-    "permitContact": "DGB INVESTORS, LLC",
-    "licenseContact": "Not Available",
+    "contact": "DGB INVESTORS, LLC",
     "phone": "952-669-1941",
     "email": "",
     "permits": 177,
@@ -3558,8 +3281,7 @@
   },
   {
     "company": "TPK Plumbing and Heating LLC",
-    "permitContact": "DINKYTOWN RENTALS LLC",
-    "licenseContact": "Not Available",
+    "contact": "DINKYTOWN RENTALS LLC",
     "phone": "715-410-8430",
     "email": "",
     "permits": 4,
@@ -3571,8 +3293,7 @@
   },
   {
     "company": "CENTERPOINT ENERGY",
-    "permitContact": "AUGUSTIN MARTINEZ",
-    "licenseContact": "Not Available",
+    "contact": "AUGUSTIN MARTINEZ",
     "phone": "",
     "email": "augustin.martinez@centerpointenergy.com",
     "permits": 6628,
@@ -3584,8 +3305,7 @@
   },
   {
     "company": "MN Plumbing & Home Services INC",
-    "permitContact": "MARK C EYBERG",
-    "licenseContact": "Not Available",
+    "contact": "MARK C EYBERG",
     "phone": "",
     "email": "mark.eyberg@mnplumbinghome.com",
     "permits": 4578,
@@ -3597,8 +3317,7 @@
   },
   {
     "company": "FIRESIDE HEARTH AND HOME",
-    "permitContact": "WARREN VOLLMAR",
-    "licenseContact": "Not Available",
+    "contact": "WARREN VOLLMAR",
     "phone": "",
     "email": "warren.vollmar@firesidehearthandhome.com",
     "permits": 1831,
@@ -3610,8 +3329,7 @@
   },
   {
     "company": "SODERLIN PLUMBING HEATING AND AIR",
-    "permitContact": "DANIEL B DAHL",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL B DAHL",
     "phone": "",
     "email": "daniel.dahl@soderlinplumbingheatingandair.com",
     "permits": 1257,
@@ -3623,8 +3341,7 @@
   },
   {
     "company": "Hero Home Services LLC",
-    "permitContact": "MAXIMO F FIGUEROA",
-    "licenseContact": "Not Available",
+    "contact": "MAXIMO F FIGUEROA",
     "phone": "",
     "email": "maximo.figueroa@herohome.com",
     "permits": 1057,
@@ -3636,8 +3353,7 @@
   },
   {
     "company": "Water Heaters Now Inc",
-    "permitContact": "KRISTINA E SIGLER",
-    "licenseContact": "Not Available",
+    "contact": "KRISTINA E SIGLER",
     "phone": "",
     "email": "kristina.sigler@waterheatersnow.com",
     "permits": 925,
@@ -3649,8 +3365,7 @@
   },
   {
     "company": "FFM LLC",
-    "permitContact": "DENZEL A KINGSBURY",
-    "licenseContact": "Not Available",
+    "contact": "DENZEL A KINGSBURY",
     "phone": "",
     "email": "denzel.kingsbury@ffm.com",
     "permits": 699,
@@ -3662,8 +3377,7 @@
   },
   {
     "company": "Twin City Fireplace & Stone Company",
-    "permitContact": "BRENDON DENNEWILL",
-    "licenseContact": "Not Available",
+    "contact": "BRENDON DENNEWILL",
     "phone": "",
     "email": "brendon.dennewill@twincityfireplacestone.com",
     "permits": 694,
@@ -3675,8 +3389,7 @@
   },
   {
     "company": "4Front Energy Solutions Inc",
-    "permitContact": "MARK R BERGSTROM",
-    "licenseContact": "Not Available",
+    "contact": "MARK R BERGSTROM",
     "phone": "",
     "email": "mark.bergstrom@4frontenergysolutions.com",
     "permits": 653,
@@ -3688,8 +3401,7 @@
   },
   {
     "company": "WOODLAND STOVES & FIREPLACES",
-    "permitContact": "JONATHAN B PETERSON",
-    "licenseContact": "Not Available",
+    "contact": "JONATHAN B PETERSON",
     "phone": "",
     "email": "jonathan.peterson@woodlandstovesfireplaces.com",
     "permits": 564,
@@ -3701,8 +3413,7 @@
   },
   {
     "company": "Paul Bunyan Plumbing, LLC",
-    "permitContact": "DONALD S PORTER",
-    "licenseContact": "Not Available",
+    "contact": "DONALD S PORTER",
     "phone": "",
     "email": "donald.porter@paulbunyan.com",
     "permits": 424,
@@ -3714,8 +3425,7 @@
   },
   {
     "company": "Mad City Windows & Bath",
-    "permitContact": "THOMAS L NORDYKE",
-    "licenseContact": "Not Available",
+    "contact": "THOMAS L NORDYKE",
     "phone": "",
     "email": "thomas.nordyke@madcitywindowsbath.com",
     "permits": 342,
@@ -3727,8 +3437,7 @@
   },
   {
     "company": "ECOWATER",
-    "permitContact": "SWETHA R PALLE",
-    "licenseContact": "Not Available",
+    "contact": "SWETHA R PALLE",
     "phone": "",
     "email": "swetha.palle@ecowater.com",
     "permits": 333,
@@ -3740,8 +3449,7 @@
   },
   {
     "company": "Northern's Benjamin Franklin Plumbing",
-    "permitContact": "JESSICA LONIE MOONEY",
-    "licenseContact": "Not Available",
+    "contact": "JESSICA LONIE MOONEY",
     "phone": "",
     "email": "jessica.mooney@northernsbenjaminfranklin.com",
     "permits": 331,
@@ -3753,8 +3461,7 @@
   },
   {
     "company": "Minnesota Rusco Inc",
-    "permitContact": "KRISTINA A BRADBURY",
-    "licenseContact": "Not Available",
+    "contact": "KRISTINA A BRADBURY",
     "phone": "",
     "email": "kristina.bradbury@minnesotarus.com",
     "permits": 324,
@@ -3766,8 +3473,7 @@
   },
   {
     "company": "ED'S PLUMBING AND HEATING",
-    "permitContact": "LUCAS KASTER",
-    "licenseContact": "Not Available",
+    "contact": "LUCAS KASTER",
     "phone": "",
     "email": "lucas.kaster@edsplumbingand.com",
     "permits": 292,
@@ -3779,8 +3485,7 @@
   },
   {
     "company": "Bartylla Plumbing and Heating Inc",
-    "permitContact": "VANNESSA HARPER WHITE ET AL",
-    "licenseContact": "Not Available",
+    "contact": "VANNESSA HARPER WHITE ET AL",
     "phone": "",
     "email": "vannessa.al@bartyllaplumbingand.com",
     "permits": 291,
@@ -3792,8 +3497,7 @@
   },
   {
     "company": "Schadegg Mechanical",
-    "permitContact": "KBSIII 60 SOUTH SIXTH STREET LLC",
-    "licenseContact": "Not Available",
+    "contact": "KBSIII 60 SOUTH SIXTH STREET LLC",
     "phone": "",
     "email": "dschadegg@schadegg-mech.com",
     "permits": 268,
@@ -3805,8 +3509,7 @@
   },
   {
     "company": "Ron the Sewer Rat Inc",
-    "permitContact": "ROBIN M HESSER",
-    "licenseContact": "Not Available",
+    "contact": "ROBIN M HESSER",
     "phone": "",
     "email": "robin.hesser@ronthesewerrat.com",
     "permits": 242,
@@ -3818,8 +3521,7 @@
   },
   {
     "company": "Jayhawk Mechanical Inc",
-    "permitContact": "JILL PIANO",
-    "licenseContact": "Not Available",
+    "contact": "JILL PIANO",
     "phone": "",
     "email": "jill.piano@jayhawk.com",
     "permits": 189,
@@ -3831,8 +3533,7 @@
   },
   {
     "company": "Glowing Hearth & Home LLC",
-    "permitContact": "JOSH BUSHARD",
-    "licenseContact": "Not Available",
+    "contact": "JOSH BUSHARD",
     "phone": "",
     "email": "josh.bushard@glowinghearthhome.com",
     "permits": 157,
@@ -3844,8 +3545,7 @@
   },
   {
     "company": "BURNOMATIC",
-    "permitContact": "SHANE D THOME",
-    "licenseContact": "Not Available",
+    "contact": "SHANE D THOME",
     "phone": "",
     "email": "shane.thome@burnomatic.com",
     "permits": 150,
@@ -3857,8 +3557,7 @@
   },
   {
     "company": "SEDGWICK HEATING & AIR CONDITIONING",
-    "permitContact": "DANIEL R BOURGEOIS",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL R BOURGEOIS",
     "phone": "",
     "email": "daniel.bourgeois@sedgwickheatingairconditioning.com",
     "permits": 130,
@@ -3870,8 +3569,7 @@
   },
   {
     "company": "Admiral Radon & Mechanical Services LLC",
-    "permitContact": "GLORIA R BURNETT",
-    "licenseContact": "Not Available",
+    "contact": "GLORIA R BURNETT",
     "phone": "",
     "email": "gloria.burnett@admiralradonmechanical.com",
     "permits": 130,
@@ -3883,8 +3581,7 @@
   },
   {
     "company": "Creative Heating and Air Conditioning LLC",
-    "permitContact": "JEFFREY GOERTZ",
-    "licenseContact": "Not Available",
+    "contact": "JEFFREY GOERTZ",
     "phone": "",
     "email": "jeffrey.goertz@creativeheatingandairconditioning.com",
     "permits": 96,
@@ -3896,8 +3593,7 @@
   },
   {
     "company": "Tony's Plumbing and Heating",
-    "permitContact": "GEORGE L EFTELAND",
-    "licenseContact": "Not Available",
+    "contact": "GEORGE L EFTELAND",
     "phone": "",
     "email": "george.efteland@tonysplumbingand.com",
     "permits": 96,
@@ -3909,8 +3605,7 @@
   },
   {
     "company": "Goss Plumbing Inc",
-    "permitContact": "LUCAS BRATVOLD",
-    "licenseContact": "Not Available",
+    "contact": "LUCAS BRATVOLD",
     "phone": "",
     "email": "hossplumbingllc@gmail.com",
     "permits": 87,
@@ -3922,8 +3617,7 @@
   },
   {
     "company": "D & K Plumbing LLC",
-    "permitContact": "BRADLEY BORN",
-    "licenseContact": "Not Available",
+    "contact": "BRADLEY BORN",
     "phone": "",
     "email": "nothaft@comcast.net",
     "permits": 87,
@@ -3935,8 +3629,7 @@
   },
   {
     "company": "Blue Yeti Services LLC",
-    "permitContact": "JANE A BARTON",
-    "licenseContact": "Not Available",
+    "contact": "JANE A BARTON",
     "phone": "",
     "email": "jane.barton@blueyeti.com",
     "permits": 77,
@@ -3948,8 +3641,7 @@
   },
   {
     "company": "Guptil Contracting Inc",
-    "permitContact": "JAMIE KOEHLER",
-    "licenseContact": "Not Available",
+    "contact": "JAMIE KOEHLER",
     "phone": "",
     "email": "jamie.koehler@guptilcontracting.com",
     "permits": 75,
@@ -3961,8 +3653,7 @@
   },
   {
     "company": "Davis Mechanical Systems, Inc.",
-    "permitContact": "PARENTS IN COMMUNITY ACTION",
-    "licenseContact": "Not Available",
+    "contact": "PARENTS IN COMMUNITY ACTION",
     "phone": "",
     "email": "parents.action@davismechanicalsystems.com",
     "permits": 75,
@@ -3974,8 +3665,7 @@
   },
   {
     "company": "Harris St Paul Inc",
-    "permitContact": "N J BURNS",
-    "licenseContact": "Not Available",
+    "contact": "N J BURNS",
     "phone": "",
     "email": "n.burns@harrisstpaul.com",
     "permits": 73,
@@ -3987,8 +3677,7 @@
   },
   {
     "company": "Crimson Copper LLC",
-    "permitContact": "NICHOLAS WESCHE",
-    "licenseContact": "Not Available",
+    "contact": "NICHOLAS WESCHE",
     "phone": "",
     "email": "nicholas.wesche@crimsoncopper.com",
     "permits": 68,
@@ -4000,8 +3689,7 @@
   },
   {
     "company": "Visionary Plumbing LLC",
-    "permitContact": "KIRA HARTKE",
-    "licenseContact": "Not Available",
+    "contact": "KIRA HARTKE",
     "phone": "",
     "email": "aaron@visionaryplumbing.com",
     "permits": 68,
@@ -4013,8 +3701,7 @@
   },
   {
     "company": "Ray N Welter Heating Co",
-    "permitContact": "JEREMY LEWIS",
-    "licenseContact": "Not Available",
+    "contact": "JEREMY LEWIS",
     "phone": "",
     "email": "jeremy.lewis@raynwelter.com",
     "permits": 68,
@@ -4026,8 +3713,7 @@
   },
   {
     "company": "TWIN CITY HEATING AND AIR",
-    "permitContact": "ENUYE FANETA",
-    "licenseContact": "Not Available",
+    "contact": "ENUYE FANETA",
     "phone": "",
     "email": "enuye.faneta@twincityheatingandair.com",
     "permits": 67,
@@ -4039,8 +3725,7 @@
   },
   {
     "company": "Pipe and Water Plumbing LLC",
-    "permitContact": "JAMES C BRAND",
-    "licenseContact": "Not Available",
+    "contact": "JAMES C BRAND",
     "phone": "",
     "email": "james.brand@pipeandwater.com",
     "permits": 62,
@@ -4052,8 +3737,7 @@
   },
   {
     "company": "Super Heating and Cooling LLC",
-    "permitContact": "JORDAN M W NARVEY",
-    "licenseContact": "Not Available",
+    "contact": "JORDAN M W NARVEY",
     "phone": "",
     "email": "jordan.narvey@superheatingand.com",
     "permits": 60,
@@ -4065,8 +3749,7 @@
   },
   {
     "company": "Seabass Plumbing LLC",
-    "permitContact": "DAVID WIERZBA",
-    "licenseContact": "Not Available",
+    "contact": "DAVID WIERZBA",
     "phone": "",
     "email": "david.wierzba@seabass.com",
     "permits": 55,
@@ -4078,8 +3761,7 @@
   },
   {
     "company": "Jeffrey Hansen",
-    "permitContact": "ERIKA WOODS",
-    "licenseContact": "Not Available",
+    "contact": "ERIKA WOODS",
     "phone": "",
     "email": "erika.woods@jeffreyhansen.com",
     "permits": 54,
@@ -4091,8 +3773,7 @@
   },
   {
     "company": "METRO GAS INSTALLERS",
-    "permitContact": "CONRAD E SMITH ET AL",
-    "licenseContact": "Not Available",
+    "contact": "CONRAD E SMITH ET AL",
     "phone": "",
     "email": "conrad.al@metrogasinstallers.com",
     "permits": 53,
@@ -4104,8 +3785,7 @@
   },
   {
     "company": "The Plumbing Heating and AC Doctor Inc",
-    "permitContact": "ISELA A SANCHEZ",
-    "licenseContact": "Not Available",
+    "contact": "ISELA A SANCHEZ",
     "phone": "",
     "email": "isela.sanchez@theplumbingheatingandacdoctor.com",
     "permits": 51,
@@ -4117,8 +3797,7 @@
   },
   {
     "company": "Tundraland Home Improvements",
-    "permitContact": "BETTYE S GRANGER",
-    "licenseContact": "Not Available",
+    "contact": "BETTYE S GRANGER",
     "phone": "",
     "email": "bettye.granger@tundralandhomeimprovements.com",
     "permits": 51,
@@ -4130,8 +3809,7 @@
   },
   {
     "company": "Loch Monster Plumbing LLC",
-    "permitContact": "SUNSETT D REYNOLDS",
-    "licenseContact": "Not Available",
+    "contact": "SUNSETT D REYNOLDS",
     "phone": "",
     "email": "sunsett.reynolds@lochmonster.com",
     "permits": 51,
@@ -4143,8 +3821,7 @@
   },
   {
     "company": "Mr. Plumbing and Drains LLC",
-    "permitContact": "KIM P RADKE",
-    "licenseContact": "Not Available",
+    "contact": "KIM P RADKE",
     "phone": "",
     "email": "kim.radke@mrplumbinganddrains.com",
     "permits": 51,
@@ -4156,8 +3833,7 @@
   },
   {
     "company": "McQuillan Home Services LLC",
-    "permitContact": "STUART W GRANDE",
-    "licenseContact": "Not Available",
+    "contact": "STUART W GRANDE",
     "phone": "",
     "email": "stuart.grande@mcquillanhome.com",
     "permits": 51,
@@ -4169,8 +3845,7 @@
   },
   {
     "company": "API Companies",
-    "permitContact": "LUKE RISIUS",
-    "licenseContact": "Not Available",
+    "contact": "LUKE RISIUS",
     "phone": "",
     "email": "luke.risius@apicompanies.com",
     "permits": 50,
@@ -4182,8 +3857,7 @@
   },
   {
     "company": "H and H Plumbing",
-    "permitContact": "DANIEL G JODARSKI",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL G JODARSKI",
     "phone": "",
     "email": "bruceheggsenior@gmail.com",
     "permits": 48,
@@ -4195,8 +3869,7 @@
   },
   {
     "company": "SERVICE STAR PLUMBING LLC",
-    "permitContact": "HOPE B HUTCHISON",
-    "licenseContact": "Not Available",
+    "contact": "HOPE B HUTCHISON",
     "phone": "",
     "email": "hope.hutchison@servicestar.com",
     "permits": 47,
@@ -4208,8 +3881,7 @@
   },
   {
     "company": "Your Home Improvement Company LLC",
-    "permitContact": "MICHELLE RAE MORALES",
-    "licenseContact": "Not Available",
+    "contact": "MICHELLE RAE MORALES",
     "phone": "",
     "email": "michelle.morales@yourhomeimprovement.com",
     "permits": 46,
@@ -4221,8 +3893,7 @@
   },
   {
     "company": "Air Rite Mechanical Systems Inc",
-    "permitContact": "ARTHUR R BARLOW",
-    "licenseContact": "Not Available",
+    "contact": "ARTHUR R BARLOW",
     "phone": "",
     "email": "arthur.barlow@airritemechanicalsystems.com",
     "permits": 45,
@@ -4234,8 +3905,7 @@
   },
   {
     "company": "AQUARIUS HOME SERVICES",
-    "permitContact": "MICHELLE A WATANABE",
-    "licenseContact": "Not Available",
+    "contact": "MICHELLE A WATANABE",
     "phone": "",
     "email": "michelle.watanabe@aquariushome.com",
     "permits": 44,
@@ -4247,8 +3917,7 @@
   },
   {
     "company": "MN PLUMBING PRO LLC",
-    "permitContact": "DAVID BELL",
-    "licenseContact": "Not Available",
+    "contact": "DAVID BELL",
     "phone": "",
     "email": "david.bell@mnplumbingpro.com",
     "permits": 41,
@@ -4260,8 +3929,7 @@
   },
   {
     "company": "Tri County Water Conditioning, Inc.",
-    "permitContact": "HEIDI J KIM",
-    "licenseContact": "Not Available",
+    "contact": "HEIDI J KIM",
     "phone": "",
     "email": "heidi.kim@tricountywaterconditioning.com",
     "permits": 41,
@@ -4273,8 +3941,7 @@
   },
   {
     "company": "Highland Plumbing LLC",
-    "permitContact": "JENNIFER J HALVERSON",
-    "licenseContact": "Not Available",
+    "contact": "JENNIFER J HALVERSON",
     "phone": "",
     "email": "jennifer.halverson@highland.com",
     "permits": 40,
@@ -4286,8 +3953,7 @@
   },
   {
     "company": "Pattim LLC",
-    "permitContact": "SARAH C GEROLD",
-    "licenseContact": "Not Available",
+    "contact": "SARAH C GEROLD",
     "phone": "",
     "email": "sarah.gerold@pattim.com",
     "permits": 39,
@@ -4299,8 +3965,7 @@
   },
   {
     "company": "Marchand Plumbing and Gas LLC",
-    "permitContact": "KEVIN PAPKE",
-    "licenseContact": "Not Available",
+    "contact": "KEVIN PAPKE",
     "phone": "",
     "email": "kevin.papke@marchandplumbingandgas.com",
     "permits": 39,
@@ -4312,8 +3977,7 @@
   },
   {
     "company": "Hamlin Installations LLC",
-    "permitContact": "MARY J CASEY",
-    "licenseContact": "Not Available",
+    "contact": "MARY J CASEY",
     "phone": "",
     "email": "mary.casey@hamlininstallations.com",
     "permits": 39,
@@ -4325,8 +3989,7 @@
   },
   {
     "company": "Chan Consulting LLC",
-    "permitContact": "ST PAUL DEVELOPMENT CORP",
-    "licenseContact": "Not Available",
+    "contact": "ST PAUL DEVELOPMENT CORP",
     "phone": "",
     "email": "st.corp@chanconsulting.com",
     "permits": 35,
@@ -4338,8 +4001,7 @@
   },
   {
     "company": "WENZEL HEATING AND AIR CONDITIONING",
-    "permitContact": "DEANE BRUNER",
-    "licenseContact": "Not Available",
+    "contact": "DEANE BRUNER",
     "phone": "",
     "email": "deane.bruner@wenzelheatingandairconditioning.com",
     "permits": 32,
@@ -4351,8 +4013,7 @@
   },
   {
     "company": "Castro Plumbing and Construction LLC",
-    "permitContact": "ANDREW J KRAFT",
-    "licenseContact": "Not Available",
+    "contact": "ANDREW J KRAFT",
     "phone": "",
     "email": "andrew.kraft@castroplumbingandconstruction.com",
     "permits": 32,
@@ -4364,8 +4025,7 @@
   },
   {
     "company": "Rusco Kitchen Remodelers",
-    "permitContact": "ANDREW J THOMPSON",
-    "licenseContact": "Not Available",
+    "contact": "ANDREW J THOMPSON",
     "phone": "",
     "email": "andrew.thompson@ruscokitchenremodelers.com",
     "permits": 32,
@@ -4377,8 +4037,7 @@
   },
   {
     "company": "AMERICAN AIR SUPPLY INC",
-    "permitContact": "ANDREW K HARBECK",
-    "licenseContact": "Not Available",
+    "contact": "ANDREW K HARBECK",
     "phone": "",
     "email": "andrew.harbeck@americanairsupply.com",
     "permits": 32,
@@ -4390,8 +4049,7 @@
   },
   {
     "company": "NORTHERN PLUMBING AND SOFTENING",
-    "permitContact": "TRISHA S QUALY",
-    "licenseContact": "Not Available",
+    "contact": "TRISHA S QUALY",
     "phone": "",
     "email": "trisha.qualy@northernplumbingandsoftening.com",
     "permits": 31,
@@ -4403,8 +4061,7 @@
   },
   {
     "company": "Home Care Heating and Air LLC",
-    "permitContact": "ANA SCHUNEMAN",
-    "licenseContact": "Not Available",
+    "contact": "ANA SCHUNEMAN",
     "phone": "",
     "email": "ana.schuneman@homecareheatingandair.com",
     "permits": 31,
@@ -4416,8 +4073,7 @@
   },
   {
     "company": "Total Air Inc",
-    "permitContact": "ALFONSO L VELASCO",
-    "licenseContact": "Not Available",
+    "contact": "ALFONSO L VELASCO",
     "phone": "",
     "email": "alfonso.velasco@totalair.com",
     "permits": 31,
@@ -4429,8 +4085,7 @@
   },
   {
     "company": "Sweet's Home Solutions LLC",
-    "permitContact": "ERICA JOHNSON",
-    "licenseContact": "Not Available",
+    "contact": "ERICA JOHNSON",
     "phone": "",
     "email": "erica.johnson@sweetshomesolutions.com",
     "permits": 30,
@@ -4442,8 +4097,7 @@
   },
   {
     "company": "Vector Services LLC",
-    "permitContact": "THR PROPERTY ILLINOIS LP",
-    "licenseContact": "Not Available",
+    "contact": "THR PROPERTY ILLINOIS LP",
     "phone": "",
     "email": "thr.lp@vector.com",
     "permits": 29,
@@ -4455,8 +4109,7 @@
   },
   {
     "company": "A Frank Motzko Plumbing LLC",
-    "permitContact": "ANDREW HAZZARD",
-    "licenseContact": "Not Available",
+    "contact": "ANDREW HAZZARD",
     "phone": "",
     "email": "andrew.hazzard@afrankmotzko.com",
     "permits": 28,
@@ -4468,8 +4121,7 @@
   },
   {
     "company": "UNGERMAN INC",
-    "permitContact": "MONICA M MABEE",
-    "licenseContact": "Not Available",
+    "contact": "MONICA M MABEE",
     "phone": "",
     "email": "monica.mabee@ungerman.com",
     "permits": 27,
@@ -4481,8 +4133,7 @@
   },
   {
     "company": "E5 Energy LLC",
-    "permitContact": "MPLS PARK & RECREATION BOARD",
-    "licenseContact": "Not Available",
+    "contact": "MPLS PARK & RECREATION BOARD",
     "phone": "",
     "email": "mpls.board@e5energy.com",
     "permits": 26,
@@ -4494,8 +4145,7 @@
   },
   {
     "company": "Sasquatch Plumbing LLC",
-    "permitContact": "U R LOPEZ",
-    "licenseContact": "Not Available",
+    "contact": "U R LOPEZ",
     "phone": "",
     "email": "u.lopez@sasquatch.com",
     "permits": 26,
@@ -4507,8 +4157,7 @@
   },
   {
     "company": "Logan Companies",
-    "permitContact": "VIPUL PATEL",
-    "licenseContact": "Not Available",
+    "contact": "VIPUL PATEL",
     "phone": "",
     "email": "vipul.patel@logancompanies.com",
     "permits": 25,
@@ -4520,8 +4169,7 @@
   },
   {
     "company": "All Climate Mechanical LLC",
-    "permitContact": "CRAWFORD BRIAN",
-    "licenseContact": "Not Available",
+    "contact": "CRAWFORD BRIAN",
     "phone": "",
     "email": "crawford.brian@allclimate.com",
     "permits": 25,
@@ -4533,8 +4181,7 @@
   },
   {
     "company": "Burnham Plumbing LLC",
-    "permitContact": "DANIEL T HOBBS",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL T HOBBS",
     "phone": "",
     "email": "daniel.hobbs@burnham.com",
     "permits": 25,
@@ -4546,8 +4193,7 @@
   },
   {
     "company": "Drain Works Plumbing LLC",
-    "permitContact": "ALEXIS RODRIGUEZ VILLAFANET",
-    "licenseContact": "Not Available",
+    "contact": "ALEXIS RODRIGUEZ VILLAFANET",
     "phone": "",
     "email": "alexis.villafanet@drainworks.com",
     "permits": 24,
@@ -4559,8 +4205,7 @@
   },
   {
     "company": "Gray Duck Plumbing LLC",
-    "permitContact": "RYAN W SKINNER ET AL",
-    "licenseContact": "Not Available",
+    "contact": "RYAN W SKINNER ET AL",
     "phone": "",
     "email": "ryan.al@grayduck.com",
     "permits": 24,
@@ -4572,8 +4217,7 @@
   },
   {
     "company": "WINDOW CONCEPTS OF MINNESOTA INC",
-    "permitContact": "MARY B PERSOON",
-    "licenseContact": "Not Available",
+    "contact": "MARY B PERSOON",
     "phone": "",
     "email": "mary.persoon@windowconceptsofminnesota.com",
     "permits": 24,
@@ -4585,8 +4229,7 @@
   },
   {
     "company": "Paul's Plumbing & Heating of Dennison, Inc.",
-    "permitContact": "RACHEL L SURBER",
-    "licenseContact": "Not Available",
+    "contact": "RACHEL L SURBER",
     "phone": "",
     "email": "rachel.surber@paulsplumbingheatingofdennison.com",
     "permits": 23,
@@ -4598,8 +4241,7 @@
   },
   {
     "company": "Scoobs Plumbing Inc",
-    "permitContact": "R T RYBAK",
-    "licenseContact": "Not Available",
+    "contact": "R T RYBAK",
     "phone": "",
     "email": "r.rybak@scoobs.com",
     "permits": 23,
@@ -4611,8 +4253,7 @@
   },
   {
     "company": "Top Choice Plumbing LLC",
-    "permitContact": "MONET BARNES",
-    "licenseContact": "Not Available",
+    "contact": "MONET BARNES",
     "phone": "",
     "email": "monet.barnes@topchoice.com",
     "permits": 21,
@@ -4624,8 +4265,7 @@
   },
   {
     "company": "Window Concepts of Minnesota Inc",
-    "permitContact": "LOLA HEIMLICH",
-    "licenseContact": "Not Available",
+    "contact": "LOLA HEIMLICH",
     "phone": "",
     "email": "lola.heimlich@windowconceptsofminnesota.com",
     "permits": 21,
@@ -4637,8 +4277,7 @@
   },
   {
     "company": "Martius Plumbing LLC",
-    "permitContact": "SPENCER J KUBO",
-    "licenseContact": "Not Available",
+    "contact": "SPENCER J KUBO",
     "phone": "",
     "email": "spencer.kubo@martius.com",
     "permits": 21,
@@ -4650,8 +4289,7 @@
   },
   {
     "company": "Hertz Mechanical LLC",
-    "permitContact": "BELAI G MERGIA",
-    "licenseContact": "Not Available",
+    "contact": "BELAI G MERGIA",
     "phone": "",
     "email": "belai.mergia@hertz.com",
     "permits": 20,
@@ -4663,8 +4301,7 @@
   },
   {
     "company": "Spetz Plumbing Corporation",
-    "permitContact": "GINA L BIANCO",
-    "licenseContact": "Not Available",
+    "contact": "GINA L BIANCO",
     "phone": "",
     "email": "gina.bianco@spetz.com",
     "permits": 20,
@@ -4676,8 +4313,7 @@
   },
   {
     "company": "River Country Plumbing LLC",
-    "permitContact": "KHURSHID KHAN",
-    "licenseContact": "Not Available",
+    "contact": "KHURSHID KHAN",
     "phone": "",
     "email": "khurshid.khan@rivercountry.com",
     "permits": 18,
@@ -4689,8 +4325,7 @@
   },
   {
     "company": "Palen Kimball LLC",
-    "permitContact": "AUDREY SMITH",
-    "licenseContact": "Not Available",
+    "contact": "AUDREY SMITH",
     "phone": "",
     "email": "audrey.smith@palenkimball.com",
     "permits": 18,
@@ -4702,8 +4337,7 @@
   },
   {
     "company": "MESPO HEATING AND COOLING INC",
-    "permitContact": "STEPHEN J HENNESSY",
-    "licenseContact": "Not Available",
+    "contact": "STEPHEN J HENNESSY",
     "phone": "",
     "email": "stephen.hennessy@mespoheatingand.com",
     "permits": 18,
@@ -4715,8 +4349,7 @@
   },
   {
     "company": "Dan's Sewer Service INC",
-    "permitContact": "MORGAN CHRISTINE TURK",
-    "licenseContact": "Not Available",
+    "contact": "MORGAN CHRISTINE TURK",
     "phone": "",
     "email": "morgan.turk@danssewer.com",
     "permits": 17,
@@ -4728,8 +4361,7 @@
   },
   {
     "company": "APOLLO HEATING AND AIR",
-    "permitContact": "BRITA THOMPSON",
-    "licenseContact": "Not Available",
+    "contact": "BRITA THOMPSON",
     "phone": "",
     "email": "brita.thompson@apolloheatingandair.com",
     "permits": 15,
@@ -4741,8 +4373,7 @@
   },
   {
     "company": "Kohler Co",
-    "permitContact": "CHRISTIAN A LEDESMA",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTIAN A LEDESMA",
     "phone": "",
     "email": "christian.ledesma@kohler.com",
     "permits": 14,
@@ -4754,8 +4385,7 @@
   },
   {
     "company": "Matt's Plumbing Solutions LLC",
-    "permitContact": "MATTHEW J BERG",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW J BERG",
     "phone": "",
     "email": "matthew.berg@mattsplumbingsolutions.com",
     "permits": 14,
@@ -4767,8 +4397,7 @@
   },
   {
     "company": "Golden Steer Plumbing LLC",
-    "permitContact": "TASHA M NIENOW",
-    "licenseContact": "Not Available",
+    "contact": "TASHA M NIENOW",
     "phone": "",
     "email": "tasha.nienow@goldensteer.com",
     "permits": 13,
@@ -4780,8 +4409,7 @@
   },
   {
     "company": "Flush Once Plumbing Inc",
-    "permitContact": "JACK BRANDVOLD",
-    "licenseContact": "Not Available",
+    "contact": "JACK BRANDVOLD",
     "phone": "",
     "email": "jack.brandvold@flushonce.com",
     "permits": 12,
@@ -4793,8 +4421,7 @@
   },
   {
     "company": "Louie & Sons Plumbing Inc",
-    "permitContact": "LUCY IBURG",
-    "licenseContact": "Not Available",
+    "contact": "LUCY IBURG",
     "phone": "",
     "email": "lucy.iburg@louiesons.com",
     "permits": 12,
@@ -4806,8 +4433,7 @@
   },
   {
     "company": "Hilliard Heating & Cooling Inc",
-    "permitContact": "BRIAN TRUBOWITZ",
-    "licenseContact": "Not Available",
+    "contact": "BRIAN TRUBOWITZ",
     "phone": "",
     "email": "brian.trubowitz@hilliardheating.com",
     "permits": 12,
@@ -4819,8 +4445,7 @@
   },
   {
     "company": "O'Boys Heating & Air LLC",
-    "permitContact": "DANIEL NELSON",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL NELSON",
     "phone": "",
     "email": "daniel.nelson@oboysheatingair.com",
     "permits": 11,
@@ -4832,8 +4457,7 @@
   },
   {
     "company": "Mad City Home Improvement LLC",
-    "permitContact": "MATHEW P NAGEL",
-    "licenseContact": "Not Available",
+    "contact": "MATHEW P NAGEL",
     "phone": "",
     "email": "mathew.nagel@madcityhomeimprovement.com",
     "permits": 10,
@@ -4845,8 +4469,7 @@
   },
   {
     "company": "Minnesota Rusco LLC",
-    "permitContact": "STEPHEN C DAHL",
-    "licenseContact": "Not Available",
+    "contact": "STEPHEN C DAHL",
     "phone": "",
     "email": "stephen.dahl@minnesotarus.com",
     "permits": 10,
@@ -4858,8 +4481,7 @@
   },
   {
     "company": "Krinkie Heating & Air Conditiong",
-    "permitContact": "PAUL BRINDA",
-    "licenseContact": "Not Available",
+    "contact": "PAUL BRINDA",
     "phone": "",
     "email": "paul.brinda@krinkieheatingairconditiong.com",
     "permits": 10,
@@ -4871,8 +4493,7 @@
   },
   {
     "company": "ALPHA PLUMBING",
-    "permitContact": "BRADLEY BORN",
-    "licenseContact": "Not Available",
+    "contact": "BRADLEY BORN",
     "phone": "",
     "email": "bradley.born@alpha.com",
     "permits": 10,
@@ -4884,8 +4505,7 @@
   },
   {
     "company": "True Plumbing Solutions MN LLC",
-    "permitContact": "SEAN FISCHER",
-    "licenseContact": "Not Available",
+    "contact": "SEAN FISCHER",
     "phone": "",
     "email": "sean.fischer@trueplumbingsolutionsmn.com",
     "permits": 8,
@@ -4897,8 +4517,7 @@
   },
   {
     "company": "RONALD P FJERSTAD",
-    "permitContact": "AYAN JAMA",
-    "licenseContact": "Not Available",
+    "contact": "AYAN JAMA",
     "phone": "",
     "email": "ayan.jama@ronaldpfjerstad.com",
     "permits": 8,
@@ -4910,8 +4529,7 @@
   },
   {
     "company": "Vertex Mechanical Inc",
-    "permitContact": "ANNA RYAN",
-    "licenseContact": "Not Available",
+    "contact": "ANNA RYAN",
     "phone": "",
     "email": "anna.ryan@vertex.com",
     "permits": 8,
@@ -4923,8 +4541,7 @@
   },
   {
     "company": "Hurlburt Heating & Plumbing",
-    "permitContact": "EMILY J MERRITT",
-    "licenseContact": "Not Available",
+    "contact": "EMILY J MERRITT",
     "phone": "",
     "email": "emily.merritt@hurlburt.com",
     "permits": 7,
@@ -4936,8 +4553,7 @@
   },
   {
     "company": "Castro Plumbing and Construction",
-    "permitContact": "BARBARA GUY",
-    "licenseContact": "Not Available",
+    "contact": "BARBARA GUY",
     "phone": "",
     "email": "barbara.guy@castroplumbingandconstruction.com",
     "permits": 7,
@@ -4949,8 +4565,7 @@
   },
   {
     "company": "Big Dawg Plumbing LLC",
-    "permitContact": "WILLIAM NIELSEN ET AL",
-    "licenseContact": "Not Available",
+    "contact": "WILLIAM NIELSEN ET AL",
     "phone": "",
     "email": "william.al@bigdawg.com",
     "permits": 7,
@@ -4962,8 +4577,7 @@
   },
   {
     "company": "Freedom Plumbing and Water Conditioning LLC",
-    "permitContact": "THOMAS HELLER",
-    "licenseContact": "Not Available",
+    "contact": "THOMAS HELLER",
     "phone": "",
     "email": "thomas.heller@freedomplumbingandwaterconditioning.com",
     "permits": 7,
@@ -4975,8 +4589,7 @@
   },
   {
     "company": "Summit Mechanical LLC",
-    "permitContact": "JEFFREY J ROBY",
-    "licenseContact": "Not Available",
+    "contact": "JEFFREY J ROBY",
     "phone": "",
     "email": "jeffrey.roby@summit.com",
     "permits": 7,
@@ -4988,8 +4601,7 @@
   },
   {
     "company": "SUNBURST HEATING AND AIR CONDITIONING INC",
-    "permitContact": "ISAAC DAYTON",
-    "licenseContact": "Not Available",
+    "contact": "ISAAC DAYTON",
     "phone": "",
     "email": "isaac.dayton@sunburstheatingandairconditioning.com",
     "permits": 6,
@@ -5001,8 +4613,7 @@
   },
   {
     "company": "North Lakes Plumbing LLC",
-    "permitContact": "BRADFORD S FERSTAN",
-    "licenseContact": "Not Available",
+    "contact": "BRADFORD S FERSTAN",
     "phone": "",
     "email": "bradford.ferstan@northlakes.com",
     "permits": 6,
@@ -5014,8 +4625,7 @@
   },
   {
     "company": "Skarda Plumbing & Heating",
-    "permitContact": "MORGAN ST JAMES MACIAN LEE",
-    "licenseContact": "Not Available",
+    "contact": "MORGAN ST JAMES MACIAN LEE",
     "phone": "",
     "email": "morgan.lee@skardaplumbing.com",
     "permits": 6,
@@ -5027,8 +4637,7 @@
   },
   {
     "company": "RiverWorks Plumbing LLC",
-    "permitContact": "BRYAN L TOOV",
-    "licenseContact": "Not Available",
+    "contact": "BRYAN L TOOV",
     "phone": "",
     "email": "bryan.toov@riverworks.com",
     "permits": 6,
@@ -5040,8 +4649,7 @@
   },
   {
     "company": "Midwest Electric & Generator Inc",
-    "permitContact": "CATHERINE SIMS",
-    "licenseContact": "Not Available",
+    "contact": "CATHERINE SIMS",
     "phone": "",
     "email": "catherine.sims@midwestelectricgenerator.com",
     "permits": 6,
@@ -5053,8 +4661,7 @@
   },
   {
     "company": "Tom D Johnson",
-    "permitContact": "THOMAS D JOHNSON",
-    "licenseContact": "Not Available",
+    "contact": "THOMAS D JOHNSON",
     "phone": "",
     "email": "thomas.johnson@tomdjohnson.com",
     "permits": 5,
@@ -5066,8 +4673,7 @@
   },
   {
     "company": "North Metro Plumbing Inc",
-    "permitContact": "FARHIA MOHAMED NOOR",
-    "licenseContact": "Not Available",
+    "contact": "FARHIA MOHAMED NOOR",
     "phone": "",
     "email": "farhia.noor@northmetro.com",
     "permits": 5,
@@ -5079,8 +4685,7 @@
   },
   {
     "company": "Peterson Sheet Metal Inc",
-    "permitContact": "MPLS BOARD OF EDUCATION DISTRICT #1",
-    "licenseContact": "Not Available",
+    "contact": "MPLS BOARD OF EDUCATION DISTRICT #1",
     "phone": "",
     "email": "mpls.#1@petersonsheetmetal.com",
     "permits": 5,
@@ -5092,8 +4697,7 @@
   },
   {
     "company": "Precision Point Plumbing",
-    "permitContact": "MALISSA E KOHRMAN",
-    "licenseContact": "Not Available",
+    "contact": "MALISSA E KOHRMAN",
     "phone": "",
     "email": "malissa.kohrman@precisionpoint.com",
     "permits": 5,
@@ -5105,8 +4709,7 @@
   },
   {
     "company": "Core Mechanical Services LLC",
-    "permitContact": "MPLS CITY PROPERTY (PREV MCDA)",
-    "licenseContact": "Not Available",
+    "contact": "MPLS CITY PROPERTY (PREV MCDA)",
     "phone": "",
     "email": "mpls.mcda)@coremechanical.com",
     "permits": 5,
@@ -5118,8 +4721,7 @@
   },
   {
     "company": "Twin Town Plumbing LLC",
-    "permitContact": "MATTHEW WOELFFLER",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW WOELFFLER",
     "phone": "",
     "email": "matthew.woelffler@twintown.com",
     "permits": 5,
@@ -5131,8 +4733,7 @@
   },
   {
     "company": "Hanson Plumbing Industries LLC",
-    "permitContact": "STEPHANIE EUZEBIO",
-    "licenseContact": "Not Available",
+    "contact": "STEPHANIE EUZEBIO",
     "phone": "",
     "email": "stephanie.euzebio@hansonplumbingindustries.com",
     "permits": 5,
@@ -5144,8 +4745,7 @@
   },
   {
     "company": "KPCM Plumbing LLC",
-    "permitContact": "NAJIB ISSE",
-    "licenseContact": "Not Available",
+    "contact": "NAJIB ISSE",
     "phone": "",
     "email": "najib.isse@kpcm.com",
     "permits": 5,
@@ -5157,8 +4757,7 @@
   },
   {
     "company": "Dean's Home Services",
-    "permitContact": "DONALD W CAMERON",
-    "licenseContact": "Not Available",
+    "contact": "DONALD W CAMERON",
     "phone": "",
     "email": "donald.cameron@deanshome.com",
     "permits": 4,
@@ -5170,8 +4769,7 @@
   },
   {
     "company": "Good Guys Plumbing",
-    "permitContact": "SUZANNE BROSS",
-    "licenseContact": "Not Available",
+    "contact": "SUZANNE BROSS",
     "phone": "",
     "email": "suzanne.bross@goodguys.com",
     "permits": 4,
@@ -5183,8 +4781,7 @@
   },
   {
     "company": "Sandcreek Plumbing LLC",
-    "permitContact": "JOHN GOBLIRSCH",
-    "licenseContact": "Not Available",
+    "contact": "JOHN GOBLIRSCH",
     "phone": "",
     "email": "john.goblirsch@sandcreek.com",
     "permits": 4,
@@ -5196,8 +4793,7 @@
   },
   {
     "company": "Young's Professional Plumbing & Fixtures LLC",
-    "permitContact": "SHAYMUL MCLAUGHLIN",
-    "licenseContact": "Not Available",
+    "contact": "SHAYMUL MCLAUGHLIN",
     "phone": "",
     "email": "shaymul.mclaughlin@youngsprofessionalplumbingfixtures.com",
     "permits": 4,
@@ -5209,8 +4805,7 @@
   },
   {
     "company": "Home Contracting Systems LLC",
-    "permitContact": "STEPHEN A DELONG",
-    "licenseContact": "Not Available",
+    "contact": "STEPHEN A DELONG",
     "phone": "",
     "email": "stephen.delong@homecontractingsystems.com",
     "permits": 4,
@@ -5222,8 +4817,7 @@
   },
   {
     "company": "Spriggs Mechanical Inc.",
-    "permitContact": "STATE OF MINNESOTA",
-    "licenseContact": "Not Available",
+    "contact": "STATE OF MINNESOTA",
     "phone": "",
     "email": "state.minnesota@spriggs.com",
     "permits": 4,
@@ -5235,8 +4829,7 @@
   },
   {
     "company": "Michels Utility Services Inc",
-    "permitContact": "HISTORIC CRANE BUILDING",
-    "licenseContact": "Not Available",
+    "contact": "HISTORIC CRANE BUILDING",
     "phone": "",
     "email": "historic.building@michelsutility.com",
     "permits": 4,
@@ -5248,8 +4841,7 @@
   },
   {
     "company": "DJ's Homes Services LLC",
-    "permitContact": "JENNIFER KRUEGER",
-    "licenseContact": "Not Available",
+    "contact": "JENNIFER KRUEGER",
     "phone": "",
     "email": "jennifer.krueger@djshomes.com",
     "permits": 4,
@@ -5261,8 +4853,7 @@
   },
   {
     "company": "Precision Mechanical Inc",
-    "permitContact": "JAMES P ALPERS",
-    "licenseContact": "Not Available",
+    "contact": "JAMES P ALPERS",
     "phone": "",
     "email": "james.alpers@precision.com",
     "permits": 3,
@@ -5274,8 +4865,7 @@
   },
   {
     "company": "Kevin Curran",
-    "permitContact": "KEVIN P CURRAN",
-    "licenseContact": "Not Available",
+    "contact": "KEVIN P CURRAN",
     "phone": "",
     "email": "kevin.curran@kevincurran.com",
     "permits": 3,
@@ -5287,8 +4877,7 @@
   },
   {
     "company": "Nathan Bare",
-    "permitContact": "NATHAN BARE",
-    "licenseContact": "Not Available",
+    "contact": "NATHAN BARE",
     "phone": "",
     "email": "nathan.bare@nathanbare.com",
     "permits": 3,
@@ -5300,8 +4889,7 @@
   },
   {
     "company": "Subarban Plumbing",
-    "permitContact": "TROY THOMPSON",
-    "licenseContact": "Not Available",
+    "contact": "TROY THOMPSON",
     "phone": "",
     "email": "troy.thompson@subarban.com",
     "permits": 3,
@@ -5313,8 +4901,7 @@
   },
   {
     "company": "MR PLUMBING AND DRAINS",
-    "permitContact": "DANIEL SCOTT SIGELMAN",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL SCOTT SIGELMAN",
     "phone": "",
     "email": "daniel.sigelman@mrplumbinganddrains.com",
     "permits": 3,
@@ -5326,8 +4913,7 @@
   },
   {
     "company": "Ziemer Plumbing LLC",
-    "permitContact": "TIMOTHY B ULRICH",
-    "licenseContact": "Not Available",
+    "contact": "TIMOTHY B ULRICH",
     "phone": "",
     "email": "timothy.ulrich@ziemer.com",
     "permits": 3,
@@ -5339,8 +4925,7 @@
   },
   {
     "company": "JESSICA HENNING",
-    "permitContact": "JESSICA L HENNING",
-    "licenseContact": "Not Available",
+    "contact": "JESSICA L HENNING",
     "phone": "",
     "email": "jessica.henning@jessicahenning.com",
     "permits": 3,
@@ -5352,8 +4937,7 @@
   },
   {
     "company": "ACS Logistics Holdings LLC",
-    "permitContact": "ALEX LARSON",
-    "licenseContact": "Not Available",
+    "contact": "ALEX LARSON",
     "phone": "",
     "email": "alex.larson@acslogisticsholdings.com",
     "permits": 3,
@@ -5365,8 +4949,7 @@
   },
   {
     "company": "A1-Plumbmasters LLC",
-    "permitContact": "DAVID M STANTON",
-    "licenseContact": "Not Available",
+    "contact": "DAVID M STANTON",
     "phone": "",
     "email": "david.stanton@a1-plumbmasters.com",
     "permits": 3,
@@ -5378,8 +4961,7 @@
   },
   {
     "company": "Lynn D Estes",
-    "permitContact": "LYNN D ESTES",
-    "licenseContact": "Not Available",
+    "contact": "LYNN D ESTES",
     "phone": "",
     "email": "lynn.estes@lynndestes.com",
     "permits": 2,
@@ -5391,8 +4973,7 @@
   },
   {
     "company": "GV Heating and Air Inc",
-    "permitContact": "KATHERINE TURNER",
-    "licenseContact": "Not Available",
+    "contact": "KATHERINE TURNER",
     "phone": "",
     "email": "katherine.turner@gvheatingandair.com",
     "permits": 2,
@@ -5404,8 +4985,7 @@
   },
   {
     "company": "Patrick Moe",
-    "permitContact": "PATRICK J MOE",
-    "licenseContact": "Not Available",
+    "contact": "PATRICK J MOE",
     "phone": "",
     "email": "patrick.moe@patrickmoe.com",
     "permits": 2,
@@ -5417,8 +4997,7 @@
   },
   {
     "company": "Philip Pappano",
-    "permitContact": "PHILIP C PAPPANO",
-    "licenseContact": "Not Available",
+    "contact": "PHILIP C PAPPANO",
     "phone": "",
     "email": "philip.pappano@philippappano.com",
     "permits": 2,
@@ -5430,8 +5009,7 @@
   },
   {
     "company": "Jacob Widmark",
-    "permitContact": "JACOB WIDMARK",
-    "licenseContact": "Not Available",
+    "contact": "JACOB WIDMARK",
     "phone": "",
     "email": "jacob.widmark@jacobwidmark.com",
     "permits": 2,
@@ -5443,8 +5021,7 @@
   },
   {
     "company": "Philip J Skarda",
-    "permitContact": "CYNTHIA D BOBO",
-    "licenseContact": "Not Available",
+    "contact": "CYNTHIA D BOBO",
     "phone": "",
     "email": "cynthia.bobo@philipjskarda.com",
     "permits": 2,
@@ -5456,8 +5033,7 @@
   },
   {
     "company": "Hawo Nur",
-    "permitContact": "AHMED I MOXAMUD",
-    "licenseContact": "Not Available",
+    "contact": "AHMED I MOXAMUD",
     "phone": "",
     "email": "ahmed.moxamud@hawonur.com",
     "permits": 2,
@@ -5469,8 +5045,7 @@
   },
   {
     "company": "Optimal Heating and Cooling LLC",
-    "permitContact": "THOMAS XIONG",
-    "licenseContact": "Not Available",
+    "contact": "THOMAS XIONG",
     "phone": "",
     "email": "thomas.xiong@optimalheatingand.com",
     "permits": 2,
@@ -5482,8 +5057,7 @@
   },
   {
     "company": "Mikhala Stutzman",
-    "permitContact": "MIKHALA STUTZMAN",
-    "licenseContact": "Not Available",
+    "contact": "MIKHALA STUTZMAN",
     "phone": "",
     "email": "mikhala.stutzman@mikhalastutzman.com",
     "permits": 2,
@@ -5495,8 +5069,7 @@
   },
   {
     "company": "Juan Robles",
-    "permitContact": "JUAN J ROBLES",
-    "licenseContact": "Not Available",
+    "contact": "JUAN J ROBLES",
     "phone": "",
     "email": "juan.robles@juanrobles.com",
     "permits": 2,
@@ -5508,8 +5081,7 @@
   },
   {
     "company": "Norse Heating and Air Inc",
-    "permitContact": "TERI L NAGEL",
-    "licenseContact": "Not Available",
+    "contact": "TERI L NAGEL",
     "phone": "",
     "email": "teri.nagel@norseheatingandair.com",
     "permits": 2,
@@ -5521,8 +5093,7 @@
   },
   {
     "company": "Sarah Doege",
-    "permitContact": "SARAH NELSON",
-    "licenseContact": "Not Available",
+    "contact": "SARAH NELSON",
     "phone": "",
     "email": "sarah.nelson@sarahdoege.com",
     "permits": 2,
@@ -5534,8 +5105,7 @@
   },
   {
     "company": "Alex Sosa",
-    "permitContact": "ALEXANDER C SOSA",
-    "licenseContact": "Not Available",
+    "contact": "ALEXANDER C SOSA",
     "phone": "",
     "email": "alexander.sosa@alexsosa.com",
     "permits": 2,
@@ -5547,8 +5117,7 @@
   },
   {
     "company": "Brandon Gezel",
-    "permitContact": "BRANDON GEZEL",
-    "licenseContact": "Not Available",
+    "contact": "BRANDON GEZEL",
     "phone": "",
     "email": "brandon.gezel@brandongezel.com",
     "permits": 2,
@@ -5560,8 +5129,7 @@
   },
   {
     "company": "Edward Hatterschide",
-    "permitContact": "EDWARD HATTERSCHIDE",
-    "licenseContact": "Not Available",
+    "contact": "EDWARD HATTERSCHIDE",
     "phone": "",
     "email": "edward.hatterschide@edwardhatterschide.com",
     "permits": 2,
@@ -5573,8 +5141,7 @@
   },
   {
     "company": "Daniel Perry",
-    "permitContact": "DANIEL PERRY",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL PERRY",
     "phone": "",
     "email": "daniel.perry@danielperry.com",
     "permits": 2,
@@ -5586,8 +5153,7 @@
   },
   {
     "company": "Chris George",
-    "permitContact": "CHRISTOPHER L GEORGE",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTOPHER L GEORGE",
     "phone": "",
     "email": "christopher.george@chrisgeorge.com",
     "permits": 2,
@@ -5599,8 +5165,7 @@
   },
   {
     "company": "David Truesdale",
-    "permitContact": "DAVID TRUESDALE",
-    "licenseContact": "Not Available",
+    "contact": "DAVID TRUESDALE",
     "phone": "",
     "email": "david.truesdale@davidtruesdale.com",
     "permits": 2,
@@ -5612,8 +5177,7 @@
   },
   {
     "company": "Robert Rounds",
-    "permitContact": "HANNAH L ROUNDS",
-    "licenseContact": "Not Available",
+    "contact": "HANNAH L ROUNDS",
     "phone": "",
     "email": "hannah.rounds@robertrounds.com",
     "permits": 2,
@@ -5625,8 +5189,7 @@
   },
   {
     "company": "Eric DeLuca",
-    "permitContact": "ERIC DELUCA",
-    "licenseContact": "Not Available",
+    "contact": "ERIC DELUCA",
     "phone": "",
     "email": "eric.deluca@ericdeluca.com",
     "permits": 2,
@@ -5638,8 +5201,7 @@
   },
   {
     "company": "Trystan Johnson",
-    "permitContact": "TRYSTAN JOHNSON",
-    "licenseContact": "Not Available",
+    "contact": "TRYSTAN JOHNSON",
     "phone": "",
     "email": "trystan.johnson@trystanjohnson.com",
     "permits": 1,
@@ -5651,8 +5213,7 @@
   },
   {
     "company": "Michael Bauer",
-    "permitContact": "MICHAEL BAUER",
-    "licenseContact": "Not Available",
+    "contact": "MICHAEL BAUER",
     "phone": "",
     "email": "michael.bauer@michaelbauer.com",
     "permits": 1,
@@ -5664,8 +5225,7 @@
   },
   {
     "company": "Tyler Ponozzo",
-    "permitContact": "TYLER J PONOZZO",
-    "licenseContact": "Not Available",
+    "contact": "TYLER J PONOZZO",
     "phone": "",
     "email": "tyler.ponozzo@tylerponozzo.com",
     "permits": 1,
@@ -5677,8 +5237,7 @@
   },
   {
     "company": "Nathan Hemann",
-    "permitContact": "NATHAN HEMANN",
-    "licenseContact": "Not Available",
+    "contact": "NATHAN HEMANN",
     "phone": "",
     "email": "nathan.hemann@nathanhemann.com",
     "permits": 1,
@@ -5690,8 +5249,7 @@
   },
   {
     "company": "Nathan Bird",
-    "permitContact": "NATHAN BIRD",
-    "licenseContact": "Not Available",
+    "contact": "NATHAN BIRD",
     "phone": "",
     "email": "nathan.bird@nathanbird.com",
     "permits": 1,
@@ -5703,8 +5261,7 @@
   },
   {
     "company": "Michel B Humphrey",
-    "permitContact": "MICHEL B HUMPHREY",
-    "licenseContact": "Not Available",
+    "contact": "MICHEL B HUMPHREY",
     "phone": "",
     "email": "michel.humphrey@michelbhumphrey.com",
     "permits": 1,
@@ -5716,8 +5273,7 @@
   },
   {
     "company": "Miles Painter",
-    "permitContact": "MILES PAINTER",
-    "licenseContact": "Not Available",
+    "contact": "MILES PAINTER",
     "phone": "",
     "email": "miles.painter@milespainter.com",
     "permits": 1,
@@ -5729,8 +5285,7 @@
   },
   {
     "company": "Miles Barnidge",
-    "permitContact": "GARIELLE BARNIDGE",
-    "licenseContact": "Not Available",
+    "contact": "GARIELLE BARNIDGE",
     "phone": "",
     "email": "garielle.barnidge@milesbarnidge.com",
     "permits": 1,
@@ -5742,8 +5297,7 @@
   },
   {
     "company": "Tina M Meyhoff",
-    "permitContact": "ANA LUISA COBARRUBIAS RAMOS",
-    "licenseContact": "Not Available",
+    "contact": "ANA LUISA COBARRUBIAS RAMOS",
     "phone": "",
     "email": "ana.ramos@tinammeyhoff.com",
     "permits": 1,
@@ -5755,8 +5309,7 @@
   },
   {
     "company": "Tina Meyhoff",
-    "permitContact": "ANA LUISA COBARRUBIAS RAMOS",
-    "licenseContact": "Not Available",
+    "contact": "ANA LUISA COBARRUBIAS RAMOS",
     "phone": "",
     "email": "ana.ramos@tinameyhoff.com",
     "permits": 1,
@@ -5768,8 +5321,7 @@
   },
   {
     "company": "Todd Schendel",
-    "permitContact": "TODD SCHENDEL",
-    "licenseContact": "Not Available",
+    "contact": "TODD SCHENDEL",
     "phone": "",
     "email": "todd.schendel@toddschendel.com",
     "permits": 1,
@@ -5781,8 +5333,7 @@
   },
   {
     "company": "Torrie Green",
-    "permitContact": "CONNOR J P GREEN",
-    "licenseContact": "Not Available",
+    "contact": "CONNOR J P GREEN",
     "phone": "",
     "email": "connor.green@torriegreen.com",
     "permits": 1,
@@ -5794,8 +5345,7 @@
   },
   {
     "company": "Morgan Kunz",
-    "permitContact": "MORGAN D KUNZ",
-    "licenseContact": "Not Available",
+    "contact": "MORGAN D KUNZ",
     "phone": "",
     "email": "morgan.kunz@morgankunz.com",
     "permits": 1,
@@ -5807,8 +5357,7 @@
   },
   {
     "company": "Timothy Dirr",
-    "permitContact": "TIMOTHY L DIRR",
-    "licenseContact": "Not Available",
+    "contact": "TIMOTHY L DIRR",
     "phone": "",
     "email": "timothy.dirr@timothydirr.com",
     "permits": 1,
@@ -5820,8 +5369,7 @@
   },
   {
     "company": "Mohamed M Abdi",
-    "permitContact": "MOHAMED M ABDI",
-    "licenseContact": "Not Available",
+    "contact": "MOHAMED M ABDI",
     "phone": "",
     "email": "mohamed.abdi@mohamedmabdi.com",
     "permits": 1,
@@ -5833,8 +5381,7 @@
   },
   {
     "company": "Markram El-Amin",
-    "permitContact": "MAKRAM N EL AMIN",
-    "licenseContact": "Not Available",
+    "contact": "MAKRAM N EL AMIN",
     "phone": "",
     "email": "makram.amin@markramel-amin.com",
     "permits": 1,
@@ -5846,8 +5393,7 @@
   },
   {
     "company": "Mark Hockley",
-    "permitContact": "MARK J HOCKLEY",
-    "licenseContact": "Not Available",
+    "contact": "MARK J HOCKLEY",
     "phone": "",
     "email": "mark.hockley@markhockley.com",
     "permits": 1,
@@ -5859,8 +5405,7 @@
   },
   {
     "company": "Mari Gunderson",
-    "permitContact": "MARI L GUNDERSON",
-    "licenseContact": "Not Available",
+    "contact": "MARI L GUNDERSON",
     "phone": "",
     "email": "mari.gunderson@marigunderson.com",
     "permits": 1,
@@ -5872,8 +5417,7 @@
   },
   {
     "company": "Yvonna Thevenin",
-    "permitContact": "KELLY MARIE KANZ",
-    "licenseContact": "Not Available",
+    "contact": "KELLY MARIE KANZ",
     "phone": "",
     "email": "kelly.kanz@yvonnathevenin.com",
     "permits": 1,
@@ -5885,8 +5429,7 @@
   },
   {
     "company": "Zachary Hofer",
-    "permitContact": "ARTIS M GLAD",
-    "licenseContact": "Not Available",
+    "contact": "ARTIS M GLAD",
     "phone": "",
     "email": "artis.glad@zacharyhofer.com",
     "permits": 1,
@@ -5898,8 +5441,7 @@
   },
   {
     "company": "Xiang Chen",
-    "permitContact": "MARIA GEIGLE",
-    "licenseContact": "Not Available",
+    "contact": "MARIA GEIGLE",
     "phone": "",
     "email": "maria.geigle@xiangchen.com",
     "permits": 1,
@@ -5911,8 +5453,7 @@
   },
   {
     "company": "William Benjamin",
-    "permitContact": "HOLLY HENRIKSEN",
-    "licenseContact": "Not Available",
+    "contact": "HOLLY HENRIKSEN",
     "phone": "",
     "email": "holly.henriksen@williambenjamin.com",
     "permits": 1,
@@ -5924,8 +5465,7 @@
   },
   {
     "company": "Martha G Vintimilla",
-    "permitContact": "MARTHA GRANDA VINTIMILLA",
-    "licenseContact": "Not Available",
+    "contact": "MARTHA GRANDA VINTIMILLA",
     "phone": "",
     "email": "martha.vintimilla@marthagvintimilla.com",
     "permits": 1,
@@ -5937,8 +5477,7 @@
   },
   {
     "company": "Matthew J Tyler",
-    "permitContact": "MATTHEW J TYLER",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW J TYLER",
     "phone": "",
     "email": "matthew.tyler@matthewjtyler.com",
     "permits": 1,
@@ -5950,8 +5489,7 @@
   },
   {
     "company": "Matt Musich",
-    "permitContact": "MATTHEW A MUSICH",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW A MUSICH",
     "phone": "",
     "email": "matthew.musich@mattmusich.com",
     "permits": 1,
@@ -5963,8 +5501,7 @@
   },
   {
     "company": "Matius Aron Merino Almeida",
-    "permitContact": "MATIUS ARON MERINO ALMEIDA",
-    "licenseContact": "Not Available",
+    "contact": "MATIUS ARON MERINO ALMEIDA",
     "phone": "",
     "email": "matius.almeida@matiusaronmerinoalmeida.com",
     "permits": 1,
@@ -5976,8 +5513,7 @@
   },
   {
     "company": "Mathew Khang",
-    "permitContact": "MATHEW KHANG",
-    "licenseContact": "Not Available",
+    "contact": "MATHEW KHANG",
     "phone": "",
     "email": "mathew.khang@mathewkhang.com",
     "permits": 1,
@@ -5989,8 +5525,7 @@
   },
   {
     "company": "Mary Ferrian",
-    "permitContact": "MARY R FERRIAN",
-    "licenseContact": "Not Available",
+    "contact": "MARY R FERRIAN",
     "phone": "",
     "email": "mary.ferrian@maryferrian.com",
     "permits": 1,
@@ -6002,8 +5537,7 @@
   },
   {
     "company": "Matt Sauka",
-    "permitContact": "KASEY C WILLSON",
-    "licenseContact": "Not Available",
+    "contact": "KASEY C WILLSON",
     "phone": "",
     "email": "kasey.willson@mattsauka.com",
     "permits": 1,
@@ -6015,8 +5549,7 @@
   },
   {
     "company": "Matthew Harris",
-    "permitContact": "MATTHEW C HARRIS",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW C HARRIS",
     "phone": "",
     "email": "matthew.harris@matthewharris.com",
     "permits": 1,
@@ -6028,8 +5561,7 @@
   },
   {
     "company": "Samuel Johnson",
-    "permitContact": "SAMUEL JOHNSON",
-    "licenseContact": "Not Available",
+    "contact": "SAMUEL JOHNSON",
     "phone": "",
     "email": "samuel.johnson@samueljohnson.com",
     "permits": 1,
@@ -6041,8 +5573,7 @@
   },
   {
     "company": "Salomon Dominguez Diaz",
-    "permitContact": "SOLOMON DOMINGUEZ DIAZ",
-    "licenseContact": "Not Available",
+    "contact": "SOLOMON DOMINGUEZ DIAZ",
     "phone": "",
     "email": "solomon.diaz@salomondominguezdiaz.com",
     "permits": 1,
@@ -6054,8 +5585,7 @@
   },
   {
     "company": "Sarahi Ruiz Velasco",
-    "permitContact": "SARAHI RUIZ VELASCO",
-    "licenseContact": "Not Available",
+    "contact": "SARAHI RUIZ VELASCO",
     "phone": "",
     "email": "sarahi.velasco@sarahiruizvelas.com",
     "permits": 1,
@@ -6067,8 +5597,7 @@
   },
   {
     "company": "Shelley Gorak",
-    "permitContact": "SHELLEY GORAK",
-    "licenseContact": "Not Available",
+    "contact": "SHELLEY GORAK",
     "phone": "",
     "email": "shelley.gorak@shelleygorak.com",
     "permits": 1,
@@ -6080,8 +5609,7 @@
   },
   {
     "company": "Phonevilay Seldal",
-    "permitContact": "SARENA ALYSSE FOSTER",
-    "licenseContact": "Not Available",
+    "contact": "SARENA ALYSSE FOSTER",
     "phone": "",
     "email": "sarena.foster@phonevilayseldal.com",
     "permits": 1,
@@ -6093,8 +5621,7 @@
   },
   {
     "company": "Shishir Ghate",
-    "permitContact": "SHISHIR S GHATE",
-    "licenseContact": "Not Available",
+    "contact": "SHISHIR S GHATE",
     "phone": "",
     "email": "shishir.ghate@shishirghate.com",
     "permits": 1,
@@ -6106,8 +5633,7 @@
   },
   {
     "company": "Simon Solis-Cohen",
-    "permitContact": "SIMON SOLIS COHEN",
-    "licenseContact": "Not Available",
+    "contact": "SIMON SOLIS COHEN",
     "phone": "",
     "email": "simon.cohen@simonsolis-cohen.com",
     "permits": 1,
@@ -6119,8 +5645,7 @@
   },
   {
     "company": "Ronald Haynes",
-    "permitContact": "RONALD HAYNES",
-    "licenseContact": "Not Available",
+    "contact": "RONALD HAYNES",
     "phone": "",
     "email": "ronald.haynes@ronaldhaynes.com",
     "permits": 1,
@@ -6132,8 +5657,7 @@
   },
   {
     "company": "Richard Degidio",
-    "permitContact": "JOSE S R ENCISO ET AL",
-    "licenseContact": "Not Available",
+    "contact": "JOSE S R ENCISO ET AL",
     "phone": "",
     "email": "jose.al@richarddegidio.com",
     "permits": 1,
@@ -6145,8 +5669,7 @@
   },
   {
     "company": "Ryan R Culligan",
-    "permitContact": "RYAN R CULLIGAN",
-    "licenseContact": "Not Available",
+    "contact": "RYAN R CULLIGAN",
     "phone": "",
     "email": "ryan.culligan@ryanrculligan.com",
     "permits": 1,
@@ -6158,8 +5681,7 @@
   },
   {
     "company": "Ryan Smith",
-    "permitContact": "MARIA L ELEY",
-    "licenseContact": "Not Available",
+    "contact": "MARIA L ELEY",
     "phone": "",
     "email": "maria.eley@ryansmith.com",
     "permits": 1,
@@ -6171,8 +5693,7 @@
   },
   {
     "company": "Randolph Easter",
-    "permitContact": "RANDOLPH W EASTER",
-    "licenseContact": "Not Available",
+    "contact": "RANDOLPH W EASTER",
     "phone": "",
     "email": "randolph.easter@randolpheaster.com",
     "permits": 1,
@@ -6184,8 +5705,7 @@
   },
   {
     "company": "Randall Gilbert",
-    "permitContact": "RANDALL E GILBERT",
-    "licenseContact": "Not Available",
+    "contact": "RANDALL E GILBERT",
     "phone": "",
     "email": "randall.gilbert@randallgilbert.com",
     "permits": 1,
@@ -6197,8 +5717,7 @@
   },
   {
     "company": "Rainerd Olson",
-    "permitContact": "RAINERD G OLSON",
-    "licenseContact": "Not Available",
+    "contact": "RAINERD G OLSON",
     "phone": "",
     "email": "rainerd.olson@rainerdolson.com",
     "permits": 1,
@@ -6210,8 +5729,7 @@
   },
   {
     "company": "Rachael Savage",
-    "permitContact": "RACHEL SAVAGE",
-    "licenseContact": "Not Available",
+    "contact": "RACHEL SAVAGE",
     "phone": "",
     "email": "rachel.savage@rachaelsavage.com",
     "permits": 1,
@@ -6223,8 +5741,7 @@
   },
   {
     "company": "Rex Jeffries",
-    "permitContact": "REX JEFFRIES",
-    "licenseContact": "Not Available",
+    "contact": "REX JEFFRIES",
     "phone": "",
     "email": "rex.jeffries@rexjeffries.com",
     "permits": 1,
@@ -6236,8 +5753,7 @@
   },
   {
     "company": "Randy's Electric & Plumbing",
-    "permitContact": "DOUGLAS J ANDERSON",
-    "licenseContact": "Not Available",
+    "contact": "DOUGLAS J ANDERSON",
     "phone": "",
     "email": "douglas.anderson@randyselectric.com",
     "permits": 1,
@@ -6249,8 +5765,7 @@
   },
   {
     "company": "Olivia C Yoshioka-Maxwell",
-    "permitContact": "OLIVIA C YOSHIOKA MAXWELL",
-    "licenseContact": "Not Available",
+    "contact": "OLIVIA C YOSHIOKA MAXWELL",
     "phone": "",
     "email": "olivia.maxwell@oliviacyoshioka-maxwell.com",
     "permits": 1,
@@ -6262,8 +5777,7 @@
   },
   {
     "company": "Syoni Revollo",
-    "permitContact": "SYONI REVOLLO",
-    "licenseContact": "Not Available",
+    "contact": "SYONI REVOLLO",
     "phone": "",
     "email": "syoni.revollo@syonirevollo.com",
     "permits": 1,
@@ -6275,8 +5789,7 @@
   },
   {
     "company": "Suzy Streff",
-    "permitContact": "MATHEW STREFF",
-    "licenseContact": "Not Available",
+    "contact": "MATHEW STREFF",
     "phone": "",
     "email": "mathew.streff@suzystreff.com",
     "permits": 1,
@@ -6288,8 +5801,7 @@
   },
   {
     "company": "PGK Plumbing LLC",
-    "permitContact": "BRENDA L NYGREN",
-    "licenseContact": "Not Available",
+    "contact": "BRENDA L NYGREN",
     "phone": "",
     "email": "nothaft@comcast.net",
     "permits": 1,
@@ -6301,8 +5813,7 @@
   },
   {
     "company": "PAUL MARKERT",
-    "permitContact": "PAUL MARKERT",
-    "licenseContact": "Not Available",
+    "contact": "PAUL MARKERT",
     "phone": "",
     "email": "paul.markert@paulmarkert.com",
     "permits": 1,
@@ -6314,8 +5825,7 @@
   },
   {
     "company": "Sydney Arens",
-    "permitContact": "SYDNEY ARENS",
-    "licenseContact": "Not Available",
+    "contact": "SYDNEY ARENS",
     "phone": "",
     "email": "sydney.arens@sydneyarens.com",
     "permits": 1,
@@ -6327,8 +5837,7 @@
   },
   {
     "company": "Northern One Hour Heating & Air Conditioning, Inc",
-    "permitContact": "MATTHEW SALAMONKI",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW SALAMONKI",
     "phone": "",
     "email": "matthew.salamonki@northernonehourheatingairconditioning.com",
     "permits": 1,
@@ -6340,8 +5849,7 @@
   },
   {
     "company": "Northern Lights Plumbing LLC",
-    "permitContact": "NATHAN R KREKULA",
-    "licenseContact": "Not Available",
+    "contact": "NATHAN R KREKULA",
     "phone": "",
     "email": "nathan.krekula@northernlights.com",
     "permits": 1,
@@ -6353,8 +5861,7 @@
   },
   {
     "company": "Tapia Enterprises LLC",
-    "permitContact": "SEAN R SOMERMEYER",
-    "licenseContact": "Not Available",
+    "contact": "SEAN R SOMERMEYER",
     "phone": "",
     "email": "sean.somermeyer@tapiaenterprises.com",
     "permits": 1,
@@ -6366,8 +5873,7 @@
   },
   {
     "company": "Nora Kaitfors",
-    "permitContact": "NORA R KAITFORS",
-    "licenseContact": "Not Available",
+    "contact": "NORA R KAITFORS",
     "phone": "",
     "email": "nora.kaitfors@norakaitfors.com",
     "permits": 1,
@@ -6379,8 +5885,7 @@
   },
   {
     "company": "Nikolas Winter-Simat",
-    "permitContact": "NIKOLAS M WINTER SIMAT",
-    "licenseContact": "Not Available",
+    "contact": "NIKOLAS M WINTER SIMAT",
     "phone": "",
     "email": "nikolas.simat@nikolaswinter-simat.com",
     "permits": 1,
@@ -6392,8 +5897,7 @@
   },
   {
     "company": "Stephen J Greene",
-    "permitContact": "SARA GREENE",
-    "licenseContact": "Not Available",
+    "contact": "SARA GREENE",
     "phone": "",
     "email": "sara.greene@stephenjgreene.com",
     "permits": 1,
@@ -6405,8 +5909,7 @@
   },
   {
     "company": "Stephan Schacht",
-    "permitContact": "STEPHAN SCHACHT",
-    "licenseContact": "Not Available",
+    "contact": "STEPHAN SCHACHT",
     "phone": "",
     "email": "stephan.schacht@stephanschacht.com",
     "permits": 1,
@@ -6418,8 +5921,7 @@
   },
   {
     "company": "Starr Strommen",
-    "permitContact": "MALCOLM LINK",
-    "licenseContact": "Not Available",
+    "contact": "MALCOLM LINK",
     "phone": "",
     "email": "malcolm.link@starrstrommen.com",
     "permits": 1,
@@ -6431,8 +5933,7 @@
   },
   {
     "company": "Pamela Knight",
-    "permitContact": "VICTORIA A KNIGHT",
-    "licenseContact": "Not Available",
+    "contact": "VICTORIA A KNIGHT",
     "phone": "",
     "email": "victoria.knight@pamelaknight.com",
     "permits": 1,
@@ -6444,8 +5945,7 @@
   },
   {
     "company": "Steven Takata",
-    "permitContact": "STEVEN M TAKATA",
-    "licenseContact": "Not Available",
+    "contact": "STEVEN M TAKATA",
     "phone": "",
     "email": "steven.takata@steventakata.com",
     "permits": 1,
@@ -6457,8 +5957,7 @@
   },
   {
     "company": "Patricio Angamarca",
-    "permitContact": "MARTIN J SCHALK",
-    "licenseContact": "Not Available",
+    "contact": "MARTIN J SCHALK",
     "phone": "",
     "email": "martin.schalk@patricioangamarca.com",
     "permits": 1,
@@ -6470,8 +5969,7 @@
   },
   {
     "company": "Patrick Ruhland",
-    "permitContact": "PATRICK RUHLAND",
-    "licenseContact": "Not Available",
+    "contact": "PATRICK RUHLAND",
     "phone": "",
     "email": "patrick.ruhland@patrickruhland.com",
     "permits": 1,
@@ -6483,8 +5981,7 @@
   },
   {
     "company": "Mads Benishek",
-    "permitContact": "MADS STEILSTRA BENISHEK",
-    "licenseContact": "Not Available",
+    "contact": "MADS STEILSTRA BENISHEK",
     "phone": "",
     "email": "mads.benishek@madsbenishek.com",
     "permits": 1,
@@ -6496,8 +5993,7 @@
   },
   {
     "company": "Daniel Chen Bowman",
-    "permitContact": "ASPASIA MAAS",
-    "licenseContact": "Not Available",
+    "contact": "ASPASIA MAAS",
     "phone": "",
     "email": "aspasia.maas@danielchenbowman.com",
     "permits": 1,
@@ -6509,8 +6005,7 @@
   },
   {
     "company": "Daisy Sanchez Blancas",
-    "permitContact": "DAISY SANCHEZ BLANCAS",
-    "licenseContact": "Not Available",
+    "contact": "DAISY SANCHEZ BLANCAS",
     "phone": "",
     "email": "daisy.blancas@daisysanchezblancas.com",
     "permits": 1,
@@ -6522,8 +6017,7 @@
   },
   {
     "company": "DAVID A BROWN",
-    "permitContact": "DAVID A BROWN",
-    "licenseContact": "Not Available",
+    "contact": "DAVID A BROWN",
     "phone": "",
     "email": "david.brown@davidabrown.com",
     "permits": 1,
@@ -6535,8 +6029,7 @@
   },
   {
     "company": "Daniel Muse",
-    "permitContact": "DANIEL J MUSE",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL J MUSE",
     "phone": "",
     "email": "daniel.muse@danielmuse.com",
     "permits": 1,
@@ -6548,8 +6041,7 @@
   },
   {
     "company": "David Eckblad",
-    "permitContact": "DAVID B ECKBLAD",
-    "licenseContact": "Not Available",
+    "contact": "DAVID B ECKBLAD",
     "phone": "",
     "email": "david.eckblad@davideckblad.com",
     "permits": 1,
@@ -6561,8 +6053,7 @@
   },
   {
     "company": "David Gels",
-    "permitContact": "DAVID G GELS",
-    "licenseContact": "Not Available",
+    "contact": "DAVID G GELS",
     "phone": "",
     "email": "david.gels@davidgels.com",
     "permits": 1,
@@ -6574,8 +6065,7 @@
   },
   {
     "company": "Daniel Swenson",
-    "permitContact": "DANIEL H SWENSON",
-    "licenseContact": "Not Available",
+    "contact": "DANIEL H SWENSON",
     "phone": "",
     "email": "daniel.swenson@danielswenson.com",
     "permits": 1,
@@ -6587,8 +6077,7 @@
   },
   {
     "company": "Dans Sewer Sevice",
-    "permitContact": "CHRISTOPHER R JONES",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTOPHER R JONES",
     "phone": "",
     "email": "christopher.jones@danssewersevice.com",
     "permits": 1,
@@ -6600,8 +6089,7 @@
   },
   {
     "company": "Cynthia L Roesner",
-    "permitContact": "TYLER JAMES HARPER",
-    "licenseContact": "Not Available",
+    "contact": "TYLER JAMES HARPER",
     "phone": "",
     "email": "tyler.harper@cynthialroesner.com",
     "permits": 1,
@@ -6613,8 +6101,7 @@
   },
   {
     "company": "Christopher Bell",
-    "permitContact": "CHRISTOPHER J BELL",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTOPHER J BELL",
     "phone": "",
     "email": "christopher.bell@christopherbell.com",
     "permits": 1,
@@ -6626,8 +6113,7 @@
   },
   {
     "company": "Christopher Lund",
-    "permitContact": "CHRISTOPHER LUND",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTOPHER LUND",
     "phone": "",
     "email": "christopher.lund@christopherlund.com",
     "permits": 1,
@@ -6639,8 +6125,7 @@
   },
   {
     "company": "Christina M Volck Johnson",
-    "permitContact": "CHRISTINA MARIE V JOHNSON",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTINA MARIE V JOHNSON",
     "phone": "",
     "email": "christina.johnson@christinamvolckjohnson.com",
     "permits": 1,
@@ -6652,8 +6137,7 @@
   },
   {
     "company": "Christian Jimenez",
-    "permitContact": "CHRISTIAN JIMENEZ",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTIAN JIMENEZ",
     "phone": "",
     "email": "christian.jimenez@christianjimenez.com",
     "permits": 1,
@@ -6665,8 +6149,7 @@
   },
   {
     "company": "Corey Brunsvold",
-    "permitContact": "COREY J BRUNSVOLD",
-    "licenseContact": "Not Available",
+    "contact": "COREY J BRUNSVOLD",
     "phone": "",
     "email": "corey.brunsvold@coreybrunsvold.com",
     "permits": 1,
@@ -6678,8 +6161,7 @@
   },
   {
     "company": "Craig Brehrems",
-    "permitContact": "CRAIG BEHRENS",
-    "licenseContact": "Not Available",
+    "contact": "CRAIG BEHRENS",
     "phone": "",
     "email": "craig.behrens@craigbrehrems.com",
     "permits": 1,
@@ -6691,8 +6173,7 @@
   },
   {
     "company": "Craig Sorenson",
-    "permitContact": "CRAIG SORENSON",
-    "licenseContact": "Not Available",
+    "contact": "CRAIG SORENSON",
     "phone": "",
     "email": "craig.sorenson@craigsorenson.com",
     "permits": 1,
@@ -6704,8 +6185,7 @@
   },
   {
     "company": "Clairson Dutra",
-    "permitContact": "JEANNENE L DUTRA",
-    "licenseContact": "Not Available",
+    "contact": "JEANNENE L DUTRA",
     "phone": "",
     "email": "jeannene.dutra@clairsondutra.com",
     "permits": 1,
@@ -6717,8 +6197,7 @@
   },
   {
     "company": "Clark Koester",
-    "permitContact": "ANNA MCMANUS",
-    "licenseContact": "Not Available",
+    "contact": "ANNA MCMANUS",
     "phone": "",
     "email": "anna.mcmanus@clarkkoester.com",
     "permits": 1,
@@ -6730,8 +6209,7 @@
   },
   {
     "company": "Clement Pryke",
-    "permitContact": "CLEMENT PRYKE",
-    "licenseContact": "Not Available",
+    "contact": "CLEMENT PRYKE",
     "phone": "",
     "email": "clement.pryke@clementpryke.com",
     "permits": 1,
@@ -6743,8 +6221,7 @@
   },
   {
     "company": "GRANT S ENGLISH",
-    "permitContact": "SHARON E ULRICH",
-    "licenseContact": "Not Available",
+    "contact": "SHARON E ULRICH",
     "phone": "",
     "email": "sharon.ulrich@grantsenglish.com",
     "permits": 1,
@@ -6756,8 +6233,7 @@
   },
   {
     "company": "Evan Finley",
-    "permitContact": "EVAN J FINLEY",
-    "licenseContact": "Not Available",
+    "contact": "EVAN J FINLEY",
     "phone": "",
     "email": "evan.finley@evanfinley.com",
     "permits": 1,
@@ -6769,8 +6245,7 @@
   },
   {
     "company": "Donald Tepper",
-    "permitContact": "DONALD M TEPPER",
-    "licenseContact": "Not Available",
+    "contact": "DONALD M TEPPER",
     "phone": "",
     "email": "donald.tepper@donaldtepper.com",
     "permits": 1,
@@ -6782,8 +6257,7 @@
   },
   {
     "company": "Drew Bahl",
-    "permitContact": "GRETCHEN WELTER KALTHOFF",
-    "licenseContact": "Not Available",
+    "contact": "GRETCHEN WELTER KALTHOFF",
     "phone": "",
     "email": "gretchen.kalthoff@drewbahl.com",
     "permits": 1,
@@ -6795,8 +6269,7 @@
   },
   {
     "company": "Dhanesh Kumar Samsundar",
-    "permitContact": "DHANESH SAMSUNDAR",
-    "licenseContact": "Not Available",
+    "contact": "DHANESH SAMSUNDAR",
     "phone": "",
     "email": "dhanesh.samsundar@dhaneshkumarsamsundar.com",
     "permits": 1,
@@ -6808,8 +6281,7 @@
   },
   {
     "company": "Delmy Suriano",
-    "permitContact": "DANIELLE ROBERGE",
-    "licenseContact": "Not Available",
+    "contact": "DANIELLE ROBERGE",
     "phone": "",
     "email": "danielle.roberge@delmysuriano.com",
     "permits": 1,
@@ -6821,8 +6293,7 @@
   },
   {
     "company": "Eliot Berven",
-    "permitContact": "ELIZABETH JORDAN",
-    "licenseContact": "Not Available",
+    "contact": "ELIZABETH JORDAN",
     "phone": "",
     "email": "elizabeth.jordan@eliotberven.com",
     "permits": 1,
@@ -6834,8 +6305,7 @@
   },
   {
     "company": "Elizabeth Harens",
-    "permitContact": "JOHN R ROOS",
-    "licenseContact": "Not Available",
+    "contact": "JOHN R ROOS",
     "phone": "",
     "email": "john.roos@elizabethharens.com",
     "permits": 1,
@@ -6847,8 +6317,7 @@
   },
   {
     "company": "Emily Bracey Lane",
-    "permitContact": "EMILY BRACEY LANE",
-    "licenseContact": "Not Available",
+    "contact": "EMILY BRACEY LANE",
     "phone": "",
     "email": "emily.lane@emilybraceylane.com",
     "permits": 1,
@@ -6860,8 +6329,7 @@
   },
   {
     "company": "Anthony J Siebenaler-Ransom",
-    "permitContact": "ANTHONY J SIEBENALER RANSOM",
-    "licenseContact": "Not Available",
+    "contact": "ANTHONY J SIEBENALER RANSOM",
     "phone": "",
     "email": "anthony.ransom@anthonyjsiebenaler-ransom.com",
     "permits": 1,
@@ -6873,8 +6341,7 @@
   },
   {
     "company": "Aaron S Soto Sanchez",
-    "permitContact": "AARON S SOTO SANCHEZ",
-    "licenseContact": "Not Available",
+    "contact": "AARON S SOTO SANCHEZ",
     "phone": "",
     "email": "aaron.sanchez@aaronssotosanchez.com",
     "permits": 1,
@@ -6886,8 +6353,7 @@
   },
   {
     "company": "Aaron Shekey",
-    "permitContact": "AARON SHEKEY",
-    "licenseContact": "Not Available",
+    "contact": "AARON SHEKEY",
     "phone": "",
     "email": "aaron.shekey@aaronshekey.com",
     "permits": 1,
@@ -6899,8 +6365,7 @@
   },
   {
     "company": "ALEXANDER M PORTER",
-    "permitContact": "ALEXANDER M PORTER",
-    "licenseContact": "Not Available",
+    "contact": "ALEXANDER M PORTER",
     "phone": "",
     "email": "alexander.porter@alexandermporter.com",
     "permits": 1,
@@ -6912,8 +6377,7 @@
   },
   {
     "company": "ADAM J STRAND",
-    "permitContact": "ADAM J STRAND",
-    "licenseContact": "Not Available",
+    "contact": "ADAM J STRAND",
     "phone": "",
     "email": "adam.strand@adamjstrand.com",
     "permits": 1,
@@ -6925,8 +6389,7 @@
   },
   {
     "company": "Arik Van Asten",
-    "permitContact": "ARIK VAN ASTEN",
-    "licenseContact": "Not Available",
+    "contact": "ARIK VAN ASTEN",
     "phone": "",
     "email": "arik.asten@arikvanasten.com",
     "permits": 1,
@@ -6938,8 +6401,7 @@
   },
   {
     "company": "Brian S Grande",
-    "permitContact": "BRIAN S GRANDE",
-    "licenseContact": "Not Available",
+    "contact": "BRIAN S GRANDE",
     "phone": "",
     "email": "brian.grande@briansgrande.com",
     "permits": 1,
@@ -6951,8 +6413,7 @@
   },
   {
     "company": "Brian Hauger",
-    "permitContact": "BRIAN T HAUGER",
-    "licenseContact": "Not Available",
+    "contact": "BRIAN T HAUGER",
     "phone": "",
     "email": "brian.hauger@brianhauger.com",
     "permits": 1,
@@ -6964,8 +6425,7 @@
   },
   {
     "company": "Bryan Vargas Leana",
-    "permitContact": "BRYAN V LEANA",
-    "licenseContact": "Not Available",
+    "contact": "BRYAN V LEANA",
     "phone": "",
     "email": "bryan.leana@bryanvargasleana.com",
     "permits": 1,
@@ -6977,8 +6437,7 @@
   },
   {
     "company": "Brenda Tavera",
-    "permitContact": "BRENDA M BARCK",
-    "licenseContact": "Not Available",
+    "contact": "BRENDA M BARCK",
     "phone": "",
     "email": "brenda.barck@brendatavera.com",
     "permits": 1,
@@ -6990,8 +6449,7 @@
   },
   {
     "company": "Breana C Saba",
-    "permitContact": "BREANA C WOLLNER",
-    "licenseContact": "Not Available",
+    "contact": "BREANA C WOLLNER",
     "phone": "",
     "email": "breana.wollner@breanacsaba.com",
     "permits": 1,
@@ -7003,8 +6461,7 @@
   },
   {
     "company": "Barbara Lancette",
-    "permitContact": "BARBARA D EHRLER",
-    "licenseContact": "Not Available",
+    "contact": "BARBARA D EHRLER",
     "phone": "",
     "email": "barbara.ehrler@barbaralancette.com",
     "permits": 1,
@@ -7016,8 +6473,7 @@
   },
   {
     "company": "BEREKET KAHSAI",
-    "permitContact": "BEREKET KAHSAI",
-    "licenseContact": "Not Available",
+    "contact": "BEREKET KAHSAI",
     "phone": "",
     "email": "bereket.kahsai@bereketkahsai.com",
     "permits": 1,
@@ -7029,8 +6485,7 @@
   },
   {
     "company": "Asha Lee Ouma",
-    "permitContact": "ASHA L OUMA",
-    "licenseContact": "Not Available",
+    "contact": "ASHA L OUMA",
     "phone": "",
     "email": "asha.ouma@ashaleeouma.com",
     "permits": 1,
@@ -7042,8 +6497,7 @@
   },
   {
     "company": "KAREN A HARRISON",
-    "permitContact": "PAUL M HARRISON",
-    "licenseContact": "Not Available",
+    "contact": "PAUL M HARRISON",
     "phone": "",
     "email": "paul.harrison@karenaharrison.com",
     "permits": 1,
@@ -7055,8 +6509,7 @@
   },
   {
     "company": "KARL KITTELSON",
-    "permitContact": "KARL E KITTELSON",
-    "licenseContact": "Not Available",
+    "contact": "KARL E KITTELSON",
     "phone": "",
     "email": "karl.kittelson@karlkittelson.com",
     "permits": 1,
@@ -7068,8 +6521,7 @@
   },
   {
     "company": "KELSEY CHRISTENSEN",
-    "permitContact": "KELSEY ANN CHRISTENSEN",
-    "licenseContact": "Not Available",
+    "contact": "KELSEY ANN CHRISTENSEN",
     "phone": "",
     "email": "kelsey.christensen@kelseychristensen.com",
     "permits": 1,
@@ -7081,8 +6533,7 @@
   },
   {
     "company": "Julio Jara",
-    "permitContact": "JULIO R JARA",
-    "licenseContact": "Not Available",
+    "contact": "JULIO R JARA",
     "phone": "",
     "email": "julio.jara@juliojara.com",
     "permits": 1,
@@ -7094,8 +6545,7 @@
   },
   {
     "company": "Kaelynn Heiberg",
-    "permitContact": "KAELYNN HEIBERG",
-    "licenseContact": "Not Available",
+    "contact": "KAELYNN HEIBERG",
     "phone": "",
     "email": "kaelynn.heiberg@kaelynnheiberg.com",
     "permits": 1,
@@ -7107,8 +6557,7 @@
   },
   {
     "company": "Kevin Healy",
-    "permitContact": "KENNA CONWAY",
-    "licenseContact": "Not Available",
+    "contact": "KENNA CONWAY",
     "phone": "",
     "email": "kenna.conway@kevinhealy.com",
     "permits": 1,
@@ -7120,8 +6569,7 @@
   },
   {
     "company": "Kari L Hanson",
-    "permitContact": "KARI L HANSON",
-    "licenseContact": "Not Available",
+    "contact": "KARI L HANSON",
     "phone": "",
     "email": "kari.hanson@karilhanson.com",
     "permits": 1,
@@ -7133,8 +6581,7 @@
   },
   {
     "company": "Katherine Treece",
-    "permitContact": "KATHERINE L TREECE",
-    "licenseContact": "Not Available",
+    "contact": "KATHERINE L TREECE",
     "phone": "",
     "email": "katherine.treece@katherinetreece.com",
     "permits": 1,
@@ -7146,8 +6593,7 @@
   },
   {
     "company": "Jordan M Dalluge",
-    "permitContact": "JORDAN M DALLUGE",
-    "licenseContact": "Not Available",
+    "contact": "JORDAN M DALLUGE",
     "phone": "",
     "email": "jordan.dalluge@jordanmdalluge.com",
     "permits": 1,
@@ -7159,8 +6605,7 @@
   },
   {
     "company": "Jon Lindholm",
-    "permitContact": "JON WILLIAM LINDHOLM",
-    "licenseContact": "Not Available",
+    "contact": "JON WILLIAM LINDHOLM",
     "phone": "",
     "email": "jon.lindholm@jonlindholm.com",
     "permits": 1,
@@ -7172,8 +6617,7 @@
   },
   {
     "company": "Juan Fernandez",
-    "permitContact": "JUAN F FERNANDEZ REVILLA",
-    "licenseContact": "Not Available",
+    "contact": "JUAN F FERNANDEZ REVILLA",
     "phone": "",
     "email": "juan.revilla@juanfernandez.com",
     "permits": 1,
@@ -7185,8 +6629,7 @@
   },
   {
     "company": "Joshua Butcher",
-    "permitContact": "JOSHUA BUCHER",
-    "licenseContact": "Not Available",
+    "contact": "JOSHUA BUCHER",
     "phone": "",
     "email": "joshua.bucher@joshuabutcher.com",
     "permits": 1,
@@ -7198,8 +6641,7 @@
   },
   {
     "company": "Joshua Loewenhagen",
-    "permitContact": "JOSE LOEWENHAGEN",
-    "licenseContact": "Not Available",
+    "contact": "JOSE LOEWENHAGEN",
     "phone": "",
     "email": "jose.loewenhagen@joshualoewenhagen.com",
     "permits": 1,
@@ -7211,8 +6653,7 @@
   },
   {
     "company": "Josiah Lindstrom",
-    "permitContact": "LEAH LINDSTROM",
-    "licenseContact": "Not Available",
+    "contact": "LEAH LINDSTROM",
     "phone": "",
     "email": "leah.lindstrom@josiahlindstrom.com",
     "permits": 1,
@@ -7224,8 +6665,7 @@
   },
   {
     "company": "Louis Nord",
-    "permitContact": "LOUIS NORD",
-    "licenseContact": "Not Available",
+    "contact": "LOUIS NORD",
     "phone": "",
     "email": "louis.nord@louisnord.com",
     "permits": 1,
@@ -7237,8 +6677,7 @@
   },
   {
     "company": "Lucas M Manos",
-    "permitContact": "LUCAS M MANOS",
-    "licenseContact": "Not Available",
+    "contact": "LUCAS M MANOS",
     "phone": "",
     "email": "lucas.manos@lucasmmanos.com",
     "permits": 1,
@@ -7250,8 +6689,7 @@
   },
   {
     "company": "Luis Bolanos",
-    "permitContact": "LUIS P BOLANOS",
-    "licenseContact": "Not Available",
+    "contact": "LUIS P BOLANOS",
     "phone": "",
     "email": "luis.bolanos@luisbolanos.com",
     "permits": 1,
@@ -7263,8 +6701,7 @@
   },
   {
     "company": "Lillie Herbst",
-    "permitContact": "LILLIE E HERBST",
-    "licenseContact": "Not Available",
+    "contact": "LILLIE E HERBST",
     "phone": "",
     "email": "lillie.herbst@lillieherbst.com",
     "permits": 1,
@@ -7276,8 +6713,7 @@
   },
   {
     "company": "Lindsay Sorge",
-    "permitContact": "LINDSAY ANNE SORGE",
-    "licenseContact": "Not Available",
+    "contact": "LINDSAY ANNE SORGE",
     "phone": "",
     "email": "lindsay.sorge@lindsaysorge.com",
     "permits": 1,
@@ -7289,8 +6725,7 @@
   },
   {
     "company": "MATTHEW J TYLER",
-    "permitContact": "MATTHEW J TYLER",
-    "licenseContact": "Not Available",
+    "contact": "MATTHEW J TYLER",
     "phone": "",
     "email": "matthew.tyler@matthewjtyler.com",
     "permits": 1,
@@ -7302,8 +6737,7 @@
   },
   {
     "company": "Kristian Zimmerman",
-    "permitContact": "K ZIMMERMAN",
-    "licenseContact": "Not Available",
+    "contact": "K ZIMMERMAN",
     "phone": "",
     "email": "k.zimmerman@kristianzimmerman.com",
     "permits": 1,
@@ -7315,8 +6749,7 @@
   },
   {
     "company": "Kianoosh Ehitiatkar",
-    "permitContact": "KIANOOSH EHTIATKAR",
-    "licenseContact": "Not Available",
+    "contact": "KIANOOSH EHTIATKAR",
     "phone": "",
     "email": "kianoosh.ehtiatkar@kianooshehitiatkar.com",
     "permits": 1,
@@ -7328,8 +6761,7 @@
   },
   {
     "company": "Kohler Services",
-    "permitContact": "CHERYL JONES",
-    "licenseContact": "Not Available",
+    "contact": "CHERYL JONES",
     "phone": "",
     "email": "cheryl.jones@kohler.com",
     "permits": 1,
@@ -7341,8 +6773,7 @@
   },
   {
     "company": "Kyle Hannah",
-    "permitContact": "KYLE HANNAH",
-    "licenseContact": "Not Available",
+    "contact": "KYLE HANNAH",
     "phone": "",
     "email": "kyle.hannah@kylehannah.com",
     "permits": 1,
@@ -7354,8 +6785,7 @@
   },
   {
     "company": "Lauro S Villa",
-    "permitContact": "LEONARDA MARIN SANCHEZ",
-    "licenseContact": "Not Available",
+    "contact": "LEONARDA MARIN SANCHEZ",
     "phone": "",
     "email": "leonarda.sanchez@laurosvilla.com",
     "permits": 1,
@@ -7367,8 +6797,7 @@
   },
   {
     "company": "Landre Sorlie",
-    "permitContact": "LANDRE SORLIE",
-    "licenseContact": "Not Available",
+    "contact": "LANDRE SORLIE",
     "phone": "",
     "email": "landre.sorlie@landresorlie.com",
     "permits": 1,
@@ -7380,8 +6809,7 @@
   },
   {
     "company": "Kyle Schwebach",
-    "permitContact": "KYLE SCHWEBACH",
-    "licenseContact": "Not Available",
+    "contact": "KYLE SCHWEBACH",
     "phone": "",
     "email": "kyle.schwebach@kyleschwebach.com",
     "permits": 1,
@@ -7393,8 +6821,7 @@
   },
   {
     "company": "LILYA VAYSBERG",
-    "permitContact": "LILYA JEAN VAYSBERG",
-    "licenseContact": "Not Available",
+    "contact": "LILYA JEAN VAYSBERG",
     "phone": "",
     "email": "lilya.vaysberg@lilyavaysberg.com",
     "permits": 1,
@@ -7406,8 +6833,7 @@
   },
   {
     "company": "John Schutz",
-    "permitContact": "BETH SCHUTZ",
-    "licenseContact": "Not Available",
+    "contact": "BETH SCHUTZ",
     "phone": "",
     "email": "beth.schutz@johnschutz.com",
     "permits": 1,
@@ -7419,8 +6845,7 @@
   },
   {
     "company": "Hubbard Vicky",
-    "permitContact": "ZACHARY ESSIG",
-    "licenseContact": "Not Available",
+    "contact": "ZACHARY ESSIG",
     "phone": "",
     "email": "zachary.essig@hubbardvicky.com",
     "permits": 1,
@@ -7432,8 +6857,7 @@
   },
   {
     "company": "Hugo Silva",
-    "permitContact": "VANESSA B MCDUFFIE",
-    "licenseContact": "Not Available",
+    "contact": "VANESSA B MCDUFFIE",
     "phone": "",
     "email": "vanessa.mcduffie@hugosilva.com",
     "permits": 1,
@@ -7445,8 +6869,7 @@
   },
   {
     "company": "JONATHAN JOSEPH KALSCHEUR",
-    "permitContact": "ASHLEY KALSCHEUR",
-    "licenseContact": "Not Available",
+    "contact": "ASHLEY KALSCHEUR",
     "phone": "",
     "email": "ashley.kalscheur@jonathanjosephkalscheur.com",
     "permits": 1,
@@ -7458,8 +6881,7 @@
   },
   {
     "company": "Good Guys Plumbing Inc",
-    "permitContact": "ERICA COLLINS",
-    "licenseContact": "Not Available",
+    "contact": "ERICA COLLINS",
     "phone": "",
     "email": "erica.collins@goodguys.com",
     "permits": 1,
@@ -7471,8 +6893,7 @@
   },
   {
     "company": "George R Martin",
-    "permitContact": "GEORGE R MARTIN",
-    "licenseContact": "Not Available",
+    "contact": "GEORGE R MARTIN",
     "phone": "",
     "email": "george.martin@georgermartin.com",
     "permits": 1,
@@ -7484,8 +6905,7 @@
   },
   {
     "company": "Griffin Buell",
-    "permitContact": "GRIFFIN J BUELL",
-    "licenseContact": "Not Available",
+    "contact": "GRIFFIN J BUELL",
     "phone": "",
     "email": "griffin.buell@griffinbuell.com",
     "permits": 1,
@@ -7497,8 +6917,7 @@
   },
   {
     "company": "Jacob J Smith",
-    "permitContact": "JACOB SMITH",
-    "licenseContact": "Not Available",
+    "contact": "JACOB SMITH",
     "phone": "",
     "email": "jacob.smith@jacobjsmith.com",
     "permits": 1,
@@ -7510,8 +6929,7 @@
   },
   {
     "company": "Jessica Felton",
-    "permitContact": "NICHOLAS T KIRBY",
-    "licenseContact": "Not Available",
+    "contact": "NICHOLAS T KIRBY",
     "phone": "",
     "email": "nicholas.kirby@jessicafelton.com",
     "permits": 1,
@@ -7523,8 +6941,7 @@
   },
   {
     "company": "Jessica M Norman",
-    "permitContact": "JESSICA M NORMAN",
-    "licenseContact": "Not Available",
+    "contact": "JESSICA M NORMAN",
     "phone": "",
     "email": "jessica.norman@jessicamnorman.com",
     "permits": 1,
@@ -7536,8 +6953,7 @@
   },
   {
     "company": "Jessica Meyer",
-    "permitContact": "SILAS P MAYER",
-    "licenseContact": "Not Available",
+    "contact": "SILAS P MAYER",
     "phone": "",
     "email": "silas.mayer@jessicameyer.com",
     "permits": 1,
@@ -7549,8 +6965,7 @@
   },
   {
     "company": "Jessie Welton",
-    "permitContact": "MICHON ROSS",
-    "licenseContact": "Not Available",
+    "contact": "MICHON ROSS",
     "phone": "",
     "email": "michon.ross@jessiewelton.com",
     "permits": 1,
@@ -7562,8 +6977,7 @@
   },
   {
     "company": "Jesse Mack",
-    "permitContact": "JESSE V MACK",
-    "licenseContact": "Not Available",
+    "contact": "JESSE V MACK",
     "phone": "",
     "email": "jesse.mack@jessemack.com",
     "permits": 1,
@@ -7575,8 +6989,7 @@
   },
   {
     "company": "Jesse Evans",
-    "permitContact": "JESSE EVANS",
-    "licenseContact": "Not Available",
+    "contact": "JESSE EVANS",
     "phone": "",
     "email": "jesse.evans@jesseevans.com",
     "permits": 1,
@@ -7588,8 +7001,7 @@
   },
   {
     "company": "Jerome Urbaniak",
-    "permitContact": "JEROME R URBANIAK",
-    "licenseContact": "Not Available",
+    "contact": "JEROME R URBANIAK",
     "phone": "",
     "email": "jerome.urbaniak@jeromeurbaniak.com",
     "permits": 1,
@@ -7601,8 +7013,7 @@
   },
   {
     "company": "John Condon",
-    "permitContact": "JOHN CONDON",
-    "licenseContact": "Not Available",
+    "contact": "JOHN CONDON",
     "phone": "",
     "email": "john.condon@johncondon.com",
     "permits": 1,
@@ -7614,8 +7025,7 @@
   },
   {
     "company": "Joel Calzada Ortiz",
-    "permitContact": "ERIC W JONES",
-    "licenseContact": "Not Available",
+    "contact": "ERIC W JONES",
     "phone": "",
     "email": "eric.jones@joelcalzadaortiz.com",
     "permits": 1,
@@ -7627,8 +7037,7 @@
   },
   {
     "company": "James Popp",
-    "permitContact": "JAMES F POPP III",
-    "licenseContact": "Not Available",
+    "contact": "JAMES F POPP III",
     "phone": "",
     "email": "james.iii@jamespopp.com",
     "permits": 1,
@@ -7640,8 +7049,7 @@
   },
   {
     "company": "Jacob Royce",
-    "permitContact": "JACOB ROGER ROYCE",
-    "licenseContact": "Not Available",
+    "contact": "JACOB ROGER ROYCE",
     "phone": "",
     "email": "jacob.royce@jacobroyce.com",
     "permits": 1,
@@ -7653,8 +7061,7 @@
   },
   {
     "company": "Jacob Sharff",
-    "permitContact": "JACOB A SHARFF",
-    "licenseContact": "Not Available",
+    "contact": "JACOB A SHARFF",
     "phone": "",
     "email": "jacob.sharff@jacobsharff.com",
     "permits": 1,
@@ -7666,8 +7073,7 @@
   },
   {
     "company": "Jeff Vondenkamp",
-    "permitContact": "JEFFREY J VONDENKAMP ET AL",
-    "licenseContact": "Not Available",
+    "contact": "JEFFREY J VONDENKAMP ET AL",
     "phone": "",
     "email": "jeffrey.al@jeffvondenkamp.com",
     "permits": 1,
@@ -7679,8 +7085,7 @@
   },
   {
     "company": "CenterPoint Energy Resource Corp",
-    "permitContact": "KATHERINE SIMON FRANK TRUST",
-    "licenseContact": "Not Available",
+    "contact": "KATHERINE SIMON FRANK TRUST",
     "phone": "",
     "email": "",
     "permits": 31231,
@@ -7692,8 +7097,7 @@
   },
   {
     "company": "CASTLE MASTER MECHANICAL",
-    "permitContact": "FIRST AND THIRD PROPERTIES LLC",
-    "licenseContact": "Not Available",
+    "contact": "FIRST AND THIRD PROPERTIES LLC",
     "phone": "",
     "email": "",
     "permits": 434,
@@ -7705,8 +7109,7 @@
   },
   {
     "company": "Master Gas Fitters Inc",
-    "permitContact": "VINCENT BEACOM",
-    "licenseContact": "Not Available",
+    "contact": "VINCENT BEACOM",
     "phone": "",
     "email": "",
     "permits": 345,
@@ -7718,8 +7121,7 @@
   },
   {
     "company": "Berg Plumbing and Heating Inc",
-    "permitContact": "NASHVILLE COOP LLC",
-    "licenseContact": "Not Available",
+    "contact": "NASHVILLE COOP LLC",
     "phone": "",
     "email": "",
     "permits": 262,
@@ -7731,8 +7133,7 @@
   },
   {
     "company": "Diversified Plumbing and Heating Inc",
-    "permitContact": "CHATEAU COMM HSNG ASSOC INC",
-    "licenseContact": "Not Available",
+    "contact": "CHATEAU COMM HSNG ASSOC INC",
     "phone": "",
     "email": "",
     "permits": 215,
@@ -7744,8 +7145,7 @@
   },
   {
     "company": "Blaylock Plumbing Co Inc",
-    "permitContact": "RP MINNEAPOLIS PROPCO LLC",
-    "licenseContact": "Not Available",
+    "contact": "RP MINNEAPOLIS PROPCO LLC",
     "phone": "",
     "email": "",
     "permits": 182,
@@ -7757,8 +7157,7 @@
   },
   {
     "company": "BKMC",
-    "permitContact": "FRIDA CULTURAL PARTNERS, LLC",
-    "licenseContact": "Not Available",
+    "contact": "FRIDA CULTURAL PARTNERS, LLC",
     "phone": "",
     "email": "",
     "permits": 129,
@@ -7770,8 +7169,7 @@
   },
   {
     "company": "Binder Heating and Air Conditioning Inc",
-    "permitContact": "CITY OF LAKES COMMUNITY LAND TRUST",
-    "licenseContact": "Not Available",
+    "contact": "CITY OF LAKES COMMUNITY LAND TRUST",
     "phone": "",
     "email": "",
     "permits": 119,
@@ -7783,8 +7181,7 @@
   },
   {
     "company": "Kraft Mechanical",
-    "permitContact": "RP MINNEAPOLIS PROPCO, LLC",
-    "licenseContact": "Not Available",
+    "contact": "RP MINNEAPOLIS PROPCO, LLC",
     "phone": "",
     "email": "",
     "permits": 82,
@@ -7796,8 +7193,7 @@
   },
   {
     "company": "Suburban Plumbing",
-    "permitContact": "ADEED ENTERPRISES LLC",
-    "licenseContact": "Not Available",
+    "contact": "ADEED ENTERPRISES LLC",
     "phone": "",
     "email": "",
     "permits": 76,
@@ -7809,8 +7205,7 @@
   },
   {
     "company": "STERN HEATING AND COOLING INC",
-    "permitContact": "ERIN E KINCHELOE",
-    "licenseContact": "Not Available",
+    "contact": "ERIN E KINCHELOE",
     "phone": "",
     "email": "",
     "permits": 65,
@@ -7822,8 +7217,7 @@
   },
   {
     "company": "Lopez Son's Plumbing LLC",
-    "permitContact": "AA VENTURES LLC",
-    "licenseContact": "Not Available",
+    "contact": "AA VENTURES LLC",
     "phone": "",
     "email": "",
     "permits": 62,
@@ -7835,8 +7229,7 @@
   },
   {
     "company": "Affinity Plumbing LLC",
-    "permitContact": "CHRISTINE O POPPE LIVING TRUST",
-    "licenseContact": "Not Available",
+    "contact": "CHRISTINE O POPPE LIVING TRUST",
     "phone": "",
     "email": "",
     "permits": 62,
@@ -7848,8 +7241,7 @@
   },
   {
     "company": "Dooty Calls Plumbing LLC",
-    "permitContact": "BANK OF NY AS TRUSTEE",
-    "licenseContact": "Not Available",
+    "contact": "BANK OF NY AS TRUSTEE",
     "phone": "",
     "email": "",
     "permits": 45,
@@ -7861,8 +7253,7 @@
   },
   {
     "company": "MR. MAISON PLUMBING AND DRAIN LLC",
-    "permitContact": "BINA INVESTMENT GROUP INC.",
-    "licenseContact": "Not Available",
+    "contact": "BINA INVESTMENT GROUP INC.",
     "phone": "",
     "email": "",
     "permits": 37,
@@ -7874,8 +7265,7 @@
   },
   {
     "company": "First Class Plumbing LLC",
-    "permitContact": "MOJO HOLDINGS 4 LLC",
-    "licenseContact": "Not Available",
+    "contact": "MOJO HOLDINGS 4 LLC",
     "phone": "",
     "email": "",
     "permits": 32,
@@ -7887,8 +7277,7 @@
   },
   {
     "company": "NASSEFF MECHANICAL CONTRACTORS",
-    "permitContact": "RP MINNEAPOLIS PROPCO, LLC",
-    "licenseContact": "Not Available",
+    "contact": "RP MINNEAPOLIS PROPCO, LLC",
     "phone": "",
     "email": "",
     "permits": 31,
@@ -7900,8 +7289,7 @@
   },
   {
     "company": "Hutton Plumbing LLC",
-    "permitContact": "UMBRA ARTS LLC",
-    "licenseContact": "Not Available",
+    "contact": "UMBRA ARTS LLC",
     "phone": "",
     "email": "",
     "permits": 25,
@@ -7913,8 +7301,7 @@
   },
   {
     "company": "Reliable Plumbing and Heating LLC",
-    "permitContact": "FARM TO FORK LLC",
-    "licenseContact": "Not Available",
+    "contact": "FARM TO FORK LLC",
     "phone": "",
     "email": "",
     "permits": 23,
@@ -7926,8 +7313,7 @@
   },
   {
     "company": "TrueWater Plumbing",
-    "permitContact": "ESTATE OF SUSAN KAY SALOKA",
-    "licenseContact": "Not Available",
+    "contact": "ESTATE OF SUSAN KAY SALOKA",
     "phone": "",
     "email": "",
     "permits": 20,
@@ -7939,8 +7325,7 @@
   },
   {
     "company": "Commercial Kitchen Services Inc",
-    "permitContact": "CHARITYUSA PROPERTIES, LLC",
-    "licenseContact": "Not Available",
+    "contact": "CHARITYUSA PROPERTIES, LLC",
     "phone": "",
     "email": "",
     "permits": 19,
@@ -7952,8 +7337,7 @@
   },
   {
     "company": "Bedrock Plumbing LLC",
-    "permitContact": "BRJ2X PROPERTIES LLC",
-    "licenseContact": "Not Available",
+    "contact": "BRJ2X PROPERTIES LLC",
     "phone": "",
     "email": "",
     "permits": 12,
@@ -7965,8 +7349,7 @@
   },
   {
     "company": "Waterworks Plumbing & Heating LLC",
-    "permitContact": "MARTA L SIMPSON TRUST",
-    "licenseContact": "Not Available",
+    "contact": "MARTA L SIMPSON TRUST",
     "phone": "",
     "email": "",
     "permits": 12,
@@ -7978,8 +7361,7 @@
   },
   {
     "company": "Gopher Sewer and Drain",
-    "permitContact": "P & N PROPERTIES LLC",
-    "licenseContact": "Not Available",
+    "contact": "P & N PROPERTIES LLC",
     "phone": "",
     "email": "",
     "permits": 10,
@@ -7991,8 +7373,7 @@
   },
   {
     "company": "Precision Outdoor Services LLC",
-    "permitContact": "JYM PROPERTIES, LLC",
-    "licenseContact": "Not Available",
+    "contact": "JYM PROPERTIES, LLC",
     "phone": "",
     "email": "",
     "permits": 8,
@@ -8004,8 +7385,7 @@
   },
   {
     "company": "SPI Mechanical LLC",
-    "permitContact": "AA VENTURES LLC",
-    "licenseContact": "Not Available",
+    "contact": "AA VENTURES LLC",
     "phone": "",
     "email": "",
     "permits": 8,
@@ -8017,8 +7397,7 @@
   },
   {
     "company": "Airtech Thermex LLC",
-    "permitContact": "MALCOLM YARDS MARKET LLC",
-    "licenseContact": "Not Available",
+    "contact": "MALCOLM YARDS MARKET LLC",
     "phone": "",
     "email": "",
     "permits": 7,
@@ -8030,8 +7409,7 @@
   },
   {
     "company": "MJW HVAC Inc",
-    "permitContact": "FYR SFR TRS LLC",
-    "licenseContact": "Not Available",
+    "contact": "FYR SFR TRS LLC",
     "phone": "",
     "email": "",
     "permits": 6,
@@ -8043,8 +7421,7 @@
   },
   {
     "company": "Air Conditioning Associates Inc",
-    "permitContact": "124 NORTH PARTNERS LLC",
-    "licenseContact": "Not Available",
+    "contact": "124 NORTH PARTNERS LLC",
     "phone": "",
     "email": "",
     "permits": 5,
@@ -8056,8 +7433,7 @@
   },
   {
     "company": "Top Tier Plumbing",
-    "permitContact": "GLENWOOD FINANCIAL LLC",
-    "licenseContact": "Not Available",
+    "contact": "GLENWOOD FINANCIAL LLC",
     "phone": "",
     "email": "",
     "permits": 4,
@@ -8069,8 +7445,7 @@
   },
   {
     "company": "Heating & Cooling Exxperts LLC",
-    "permitContact": "NS SOUTH MINNEAPOLIS LLC",
-    "licenseContact": "Not Available",
+    "contact": "NS SOUTH MINNEAPOLIS LLC",
     "phone": "",
     "email": "",
     "permits": 3,
@@ -8082,8 +7457,7 @@
   },
   {
     "company": "Jesus Romero Pallchizaca",
-    "permitContact": "JESUS M ROMERO PALLCHIZACA",
-    "licenseContact": "Not Available",
+    "contact": "JESUS M ROMERO PALLCHIZACA",
     "phone": "",
     "email": "",
     "permits": 2,
@@ -8095,8 +7469,7 @@
   },
   {
     "company": "Mark Noble",
-    "permitContact": "THE NOBLE LIVING TRUST",
-    "licenseContact": "Not Available",
+    "contact": "THE NOBLE LIVING TRUST",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8108,8 +7481,7 @@
   },
   {
     "company": "STEPHEN E LYSTER",
-    "permitContact": "STEPHEN E LYSTER TRUST",
-    "licenseContact": "Not Available",
+    "contact": "STEPHEN E LYSTER TRUST",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8121,8 +7493,7 @@
   },
   {
     "company": "RANDY M ANDERSON",
-    "permitContact": "HSR MSP LLC",
-    "licenseContact": "Not Available",
+    "contact": "HSR MSP LLC",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8134,8 +7505,7 @@
   },
   {
     "company": "Rubi Pal",
-    "permitContact": "HSR MSP LLC",
-    "licenseContact": "Not Available",
+    "contact": "HSR MSP LLC",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8147,8 +7517,7 @@
   },
   {
     "company": "Damyan's Heating and Cooling LLC",
-    "permitContact": "DIRIR PROPERTIES, LLC",
-    "licenseContact": "Not Available",
+    "contact": "DIRIR PROPERTIES, LLC",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8160,8 +7529,7 @@
   },
   {
     "company": "Flow Master Plumbing LLC",
-    "permitContact": "CEDAR LAKE LLC",
-    "licenseContact": "Not Available",
+    "contact": "CEDAR LAKE LLC",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8173,8 +7541,7 @@
   },
   {
     "company": "Brown Dog Plumbing LLC",
-    "permitContact": "MINNEAPOLIS PROPERTY LLC",
-    "licenseContact": "Not Available",
+    "contact": "MINNEAPOLIS PROPERTY LLC",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8186,8 +7553,7 @@
   },
   {
     "company": "Kelly Parker",
-    "permitContact": "KELLY L PARKER TRUST",
-    "licenseContact": "Not Available",
+    "contact": "KELLY L PARKER TRUST",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8199,8 +7565,7 @@
   },
   {
     "company": "High Quality Plumbing LLC",
-    "permitContact": "1407 MADISON LLC",
-    "licenseContact": "Not Available",
+    "contact": "1407 MADISON LLC",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8212,8 +7577,7 @@
   },
   {
     "company": "Greg Christian",
-    "permitContact": "G & S PSE PROPERTIES LLC",
-    "licenseContact": "Not Available",
+    "contact": "G & S PSE PROPERTIES LLC",
     "phone": "",
     "email": "",
     "permits": 1,
@@ -8261,8 +7625,7 @@
                 
                 row.innerHTML = `
                     <td>${contractor.company}</td>
-                    <td>${contractor.permitContact}</td>
-                    <td>${contractor.licenseContact}</td>
+                    <td>${contractor.contact || 'N/A'}</td>
                     <td>${phoneCell}</td>
                     <td>${emailCell}</td>
                     <td>${contractor.permits.toLocaleString()}</td>
@@ -8350,7 +7713,7 @@
             if (searchTerm) {
                 filtered = filtered.filter(c => 
                     c.company.toLowerCase().includes(searchTerm) ||
-                    c.permitContact.toLowerCase().includes(searchTerm) ||
+                    (c.contact && c.contact.toLowerCase().includes(searchTerm)) ||
                     (c.phone && c.phone.includes(searchTerm)) ||
                     (c.email && c.email.toLowerCase().includes(searchTerm))
                 );
@@ -8363,11 +7726,10 @@
 
         // Download functions
         function downloadCSV() {
-            const headers = ['Company Name', 'Permit Contact Person', 'License Contact Person', 'Phone', 'Email', 'Total Permits', 'Last Permit', 'Activity Level', 'Days Since Last', 'Source', 'Confidence'];
+            const headers = ['Company Name', 'Contact Person', 'Phone', 'Email', 'Total Permits', 'Last Permit', 'Activity Level', 'Days Since Last', 'Source', 'Confidence'];
             const rows = currentData.map(c => [
                 c.company,
-                c.permitContact,
-                c.licenseContact,
+                c.contact || '',
                 c.phone || '',
                 c.email || '',
                 c.permits,
@@ -8384,17 +7746,17 @@
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'plumber_contacts_dual_' + new Date().toISOString().split('T')[0] + '.csv';
+            a.download = 'plumber_contacts_' + new Date().toISOString().split('T')[0] + '.csv';
             a.click();
             window.URL.revokeObjectURL(url);
         }
 
         function downloadCallList() {
             const callListData = currentData.filter(c => c.phone);
-            const headers = ['Company Name', 'Permit Contact', 'Phone', 'Email', 'Total Permits', 'Last Activity', 'Confidence'];
+            const headers = ['Company Name', 'Contact Person', 'Phone', 'Email', 'Total Permits', 'Last Activity', 'Confidence'];
             const rows = callListData.map(c => [
                 c.company,
-                c.permitContact,
+                c.contact || '',
                 c.phone,
                 c.email || '',
                 c.permits,
