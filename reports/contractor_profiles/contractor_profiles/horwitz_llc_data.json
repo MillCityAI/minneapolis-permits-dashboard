@@ -1,0 +1,238 @@
+{
+  "company_info": {
+    "company_name": "Horwitz LLC",
+    "legal_name": "HORWITZ INC",
+    "dba_names": [],
+    "business_type": "",
+    "license_number": "",
+    "license_status": "",
+    "years_in_business": null,
+    "founded_date": "",
+    "employee_count": "",
+    "annual_revenue": "",
+    "business_structure": ""
+  },
+  "contact_info": {
+    "primary_contact": {
+      "name": "JAMES J KARASON",
+      "title": "",
+      "phone": "",
+      "email": "",
+      "linkedin": ""
+    },
+    "secondary_contacts": [],
+    "main_phone": "763-235-9839",
+    "emergency_phone": "",
+    "fax": "",
+    "emails": {
+      "general": "dthom@horwitz-nsi.com",
+      "sales": "",
+      "service": "",
+      "billing": ""
+    },
+    "website": "",
+    "social_media": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    }
+  },
+  "location_info": {
+    "primary_address": {
+      "street": "7400 49TH AVE N",
+      "city": "NEW HOPE",
+      "state": "MN",
+      "zip": "",
+      "county": ""
+    },
+    "additional_locations": [],
+    "service_areas": [
+      "Bottineau",
+      "Bryant",
+      "Cedar - Isles - Dean",
+      "Cedar Riverside",
+      "Columbia Park",
+      "Como",
+      "Downtown East",
+      "Downtown West",
+      "East Bde Maka Ska",
+      "East Isles",
+      "Elliot Park",
+      "Hawthorne",
+      "Holland",
+      "Jordan",
+      "Lind - Bohanon",
+      "Linden Hills",
+      "Logan Park",
+      "Loring Park",
+      "Lowry Hill",
+      "Lowry Hill East",
+      "Lynnhurst",
+      "Marcy Holmes",
+      "Mid - City Industrial",
+      "Midtown Phillips",
+      "Near - North",
+      "North Loop",
+      "Northeast Park",
+      "Phillips West",
+      "Powderhorn Park",
+      "Prospect Park - East River Road",
+      "Regina",
+      "Seward",
+      "Sheridan",
+      "Steven's Square - Loring Heights",
+      "Ventura Village",
+      "Waite Park",
+      "West Maka Ska",
+      "Whittier",
+      "Windom"
+    ],
+    "service_radius_miles": null,
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  "business_details": {
+    "specialties": [
+      "Residential plumbing",
+      "Commercial plumbing",
+      "Water heater installation",
+      "Drain cleaning"
+    ],
+    "certifications": [],
+    "associations": [],
+    "insurance": {
+      "general_liability": "",
+      "workers_comp": "",
+      "bonding": "",
+      "coverage_amounts": {}
+    },
+    "equipment_capabilities": [],
+    "technology_used": [],
+    "warranty_info": "",
+    "business_hours": {
+      "monday": "",
+      "tuesday": "",
+      "wednesday": "",
+      "thursday": "",
+      "friday": "",
+      "saturday": "",
+      "sunday": "",
+      "emergency_available": false
+    }
+  },
+  "performance_metrics": {
+    "permit_data": {
+      "total_permits": 1235,
+      "avg_permits_per_year": 147.0,
+      "first_permit_date": "2016-12-20",
+      "last_permit_date": "2025-05-29",
+      "days_since_last_permit": 62,
+      "total_fees_paid": 950619.98,
+      "activity_level": "Active (30-90 days)",
+      "top_work_types": [
+        "ComMin: 711",
+        "ComNoFdBv: 394",
+        "ComFdBv: 107"
+      ]
+    },
+    "project_metrics": {
+      "avg_project_value": 0,
+      "completion_rate": "",
+      "avg_completion_time": "",
+      "project_types": {}
+    },
+    "growth_trends": {
+      "permit_growth_rate": "",
+      "revenue_growth_estimate": "",
+      "market_share_estimate": ""
+    }
+  },
+  "reputation_data": {
+    "bbb_rating": "",
+    "bbb_accredited": false,
+    "google_rating": 0,
+    "google_review_count": 0,
+    "yelp_rating": 0,
+    "yelp_review_count": 0,
+    "angies_list_rating": "",
+    "home_advisor_rating": "",
+    "recent_reviews": [],
+    "complaints": {
+      "bbb_complaints": 0,
+      "resolved_complaints": 0,
+      "government_actions": []
+    }
+  },
+  "marketing_intelligence": {
+    "current_promotions": [],
+    "pricing_transparency": "",
+    "response_time_commitment": "",
+    "unique_selling_points": [
+      "Licensed and insured",
+      "24/7 emergency service",
+      "Family-owned business",
+      "Serving Minneapolis area"
+    ],
+    "target_customers": [],
+    "competitive_advantages": [],
+    "weaknesses": [],
+    "market_positioning": ""
+  },
+  "web_research": {
+    "company_history": "",
+    "recent_news": [],
+    "press_releases": [],
+    "awards_recognition": [],
+    "community_involvement": [],
+    "case_studies": [],
+    "testimonials": [],
+    "research_notes": [
+      {
+        "timestamp": "2025-08-04T15:02:39.249357",
+        "action": "Web research queries prepared",
+        "queries": {
+          "business_info": "\"Horwitz LLC\" plumbing NEW HOPE Minnesota business information",
+          "reviews": "\"Horwitz LLC\" plumbing reviews ratings NEW HOPE",
+          "website": "\"Horwitz LLC\" plumbing 763-235-9839 website",
+          "bbb": "\"Horwitz LLC\" better business bureau BBB rating",
+          "social_media": "\"Horwitz LLC\" plumbing facebook linkedin",
+          "news": "\"Horwitz LLC\" plumbing news announcements NEW HOPE"
+        }
+      }
+    ]
+  },
+  "sales_intelligence": {
+    "decision_makers": [],
+    "buying_process": "",
+    "pain_points": [],
+    "objections": [],
+    "talking_points": [],
+    "competitor_relationships": [],
+    "preferred_vendors": [],
+    "budget_cycle": ""
+  },
+  "interaction_history": {
+    "calls": [],
+    "emails": [],
+    "meetings": [],
+    "proposals": [],
+    "notes": [],
+    "follow_ups": [],
+    "last_contact_date": "",
+    "next_action_date": "",
+    "relationship_status": "",
+    "lead_score": 0
+  },
+  "metadata": {
+    "data_source": "Licensed Data",
+    "last_updated": "2025-08-04T15:02:39.249341",
+    "updated_by": "",
+    "data_quality_score": "",
+    "verification_status": "High",
+    "research_notes": []
+  }
+}

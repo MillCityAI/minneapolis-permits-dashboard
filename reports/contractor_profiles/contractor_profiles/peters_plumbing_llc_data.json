@@ -1,0 +1,250 @@
+{
+  "company_info": {
+    "company_name": "Peters Plumbing LLC",
+    "legal_name": "PETES PLUMBING LLC",
+    "dba_names": [],
+    "business_type": "",
+    "license_number": "",
+    "license_status": "",
+    "years_in_business": null,
+    "founded_date": "",
+    "employee_count": "",
+    "annual_revenue": "",
+    "business_structure": ""
+  },
+  "contact_info": {
+    "primary_contact": {
+      "name": "ANN J BROWN",
+      "title": "",
+      "phone": "",
+      "email": "",
+      "linkedin": ""
+    },
+    "secondary_contacts": [],
+    "main_phone": "763-234-8187",
+    "emergency_phone": "",
+    "fax": "",
+    "emails": {
+      "general": "jeremy@petesplumbingmn.com",
+      "sales": "",
+      "service": "",
+      "billing": ""
+    },
+    "website": "",
+    "social_media": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    }
+  },
+  "location_info": {
+    "primary_address": {
+      "street": "20455 Manor Rd",
+      "city": "Excelsior",
+      "state": "MN",
+      "zip": "",
+      "county": ""
+    },
+    "additional_locations": [],
+    "service_areas": [
+      "Armatage",
+      "Audubon Park",
+      "Bancroft",
+      "Bryant",
+      "Cedar - Isles - Dean",
+      "Central",
+      "Como",
+      "Cooper",
+      "Diamond Lake",
+      "Downtown West",
+      "East Bde Maka Ska",
+      "East Harriet",
+      "East Isles",
+      "East Phillips",
+      "Elliot Park",
+      "Ericsson",
+      "Field",
+      "Folwell",
+      "Fulton",
+      "Hale",
+      "Hawthorne",
+      "Kenny",
+      "Kenwood",
+      "King Field",
+      "Linden Hills",
+      "Loring Park",
+      "Lowry Hill",
+      "Lowry Hill East",
+      "Lynnhurst",
+      "Marcy Holmes",
+      "Midtown Phillips",
+      "Minnehaha",
+      "Morris Park",
+      "Near - North",
+      "North Loop",
+      "Northrop",
+      "Powderhorn Park",
+      "Prospect Park - East River Road",
+      "Regina",
+      "Sheridan",
+      "Shingle Creek",
+      "South Uptown",
+      "St. Anthony East",
+      "Standish",
+      "Steven's Square - Loring Heights",
+      "Tangletown",
+      "Victory",
+      "Waite Park",
+      "Whittier",
+      "Windom",
+      "Windom Park"
+    ],
+    "service_radius_miles": null,
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  "business_details": {
+    "specialties": [
+      "Residential plumbing",
+      "Commercial plumbing",
+      "Water heater installation",
+      "Drain cleaning"
+    ],
+    "certifications": [],
+    "associations": [],
+    "insurance": {
+      "general_liability": "",
+      "workers_comp": "",
+      "bonding": "",
+      "coverage_amounts": {}
+    },
+    "equipment_capabilities": [],
+    "technology_used": [],
+    "warranty_info": "",
+    "business_hours": {
+      "monday": "",
+      "tuesday": "",
+      "wednesday": "",
+      "thursday": "",
+      "friday": "",
+      "saturday": "",
+      "sunday": "",
+      "emergency_available": false
+    }
+  },
+  "performance_metrics": {
+    "permit_data": {
+      "total_permits": 834,
+      "avg_permits_per_year": 103.0,
+      "first_permit_date": "2016-12-07",
+      "last_permit_date": "2025-01-30",
+      "days_since_last_permit": 182,
+      "total_fees_paid": 124709.86,
+      "activity_level": "Low (180-365 days)",
+      "top_work_types": [
+        "ComNoFdBv: 717",
+        "Res: 82",
+        "ComMin: 25"
+      ]
+    },
+    "project_metrics": {
+      "avg_project_value": 0,
+      "completion_rate": "",
+      "avg_completion_time": "",
+      "project_types": {}
+    },
+    "growth_trends": {
+      "permit_growth_rate": "",
+      "revenue_growth_estimate": "",
+      "market_share_estimate": ""
+    }
+  },
+  "reputation_data": {
+    "bbb_rating": "",
+    "bbb_accredited": false,
+    "google_rating": 0,
+    "google_review_count": 0,
+    "yelp_rating": 0,
+    "yelp_review_count": 0,
+    "angies_list_rating": "",
+    "home_advisor_rating": "",
+    "recent_reviews": [],
+    "complaints": {
+      "bbb_complaints": 0,
+      "resolved_complaints": 0,
+      "government_actions": []
+    }
+  },
+  "marketing_intelligence": {
+    "current_promotions": [],
+    "pricing_transparency": "",
+    "response_time_commitment": "",
+    "unique_selling_points": [
+      "Licensed and insured",
+      "24/7 emergency service",
+      "Family-owned business",
+      "Serving Minneapolis area"
+    ],
+    "target_customers": [],
+    "competitive_advantages": [],
+    "weaknesses": [],
+    "market_positioning": ""
+  },
+  "web_research": {
+    "company_history": "",
+    "recent_news": [],
+    "press_releases": [],
+    "awards_recognition": [],
+    "community_involvement": [],
+    "case_studies": [],
+    "testimonials": [],
+    "research_notes": [
+      {
+        "timestamp": "2025-08-04T15:01:24.149845",
+        "action": "Web research queries prepared",
+        "queries": {
+          "business_info": "\"Peters Plumbing LLC\" plumbing Excelsior Minnesota business information",
+          "reviews": "\"Peters Plumbing LLC\" plumbing reviews ratings Excelsior",
+          "website": "\"Peters Plumbing LLC\" plumbing 763-234-8187 website",
+          "bbb": "\"Peters Plumbing LLC\" better business bureau BBB rating",
+          "social_media": "\"Peters Plumbing LLC\" plumbing facebook linkedin",
+          "news": "\"Peters Plumbing LLC\" plumbing news announcements Excelsior"
+        }
+      }
+    ]
+  },
+  "sales_intelligence": {
+    "decision_makers": [],
+    "buying_process": "",
+    "pain_points": [],
+    "objections": [],
+    "talking_points": [],
+    "competitor_relationships": [],
+    "preferred_vendors": [],
+    "budget_cycle": ""
+  },
+  "interaction_history": {
+    "calls": [],
+    "emails": [],
+    "meetings": [],
+    "proposals": [],
+    "notes": [],
+    "follow_ups": [],
+    "last_contact_date": "",
+    "next_action_date": "",
+    "relationship_status": "",
+    "lead_score": 0
+  },
+  "metadata": {
+    "data_source": "Licensed Data",
+    "last_updated": "2025-08-04T15:01:24.149817",
+    "updated_by": "",
+    "data_quality_score": "",
+    "verification_status": "High",
+    "research_notes": []
+  }
+}

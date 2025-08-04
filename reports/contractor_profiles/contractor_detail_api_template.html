@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{COMPANY_NAME} - Contractor Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background-color: #1565c0;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .company-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .last-updated {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .nav-button {
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .card-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            color: #666;
+        }
+        
+        .contact-label {
+            font-weight: 500;
+            color: #666;
+            min-width: 80px;
+        }
+        
+        .contact-value {
+            color: #333;
+        }
+        
+        .contact-value a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+        
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+        
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .action-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .action-button {
+            background-color: #1565c0;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .action-button:hover {
+            background-color: #0d47a1;
+        }
+        
+        .action-button.secondary {
+            background-color: #757575;
+        }
+        
+        .action-button.secondary:hover {
+            background-color: #616161;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 12px 24px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.3s;
+        }
+        
+        .tab:hover {
+            color: #1565c0;
+        }
+        
+        .tab.active {
+            color: #1565c0;
+            border-bottom-color: #1565c0;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .info-item {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #1565c0;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            color: #333;
+            font-size: 16px;
+        }
+        
+        .performance-chart {
+            height: 300px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            margin-top: 20px;
+        }
+        
+        .notes-section {
+            margin-top: 20px;
+        }
+        
+        .note-input {
+            width: 100%;
+            min-height: 100px;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+        }
+        
+        .note-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .note-history {
+            margin-top: 20px;
+        }
+        
+        .note-entry {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .note-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .note-content {
+            color: #333;
+        }
+        
+        .review-item {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .review-rating {
+            color: #ffa000;
+            font-weight: bold;
+        }
+        
+        .review-source {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .review-text {
+            color: #333;
+            font-style: italic;
+        }
+        
+        .map-container {
+            height: 400px;
+            background-color: #e0e0e0;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            margin-top: 20px;
+        }
+        
+        .call-tracking {
+            margin-top: 20px;
+        }
+        
+        .call-log {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .call-entry {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .call-status {
+            font-weight: 500;
+        }
+        
+        .call-status.success {
+            color: #2e7d32;
+        }
+        
+        .call-status.no-answer {
+            color: #f57c00;
+        }
+        
+        .call-status.voicemail {
+            color: #1976d2;
+        }
+        
+        /* Loading and error states */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #1565c0;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error-message {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        
+        .success-message {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        
+        /* Modal for call logging */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .modal-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .close-button {
+            font-size: 28px;
+            font-weight: bold;
+            color: #999;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        
+        .close-button:hover {
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #1565c0;
+        }
+        
+        select.form-control {
+            cursor: pointer;
+        }
+        
+        textarea.form-control {
+            min-height: 80px;
+            resize: vertical;
+        }
+        
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: 2;
+            }
+            
+            .content-area {
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .action-buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .tabs {
+                overflow-x: auto;
+            }
+            
+            .tab {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+        
+        @media print {
+            .header {
+                background-color: white;
+                color: black;
+                border-bottom: 2px solid #333;
+            }
+            
+            .nav-buttons {
+                display: none;
+            }
+            
+            .action-buttons {
+                display: none;
+            }
+            
+            .tabs {
+                display: none;
+            }
+            
+            .tab-content {
+                display: block !important;
+                page-break-inside: avoid;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <h1 class="company-name">{COMPANY_NAME}</h1>
+                <p class="last-updated">Last Updated: <span id="lastUpdated">{LAST_UPDATED}</span></p>
+            </div>
+            <div class="nav-buttons">
+                <a href="../drill_down_reports/contractor_contact_dashboard_live.html" class="nav-button">← Back to Dashboard</a>
+                <button onclick="window.print()" class="nav-button">Print</button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-grid">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Contact Information -->
+                <div class="card">
+                    <h2 class="card-header">Contact Information</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">Primary:</span>
+                            <span class="contact-value">{CONTACT_PERSON}</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <span class="contact-value"><a href="tel:{PHONE_NUMBER}">{PHONE_NUMBER}</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <span class="contact-value"><a href="mailto:{EMAIL}">{EMAIL}</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Address:</span>
+                            <span class="contact-value">{ADDRESS}<br>{CITY}, MN</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Website:</span>
+                            <span class="contact-value"><a href="{WEBSITE}" target="_blank">{WEBSITE_DISPLAY}</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Stats -->
+                <div class="card">
+                    <h2 class="card-header">Quick Stats</h2>
+                    <div class="quick-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">{TOTAL_PERMITS}</div>
+                            <div class="stat-label">Total Permits</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">{AVG_PERMITS_YEAR}</div>
+                            <div class="stat-label">Avg/Year</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">{DAYS_SINCE_LAST}</div>
+                            <div class="stat-label">Days Since Last</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">${TOTAL_FEES}</div>
+                            <div class="stat-label">Total Fees</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="card">
+                    <h2 class="card-header">Actions</h2>
+                    <div class="action-buttons">
+                        <a href="tel:{PHONE_NUMBER}" class="action-button">
+                            📞 Call Now
+                        </a>
+                        <a href="mailto:{EMAIL}" class="action-button">
+                            ✉️ Send Email
+                        </a>
+                        <button class="action-button secondary" onclick="addToCallList()">
+                            📋 Add to List
+                        </button>
+                        <button class="action-button secondary" onclick="scheduleFollowUp()">
+                            📅 Schedule
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Call Tracking -->
+                <div class="card">
+                    <h2 class="card-header">Call History</h2>
+                    <div class="call-tracking">
+                        <button class="action-button" onclick="openCallModal()">Log New Call</button>
+                        <div id="callLog" class="call-log">
+                            <div class="loading">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content Area -->
+            <div class="content-area">
+                <!-- Company Overview -->
+                <div class="card">
+                    <h2 class="card-header">Company Overview</h2>
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('business-info')">Business Info</button>
+                        <button class="tab" onclick="showTab('performance')">Performance</button>
+                        <button class="tab" onclick="showTab('service-areas')">Service Areas</button>
+                        <button class="tab" onclick="showTab('reviews')">Reviews</button>
+                        <button class="tab" onclick="showTab('research')">Research</button>
+                    </div>
+                    
+                    <!-- Business Info Tab -->
+                    <div id="business-info" class="tab-content active">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Legal Name</div>
+                                <div class="info-value">{LEGAL_NAME}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Business Type</div>
+                                <div class="info-value">{BUSINESS_TYPE}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">License Number</div>
+                                <div class="info-value">{LICENSE_NUMBER}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Years in Business</div>
+                                <div class="info-value">{YEARS_IN_BUSINESS}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Employee Count</div>
+                                <div class="info-value">{EMPLOYEE_COUNT}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">BBB Rating</div>
+                                <div class="info-value">{BBB_RATING}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Insurance Status</div>
+                                <div class="info-value">{INSURANCE_STATUS}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Bonding Info</div>
+                                <div class="info-value">{BONDING_INFO}</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-grid" style="margin-top: 20px;">
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <div class="info-label">Specialties & Services</div>
+                                <div class="info-value">{SPECIALTIES}</div>
+                            </div>
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <div class="info-label">Key Personnel</div>
+                                <div class="info-value">{KEY_PERSONNEL}</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Performance Tab -->
+                    <div id="performance" class="tab-content">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Top Work Types</div>
+                                <div class="info-value">{TOP_WORK_TYPES}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Activity Level</div>
+                                <div class="info-value">{ACTIVITY_LEVEL}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">First Permit Date</div>
+                                <div class="info-value">{FIRST_PERMIT_DATE}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Last Permit Date</div>
+                                <div class="info-value">{LAST_PERMIT_DATE}</div>
+                            </div>
+                        </div>
+                        <div class="performance-chart">
+                            [Permit Activity Chart Will Go Here]
+                        </div>
+                    </div>
+                    
+                    <!-- Service Areas Tab -->
+                    <div id="service-areas" class="tab-content">
+                        <div class="info-item">
+                            <div class="info-label">Service Areas</div>
+                            <div class="info-value">{SERVICE_AREAS}</div>
+                        </div>
+                        <div class="map-container">
+                            [Service Area Map Will Go Here]
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews Tab -->
+                    <div id="reviews" class="tab-content">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Google Rating</div>
+                                <div class="info-value">{GOOGLE_RATING}</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Total Reviews</div>
+                                <div class="info-value">{TOTAL_REVIEWS}</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <h3 style="margin-bottom: 15px;">Recent Reviews</h3>
+                            {REVIEWS_HTML}
+                        </div>
+                    </div>
+                    
+                    <!-- Research Tab -->
+                    <div id="research" class="tab-content">
+                        <div class="info-grid">
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <div class="info-label">Company History</div>
+                                <div class="info-value">{COMPANY_HISTORY}</div>
+                            </div>
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <div class="info-label">Recent News & Updates</div>
+                                <div class="info-value">{RECENT_NEWS}</div>
+                            </div>
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <div class="info-label">Competitive Advantages</div>
+                                <div class="info-value">{COMPETITIVE_ADVANTAGES}</div>
+                            </div>
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <div class="info-label">Social Media Presence</div>
+                                <div class="info-value">{SOCIAL_MEDIA}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Notes Section -->
+                <div class="card">
+                    <h2 class="card-header">Notes & Follow-Up</h2>
+                    <div class="notes-section">
+                        <textarea id="noteInput" class="note-input" placeholder="Add notes about this contractor..."></textarea>
+                        <div class="note-actions">
+                            <button class="action-button" onclick="saveNote()">Save Note</button>
+                            <button class="action-button secondary" onclick="clearNote()">Clear</button>
+                        </div>
+                        <div id="statusMessage"></div>
+                        <div class="note-history">
+                            <h3 style="margin-bottom: 15px;">Note History</h3>
+                            <div id="notesHistory">
+                                <div class="loading">Loading...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Call Logging Modal -->
+    <div id="callModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Log Call</h2>
+                <button class="close-button" onclick="closeCallModal()">&times;</button>
+            </div>
+            <form id="callForm">
+                <div class="form-group">
+                    <label class="form-label" for="callStatus">Call Status</label>
+                    <select id="callStatus" class="form-control" required>
+                        <option value="">Select status...</option>
+                        <option value="success">Success - Spoke with contact</option>
+                        <option value="no-answer">No Answer</option>
+                        <option value="voicemail">Left Voicemail</option>
+                        <option value="busy">Busy</option>
+                        <option value="wrong-number">Wrong Number</option>
+                        <option value="scheduled">Scheduled Callback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contactPerson">Contact Person</label>
+                    <input type="text" id="contactPerson" class="form-control" placeholder="Who did you speak with?">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="callNotes">Call Notes</label>
+                    <textarea id="callNotes" class="form-control" required placeholder="Summary of the call..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="followUpDate">Follow-up Date</label>
+                    <input type="date" id="followUpDate" class="form-control">
+                </div>
+                <div class="note-actions">
+                    <button type="submit" class="action-button">Save Call Log</button>
+                    <button type="button" class="action-button secondary" onclick="closeCallModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // Configuration for your Render API
+        const API_CONFIG = {
+            baseUrl: 'https://your-render-app.onrender.com/api', // Replace with your actual Render URL
+            // Add authentication headers if needed
+            headers: {
+                'Content-Type': 'application/json',
+                // 'Authorization': 'Bearer YOUR_TOKEN' // Add if you have authentication
+            }
+        };
+        
+        // Contractor data from the page
+        const contractorData = {
+            companyName: '{COMPANY_NAME}',
+            companyId: '{COMPANY_ID}', // You'll need to add a unique ID for each contractor
+            phone: '{PHONE_NUMBER}',
+            email: '{EMAIL}'
+        };
+        
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+        
+        // API Integration Functions
+        async function makeAPICall(endpoint, method = 'GET', data = null) {
+            try {
+                const options = {
+                    method: method,
+                    headers: API_CONFIG.headers,
+                    mode: 'cors' // Enable CORS
+                };
+                
+                if (data && method !== 'GET') {
+                    options.body = JSON.stringify(data);
+                }
+                
+                const response = await fetch(`${API_CONFIG.baseUrl}${endpoint}`, options);
+                
+                if (!response.ok) {
+                    throw new Error(`API Error: ${response.status} ${response.statusText}`);
+                }
+                
+                return await response.json();
+            } catch (error) {
+                console.error('API call failed:', error);
+                throw error;
+            }
+        }
+        
+        // Load call history from Render backend
+        async function loadCallHistory() {
+            const callLog = document.getElementById('callLog');
+            
+            try {
+                const calls = await makeAPICall(`/contractors/${contractorData.companyId}/calls`);
+                
+                if (calls && calls.length > 0) {
+                    callLog.innerHTML = calls.map(call => `
+                        <div class="call-entry">
+                            <span>${formatDate(call.date)} - ${call.time}</span>
+                            <span class="call-status ${call.status}">${call.statusDisplay}</span>
+                        </div>
+                    `).join('');
+                } else {
+                    callLog.innerHTML = '<div class="call-entry"><span>No calls logged yet</span></div>';
+                }
+            } catch (error) {
+                callLog.innerHTML = '<div class="error-message">Failed to load call history</div>';
+            }
+        }
+        
+        // Load notes history from Render backend
+        async function loadNotesHistory() {
+            const notesHistory = document.getElementById('notesHistory');
+            
+            try {
+                const notes = await makeAPICall(`/contractors/${contractorData.companyId}/notes`);
+                
+                if (notes && notes.length > 0) {
+                    notesHistory.innerHTML = notes.map(note => `
+                        <div class="note-entry">
+                            <div class="note-header">
+                                <span>${formatDate(note.date)}</span>
+                                <span>${note.author || 'Unknown'}</span>
+                            </div>
+                            <p class="note-content">${note.content}</p>
+                        </div>
+                    `).join('');
+                } else {
+                    notesHistory.innerHTML = '<div class="note-entry"><p>No notes yet. Add your first note above!</p></div>';
+                }
+            } catch (error) {
+                notesHistory.innerHTML = '<div class="error-message">Failed to load notes history</div>';
+            }
+        }
+        
+        // Save note to Render backend
+        async function saveNote() {
+            const noteText = document.getElementById('noteInput').value;
+            const statusMessage = document.getElementById('statusMessage');
+            
+            if (!noteText.trim()) {
+                statusMessage.innerHTML = '<div class="error-message">Please enter a note</div>';
+                return;
+            }
+            
+            try {
+                const noteData = {
+                    contractorId: contractorData.companyId,
+                    content: noteText,
+                    date: new Date().toISOString(),
+                    author: getCurrentUser() // You'll need to implement user identification
+                };
+                
+                await makeAPICall(`/contractors/${contractorData.companyId}/notes`, 'POST', noteData);
+                
+                statusMessage.innerHTML = '<div class="success-message">Note saved successfully!</div>';
+                document.getElementById('noteInput').value = '';
+                
+                // Reload notes
+                await loadNotesHistory();
+                
+                // Clear success message after 3 seconds
+                setTimeout(() => {
+                    statusMessage.innerHTML = '';
+                }, 3000);
+                
+            } catch (error) {
+                statusMessage.innerHTML = '<div class="error-message">Failed to save note. Please try again.</div>';
+            }
+        }
+        
+        // Clear note input
+        function clearNote() {
+            document.getElementById('noteInput').value = '';
+            document.getElementById('statusMessage').innerHTML = '';
+        }
+        
+        // Call modal functions
+        function openCallModal() {
+            document.getElementById('callModal').style.display = 'block';
+        }
+        
+        function closeCallModal() {
+            document.getElementById('callModal').style.display = 'none';
+            document.getElementById('callForm').reset();
+        }
+        
+        // Handle call form submission
+        document.getElementById('callForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const callData = {
+                contractorId: contractorData.companyId,
+                status: document.getElementById('callStatus').value,
+                contactPerson: document.getElementById('contactPerson').value,
+                notes: document.getElementById('callNotes').value,
+                followUpDate: document.getElementById('followUpDate').value,
+                date: new Date().toISOString(),
+                author: getCurrentUser()
+            };
+            
+            try {
+                await makeAPICall(`/contractors/${contractorData.companyId}/calls`, 'POST', callData);
+                
+                closeCallModal();
+                await loadCallHistory();
+                
+                // Show success message
+                const statusMessage = document.getElementById('statusMessage');
+                statusMessage.innerHTML = '<div class="success-message">Call logged successfully!</div>';
+                setTimeout(() => {
+                    statusMessage.innerHTML = '';
+                }, 3000);
+                
+            } catch (error) {
+                alert('Failed to log call. Please try again.');
+            }
+        });
+        
+        // Utility functions
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { 
+                month: 'short', 
+                day: 'numeric', 
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+        
+        function getCurrentUser() {
+            // Implement user identification
+            // This could come from localStorage, session, or API
+            return localStorage.getItem('userName') || 'Sales Team';
+        }
+        
+        // Placeholder functions for other actions
+        function addToCallList() {
+            // Implement adding to call list via API
+            alert('Added to call list!');
+        }
+        
+        function scheduleFollowUp() {
+            const date = prompt('Enter follow-up date (MM/DD/YYYY):');
+            if (date) {
+                // Implement scheduling via API
+                alert('Follow-up scheduled for ' + date);
+            }
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('callModal');
+            if (event.target === modal) {
+                closeCallModal();
+            }
+        }
+        
+        // Initialize page with data from Render
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Load call history and notes
+            await Promise.all([
+                loadCallHistory(),
+                loadNotesHistory()
+            ]);
+            
+            // Update last updated timestamp
+            document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
+        });
+    </script>
+</body>
+</html>

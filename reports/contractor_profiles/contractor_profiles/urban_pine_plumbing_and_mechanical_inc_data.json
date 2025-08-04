@@ -1,0 +1,281 @@
+{
+  "company_info": {
+    "company_name": "Urban Pine Plumbing and Mechanical Inc",
+    "legal_name": "URBAN PINE PLUMBING & MECHANICAL INC",
+    "dba_names": [],
+    "business_type": "",
+    "license_number": "",
+    "license_status": "",
+    "years_in_business": null,
+    "founded_date": "",
+    "employee_count": "",
+    "annual_revenue": "",
+    "business_structure": ""
+  },
+  "contact_info": {
+    "primary_contact": {
+      "name": "CHEO H SMITH",
+      "title": "",
+      "phone": "",
+      "email": "",
+      "linkedin": ""
+    },
+    "secondary_contacts": [],
+    "main_phone": "651-888-2275",
+    "emergency_phone": "",
+    "fax": "",
+    "emails": {
+      "general": "jpeine@urbanpine.com",
+      "sales": "",
+      "service": "",
+      "billing": ""
+    },
+    "website": "",
+    "social_media": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    }
+  },
+  "location_info": {
+    "primary_address": {
+      "street": "13860 Newlander Ave",
+      "city": "Lindstrom",
+      "state": "MN",
+      "zip": "",
+      "county": ""
+    },
+    "additional_locations": [],
+    "service_areas": [
+      "Armatage",
+      "Audubon Park",
+      "Bancroft",
+      "Beltrami",
+      "Bottineau",
+      "Bryant",
+      "Bryn - Mawr",
+      "Cedar - Isles - Dean",
+      "Cedar Riverside",
+      "Central",
+      "Cleveland",
+      "Columbia Park",
+      "Como",
+      "Cooper",
+      "Corcoran",
+      "Diamond Lake",
+      "Downtown East",
+      "East Bde Maka Ska",
+      "East Harriet",
+      "East Isles",
+      "East Phillips",
+      "Elliot Park",
+      "Ericsson",
+      "Field",
+      "Folwell",
+      "Fulton",
+      "Hale",
+      "Harrison",
+      "Hawthorne",
+      "Hiawatha",
+      "Holland",
+      "Howe",
+      "Jordan",
+      "Keewaydin",
+      "Kenny",
+      "Kenwood",
+      "King Field",
+      "Lind - Bohanon",
+      "Linden Hills",
+      "Logan Park",
+      "Longfellow",
+      "Loring Park",
+      "Lowry Hill",
+      "Lowry Hill East",
+      "Lyndale",
+      "Lynnhurst",
+      "Marcy Holmes",
+      "Marshall Terrace",
+      "McKinley",
+      "Midtown Phillips",
+      "Minnehaha",
+      "Morris Park",
+      "Near - North",
+      "Nicollet Island - East Bank",
+      "North Loop",
+      "Northeast Park",
+      "Northrop",
+      "Page",
+      "Phillips West",
+      "Powderhorn Park",
+      "Prospect Park - East River Road",
+      "Regina",
+      "Seward",
+      "Sheridan",
+      "Shingle Creek",
+      "South Uptown",
+      "St. Anthony East",
+      "St. Anthony West",
+      "Standish",
+      "Steven's Square - Loring Heights",
+      "Sumner - Glenwood",
+      "Tangletown",
+      "Ventura Village",
+      "Victory",
+      "Waite Park",
+      "Webber - Camden",
+      "Wenonah",
+      "West Maka Ska",
+      "Whittier",
+      "Willard - Hay",
+      "Windom",
+      "Windom Park"
+    ],
+    "service_radius_miles": null,
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  "business_details": {
+    "specialties": [
+      "Residential plumbing",
+      "Commercial plumbing",
+      "Water heater installation",
+      "Drain cleaning"
+    ],
+    "certifications": [],
+    "associations": [],
+    "insurance": {
+      "general_liability": "",
+      "workers_comp": "",
+      "bonding": "",
+      "coverage_amounts": {}
+    },
+    "equipment_capabilities": [],
+    "technology_used": [],
+    "warranty_info": "",
+    "business_hours": {
+      "monday": "",
+      "tuesday": "",
+      "wednesday": "",
+      "thursday": "",
+      "friday": "",
+      "saturday": "",
+      "sunday": "",
+      "emergency_available": false
+    }
+  },
+  "performance_metrics": {
+    "permit_data": {
+      "total_permits": 5284,
+      "avg_permits_per_year": 621.6,
+      "first_permit_date": "2016-12-13",
+      "last_permit_date": "2025-06-09",
+      "days_since_last_permit": 51,
+      "total_fees_paid": 449322.5,
+      "activity_level": "Active (30-90 days)",
+      "top_work_types": [
+        "Res: 5161",
+        "ComNoFdBv: 99",
+        "ComMin: 22"
+      ]
+    },
+    "project_metrics": {
+      "avg_project_value": 0,
+      "completion_rate": "",
+      "avg_completion_time": "",
+      "project_types": {}
+    },
+    "growth_trends": {
+      "permit_growth_rate": "",
+      "revenue_growth_estimate": "",
+      "market_share_estimate": ""
+    }
+  },
+  "reputation_data": {
+    "bbb_rating": "",
+    "bbb_accredited": false,
+    "google_rating": 0,
+    "google_review_count": 0,
+    "yelp_rating": 0,
+    "yelp_review_count": 0,
+    "angies_list_rating": "",
+    "home_advisor_rating": "",
+    "recent_reviews": [],
+    "complaints": {
+      "bbb_complaints": 0,
+      "resolved_complaints": 0,
+      "government_actions": []
+    }
+  },
+  "marketing_intelligence": {
+    "current_promotions": [],
+    "pricing_transparency": "",
+    "response_time_commitment": "",
+    "unique_selling_points": [
+      "Licensed and insured",
+      "24/7 emergency service",
+      "Family-owned business",
+      "Serving Minneapolis area"
+    ],
+    "target_customers": [],
+    "competitive_advantages": [],
+    "weaknesses": [],
+    "market_positioning": ""
+  },
+  "web_research": {
+    "company_history": "",
+    "recent_news": [],
+    "press_releases": [],
+    "awards_recognition": [],
+    "community_involvement": [],
+    "case_studies": [],
+    "testimonials": [],
+    "research_notes": [
+      {
+        "timestamp": "2025-08-04T14:51:56.629575",
+        "action": "Web research queries prepared",
+        "queries": {
+          "business_info": "\"Urban Pine Plumbing and Mechanical Inc\" plumbing Lindstrom Minnesota business information",
+          "reviews": "\"Urban Pine Plumbing and Mechanical Inc\" plumbing reviews ratings Lindstrom",
+          "website": "\"Urban Pine Plumbing and Mechanical Inc\" plumbing 651-888-2275 website",
+          "bbb": "\"Urban Pine Plumbing and Mechanical Inc\" better business bureau BBB rating",
+          "social_media": "\"Urban Pine Plumbing and Mechanical Inc\" plumbing facebook linkedin",
+          "news": "\"Urban Pine Plumbing and Mechanical Inc\" plumbing news announcements Lindstrom"
+        }
+      }
+    ]
+  },
+  "sales_intelligence": {
+    "decision_makers": [],
+    "buying_process": "",
+    "pain_points": [],
+    "objections": [],
+    "talking_points": [],
+    "competitor_relationships": [],
+    "preferred_vendors": [],
+    "budget_cycle": ""
+  },
+  "interaction_history": {
+    "calls": [],
+    "emails": [],
+    "meetings": [],
+    "proposals": [],
+    "notes": [],
+    "follow_ups": [],
+    "last_contact_date": "",
+    "next_action_date": "",
+    "relationship_status": "",
+    "lead_score": 0
+  },
+  "metadata": {
+    "data_source": "Licensed Data",
+    "last_updated": "2025-08-04T14:51:56.629548",
+    "updated_by": "",
+    "data_quality_score": "",
+    "verification_status": "High",
+    "research_notes": []
+  }
+}

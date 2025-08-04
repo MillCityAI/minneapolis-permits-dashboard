@@ -1,0 +1,235 @@
+{
+  "company_info": {
+    "company_name": "NORTHERN AIR CORP",
+    "legal_name": "NORTHERN AIR CORPORATION",
+    "dba_names": [],
+    "business_type": "",
+    "license_number": "",
+    "license_status": "",
+    "years_in_business": null,
+    "founded_date": "",
+    "employee_count": "",
+    "annual_revenue": "",
+    "business_structure": ""
+  },
+  "contact_info": {
+    "primary_contact": {
+      "name": "33 CITY CENTER 33 SOUTH PROPERTY LLC",
+      "title": "",
+      "phone": "",
+      "email": "",
+      "linkedin": ""
+    },
+    "secondary_contacts": [],
+    "main_phone": "651-490-9868",
+    "emergency_phone": "",
+    "fax": "",
+    "emails": {
+      "general": "jsluss@nac-hvac.com",
+      "sales": "",
+      "service": "",
+      "billing": ""
+    },
+    "website": "",
+    "social_media": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    }
+  },
+  "location_info": {
+    "primary_address": {
+      "street": "1001 Labore Industrial Court #B",
+      "city": "Vadnais Heights",
+      "state": "MN",
+      "zip": "",
+      "county": ""
+    },
+    "additional_locations": [],
+    "service_areas": [
+      "Beltrami",
+      "Camden Industrial",
+      "Cedar Riverside",
+      "Central",
+      "Como",
+      "Corcoran",
+      "Downtown West",
+      "Elliot Park",
+      "Field",
+      "Hawthorne",
+      "Howe",
+      "Logan Park",
+      "Longfellow",
+      "Loring Park",
+      "Lowry Hill East",
+      "Lyndale",
+      "Marcy Holmes",
+      "Marshall Terrace",
+      "Mid - City Industrial",
+      "Midtown Phillips",
+      "Near - North",
+      "Nicollet Island - East Bank",
+      "North Loop",
+      "Phillips West",
+      "Powderhorn Park",
+      "Shingle Creek",
+      "South Uptown",
+      "St. Anthony West",
+      "Standish",
+      "Sumner - Glenwood",
+      "Tangletown",
+      "University of Minnesota",
+      "Webber - Camden",
+      "Whittier",
+      "Willard - Hay",
+      "Windom"
+    ],
+    "service_radius_miles": null,
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  "business_details": {
+    "specialties": [
+      "Residential plumbing",
+      "Commercial plumbing",
+      "Water heater installation",
+      "Drain cleaning"
+    ],
+    "certifications": [],
+    "associations": [],
+    "insurance": {
+      "general_liability": "",
+      "workers_comp": "",
+      "bonding": "",
+      "coverage_amounts": {}
+    },
+    "equipment_capabilities": [],
+    "technology_used": [],
+    "warranty_info": "",
+    "business_hours": {
+      "monday": "",
+      "tuesday": "",
+      "wednesday": "",
+      "thursday": "",
+      "friday": "",
+      "saturday": "",
+      "sunday": "",
+      "emergency_available": false
+    }
+  },
+  "performance_metrics": {
+    "permit_data": {
+      "total_permits": 563,
+      "avg_permits_per_year": 67.8,
+      "first_permit_date": "2017-02-07",
+      "last_permit_date": "2025-05-27",
+      "days_since_last_permit": 64,
+      "total_fees_paid": 339660.22,
+      "activity_level": "Active (30-90 days)",
+      "top_work_types": [
+        "ComNoFdBv: 416",
+        "ComFdBv: 102",
+        "ComMin: 32"
+      ]
+    },
+    "project_metrics": {
+      "avg_project_value": 0,
+      "completion_rate": "",
+      "avg_completion_time": "",
+      "project_types": {}
+    },
+    "growth_trends": {
+      "permit_growth_rate": "",
+      "revenue_growth_estimate": "",
+      "market_share_estimate": ""
+    }
+  },
+  "reputation_data": {
+    "bbb_rating": "",
+    "bbb_accredited": false,
+    "google_rating": 0,
+    "google_review_count": 0,
+    "yelp_rating": 0,
+    "yelp_review_count": 0,
+    "angies_list_rating": "",
+    "home_advisor_rating": "",
+    "recent_reviews": [],
+    "complaints": {
+      "bbb_complaints": 0,
+      "resolved_complaints": 0,
+      "government_actions": []
+    }
+  },
+  "marketing_intelligence": {
+    "current_promotions": [],
+    "pricing_transparency": "",
+    "response_time_commitment": "",
+    "unique_selling_points": [
+      "Licensed and insured",
+      "24/7 emergency service",
+      "Family-owned business",
+      "Serving Minneapolis area"
+    ],
+    "target_customers": [],
+    "competitive_advantages": [],
+    "weaknesses": [],
+    "market_positioning": ""
+  },
+  "web_research": {
+    "company_history": "",
+    "recent_news": [],
+    "press_releases": [],
+    "awards_recognition": [],
+    "community_involvement": [],
+    "case_studies": [],
+    "testimonials": [],
+    "research_notes": [
+      {
+        "timestamp": "2025-08-04T15:01:26.160498",
+        "action": "Web research queries prepared",
+        "queries": {
+          "business_info": "\"NORTHERN AIR CORP\" plumbing Vadnais Heights Minnesota business information",
+          "reviews": "\"NORTHERN AIR CORP\" plumbing reviews ratings Vadnais Heights",
+          "website": "\"NORTHERN AIR CORP\" plumbing 651-490-9868 website",
+          "bbb": "\"NORTHERN AIR CORP\" better business bureau BBB rating",
+          "social_media": "\"NORTHERN AIR CORP\" plumbing facebook linkedin",
+          "news": "\"NORTHERN AIR CORP\" plumbing news announcements Vadnais Heights"
+        }
+      }
+    ]
+  },
+  "sales_intelligence": {
+    "decision_makers": [],
+    "buying_process": "",
+    "pain_points": [],
+    "objections": [],
+    "talking_points": [],
+    "competitor_relationships": [],
+    "preferred_vendors": [],
+    "budget_cycle": ""
+  },
+  "interaction_history": {
+    "calls": [],
+    "emails": [],
+    "meetings": [],
+    "proposals": [],
+    "notes": [],
+    "follow_ups": [],
+    "last_contact_date": "",
+    "next_action_date": "",
+    "relationship_status": "",
+    "lead_score": 0
+  },
+  "metadata": {
+    "data_source": "Licensed Data",
+    "last_updated": "2025-08-04T15:01:26.160453",
+    "updated_by": "",
+    "data_quality_score": "",
+    "verification_status": "High",
+    "research_notes": []
+  }
+}

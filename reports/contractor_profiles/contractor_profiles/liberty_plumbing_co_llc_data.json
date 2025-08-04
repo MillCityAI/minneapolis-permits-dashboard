@@ -1,0 +1,269 @@
+{
+  "company_info": {
+    "company_name": "LIBERTY PLUMBING CO LLC",
+    "legal_name": "LIBERTY PLUMBING CO LLC 925 227TH AVE NW BETHEL MN 55005",
+    "dba_names": [],
+    "business_type": "",
+    "license_number": "",
+    "license_status": "",
+    "years_in_business": null,
+    "founded_date": "",
+    "employee_count": "",
+    "annual_revenue": "",
+    "business_structure": ""
+  },
+  "contact_info": {
+    "primary_contact": {
+      "name": "MICHAEL D SASSON",
+      "title": "",
+      "phone": "",
+      "email": "",
+      "linkedin": ""
+    },
+    "secondary_contacts": [],
+    "main_phone": "763-286-2485",
+    "emergency_phone": "",
+    "fax": "",
+    "emails": {
+      "general": "kerrys@libertyplumbingheating.com",
+      "sales": "",
+      "service": "",
+      "billing": ""
+    },
+    "website": "",
+    "social_media": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    }
+  },
+  "location_info": {
+    "primary_address": {
+      "street": "925-227th Ave NW",
+      "city": "Bethel",
+      "state": "MN",
+      "zip": "",
+      "county": ""
+    },
+    "additional_locations": [],
+    "service_areas": [
+      "Armatage",
+      "Audubon Park",
+      "Bancroft",
+      "Beltrami",
+      "Bottineau",
+      "Bryant",
+      "Cedar - Isles - Dean",
+      "Cedar Riverside",
+      "Central",
+      "Cleveland",
+      "Columbia Park",
+      "Como",
+      "Cooper",
+      "Corcoran",
+      "Diamond Lake",
+      "Downtown West",
+      "East Isles",
+      "East Phillips",
+      "Elliot Park",
+      "Field",
+      "Folwell",
+      "Fulton",
+      "Hale",
+      "Harrison",
+      "Hawthorne",
+      "Hiawatha",
+      "Holland",
+      "Howe",
+      "Jordan",
+      "Kenny",
+      "King Field",
+      "Lind - Bohanon",
+      "Linden Hills",
+      "Logan Park",
+      "Longfellow",
+      "Loring Park",
+      "Lowry Hill",
+      "Lowry Hill East",
+      "Lyndale",
+      "Lynnhurst",
+      "Marcy Holmes",
+      "Marshall Terrace",
+      "McKinley",
+      "Mid - City Industrial",
+      "Midtown Phillips",
+      "Minnehaha",
+      "Morris Park",
+      "Near - North",
+      "Northrop",
+      "Page",
+      "Phillips West",
+      "Powderhorn Park",
+      "Prospect Park - East River Road",
+      "Regina",
+      "Seward",
+      "Sheridan",
+      "Shingle Creek",
+      "Standish",
+      "Steven's Square - Loring Heights",
+      "Tangletown",
+      "University of Minnesota",
+      "Ventura Village",
+      "Victory",
+      "Waite Park",
+      "Webber - Camden",
+      "Wenonah",
+      "Whittier",
+      "Willard - Hay",
+      "Windom",
+      "Windom Park"
+    ],
+    "service_radius_miles": null,
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    }
+  },
+  "business_details": {
+    "specialties": [
+      "Residential plumbing",
+      "Commercial plumbing",
+      "Water heater installation",
+      "Drain cleaning"
+    ],
+    "certifications": [],
+    "associations": [],
+    "insurance": {
+      "general_liability": "",
+      "workers_comp": "",
+      "bonding": "",
+      "coverage_amounts": {}
+    },
+    "equipment_capabilities": [],
+    "technology_used": [],
+    "warranty_info": "",
+    "business_hours": {
+      "monday": "",
+      "tuesday": "",
+      "wednesday": "",
+      "thursday": "",
+      "friday": "",
+      "saturday": "",
+      "sunday": "",
+      "emergency_available": false
+    }
+  },
+  "performance_metrics": {
+    "permit_data": {
+      "total_permits": 467,
+      "avg_permits_per_year": 54.9,
+      "first_permit_date": "2016-12-06",
+      "last_permit_date": "2025-06-02",
+      "days_since_last_permit": 58,
+      "total_fees_paid": 170945.51,
+      "activity_level": "Active (30-90 days)",
+      "top_work_types": [
+        "Res: 219",
+        "ComFdBv: 108",
+        "ComMin: 50"
+      ]
+    },
+    "project_metrics": {
+      "avg_project_value": 0,
+      "completion_rate": "",
+      "avg_completion_time": "",
+      "project_types": {}
+    },
+    "growth_trends": {
+      "permit_growth_rate": "",
+      "revenue_growth_estimate": "",
+      "market_share_estimate": ""
+    }
+  },
+  "reputation_data": {
+    "bbb_rating": "",
+    "bbb_accredited": false,
+    "google_rating": 0,
+    "google_review_count": 0,
+    "yelp_rating": 0,
+    "yelp_review_count": 0,
+    "angies_list_rating": "",
+    "home_advisor_rating": "",
+    "recent_reviews": [],
+    "complaints": {
+      "bbb_complaints": 0,
+      "resolved_complaints": 0,
+      "government_actions": []
+    }
+  },
+  "marketing_intelligence": {
+    "current_promotions": [],
+    "pricing_transparency": "",
+    "response_time_commitment": "",
+    "unique_selling_points": [
+      "Licensed and insured",
+      "24/7 emergency service",
+      "Family-owned business",
+      "Serving Minneapolis area"
+    ],
+    "target_customers": [],
+    "competitive_advantages": [],
+    "weaknesses": [],
+    "market_positioning": ""
+  },
+  "web_research": {
+    "company_history": "",
+    "recent_news": [],
+    "press_releases": [],
+    "awards_recognition": [],
+    "community_involvement": [],
+    "case_studies": [],
+    "testimonials": [],
+    "research_notes": [
+      {
+        "timestamp": "2025-08-04T15:01:26.665122",
+        "action": "Web research queries prepared",
+        "queries": {
+          "business_info": "\"LIBERTY PLUMBING CO LLC\" plumbing Bethel Minnesota business information",
+          "reviews": "\"LIBERTY PLUMBING CO LLC\" plumbing reviews ratings Bethel",
+          "website": "\"LIBERTY PLUMBING CO LLC\" plumbing 763-286-2485 website",
+          "bbb": "\"LIBERTY PLUMBING CO LLC\" better business bureau BBB rating",
+          "social_media": "\"LIBERTY PLUMBING CO LLC\" plumbing facebook linkedin",
+          "news": "\"LIBERTY PLUMBING CO LLC\" plumbing news announcements Bethel"
+        }
+      }
+    ]
+  },
+  "sales_intelligence": {
+    "decision_makers": [],
+    "buying_process": "",
+    "pain_points": [],
+    "objections": [],
+    "talking_points": [],
+    "competitor_relationships": [],
+    "preferred_vendors": [],
+    "budget_cycle": ""
+  },
+  "interaction_history": {
+    "calls": [],
+    "emails": [],
+    "meetings": [],
+    "proposals": [],
+    "notes": [],
+    "follow_ups": [],
+    "last_contact_date": "",
+    "next_action_date": "",
+    "relationship_status": "",
+    "lead_score": 0
+  },
+  "metadata": {
+    "data_source": "Licensed Data",
+    "last_updated": "2025-08-04T15:01:26.665073",
+    "updated_by": "",
+    "data_quality_score": "",
+    "verification_status": "High",
+    "research_notes": []
+  }
+}

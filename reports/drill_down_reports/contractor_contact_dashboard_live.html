@@ -173,7 +173,20 @@
             background-color: #9e9e9e;
             color: white;
         }
-    </style>
+    
+        /* Contractor detail page links */
+        .contractor-link {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .contractor-link:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+        </style>
 </head>
 <body>
     <div class="container">
@@ -7588,6 +7601,81 @@
     "confidence": "Low"
   }
 ];
+
+        // List of contractors with detail pages
+        const contractorsWithDetails = ["CenterPoint Energy Resource Corp", "Warners Stellian Co Inc", "CENTERPOINT ENERGY", "Urban Pine Plumbing and Mechanical Inc", "MN Plumbing & Home Services INC", "CHAMPION PLUMBING LLC", "Norblom Plumbing Co", "Weld and Sons Plumbing Inc", "Horwitz LLC", "Peters Plumbing LLC", "Master Plumbing Services LLC", "Gilbert Mechanical Contractors LLC", "Northern Mechanical Contractors LLC", "NORTHERN AIR CORP", "Budget Plumbing Corp", "Barr Web Industries Inc", "LIBERTY PLUMBING CO LLC"];
+        
+        // Helper function to convert company name to filename
+        function getContractorFileName(companyName) {
+            const cleanName = companyName
+                .replace(/[^\w\s-]/g, '')
+                .replace(/[-\s]+/g, '_')
+                .toLowerCase();
+            return cleanName + '.html';
+        }
+        
+        // Helper function to get company link or plain text
+        function getCompanyLink(companyName) {
+            if (contractorsWithDetails.includes(companyName)) {
+                const fileName = getContractorFileName(companyName);
+                return `<a href="../contractor_profiles/contractor_profiles/${fileName}" 
+                        style="color: #1565c0; text-decoration: none; font-weight: 500;"
+                        onmouseover="this.style.textDecoration='underline'" 
+                        onmouseout="this.style.textDecoration='none'">${companyName}</a>`;
+            }
+            return companyName;
+        }
+        
+
+        // List of contractors with detail pages
+        const contractorsWithDetails = ["CenterPoint Energy Resource Corp", "Warners Stellian Co Inc", "CENTERPOINT ENERGY", "Urban Pine Plumbing and Mechanical Inc", "MN Plumbing & Home Services INC", "CHAMPION PLUMBING LLC", "Weld and Sons Plumbing Inc", "Peters Plumbing LLC", "Master Plumbing Services LLC", "Gilbert Mechanical Contractors LLC", "Northern Mechanical Contractors LLC", "NORTHERN AIR CORP", "LIBERTY PLUMBING CO LLC"];
+        
+        // Helper function to convert company name to filename
+        function getContractorFileName(companyName) {
+            const cleanName = companyName
+                .replace(/[^\w\s-]/g, '')
+                .replace(/[-\s]+/g, '_')
+                .toLowerCase();
+            return cleanName + '.html';
+        }
+        
+        // Helper function to get company link or plain text
+        function getCompanyLink(companyName) {
+            if (contractorsWithDetails.includes(companyName)) {
+                const fileName = getContractorFileName(companyName);
+                return `<a href="../contractor_profiles/contractor_profiles/${fileName}" 
+                        style="color: #1565c0; text-decoration: none; font-weight: 500;"
+                        onmouseover="this.style.textDecoration='underline'" 
+                        onmouseout="this.style.textDecoration='none'">${companyName}</a>`;
+            }
+            return companyName;
+        }
+        
+
+        // List of contractors with detail pages
+        const contractorsWithDetails = ["CenterPoint Energy Resource Corp", "Warners Stellian Co Inc", "CENTERPOINT ENERGY", "Urban Pine Plumbing and Mechanical Inc", "MN Plumbing & Home Services INC"];
+        
+        // Helper function to convert company name to filename
+        function getContractorFileName(companyName) {
+            const cleanName = companyName
+                .replace(/[^\w\s-]/g, '')
+                .replace(/[-\s]+/g, '_')
+                .toLowerCase();
+            return cleanName + '.html';
+        }
+        
+        // Helper function to get company link or plain text
+        function getCompanyLink(companyName) {
+            if (contractorsWithDetails.includes(companyName)) {
+                const fileName = getContractorFileName(companyName);
+                return `<a href="../contractor_profiles/contractor_profiles/${fileName}" 
+                        style="color: #1565c0; text-decoration: none; font-weight: 500;"
+                        onmouseover="this.style.textDecoration='underline'" 
+                        onmouseout="this.style.textDecoration='none'">${companyName}</a>`;
+            }
+            return companyName;
+        }
+        
 
         // Initialize
         let currentData = [...contractorData];

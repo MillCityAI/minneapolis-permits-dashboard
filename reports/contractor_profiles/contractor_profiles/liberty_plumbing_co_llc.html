@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBERTY PLUMBING CO LLC - Contractor Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background-color: #1565c0;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .company-name {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .last-updated {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .nav-button {
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .card-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-label {
+            font-weight: 500;
+            color: #666;
+            min-width: 80px;
+        }
+        
+        .contact-value {
+            color: #333;
+        }
+        
+        .contact-value a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+        
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+        
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .action-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .action-button {
+            background-color: #1565c0;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .action-button:hover {
+            background-color: #0d47a1;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 12px 24px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.3s;
+        }
+        
+        .tab:hover {
+            color: #1565c0;
+        }
+        
+        .tab.active {
+            color: #1565c0;
+            border-bottom-color: #1565c0;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .info-item {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #1565c0;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            color: #333;
+            font-size: 16px;
+        }
+        
+        .notes-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+        }
+        
+        .notes-section h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .notes-section p {
+            color: #666;
+            font-style: italic;
+        }
+        
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                order: 2;
+            }
+            
+            .content-area {
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .action-buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .tabs {
+                overflow-x: auto;
+            }
+            
+            .tab {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+        
+        @media print {
+            .header {
+                background-color: white;
+                color: black;
+                border-bottom: 2px solid #333;
+            }
+            
+            .nav-buttons {
+                display: none;
+            }
+            
+            .action-buttons {
+                display: none;
+            }
+            
+            .tabs {
+                display: none;
+            }
+            
+            .tab-content {
+                display: block !important;
+                page-break-inside: avoid;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #333;
+            }
+            
+            .notes-section {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <h1 class="company-name">LIBERTY PLUMBING CO LLC</h1>
+                <p class="last-updated">Last Updated: August 04, 2025</p>
+            </div>
+            <div class="nav-buttons">
+                <a href="../drill_down_reports/contractor_contact_dashboard_live.html" class="nav-button">← Back to Dashboard</a>
+                <button onclick="window.print()" class="nav-button">Print</button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-grid">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Contact Information -->
+                <div class="card">
+                    <h2 class="card-header">Contact Information</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">Primary:</span>
+                            <span class="contact-value">MICHAEL D SASSON</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <span class="contact-value"><a href="tel:763-286-2485">763-286-2485</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <span class="contact-value"><a href="mailto:kerrys@libertyplumbingheating.com">kerrys@libertyplumbingheating.com</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Address:</span>
+                            <span class="contact-value">925-227th Ave NW<br>Bethel, MN</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Stats -->
+                <div class="card">
+                    <h2 class="card-header">Quick Stats</h2>
+                    <div class="quick-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">467</div>
+                            <div class="stat-label">Total Permits</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">54.9</div>
+                            <div class="stat-label">Avg/Year</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">58</div>
+                            <div class="stat-label">Days Since Last</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">$170,946</div>
+                            <div class="stat-label">Total Fees</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="card">
+                    <h2 class="card-header">Quick Actions</h2>
+                    <div class="action-buttons">
+                        <a href="tel:763-286-2485" class="action-button">
+                            📞 Call Now
+                        </a>
+                        <a href="mailto:kerrys@libertyplumbingheating.com" class="action-button">
+                            ✉️ Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content Area -->
+            <div class="content-area">
+                <!-- Company Overview -->
+                <div class="card">
+                    <h2 class="card-header">Company Overview</h2>
+                    <div class="tabs">
+                        <button class="tab active" onclick="showTab('business-info')">Business Info</button>
+                        <button class="tab" onclick="showTab('performance')">Performance</button>
+                        <button class="tab" onclick="showTab('service-areas')">Service Areas</button>
+                    </div>
+                    
+                    <!-- Business Info Tab -->
+                    <div id="business-info" class="tab-content active">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Legal Name</div>
+                                <div class="info-value">LIBERTY PLUMBING CO LLC 925 227TH AVE NW BETHEL MN 55005</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">License Match</div>
+                                <div class="info-value">High</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Contact Confidence</div>
+                                <div class="info-value">High</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Data Source</div>
+                                <div class="info-value">Licensed Data</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-grid" style="margin-top: 20px;">
+                            <div class="info-item" style="grid-column: 1 / -1;">
+                                <div class="info-label">Specialties</div>
+                                <div class="info-value">Residential plumbing, Commercial plumbing, Water heater installation, Drain cleaning</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Performance Tab -->
+                    <div id="performance" class="tab-content">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-label">Top Work Types</div>
+                                <div class="info-value">Res: 219, ComFdBv: 108, ComMin: 50</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Activity Level</div>
+                                <div class="info-value">Active (30-90 days)</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">First Permit Date</div>
+                                <div class="info-value">2016-12-06</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Last Permit Date</div>
+                                <div class="info-value">2025-06-02</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Areas Tab -->
+                    <div id="service-areas" class="tab-content">
+                        <div class="info-item">
+                            <div class="info-label">Service Areas</div>
+                            <div class="info-value" style="line-height: 1.8;">Armatage, Audubon Park, Bancroft, Beltrami, Bottineau, Bryant, Cedar - Isles - Dean, Cedar Riverside, Central, Cleveland, Columbia Park, Como, Cooper, Corcoran, Diamond Lake, Downtown West, East Isles, East Phillips, Elliot Park, Field, Folwell, Fulton, Hale, Harrison, Hawthorne, Hiawatha, Holland, Howe, Jordan, Kenny, King Field, Lind - Bohanon, Linden Hills, Logan Park, Longfellow, Loring Park, Lowry Hill, Lowry Hill East, Lyndale, Lynnhurst, Marcy Holmes, Marshall Terrace, McKinley, Mid - City Industrial, Midtown Phillips, Minnehaha, Morris Park, Near - North, Northrop, Page, Phillips West, Powderhorn Park, Prospect Park - East River Road, Regina, Seward, Sheridan, Shingle Creek, Standish, Steven's Square - Loring Heights, Tangletown, University of Minnesota, Ventura Village, Victory, Waite Park, Webber - Camden, Wenonah, Whittier, Willard - Hay, Windom, Windom Park</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call Notes Section -->
+                <div class="card">
+                    <h2 class="card-header">Call Preparation</h2>
+                    <div class="notes-section">
+                        <h3>Key Talking Points</h3>
+                        <ul style="margin-left: 20px; color: #333;">
+                            <li>They have 467 total permits in Minneapolis</li>
+                            <li>Averaging 54.9 permits per year</li>
+                            <li>Last permit was 58 days ago</li>
+                            <li>Primary work types: Res: 219, ComFdBv: 108, ComMin: 50</li>
+                            <li>Activity level: Active (30-90 days)</li>
+                        </ul>
+                        
+                        <h3 style="margin-top: 20px;">Notes Space</h3>
+                        <p>Use your CRM or notes app to track call outcomes and follow-ups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Simple tab switching functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

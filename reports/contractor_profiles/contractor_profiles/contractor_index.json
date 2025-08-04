@@ -1,0 +1,121 @@
+[
+  {
+    "company_name": "CenterPoint Energy Resource Corp",
+    "total_permits": 31231,
+    "phone": NaN,
+    "html_file": "centerpoint_energy_resource_corp.html",
+    "json_file": "centerpoint_energy_resource_corp_data.json"
+  },
+  {
+    "company_name": "Warners Stellian Co Inc",
+    "total_permits": 12062,
+    "phone": "612-366-2070",
+    "html_file": "warners_stellian_co_inc.html",
+    "json_file": "warners_stellian_co_inc_data.json"
+  },
+  {
+    "company_name": "CENTERPOINT ENERGY",
+    "total_permits": 6628,
+    "phone": NaN,
+    "html_file": "centerpoint_energy.html",
+    "json_file": "centerpoint_energy_data.json"
+  },
+  {
+    "company_name": "Urban Pine Plumbing and Mechanical Inc",
+    "total_permits": 5284,
+    "phone": "651-888-2275",
+    "html_file": "urban_pine_plumbing_and_mechanical_inc.html",
+    "json_file": "urban_pine_plumbing_and_mechanical_inc_data.json"
+  },
+  {
+    "company_name": "MN Plumbing & Home Services INC",
+    "total_permits": 4578,
+    "phone": NaN,
+    "html_file": "mn_plumbing_home_services_inc.html",
+    "json_file": "mn_plumbing_home_services_inc_data.json"
+  },
+  {
+    "company_name": "CHAMPION PLUMBING LLC",
+    "total_permits": 2290,
+    "phone": "651-365-1340",
+    "html_file": "champion_plumbing_llc.html",
+    "json_file": "champion_plumbing_llc_data.json"
+  },
+  {
+    "company_name": "Norblom Plumbing Co",
+    "total_permits": 1597,
+    "phone": "612-827-4033",
+    "html_file": "norblom_plumbing_co.html",
+    "json_file": "norblom_plumbing_co_data.json"
+  },
+  {
+    "company_name": "Weld and Sons Plumbing Inc",
+    "total_permits": 1366,
+    "phone": "763-475-0296",
+    "html_file": "weld_and_sons_plumbing_inc.html",
+    "json_file": "weld_and_sons_plumbing_inc_data.json"
+  },
+  {
+    "company_name": "Horwitz LLC",
+    "total_permits": 1235,
+    "phone": "763-235-9839",
+    "html_file": "horwitz_llc.html",
+    "json_file": "horwitz_llc_data.json"
+  },
+  {
+    "company_name": "Peters Plumbing LLC",
+    "total_permits": 834,
+    "phone": "763-234-8187",
+    "html_file": "peters_plumbing_llc.html",
+    "json_file": "peters_plumbing_llc_data.json"
+  },
+  {
+    "company_name": "Master Plumbing Services LLC",
+    "total_permits": 803,
+    "phone": "651-457-7100",
+    "html_file": "master_plumbing_services_llc.html",
+    "json_file": "master_plumbing_services_llc_data.json"
+  },
+  {
+    "company_name": "Gilbert Mechanical Contractors LLC",
+    "total_permits": 699,
+    "phone": "651-224-5428",
+    "html_file": "gilbert_mechanical_contractors_llc.html",
+    "json_file": "gilbert_mechanical_contractors_llc_data.json"
+  },
+  {
+    "company_name": "Northern Mechanical Contractors LLC",
+    "total_permits": 585,
+    "phone": "651-789-2275",
+    "html_file": "northern_mechanical_contractors_llc.html",
+    "json_file": "northern_mechanical_contractors_llc_data.json"
+  },
+  {
+    "company_name": "NORTHERN AIR CORP",
+    "total_permits": 563,
+    "phone": "651-490-9868",
+    "html_file": "northern_air_corp.html",
+    "json_file": "northern_air_corp_data.json"
+  },
+  {
+    "company_name": "Budget Plumbing Corp",
+    "total_permits": 555,
+    "phone": "763-531-2000",
+    "html_file": "budget_plumbing_corp.html",
+    "json_file": "budget_plumbing_corp_data.json"
+  },
+  {
+    "company_name": "Barr Web Industries Inc",
+    "total_permits": 518,
+    "phone": "612-872-0202",
+    "html_file": "barr_web_industries_inc.html",
+    "json_file": "barr_web_industries_inc_data.json"
+  },
+  {
+    "company_name": "LIBERTY PLUMBING CO LLC",
+    "total_permits": 467,
+    "phone": "763-286-2485",
+    "html_file": "liberty_plumbing_co_llc.html",
+    "json_file": "liberty_plumbing_co_llc_data.json"
+  }
+]
